@@ -1,0 +1,29 @@
+[class*="codepen"]:hover,
+[class*="codepen"]:focus {
+  color: #000;
+}
+
+[class*="github"]:hover,
+[class*="github"]:focus {
+  color: #010409;
+}
+
+[class*="linkedin"]:hover,
+[class*="linkedin"]:focus {
+  color: #0077B5;
+}
+
+[class*="medium"]:hover,
+[class*="medium"]:focus {
+  color: #00AB6C;
+}
+
+[class*="npm"]:hover,
+[class*="npm"]:focus {
+  color: #EA2039;
+}
+
+[class*="twitter"]:hover,
+[class*="twitter"]:focus {
+  color: #1DA1F2;
+}

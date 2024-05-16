@@ -1,0 +1,29 @@
+.card {
+  --radius: 10px;
+
+  border: solid 2px var(--slate);
+  border-radius: var(--radius);
+  width: 100%;
+  background-color: var(--slate);
+
+  img {
+    border-radius: var(--radius) var(--radius) 0 0;
+    width: 100%;
+  }
+
+  figcaption {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    margin-top: -5px;
+    border-radius: 0 0 var(--radius) var(--radius);
+    height: 60px;
+    background-color: var(--slate);
+    color: var(--white);
+  }
+
+  &:hover figcaption,
+  &:focus figcaption {
+    color: var(--secondary);
+  }
+}

@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Geologica";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Geologica-Regular"),
+    url("/fonts/Geologica-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Trocchi";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Trocchi-Regular"),
+    url("/fonts/Trocchi-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("UbuntuMono-Regular"),
+    url("/fonts/UbuntuMono-Regular.ttf") format("truetype");
+}
+
+:root {
+  --sans-serif: Geo, Helvetica, sans-serif;
+  --serif: Trocchi, Times, serif;
+  --monospace: "Ubuntu Mono", Courier, monospace;
+
+  --primary:    hsl(270, 100%, 20%);
+  --secondary:  hsl( 60, 100%, 80%);
+  --red:        hsl(  0, 100%, 20%);
+  --green:      hsl(120, 100%, 80%);
+  --blue:       hsl(210, 100%, 20%);
+
+  --black:  hsl(0, 0%,  5%);
+  --slate:  hsl(0, 0%, 20%);
+  --gray:   hsl(0, 0%, 50%);
+  --silver: hsl(0, 0%, 80%);
+  --white:  hsl(0, 0%, 95%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  font-family: var(--sans-serif);
+  background-color: var(--white);
+}
+
+body,
+figure,
+ul {
+  margin: 0;
+}
+
+[id="intro"],
+[id="portfolio"],
+[id="blog"],
+[id="links"] {
+  margin: auto;
+  padding: 30px;
+  max-width: 1400px;
+
+  @media (min-width: 576px) {
+    padding: 40px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 70px;
+  }
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+hr {
+  margin: auto;
+  width: 50vw;
+  height: 0.2vh;
+  background-color: var(--primary);
+}
