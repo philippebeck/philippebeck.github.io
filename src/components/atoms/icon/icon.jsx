@@ -1,9 +1,9 @@
 import './icon.css'
 
-const Icon = ({cat, name}) => {
+const Icon = ({cat, name, size="2"}) => {
 
   return (
-    <i className={`fa-${cat} fa-${name} fa-fw fa-lg`}></i>
+    <i className={`fa-${cat} fa-${name} fa-${size}x fa-fw`}></i>
   )
 }
 
