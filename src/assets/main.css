@@ -53,6 +53,7 @@ html {
 body {
   text-align: center;
   font-family: var(--sans-serif);
+  font-size: 1.2rem;
   background-color: var(--white);
 }
 

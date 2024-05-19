@@ -1,6 +1,8 @@
 [id="intro"] {
-  hgroup {
-    font-size: 1.5rem;
+  p {
+    margin: 50px auto;
+    width: 320px;
+    font-size: 2rem;
   }
 
   ul {
