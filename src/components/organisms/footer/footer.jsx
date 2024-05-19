@@ -14,7 +14,7 @@ const Footer = () => {
             <Link
               url={item.url} 
               label={item.name}
-              content={<Icon cat="brands" name={item.icon} />}
+              content={<Icon name={item.icon} cat="brands" />}
             />
           </li>
         )}

@@ -17,7 +17,7 @@ const Nav = () => {
               label={item.text}
               content={
                 <>
-                  <Icon cat={item.iconCat} name={item.iconName} />
+                  <Icon name={item.iconName} cat={item.iconCat} />
                   <b>{item.text}</b>
                 </>
               }
