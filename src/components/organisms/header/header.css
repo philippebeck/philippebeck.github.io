@@ -1,0 +1,18 @@
+[id="intro"] {
+  hgroup {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin: auto;
+    border: solid 2px var(--primary);
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    font-size: 1.2rem;
+    background-color: var(--silver);
+  }
+}

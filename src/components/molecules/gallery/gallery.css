@@ -5,27 +5,21 @@
     flex-flow: wrap;
     gap: 50px;
     place-content: center;
-    padding: 20px 50px 50px;
+    padding: 20px 0 50px;
   }
 
   li {
     width: 100%;
-  }
 
-  @media (min-width: 576px) {
-    li {
+    @media (min-width: 576px) {
       width: calc((100% - 50px) / 2);
     }
-  }
 
-  @media (min-width: 768px) {
-    li {
+    @media (min-width: 768px) {
       width: calc((100% - 100px) / 3);
     }
-  }
 
-  @media (min-width: 1200px) {
-    li {
+    @media (min-width: 1200px) {
       width: calc((100% - 150px) / 4);
     }
   }

@@ -97,4 +97,5 @@ hr {
   width: 50vw;
   height: 0.2vh;
   background-color: var(--primary);
+  color: var(--primary);
 }
