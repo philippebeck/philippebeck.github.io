@@ -15,11 +15,12 @@ const Gallery = ({ name, gallery }) => {
 
             <Link
               url={item.url}
+              title={item.detail}
               content={
                 <Card
                   url={item.image}
                   alt={item.alt}
-                  content={<h4>{item.name}</h4>}
+                  content={<h4>{item.title}</h4>}
                 />
               }
             />

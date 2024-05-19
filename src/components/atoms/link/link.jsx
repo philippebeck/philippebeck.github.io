@@ -1,6 +1,6 @@
 import './link.css'
 
-const Link = ({url, content, label="", design=''}) => {
+const Link = ({url, content, title, label='', design=''}) => {
   const isExternalLink = url.startsWith('https');
 
   return (
@@ -10,13 +10,21 @@ const Link = ({url, content, label="", design=''}) => {
       href={url}
       className={design}
       aria-label={label}
+      title={title}
       rel="noopener noreferrer"
       target="_blank"
     >
       {content}
     </a>
     :
-    <a href={url} className={design} aria-label={label}>{content}</a>
+    <a 
+      href={url} 
+      className={design} 
+      aria-label={label}
+      title={title}
+    >
+      {content}
+    </a>
   )
 }
 
