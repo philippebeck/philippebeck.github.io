@@ -282,10 +282,13 @@
     }
   ],
   "header": [
-    "I am passionate about IT & Web, space & robotics, geology & astronomy, drama & Sci-Fi, manga & video games.",
-    "Open-minded & constantly alert, research & learning are closely linked to my personality.",
-    "Senior Fullstack developer on various technologies ; creator of open-source packages in Sass, Vue & Node on NPM.",
-    "Independent trainer, senior mentor & evaluator for OpenClassrooms ; author of articles for developers on Medium."
+    "🤖 Fullstack Developer, mainly Open-Source",
+    "💼 Web Trainer, mainly @OpenClassrooms",
+    "🌱 FrontEnd packages made : Animadio & Vesan",
+    "📦 BackEnd packages made : Nens & Pam",
+    "❤️ I love writing HTML, CSS, JS, PHP & Python",
+    "📚 I write articles about Dev on Medium",
+    "🔭 Passionate about Nature, Space & Technology"
   ],
   "links": {
     "html": [
