@@ -15,11 +15,11 @@
       width: calc((100% - 50px) / 2);
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       width: calc((100% - 100px) / 3);
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
       width: calc((100% - 150px) / 4);
     }
   }
