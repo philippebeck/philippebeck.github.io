@@ -1,4 +1,4 @@
-import "./title.css"
+import "./title.scss"
 
 const Title = ({ title, lvl="2", subtitle="" }) => {
 
