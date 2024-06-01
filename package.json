@@ -5,7 +5,7 @@
   "homepage": "https://philippebeck.github.io",
   "private": false,
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "deploy" : "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
