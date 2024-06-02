@@ -1,17 +1,9 @@
+@import "../../../assets/main.scss";
+
 //! ********** VARIABLES **********
 
 $basic-size: 1.2rem;
 $subtitle-ratio: 0.6;
-
-$breakpoints: (
-  "tn": 0,
-  "xs": 22rem,
-  "sm": 48rem,
-  "md": 64rem,
-  "lg": 85rem,
-  "xl": 96rem,
-  "wd": 120rem
-) !default;
 
 $screen-ratios: (
   "tn": 1,
@@ -52,7 +44,7 @@ hgroup {
   h3,
   h4,
   p {
-    font-family: var(--serif);
+    font-family: $serif;
   }
 
   @each $breakpoint-type, $breakpoint-size in $breakpoints {

@@ -1,4 +1,4 @@
-import './image.css'
+import './image.scss'
 
 const Image = ({ url, alt }) => {
 

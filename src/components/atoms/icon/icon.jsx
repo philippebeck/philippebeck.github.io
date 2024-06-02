@@ -1,4 +1,4 @@
-import './icon.css'
+import './icon.scss'
 
 const Icon = ({name, cat="solid", size="2"}) => {
 

@@ -1,3 +1,5 @@
+@import "../../../assets/main.scss";
+
 img {
   max-width: 100%;
   height: auto;
@@ -7,19 +9,19 @@ img {
 [alt="Logo"] {
   height: 40px;
 
-  @media (min-width: 576px) {
+  @media (min-width: $xs) {
     height: 45px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $sm) {
     height: 50px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $md) {
     height: 55px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $lg) {
     height: 60px;
   }
 }
