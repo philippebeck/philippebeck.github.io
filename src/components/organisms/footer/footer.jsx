@@ -1,5 +1,5 @@
 import { footer } from '../../../assets/data.json'
-import './footer.css'
+import './footer.scss'
 
 import Icon from '../../atoms/icon/icon'
 import Link from '../../atoms/link/link'

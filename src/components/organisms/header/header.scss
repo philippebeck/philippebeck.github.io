@@ -1,3 +1,5 @@
+@import "../../../assets/main.scss";
+
 [id="intro"] {
 
   ul {
@@ -5,11 +7,11 @@
     flex-flow: column;
     gap: 10px;
     margin: auto;
-    border: solid 2px var(--primary);
+    border: solid 2px $primary;
     border-radius: 20px;
     padding: 20px;
     width: fit-content;
     font-size: 1.2rem;
-    background-color: var(--silver);
+    background-color: $silver;
   }
 }

@@ -1,6 +1,6 @@
 import { content, header } from '../../../assets/data.json'
 import Title from '../../atoms/title/title'
-import './header.css'
+import './header.scss'
 
 const Header = () => {
 

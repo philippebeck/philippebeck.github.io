@@ -1,3 +1,5 @@
+@import "../../../assets/main.scss";
+
 footer {
   display: flex;
   place-content: center;
@@ -6,11 +8,16 @@ footer {
   padding: 10px;
   width: 100%;
   font-size: 1rem;
-  background-color: var(--white);
 
   ul {
     display: flex;
     gap: 10px;
     place-content: center;
+  }
+
+  li {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: $white;
   }
 }

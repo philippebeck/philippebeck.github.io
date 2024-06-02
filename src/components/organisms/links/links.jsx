@@ -1,7 +1,7 @@
 import { content, links } from '../../../assets/data.json'
 import List from '../../molecules/list/list'
 import Title from '../../atoms/title/title'
-import './links.css'
+import './links.scss'
 
 const Links = () => {
 

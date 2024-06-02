@@ -1,7 +1,7 @@
 import { blog, content } from '../../../assets/data.json'
 import Title from '../../atoms/title/title'
 import Gallery from '../../molecules/gallery/gallery'
-import './blog.css'
+import './blog.scss'
 
 const Blog = () => {
 

@@ -1,7 +1,7 @@
 import { content, portfolio } from '../../../assets/data.json'
 import Gallery from '../../molecules/gallery/gallery'
 import Title from '../../atoms/title/title'
-import './portfolio.css'
+import './portfolio.scss'
 
 const Portfolio = () => {
 
