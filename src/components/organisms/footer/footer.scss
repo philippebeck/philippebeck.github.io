@@ -5,19 +5,18 @@ footer {
   place-content: center;
   position: fixed;
   bottom: 0;
-  padding: 10px;
   width: 100%;
   font-size: 1rem;
 
   ul {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     place-content: center;
   }
 
   li {
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     background-color: $white;
   }
 }
