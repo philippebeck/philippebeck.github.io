@@ -2,20 +2,20 @@ import Link from "../../atoms/link/link"
 import "./list.scss"
 
 const List = ({ array }) => {
-
   return (
-    <ul className="list">
-    { array.map((item, index) => 
-      <li key={index}>
 
-        <Link
-          url={item.url}
-          content={item.name}
-          design="btn"
-        />
-      </li>
-    )}
-  </ul>
+    <ul className="list">
+      { array.map((item, index) => 
+        <li key={index}>
+
+          <Link
+            url={item.url}
+            content={item.name}
+            design="btn"
+          />
+        </li>
+      )}
+    </ul>
   )
 }
 
