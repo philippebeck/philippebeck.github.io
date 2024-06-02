@@ -1,5 +1,5 @@
 import Link from "../../atoms/link/link"
-import "./list.css"
+import "./list.scss"
 
 const List = ({ array }) => {
 

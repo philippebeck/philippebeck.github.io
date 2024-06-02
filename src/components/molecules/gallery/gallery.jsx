@@ -1,7 +1,7 @@
 import Card from '../../molecules/card/card'
 import Link from '../../atoms/link/link'
 import Title from '../../atoms/title/title'
-import './gallery.css'
+import './gallery.scss'
 
 const Gallery = ({ name, gallery }) => {
 

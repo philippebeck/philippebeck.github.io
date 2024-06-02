@@ -1,0 +1,30 @@
+@import "../../../assets/main.scss";
+
+$gallery-gap: 50px;
+
+.gallery {
+
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: $gallery-gap;
+    place-content: center;
+    padding: 20px 0 50px;
+  }
+
+  li {
+    width: 100%;
+
+    @media (min-width: $xs) {
+      width: calc((100% - $gallery-gap) / 2);
+    }
+
+    @media (min-width: $sm) {
+      width: calc((100% - 2 * $gallery-gap) / 3);
+    }
+
+    @media (min-width: $md) {
+      width: calc((100% - 3 * $gallery-gap) / 4);
+    }
+  }
+}

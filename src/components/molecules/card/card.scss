@@ -1,0 +1,33 @@
+@import "../../../assets/main.scss";
+
+.card {
+  $radius: 10px;
+
+  border: solid 2px $slate;
+  border-radius: $radius;
+  width: 100%;
+  background-color: $slate;
+
+  img {
+    border-radius: $radius $radius 0 0;
+    width: 100%;
+  }
+
+  figcaption {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    margin-top: -5px;
+    box-sizing: border-box;
+    border-radius: 0 0 $radius $radius;
+    padding: 10px;
+    height: 80px;
+    background-color: $slate;
+    color: $white;
+  }
+
+  &:hover figcaption,
+  &:focus figcaption {
+    color: $secondary;
+  }
+}

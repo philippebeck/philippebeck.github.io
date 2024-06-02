@@ -1,5 +1,5 @@
 import Image from '../../atoms/image/image'
-import './card.css'
+import './card.scss'
 
 const Card = ({ url, alt, content }) => {
 
