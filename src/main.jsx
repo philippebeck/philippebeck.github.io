@@ -13,9 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Nav />
     <Header />
     <Portfolio />
-    <hr />
     <Blog />
-    <hr />
     <Links />
     <Footer />
   </React.StrictMode>
