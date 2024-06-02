@@ -1,7 +1,6 @@
 import './image.scss'
 
 const Image = ({ url, alt }) => {
-
   return (
     <img src={url} alt={alt} loading="lazy" />
   )

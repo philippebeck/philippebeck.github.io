@@ -6,8 +6,8 @@ import Link from '../../atoms/link/link'
 import './nav.scss'
 
 const Nav = () => {
-
   return (
+
     <nav id="nav">
       <ul>
         { nav.out.map((item, index) =>

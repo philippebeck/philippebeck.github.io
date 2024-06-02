@@ -5,8 +5,8 @@ import Icon from '../../atoms/icon/icon'
 import Link from '../../atoms/link/link'
 
 const Footer = () => {
-
   return (
+
     <footer>
       <ul>
         { footer.map((item, index) =>

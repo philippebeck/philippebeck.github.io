@@ -4,8 +4,8 @@ import Title from '../../atoms/title/title'
 import './gallery.scss'
 
 const Gallery = ({ name, gallery }) => {
-
   return (
+
     <section className="gallery">
       <Title title={name} lvl="3" />
 
@@ -17,6 +17,7 @@ const Gallery = ({ name, gallery }) => {
               url={item.url}
               title={item.detail}
               content={
+
                 <Card
                   url={item.image}
                   alt={item.alt}

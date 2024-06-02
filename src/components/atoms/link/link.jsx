@@ -2,8 +2,8 @@ import './link.scss'
 
 const Link = ({url, content, title, label='', design=''}) => {
   const isExternalLink = url.startsWith('https');
-
   return (
+
     isExternalLink
     ?
     <a

@@ -4,8 +4,8 @@ import Gallery from '../../molecules/gallery/gallery'
 import './blog.scss'
 
 const Blog = () => {
-
   return (
+
     <article id="blog">
       <Title title="Blog" subtitle={content.blog}/>
 

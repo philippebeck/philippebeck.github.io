@@ -4,8 +4,8 @@ import Title from '../../atoms/title/title'
 import './portfolio.scss'
 
 const Portfolio = () => {
-
   return (
+
     <article id="portfolio">
       <Title title="Portfolio" subtitle={content.portfolio} />
 

@@ -3,8 +3,8 @@ import Title from '../../atoms/title/title'
 import './header.scss'
 
 const Header = () => {
-
   return (
+
     <header id="intro">
       <Title 
         title={content.title} 
