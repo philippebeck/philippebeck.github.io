@@ -20,7 +20,7 @@ const Gallery = ({ name, gallery }) => {
                 <Card
                   url={item.image}
                   alt={item.alt}
-                  content={<h4>{item.title}</h4>}
+                  content={item.title}
                 />
               }
             />
