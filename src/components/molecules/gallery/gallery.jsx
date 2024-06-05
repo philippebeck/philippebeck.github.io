@@ -1,13 +1,14 @@
-import Card from '../../molecules/card/card'
 import Link from '../../atoms/link/link'
-import Title from '../../atoms/title/title'
+import Card from '../../molecules/card/card'
+import Title from '../../molecules/title/title'
+
 import './gallery.scss'
 
-const Gallery = ({ name, gallery }) => {
+const Gallery = ({ name, gallery, cat="brands", icon="" }) => {
   return (
 
     <section className="gallery">
-      <Title title={name} lvl="3" />
+      <Title title={name} lvl="3" icon={icon} cat={cat} />
 
       <ul>
         { gallery.map((item, index) => 
