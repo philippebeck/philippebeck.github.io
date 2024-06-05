@@ -6,7 +6,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  font-size: 1rem;
 
   ul {
     display: flex;
@@ -15,6 +14,7 @@ footer {
   }
 
   li {
+    border: solid 2px $silver;
     border-radius: 50%;
     padding: 5px;
     background-color: $white;
