@@ -1,4 +1,5 @@
 import { footer } from '../../../assets/data.json'
+
 import './footer.scss'
 
 import Icon from '../../atoms/icon/icon'
