@@ -1,14 +1,16 @@
 import { nav } from '../../../assets/data.json'
 import logo from '../../../assets/logo.webp'
+
 import Icon from '../../atoms/icon/icon'
 import Image from '../../atoms/image/image'
 import Link from '../../atoms/link/link'
-import './nav.scss'
 
-const Nav = () => {
+import './navbar.scss'
+
+const Navbar = () => {
   return (
 
-    <nav id="nav">
+    <nav id="navbar">
       <ul>
         { nav.out.map((item, index) =>
           <li key={index}>
@@ -52,4 +54,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default Navbar
