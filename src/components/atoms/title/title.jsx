@@ -1,6 +1,6 @@
 import "./title.scss"
 
-const Title = ({ title, lvl="", subtitle="" }) => {
+const Title = ({ title, lvl="2", subtitle="" }) => {
   return (
 
     <hgroup>
