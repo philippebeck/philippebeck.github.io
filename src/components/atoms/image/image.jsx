@@ -18,8 +18,13 @@ import './image.scss'
  *  The rendered image component.
  */
 const Image = ({ url, alt }) => {
+
   return (
-    <img src={url} alt={alt} loading="lazy" />
+    <img
+      src={url}
+      alt={alt}
+      loading="lazy"
+    />
   )
 }
 
