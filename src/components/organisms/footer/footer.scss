@@ -4,7 +4,7 @@ footer {
   display: flex;
   place-content: center;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
 
   ul {
@@ -16,7 +16,38 @@ footer {
   li {
     border: solid 2px $silver;
     border-radius: 50%;
-    padding: 5px;
+    padding: 2px 2px 1px;
+    font-size: 1rem;
     background-color: $white;
+
+    @media (min-width: $xs) {
+      padding: 4px 4px 2px;
+      font-size: 1.2rem;
+    }
+
+    @media (min-width: $sm) {
+      padding: 6px 6px 3px;
+      font-size: 1.4rem;
+    }
+
+    @media (min-width: $md) {
+      padding: 8px 8px 4px;
+      font-size: 1.6rem;
+    }
+
+    @media (min-width: $lg) {
+      padding: 10px 10px 5px;
+      font-size: 1.8rem;
+    }
+
+    @media (min-width: $xl) {
+      padding: 12px 12px 6px;
+      font-size: 2rem;
+    }
+
+    @media (min-width: $wd) {
+      padding: 14p 14px 7px;
+      font-size: 2.2rem;
+    }
   }
 }
