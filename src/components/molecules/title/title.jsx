@@ -37,12 +37,12 @@ const Title = ({ title, lvl="2", cat, icon="", subtitle="" }) => {
         lvl === "1" ? <h1>{title}</h1> :
 
         lvl === "2" ? <h2>
-          <Icon name={icon} cat={cat} size="1" />
+          <Icon name={icon} cat={cat} />
           {title}
         </h2> :
 
         lvl === "3" ? <h3>
-          <Icon name={icon} cat={cat} size="1" />
+          <Icon name={icon} cat={cat} />
           {title}
         </h3> :
 
