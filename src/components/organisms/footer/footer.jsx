@@ -19,10 +19,17 @@ const Footer = () => {
       <ul>
         { footer.map((item, index) =>
           <li key={index}>
+
             <Link
               url={item.url} 
               label={item.name}
-              content={<Icon name={item.icon} cat="brands" />}
+              content={
+
+                <Icon
+                  cat="brands"
+                  isHidden="false"
+                  name={item.icon}
+                />}
             />
           </li>
         )}

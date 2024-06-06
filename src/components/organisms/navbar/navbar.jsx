@@ -22,12 +22,19 @@ const Navbar = () => {
       <ul>
         { nav.out.map((item, index) =>
           <li key={index}>
+
             <Link
               url={item.url}
               label={item.text}
               content={
+
                 <>
-                  <Icon name={item.iconName} cat={item.iconCat} />
+                  <Icon 
+                    cat={item.iconCat}
+                    isHidden="false"
+                    name={item.iconName}
+                    option="2x"
+                  />
                   <b>{item.text}</b>
                 </>
               }
@@ -45,12 +52,19 @@ const Navbar = () => {
       <ul>
         { nav.in.map((item, index) =>
           <li key={index}>
+
             <Link
               url={item.url}
               label={item.text}
               content={
+
                 <>
-                  <Icon cat={item.iconCat} name={item.iconName} />
+                  <Icon 
+                    cat={item.iconCat}
+                    isHidden="false"
+                    name={item.iconName}
+                    option="2x"
+                  />
                   <b>{item.text}</b>
                 </>
               }
