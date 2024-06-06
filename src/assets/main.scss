@@ -1,11 +1,11 @@
 //! ********** VARIABLES **********
 
-$xs:  22.5rem;    //  360px
-$sm:  48rem;      //  768px
-$md:  64rem;      // 1024px
-$lg:  85.375rem;  // 1366px
-$xl:  96rem;      // 1536px
-$wd: 120rem;      // 1920px
+$xs:  22rem;  //  352px => mobile portrait
+$sm:  48rem;  //  768px => mobile landscape & tablet portrait
+$md:  64rem;  // 1024px => tablet landscape
+$lg:  85rem;  // 1360px => small laptop
+$xl:  96rem;  // 1536px => medium laptop & small desktop
+$wd: 120rem;  // 1920px => large laptop & desktop
 
 $breakpoints: (
   "tn": 0,
@@ -79,9 +79,13 @@ body {
 }
 
 body,
-figure,
 ul {
   margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 [id="intro"],
@@ -89,27 +93,34 @@ ul {
 [id="blog"],
 [id="links"] {
   margin: auto;
-  padding: 30px 15px 0;
-  max-width: 1600px;
+  padding: 20px 10px 0;
 
   @media (min-width: $xs) {
-    padding: 40px 20px 0;
+    padding: 25px 12px 0;
   }
 
   @media (min-width: $sm) {
-    padding: 50px 25px 0;
+    padding: 30px 15px 0;
+    max-width: calc(2 * $xs);
   }
 
   @media (min-width: $md) {
-    padding: 60px 30px 0;
+    padding: 40px 20px 0;
+    max-width: $sm;
   }
 
   @media (min-width: $lg) {
-    padding: 70px 35px 0;
+    padding: 50px 25px 0;
+    max-width: $md;
   }
-}
 
-ul {
-  padding: 0;
-  list-style: none;
+  @media (min-width: $xl) {
+    padding: 60px 30px 0;
+    max-width: $lg;
+  }
+
+  @media (min-width: $wd) {
+    padding: 70px 35px 0;
+    max-width: $xl;
+  }
 }
