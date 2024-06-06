@@ -7,7 +7,15 @@ import Link from '../../atoms/link/link'
 
 import './navbar.scss'
 
+/**
+ * ? NAVBAR COMPONENT
+ * * Renders the Navbar component.
+ *
+ * @return {JSX.Element}
+ *  The rendered Navbar component.
+ */
 const Navbar = () => {
+
   return (
 
     <nav id="navbar">

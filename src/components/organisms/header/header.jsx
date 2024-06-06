@@ -4,6 +4,13 @@ import Title from '../../molecules/title/title'
 
 import './header.scss'
 
+/**
+ * ? HEADER COMPONENT
+ * * Renders the Header component.
+ *
+ * @return {JSX.Element}
+ *  The rendered Header component.
+ */
 const Header = () => {
   return (
 

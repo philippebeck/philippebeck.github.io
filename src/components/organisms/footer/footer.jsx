@@ -5,6 +5,13 @@ import './footer.scss'
 import Icon from '../../atoms/icon/icon'
 import Link from '../../atoms/link/link'
 
+/**
+ * ? FOOTER COMPONENT
+ * * Renders the Footer component.
+ *
+ * @return {JSX.Element}
+ *  The rendered Footer component.
+ */
 const Footer = () => {
   return (
 

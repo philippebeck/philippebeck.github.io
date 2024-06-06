@@ -5,6 +5,13 @@ import Title from '../../molecules/title/title'
 
 import './portfolio.scss'
 
+/**
+ * ? PORTFOLIO COMPONENT
+ * * Renders the Portfolio component.
+ *
+ * @return {JSX.Element}
+ *  The rendered Portfolio component.
+ */
 const Portfolio = () => {
   return (
 

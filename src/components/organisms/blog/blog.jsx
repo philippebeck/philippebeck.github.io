@@ -5,6 +5,13 @@ import Gallery from '../../molecules/gallery/gallery'
 
 import './blog.scss'
 
+/**
+ * ? BLOG COMPONENT
+ * * Renders the Blog component.
+ *
+ * @return {JSX.Element}
+ *  The rendered Blog component.
+ */
 const Blog = () => {
   return (
 

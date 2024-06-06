@@ -5,6 +5,14 @@ import Title from '../../molecules/title/title'
 
 import './links.scss'
 
+/**
+ * ? LINKS COMPONENT
+ * * Renders a component that displays
+ * * a list of links categorized by technology.
+ *
+ * @return {JSX.Element}
+ *  The rendered component.
+ */
 const Links = () => {
   return (
 
