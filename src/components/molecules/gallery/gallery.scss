@@ -19,11 +19,11 @@ $gallery-gap: 50px;
       width: calc((100% - $gallery-gap) / 2);
     }
 
-    @media (min-width: $sm) {
+    @media (min-width: $md) {
       width: calc((100% - 2 * $gallery-gap) / 3);
     }
 
-    @media (min-width: $md) {
+    @media (min-width: $xl) {
       width: calc((100% - 3 * $gallery-gap) / 4);
     }
   }
