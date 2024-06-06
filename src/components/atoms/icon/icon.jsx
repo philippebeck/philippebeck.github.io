@@ -26,8 +26,13 @@ import './icon.scss'
  * @return {JSX.Element}
  *  The rendered icon component.
  */
+const Icon = ({name, cat="brands", isHidden="true", option="1x"}) => {
+
   return (
-    <i className={`fa-${cat} fa-${name} fa-${size}x fa-fw`}></i>
+    <i
+      className={`fa-${cat} fa-${name} fa-${option} fa-fw`}
+      aria-hidden={isHidden}
+    ></i>
   )
 }
 
