@@ -1,28 +1,5 @@
-@import "../../../assets/main.scss";
-
 img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-}
-
-[alt="Logo"] {
-  padding: 2px 0;
-  height: 40px;
-
-  @media (min-width: $xs) {
-    height: 45px;
-  }
-
-  @media (min-width: $sm) {
-    height: 50px;
-  }
-
-  @media (min-width: $md) {
-    height: 55px;
-  }
-
-  @media (min-width: $lg) {
-    height: 60px;
-  }
 }
