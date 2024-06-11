@@ -1,11 +1,11 @@
-//! ********** VARIABLES **********
+//! ********** BREAKPOINTS **********
 
-$xs:  22rem;  //  352px => mobile portrait
-$sm:  48rem;  //  768px => mobile landscape & tablet portrait
-$md:  64rem;  // 1024px => tablet landscape
-$lg:  85rem;  // 1360px => small laptop
-$xl:  96rem;  // 1536px => medium laptop & small desktop
-$wd: 120rem;  // 1920px => large laptop & desktop
+$xs: 22.5rem;    //  360px => mobile portrait
+$sm: 48rem;      //  768px => mobile landscape & tablet portrait
+$md: 64rem;      // 1024px => tablet landscape
+$lg: 85.375rem;  // 1366px => small laptop
+$xl: 96rem;      // 1536px => medium laptop & small desktop
+$wd: 120rem;     // 1920px => large laptop & desktop
 
 $breakpoints: (
   "tn": 0,
@@ -17,9 +17,7 @@ $breakpoints: (
   "wd": $wd
 ) !default;
 
-$sans-serif: Geo, Helvetica, sans-serif;
-$serif: Trocchi, Times, serif;
-$monospace: "Ubuntu Mono", Courier, monospace;
+//! ********** COLORS **********
 
 $primary:    hsl(270, 100%, 20%);
 $secondary:  hsl( 60, 100%, 80%);
@@ -33,7 +31,7 @@ $gray:   hsl(0, 0%, 50%);
 $silver: hsl(0, 0%, 80%);
 $white:  hsl(0, 0%, 95%);
 
-//! ********** RULES **********
+//! ********** FONTS **********
 
 @font-face {
   font-family: "Geologica";
@@ -65,6 +63,14 @@ $white:  hsl(0, 0%, 95%);
     url("/fonts/UbuntuMono-Regular.ttf") format("truetype");
 }
 
+$sans-serif: Geo, Helvetica, sans-serif;
+$serif: Trocchi, Times, serif;
+$monospace: "Ubuntu Mono", Courier, monospace;
+
+//! ********** SIZES **********
+
+$size: 10px;
+
 //! ********** MAIN **********
 
 html {
@@ -93,34 +99,46 @@ ul {
 [id="blog"],
 [id="links"] {
   margin: auto;
-  padding: 20px 10px 0;
+  padding: calc($size * 2) $size 0;
+
+  //! ********** XS **********
 
   @media (min-width: $xs) {
-    padding: 30px 15px 0;
+    padding: calc($size * 3) calc($size * 1.5) 0;
   }
+
+  //! ********** SM **********
 
   @media (min-width: $sm) {
-    padding: 40px 20px 0;
-    max-width: calc(2 * $xs);
+    padding: calc($size * 4) calc($size * 2) 0;
+    max-width: calc($sm * 0.9);
   }
+
+  //! ********** MD **********
 
   @media (min-width: $md) {
-    padding: 50px 25px 0;
-    max-width: $sm;
+    padding: calc($size * 5) calc($size * 2.5) 0;
+    max-width: calc($md * 0.9);
   }
+
+  //! ********** LG **********
 
   @media (min-width: $lg) {
-    padding: 60px 30px 0;
-    max-width: $md;
+    padding: calc($size * 6) calc($size * 3) 0;
+    max-width: calc($lg * 0.9);
   }
+
+  //! ********** XL **********
 
   @media (min-width: $xl) {
-    padding: 70px 35px 0;
-    max-width: $lg;
+    padding: calc($size * 7) calc($size * 3.5) 0;
+    max-width: calc($xl * 0.9);
   }
 
+  //! ********** WD **********
+
   @media (min-width: $wd) {
-    padding: 80px 40px 0;
-    max-width: $xl;
+    padding: calc($size * 8) calc($size * 4) 0;
+    max-width: calc($wd * 0.9);
   }
 }
