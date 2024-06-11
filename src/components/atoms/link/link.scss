@@ -19,5 +19,7 @@ a {
     border-radius: 5px;
     background-color: $primary;
     color: $white;
+    transform: scale(1.05);
+    transition: all 500ms;
   }
 }

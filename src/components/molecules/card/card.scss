@@ -1,13 +1,23 @@
 @import "../../../assets/main.scss";
 
-.card {
-  $radius: 10px;
+//! ********** VARIABLES **********
 
+$radius: 10px;
+
+//! ********** MAIN **********
+
+.card {
   margin: 0;
   border: solid 2px $slate;
   border-radius: $radius;
   width: 100%;
   background-color: $slate;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    transition: all 500ms;
+  }
 
   img {
     border-radius: $radius $radius 0 0;
