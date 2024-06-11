@@ -1,97 +1,157 @@
 @import "../../../assets/main.scss";
 
+//! ********** VARIABLES **********
+
+$font-size: 0.7rem;
+$padding: 2px;
+$height: 30px;
+$gap: 10px;
+
+//! ********** MAIN **********
+
 [id="navbar"] {
   display: flex;
   place-content: space-between;
   place-items: center;
   position: fixed;
+  z-index: 10;
   top: 0;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 $size;
   width: 100%;
-  font-size: 0.7rem;
-  text-transform: uppercase;
+  font-size: $font-size;
   background-color: $primary;
   color: $white;
 
-  ul {
-    display: flex;
-    gap: 10px;
+  img {
+    padding: $padding 0;
+    height: $height;
   }
 
-  a {
-    &:hover,
-    &:focus {
-      color: $green;
-    }
+  ul {
+    display: flex;
+    gap: $gap;
+  }
+
+  a:hover,
+  a:focus {
+    color: $green;
+    transform: scale(0.9);
+    transition: all 500ms;
   }
 
   b {
     display: none;
   }
 
+  //! ********** XS **********
+
   @media (min-width: $xs) {
-    padding: 0 20px;
-    font-size: 0.8rem;
+    padding: 0 calc($size * 2);
+    font-size: calc($font-size + 0.1rem);
+
+    img {
+      padding: calc($padding + 1px) 0;
+      height: calc($height + 5px);
+    }
 
     ul {
-      gap: 15px;
+      gap: calc($gap * 2);
     }
   }
 
+  //! ********** SM **********
+
   @media (min-width: $sm) {
-    padding: 0 30px;
-    font-size: 0.9rem;
+    padding: 0 calc($size * 3);
+    font-size: calc($font-size + 0.2rem);
+
+    img {
+      padding: calc($padding + 2px) 0;
+      height: calc($height + 10px);
+    }
 
     ul {
-      gap: 20px;
+      gap: calc($gap * 3);
     }
 
     a {
       display: flex;
-      gap:10px;
+      gap: 10px;
       place-items: center;
     }
 
     b {
       display: block;
+      text-transform: uppercase;
     }
   }
+
+  //! ********** MD **********
 
   @media (min-width: $md) {
-    padding: 0 40px;
-    font-size: 1rem;
+    padding: 0 calc($size * 4);
+    font-size: calc($font-size + 0.3rem);
+
+    img {
+      padding: calc($padding + 3px) 0;
+      height: calc($height + 15px);
+    }
 
     ul {
-      gap: 25px;
+      gap: calc($gap * 4);
     }
   }
+
+  //! ********** LG **********
 
   @media (min-width: $lg) {
-    padding: 0 50px;
-    font-size: 1.1rem;
-    text-transform: capitalize;
+    padding: 0 calc($size * 5);
+    font-size: calc($font-size + 0.4rem);
+
+    img {
+      padding: calc($padding + 4px) 0;
+      height: calc($height + 20px);
+    }
 
     ul {
-      gap: 30px;
+      gap: calc($gap * 5);
+    }
+
+    b {
+      text-transform: capitalize;
     }
   }
+
+  //! ********** XL **********
 
   @media (min-width: $xl) {
-    padding: 0 60px;
-    font-size: 1.2rem;
+    padding: 0 calc($size * 6);
+    font-size: calc($font-size + 0.5rem);
+
+    img {
+      padding: calc($padding + 5px) 0;
+      height: calc($height + 25px);
+    }
 
     ul {
-      gap: 35px;
+      gap: calc($gap * 6);
     }
   }
 
+  //! ********** WD **********
+
   @media (min-width: $wd) {
-    padding: 0 70px;
-    font-size: 1.3rem;
+    padding: 0 calc($size * 7);
+    font-size: calc($font-size + 0.6rem);
+
+    img {
+      padding: calc($padding + 6px) 0;
+      height: calc($height + 30px);
+    }
 
     ul {
-      gap: 40px;
+      gap: calc($gap * 7);
     }
   }
 }

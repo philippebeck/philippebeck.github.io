@@ -1,5 +1,14 @@
 @import "../../../assets/main.scss";
 
+//! ********** VARIABLES **********
+
+$gap: 5px;
+$width: 30px;
+$height: 30px;
+$font-size: 1.2rem;
+
+//! ********** MAIN **********
+
 footer {
   display: flex;
   place-content: center;
@@ -9,45 +18,109 @@ footer {
 
   ul {
     display: flex;
-    gap: 5px;
+    gap: $gap;
     place-content: center;
   }
 
   li {
+    display: flex;
+    place-content: center;
+    place-items: center;
     border: solid 2px $silver;
     border-radius: 50%;
-    padding: 2px 2px 1px;
-    font-size: 1rem;
+    width: $width;
+    height: $height;
+    font-size: $font-size;
     background-color: $white;
+  }
 
-    @media (min-width: $xs) {
-      padding: 4px 4px 2px;
-      font-size: 1.2rem;
+  a:hover,
+  a:focus {
+    transform: scale(1.1);
+    transition: transform 500ms;
+  }
+
+  //! ********** XS **********
+
+  @media (min-width: $xs) {
+    ul {
+      gap: calc($gap * 2);
     }
 
-    @media (min-width: $sm) {
-      padding: 6px 6px 3px;
-      font-size: 1.4rem;
+    li {
+      width: calc($width + 5px);
+      height: calc($height + 5px);
+      font-size: calc($font-size * 1.2);
+    }
+  }
+
+  //! ********** SM **********
+
+  @media (min-width: $sm) {
+    ul {
+      gap: calc($gap * 3);
     }
 
-    @media (min-width: $md) {
-      padding: 8px 8px 4px;
-      font-size: 1.6rem;
+    li {
+      width: calc($width + 10px);
+      height: calc($height + 10px);
+      font-size: calc($font-size * 1.4);
+    }
+  }
+
+  //! ********** MD **********
+
+  @media (min-width: $md) {
+    ul {
+      gap: calc($gap * 4);
     }
 
-    @media (min-width: $lg) {
-      padding: 10px 10px 5px;
-      font-size: 1.8rem;
+    li {
+      width: calc($width + 15px);
+      height: calc($height + 15px);
+      font-size: calc($font-size * 1.6);
+    }
+  }
+
+  //! ********** LG **********
+
+  @media (min-width: $lg) {
+    ul {
+      gap: calc($gap * 5);
     }
 
-    @media (min-width: $xl) {
-      padding: 12px 12px 6px;
-      font-size: 2rem;
+    li {
+      width: calc($width + 20px);
+      height: calc($height + 20px);
+      font-size: calc($font-size * 1.8);
+    }
+  }
+
+  //! ********** XL **********
+
+  @media (min-width: $xl) {
+    ul {
+      gap: calc($gap * 6);
     }
 
-    @media (min-width: $wd) {
-      padding: 14p 14px 7px;
-      font-size: 2.2rem;
+    li {
+      width: calc($width + 25px);
+      height: calc($height + 25px);
+      font-size: calc($font-size * 2);
+    }
+  }
+
+  //! ********** WD **********
+
+  @media (min-width: $wd) {
+    ul {
+      gap: calc($gap * 7);
+    }
+
+    li {
+      width: calc($width + 30px);
+      height: calc($height + 30px);
+      font-size: calc($font-size * 2.2);
     }
   }
 }
