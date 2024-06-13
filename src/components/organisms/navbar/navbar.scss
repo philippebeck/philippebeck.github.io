@@ -3,7 +3,8 @@
 //! ********** VARIABLES **********
 
 $font-size: 0.7rem;
-$padding: 2px;
+$padding-x: 10px;
+$padding-y: 2px;
 $height: 30px;
 $gap: 10px;
 
@@ -17,14 +18,13 @@ $gap: 10px;
   z-index: 10;
   top: 0;
   box-sizing: border-box;
-  padding: 0 $size;
+  padding: $padding-y $padding-x;
   width: 100%;
   font-size: $font-size;
   background-color: $primary;
   color: $white;
 
   img {
-    padding: $padding 0;
     height: $height;
   }
 
@@ -47,11 +47,10 @@ $gap: 10px;
   //! ********** XS **********
 
   @media (min-width: $xs) {
-    padding: 0 calc($size * 2);
+    padding: calc($padding-y + 1px) calc($padding-x * 2);
     font-size: calc($font-size + 0.1rem);
 
     img {
-      padding: calc($padding + 1px) 0;
       height: calc($height + 5px);
     }
 
@@ -63,11 +62,10 @@ $gap: 10px;
   //! ********** SM **********
 
   @media (min-width: $sm) {
-    padding: 0 calc($size * 3);
+    padding: calc($padding-y + 2px) calc($padding-x * 3);
     font-size: calc($font-size + 0.2rem);
 
     img {
-      padding: calc($padding + 2px) 0;
       height: calc($height + 10px);
     }
 
@@ -90,11 +88,10 @@ $gap: 10px;
   //! ********** MD **********
 
   @media (min-width: $md) {
-    padding: 0 calc($size * 4);
+    padding: calc($padding-y + 3px) calc($padding-x * 4);
     font-size: calc($font-size + 0.3rem);
 
     img {
-      padding: calc($padding + 3px) 0;
       height: calc($height + 15px);
     }
 
@@ -106,11 +103,10 @@ $gap: 10px;
   //! ********** LG **********
 
   @media (min-width: $lg) {
-    padding: 0 calc($size * 5);
+    padding: calc($padding-y + 4px) calc($padding-x * 5);
     font-size: calc($font-size + 0.4rem);
 
     img {
-      padding: calc($padding + 4px) 0;
       height: calc($height + 20px);
     }
 
@@ -126,11 +122,10 @@ $gap: 10px;
   //! ********** XL **********
 
   @media (min-width: $xl) {
-    padding: 0 calc($size * 6);
+    padding: calc($padding-y + 5px) calc($padding-x * 6);
     font-size: calc($font-size + 0.5rem);
 
     img {
-      padding: calc($padding + 5px) 0;
       height: calc($height + 25px);
     }
 
@@ -142,11 +137,10 @@ $gap: 10px;
   //! ********** WD **********
 
   @media (min-width: $wd) {
-    padding: 0 calc($size * 7);
+    padding: calc($padding-y + 6px) calc($padding-x * 7);
     font-size: calc($font-size + 0.6rem);
 
     img {
-      padding: calc($padding + 6px) 0;
       height: calc($height + 30px);
     }
 
