@@ -1,0 +1,56 @@
+@import "./assets/app.scss";
+
+//! ********** VARIABLES **********
+
+$padding: 10px;
+
+//! ********** MAIN **********
+
+[id="intro"],
+[id="portfolio"],
+[id="blog"],
+[id="links"] {
+  margin: auto;
+  padding: calc($padding * 2) $padding 0;
+
+  //! ********** XS **********
+
+  @media (min-width: $xs) {
+    padding: calc($padding * 3) calc($padding * 1.5) 0;
+  }
+
+  //! ********** SM **********
+
+  @media (min-width: $sm) {
+    padding: calc($padding * 4) calc($padding * 2) 0;
+    max-width: calc($sm * 0.9);
+  }
+
+  //! ********** MD **********
+
+  @media (min-width: $md) {
+    padding: calc($padding * 5) calc($padding * 2.5) 0;
+    max-width: calc($md * 0.9);
+  }
+
+  //! ********** LG **********
+
+  @media (min-width: $lg) {
+    padding: calc($padding * 6) calc($padding * 3) 0;
+    max-width: calc($lg * 0.9);
+  }
+
+  //! ********** XL **********
+
+  @media (min-width: $xl) {
+    padding: calc($padding * 7) calc($padding * 3.5) 0;
+    max-width: calc($xl * 0.9);
+  }
+
+  //! ********** WD **********
+
+  @media (min-width: $wd) {
+    padding: calc($padding * 8) calc($padding * 4) 0;
+    max-width: calc($wd * 0.9);
+  }
+}
