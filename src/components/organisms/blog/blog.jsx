@@ -17,41 +17,19 @@ const Blog = () => {
 
     <article id="blog">
       <Title
-        title="Blog"
-        cat="solid"
-        icon="blog"
-        subtitle={content.blog}
+        title={content.blog.title}
+        icon={content.blog.icon}
+        cat={content.blog.cat}
+        subtitle={content.blog.subtitle}
       />
 
-      <Gallery
-        name="HTML5"
-        gallery={blog.html}
-        icon="html5"
-      />
-
-      <Gallery 
-        name="CSS3"
-        gallery={blog.css}
-        icon="css3"
-      />
-
-      <Gallery
-        name="JavaScript"
-        gallery={blog.js}
-        icon="square-js"
-      />
-
-      <Gallery
-        name="PHP"
-        gallery={blog.php}
-        icon="php"
-      />
-
-      <Gallery
-        name="Sass"
-        gallery={blog.sass}
-        icon="sass"
-      />
+      { blog.map((article, index) =>
+        <Gallery
+          key={index}
+          title={article.title}
+          gallery={article.gallery}
+        />
+      )}
     </article>
   )
 }
