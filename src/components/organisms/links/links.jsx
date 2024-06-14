@@ -18,82 +18,25 @@ const Links = () => {
 
     <article id="links">
       <Title
-        title="Links"
-        cat="solid"
-        icon="link"
-        subtitle={content.links}
+        title={content.links.title}
+        cat={content.links.cat}
+        icon={content.links.icon}
+        subtitle={content.links.subtitle}
       />
 
-      <Title
-        title="HTML"
-        lvl="3"
-        icon="html5"
-      />
-      <List array={links.html} />
+      { links.map((link, index) =>
 
-      <Title
-        title="CSS"
-        lvl="3"
-        icon="css3"
-      />
-      <List array={links.css} />
+      <section key={index}>
+        <Title
+          title={link.title.name}
+          lvl={link.title.lvl}
+          icon={link.title.icon}
+          cat={link.title.cat}
+        />
 
-      <Title
-        title="JS"
-        lvl="3"
-        icon="square-js"
-      />
-      <List array={links.js} />
-
-      <Title
-        title="Vue"
-        lvl="3"
-        icon="vuejs"
-      />
-      <List array={links.vue} />
-
-      <Title 
-        title="Node"
-        lvl="3"
-        icon="node-js"
-      />
-      <List array={links.node} />
-
-      <Title
-        title="PHP"
-        lvl="3"
-        icon="php"
-      />
-      <List array={links.php} />
-
-      <Title
-        title="Python"
-        lvl="3"
-        icon="python"
-      />
-      <List array={links.python} />
-
-      <Title
-        title="DB"
-        lvl="3"
-        icon="database"
-        cat="solid"
-      />
-      <List array={links.db} />
-
-      <Title
-        title="Git"
-        lvl="3"
-        icon="square-git"
-      />
-      <List array={links.git} />
-
-      <Title
-        title="Dev"
-        lvl="3"
-        icon="dev"
-      />
-      <List array={links.dev} />
+        <List array={link.list} />
+        </section>
+      )}
     </article>
   )
 }
