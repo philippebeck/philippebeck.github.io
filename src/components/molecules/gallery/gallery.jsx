@@ -7,34 +7,28 @@ import './gallery.scss'
 /**
  * ? GALLERY COMPONENT
  * * Renders a gallery component with the specified
- * * name, array of gallery items, category & icon.
+ * * title object & array of gallery items.
  *
  * @param {Object} props
  *  The properties for the gallery.
  *
- * @param {string} props.name
- *  The name of the gallery.
+ * @param {Object} props.title
+ *  The title object of the gallery.
  *
  * @param {Array} props.gallery
  *  The array of gallery items.
  *
- * @param {string} props.cat
- *  The category of the gallery.
- *
- * @param {string} [props.icon=""]
- *  The icon for the gallery.
- * 
  * @return {JSX.Element}
  *  The rendered gallery component.
  */
-const Gallery = ({ name, gallery, cat, icon="" }) => {
+const Gallery = ({ title, gallery }) => {
   return (
 
     <section className="gallery">
-      <Title title={name} lvl="3" icon={icon} cat={cat} />
+      <Title title={title.name} lvl="3" icon={title.icon} cat={title.cat} />
 
       <ul>
-        { gallery.map((item, index) => 
+        { gallery.map((item, index) =>
           <li key={index}>
 
             <Link
