@@ -17,25 +17,19 @@ const Portfolio = () => {
 
     <article id="portfolio">
       <Title
-        title="Portfolio"
-        icon="images"
-        cat="regular"
-        subtitle={content.portfolio}
+        title={content.portfolio.title}
+        icon={content.portfolio.icon}
+        cat={content.portfolio.cat}
+        subtitle={content.portfolio.subtitle}
       />
 
-      <Gallery 
-        name="Packages"
-        gallery={portfolio.packages}
-        icon="cubes"
-        cat="solid"
-      />
-
-      <Gallery
-        name="Websites"
-        gallery={portfolio.websites}
-        icon="sitemap"
-        cat="solid"
-      />
+      { portfolio.map((project, index) =>
+        <Gallery
+          key={index}
+          title={project.title}
+          gallery={project.gallery}
+        />
+      )}
     </article>
   )
 }
