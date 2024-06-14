@@ -2,7 +2,7 @@
   "blog": [
     {
       "title": {
-        "name": "html",
+        "name": "HTML",
         "icon": "html5"
       },
       "gallery": [
@@ -66,7 +66,7 @@
     },
     {
       "title": {
-        "name": "css",
+        "name": "CSS",
         "icon": "css3"
       },
       "gallery": [
@@ -130,7 +130,7 @@
     },
     {
       "title": {
-        "name": "js",
+        "name": "JS",
         "icon": "square-js"
       },
       "gallery": [
@@ -194,7 +194,7 @@
     },
     {
       "title": {
-        "name": "php",
+        "name": "PHP",
         "icon": "php"
       },
       "gallery": [
@@ -258,7 +258,7 @@
     },
     {
       "title": {
-        "name": "sass",
+        "name": "Sass",
         "icon": "sass"
       },
       "gallery": [
@@ -1503,7 +1503,7 @@
   "portfolio": [
     {
       "title": {
-        "name": "packages",
+        "name": "Packages",
         "icon": "cubes",
         "cat": "solid"
       },
@@ -1540,7 +1540,7 @@
     },
     {
       "title": {
-        "name": "websites",
+        "name": "Websites",
         "icon": "desktop",
         "cat": "regular"
       },
