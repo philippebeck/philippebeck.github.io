@@ -16,9 +16,9 @@ const Header = () => {
 
     <header id="intro">
       <Title 
-        title={content.title} 
+        title={content.header.title} 
         lvl="1" 
-        subtitle={<strong>{content.subtitle}</strong>}
+        subtitle={<strong>{content.header.subtitle}</strong>}
       />
 
       <ul>
