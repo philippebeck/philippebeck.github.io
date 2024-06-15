@@ -2,271 +2,357 @@
   "blog": [
     {
       "title": {
-        "name": "HTML",
-        "icon": "html5"
+        "heading": {
+          "text": "HTML"
+        },
+        "icon": {
+          "name": "html5"
+        }
       },
       "gallery": [
         {
-          "title": "A Dive into ARIA Attributes of HTML5",
+          "caption": "A Dive into ARIA Attributes of HTML5",
           "detail": "Exploring Usage, Best Practices & Impact of ARIA Attributes for Improved Web Application Accessibility",
-          "image": "img/blog/html5-aria.webp",
-          "alt": "A blind person equipped with headphones, in front of a computer screen where it is written some Braille symbols under the word ARIA in uppercase",
+          "image": {
+            "url": "img/blog/html5-aria.webp",
+            "alt": "A blind person equipped with headphones, in front of a computer screen where it is written some Braille symbols under the word ARIA in uppercase"
+          },
           "url": "https://medium.com/@philippebeck/html5-aria-df25efdf6f2b"
         },
         {
-          "title": "Avoiding the pitfalls of HTML5",
+          "caption": "Avoiding the pitfalls of HTML5",
           "detail": "Common bad practices including div soup, incorrect titles, excessive line breaks, table layout, HTML design & outdated attributes",
-          "image": "img/blog/html5-bad-practices.webp",
-          "alt": "A traffic sign indicating a direction of prohibition with HTML5 written under this sign",
+          "image": {
+            "url": "img/blog/html5-bad-practices.webp",
+            "alt": "A traffic sign indicating a ban direction with HTML5 written under this sign"
+          },
           "url": "https://medium.com/@philippebeck/html5-bad-practices-56f2028f698c"
         },
         {
-          "title": "Discover the Power of HTML5",
+          "caption": "Discover the Power of HTML5",
           "detail": "Uncover the Essence of HTML5 through Tags & Attributes",
-          "image": "img/blog/html5-tags-attributes.webp",
-          "alt": "HTML5 Logo",
+          "image": {
+            "url": "img/blog/html5-tags-attributes.webp",
+            "alt": "HTML5 Logo"
+          },
           "url": "https://medium.com/@philippebeck/html5-tags-attributes-292d6553398c"
         },
         {
-          "title": "Essential Tips for Mastering HTML5",
+          "caption": "Essential Tips for Mastering HTML5",
           "detail": "A comprehensive guide that covers best practices for indentation, syntax, semantics, attributes, controls & validation for effective HTML5 coding",
-          "image": "img/blog/html5-best-practices.webp",
-          "alt": "A logo with HTML5 written underneath on a sign at the entrance to a business",
+          "image": {
+            "url": "img/blog/html5-best-practices.webp",
+            "alt": "A logo with HTML5 written underneath on a sign at the entrance to a business"
+          },
           "url": "https://medium.com/@philippebeck/html5-best-practices-09c08cf46c21"
         },
         {
-          "title": "Inclusive Web Experiences with HTML5",
+          "caption": "Inclusive Web Experiences with HTML5",
           "detail": "Create accessible web content with semantic HTML, form fields, multimedia support, graphics capabilities, geolocation & local storage",
-          "image": "img/blog/html5-accessibility.webp",
-          "alt": "A large computer screen in front of a user sitting with big glasses on his nose trying to read some detail",
+          "image": {
+            "url": "img/blog/html5-accessibility.webp",
+            "alt": "A large computer screen in front of a user sitting with big glasses on his nose trying to read some detail"
+          },
           "url": "https://medium.com/@philippebeck/html5-accessibility-3705d520045d"
         },
         {
-          "title": "Maximize performance in HTML5",
+          "caption": "Maximize performance in HTML5",
           "detail": "Optimize loading, rendering & resource management to deliver an exceptional user experience",
-          "image": "img/blog/html5-performance.webp",
-          "alt": "a work desk in the shape of a rocket cockpit with a computer in the center ready to take off like a rocket, and a mad scientist around it",
+          "image": {
+            "url": "img/blog/html5-performance.webp",
+            "alt": "a work desk in the shape of a rocket cockpit with a computer in the center ready to take off like a rocket, and a mad scientist around it"
+          },
           "url": "https://medium.com/@philippebeck/html5-performance-5f65346ccf2f"
         },
         {
-          "title": "Maximize your Visibility with HTML5",
+          "caption": "Maximize your Visibility with HTML5",
           "detail": "Find out how to use HTML5 to improve your SEO, title & description, image optimization, internal links, page loading & mobile compatibility",
-          "image": "img/blog/html5-seo.webp",
-          "alt": "A brick wall with a wooden sign where it says SEO",
+          "image": {
+            "url": "img/blog/html5-seo.webp",
+            "alt": "A brick wall with a wooden sign where it says SEO"
+          },
           "url": "https://medium.com/@philippebeck/html5-seo-c246b5de3cdf"
         },
         {
-          "title": "Structured Data in HTML5",
+          "caption": "Structured Data in HTML5",
           "detail": "Explore how to enhance your SEO by marking up structured data, generating rich snippets & improving accessibility for all users",
-          "image": "img/blog/html5-structured-data.webp",
-          "alt": "A canvas representing the Web, with the terms itemtype & itemprop",
+          "image": {
+            "url": "img/blog/html5-structured-data.webp",
+            "alt": "A canvas representing the Web, with the terms itemtype & itemprop"
+          },
           "url": "https://medium.com/@philippebeck/html5-structured-data-592d4ee05a87"
         }
       ]
     },
     {
       "title": {
-        "name": "CSS",
-        "icon": "css3"
+        "heading": {
+          "text": "CSS"
+        },
+        "icon": {
+          "name": "css3"
+        }
       },
       "gallery": [
         {
-          "title": "Avoiding Common Pitfalls in CSS3",
+          "caption": "Avoiding Common Pitfalls in CSS3",
           "detail": "A Guide to Writing Maintainable Styles, learn how to steer clear of bad practices & maintain clean, efficient CSS code",
-          "image": "img/blog/css3-bad-practices.webp",
-          "alt": "A traffic sign indicating a ban direction with a computer behind the ban & CSS3 written under this sign, with cars & streets in background",
+          "image": {
+            "url": "img/blog/css3-bad-practices.webp",
+            "alt": "A traffic sign indicating a ban direction with a computer behind the ban & CSS3 written under this sign, with cars & streets in background"
+          },
           "url": "https://medium.com/@philippebeck/css3-bad-practices-0c8453786c84"
         },
         {
-          "title": "CSS3 Selectors & Properties",
+          "caption": "CSS3 Selectors & Properties",
           "detail": "Unleash the Power of Precise Styling with CSS3",
-          "image": "img/blog/css3-selectors-properties.webp",
-          "alt": "CSS3 Logo",
+          "image": {
+            "url": "img/blog/css3-selectors-properties.webp",
+            "alt": "CSS3 Logo"
+          },
           "url": "https://medium.com/@philippebeck/css3-selectors-properties-23f2c8a82fa3"
         },
         {
-          "title": "CSS3 Transitions & Animations",
+          "caption": "CSS3 Transitions & Animations",
           "detail": "Mastering the Art of Dynamic Web Design with Transitions & Animations",
-          "image": "img/blog/css3-transitions-animations.webp",
-          "alt": "A video reel showing a step-by-step animation, with loop, objects & people",
+          "image": {
+            "url": "img/blog/css3-transitions-animations.webp",
+            "alt": "A video reel showing a step-by-step animation, with loop, objects & people"
+          },
           "url": "https://medium.com/@philippebeck/css3-transitions-animations-5b3a08756b22"
         },
         {
-          "title": "Discovering CSS3 Layout",
+          "caption": "Discovering CSS3 Layout",
           "detail": "Learn to create flexible & responsive web layouts using the latest CSS3 techniques",
-          "image": "img/blog/css3-layout.webp",
-          "alt": "A man in front of a big computer screen positioning elements with digital gloves & pen",
+          "image": {
+            "url": "img/blog/css3-layout.webp",
+            "alt": "A man in front of a big computer screen positioning elements with digital gloves & pen"
+          },
           "url": "https://medium.com/@philippebeck/css3-layout-826f4acaa50d"
         },
         {
-          "title": "Embracing Mobile First",
+          "caption": "Embracing Mobile First",
           "detail": "Revolutionizing Responsive Web Design with CSS3",
-          "image": "img/blog/css3-mobile-first.webp",
-          "alt": "A race on an Olympic field, between runners represented by machines, like mobile phone, tablet & desktop",
+          "image": {
+            "url": "img/blog/css3-mobile-first.webp",
+            "alt": "A race on an Olympic field, between runners represented by machines, like mobile phone, tablet & desktop"
+          },
           "url": "https://medium.com/@philippebeck/css3-mobile-first-79ef48249a7c"
         },
         {
-          "title": "Enhancing Web Design with CSS3 Functions",
+          "caption": "Enhancing Web Design with CSS3 Functions",
           "detail": "Leveraging the Power of Dynamic Styling for Modern Web Development",
-          "image": "img/blog/css3-functions.webp",
-          "alt": "A robot with the word CSS3 write on his body, with many arms doing differents things on a wide screen",
+          "image": {
+            "url": "img/blog/css3-functions.webp",
+            "alt": "A robot with the word CSS3 write on his body, with many arms doing differents things on a wide screen"
+          },
           "url": "https://medium.com/@philippebeck/css3-functions-339dba7bb123"
         },
         {
-          "title": "Essential CSS3 Best Practices",
+          "caption": "Essential CSS3 Best Practices",
           "detail": "Elevate Your CSS Development with Performance, Maintainability & Cross-Browser Compatibility",
-          "image": "img/blog/css3-best-practices.webp",
-          "alt": "A modern cafe logo of CSS3, located on a sign outside a stone building on a sunny evening",
+          "image": {
+            "url": "img/blog/css3-best-practices.webp",
+            "alt": "A modern cafe logo of CSS3, located on a sign outside a stone building on a sunny evening"
+          },
           "url": "https://medium.com/@philippebeck/css3-best-practices-4b9a7f13b17e"
         },
         {
-          "title": "Flexbox: A Guide to Modern Layouts",
+          "caption": "Flexbox: A Guide to Modern Layouts",
           "detail": "Empowering Dynamic & Adaptive CSS Layouts",
-          "image": "img/blog/css3-mastering-flexbox.webp",
-          "alt": "A flexible box containing a multitude of forms of various media resources",
+          "image": {
+            "url": "img/blog/css3-mastering-flexbox.webp",
+            "alt": "A flexible box containing a multitude of forms of various media resources"
+          },
           "url": "https://medium.com/@philippebeck/css3-mastering-flexbox-2f79017644d8"
         }
       ]
     },
     {
       "title": {
-        "name": "JS",
-        "icon": "square-js"
+        "heading": {
+          "text": "JavaScript"
+        },
+        "icon": {
+          "name": "square-js"
+        }
       },
       "gallery": [
         {
-          "title": "Avoiding JavaScript Pitfalls",
+          "caption": "Avoiding JavaScript Pitfalls",
           "detail": "Discover common mistakes to avoid for better JavaScript code",
-          "image": "img/blog/avoiding-javascript-pitfalls.webp",
-          "alt": "A traffic sign indicating a ban direction with the 2 letters JS behind the ban & the word Bad Practices written under this sign",
+          "image": {
+            "url": "img/blog/avoiding-javascript-pitfalls.webp",
+            "alt": "A traffic sign indicating a ban direction with the 2 letters JS behind the ban & the word Avoid JavaScript Pitfalls written under this sign"
+          },
           "url": "https://medium.com/@philippebeck/avoiding-javascript-pitfalls-8413e0e3f92e"
         },
         {
-          "title": "Best Practices in JavaScript",
+          "caption": "Best Practices in JavaScript",
           "detail": "Enhance Your JavaScript Code Quality with These Essential Tips",
-          "image": "img/blog/best-practices-in-javascript.webp",
-          "alt": "A logo with JS written underneath on a sign at the entrance to a business",
+          "image": {
+            "url": "img/blog/best-practices-in-javascript.webp",
+            "alt": "A logo with JS written underneath on a sign at the entrance to a business"
+          },
           "url": "https://medium.com/@philippebeck/best-practices-in-javascript-d4af4202a41e"
         },
         {
-          "title": "Error Handling in JavaScript",
+          "caption": "Error Handling in JavaScript",
           "detail": "Best Practices & Strategies: mastering error handling to improve code reliability & user experience",
-          "image": "img/blog/error-handling-in-javascript.webp",
-          "alt": "A traffic sign indicating a ban direction with robots who have the letters JS on their head behind the ban & the word Errors written under this sign, with messenger robots driving in streets behind it",
+          "image": {
+            "url": "img/blog/error-handling-in-javascript.webp",
+            "alt": "A traffic sign indicating a ban direction with robots who have the letters JS on their head behind the ban & the word Errors written under this sign, with messenger robots driving in streets behind it"
+          },
           "url": "https://medium.com/@philippebeck/error-handling-in-javascript-05af95d174bf"
         },
         {
-          "title": "Manipulate the DOM with JavaScript",
+          "caption": "Manipulate the DOM with JavaScript",
           "detail": "An Efficient Guide to Unlock the Power of Dynamic Web Content with JavaScript DOM Manipulation",
-          "image": "img/blog/manipulate-the-dom-with-javascript.webp",
-          "alt": "A robot with JS write on his body who manipulate various objects in front of a screen",
+          "image": {
+            "url": "img/blog/manipulate-the-dom-with-javascript.webp",
+            "alt": "A robot with JS write on his body who manipulate various objects in front of a screen"
+          },
           "url": "https://medium.com/@philippebeck/manipulate-the-dom-with-javascript-efd69cf733de"
         },
         {
-          "title": "Mastering Arrays in JavaScript",
+          "caption": "Mastering Arrays in JavaScript",
           "detail": "Explore essential functions & best practices for efficiently manipulating arrays, including map, filter, reduce & much more",
-          "image": "img/blog/mastering-arrays-in-javascript.webp",
-          "alt": "A tablet where we see a man with a cat’s head and some data like graphs on screens around this tablet with titles of the methods of the Array object",
+          "image": {
+            "url": "img/blog/mastering-arrays-in-javascript.webp",
+            "alt": "A tablet where we see a man with a cat’s head and some data like graphs on screens around this tablet with titles of the methods of the Array object"
+          },
           "url": "https://medium.com/@philippebeck/mastering-arrays-in-javascript-3110c906d6fb"
         },
         {
-          "title": "Mastering JavaScript : Basic Concepts",
+          "caption": "Mastering JavaScript : Basic Concepts",
           "detail": "A Comprehensive Guide to JavaScript Variables, Conditions & Loops",
-          "image": "img/blog/mastering-javascript-basic-concepts.webp",
-          "alt": "JavaScript Logo",
+          "image": {
+            "url": "img/blog/mastering-javascript-basic-concepts.webp",
+            "alt": "JavaScript Logo"
+          },
           "url": "https://medium.com/@philippebeck/mastering-javascript-basic-concepts-d2898687be99"
         },
         {
-          "title": "Mastering JavaScript Functions",
+          "caption": "Mastering JavaScript Functions",
           "detail": "A Comprehensive Guide to discover the Fundamentals & Advanced Tips for Using JavaScript Functions Effectively",
-          "image": "img/blog/mastering-javascript-functions.webp",
-          "alt": "A machine on which it says JS Functions, with above various blocks of information which seem to fall into it",
+          "image": {
+            "url": "img/blog/mastering-javascript-functions.webp",
+            "alt": "A machine on which it says JS Functions, with above various blocks of information which seem to fall into it"
+          },
           "url": "https://medium.com/@philippebeck/mastering-javascript-functions-d6ab05129b8f"
         },
         {
-          "title": "Unveiling the Secrets of the String Object",
+          "caption": "Unveiling the Secrets of the String Object",
           "detail": "Explore the Powerful String Manipulation Features of JavaScript",
-          "image": "img/blog/unveiling-the-secrets-of-the-string-object.webp",
-          "alt": "Letters falling, with technology objects & cogs around a strange object who have words & a curious string inside it, pointing the sun & clouds, with a woman on it side",
+          "image": {
+            "url": "img/blog/unveiling-the-secrets-of-the-string-object.webp",
+            "alt": "Letters falling, with technology objects & cogs around a strange object who have words & a curious string inside it, pointing the sun & clouds, with a woman on it side"
+          },
           "url": "https://medium.com/@philippebeck/unveiling-the-secrets-of-the-string-object-11943b624dc2"
         }
       ]
     },
     {
       "title": {
-        "name": "PHP",
-        "icon": "php"
+        "heading": {
+          "text": "PHP"
+        },
+        "icon": {
+          "name": "php"
+        }
       },
       "gallery": [
         {
-          "title": "Demystifying PHP Superglobals",
+          "caption": "Demystifying PHP Superglobals",
           "detail": "A Comprehensive Guide : Unraveling the Power & Pitfalls of PHP Superglobals",
-          "image": "img/blog/demystifying-php-superglobals.webp",
-          "alt": "4 robots with writing above their heads => GET, POST, ENV & SERVER",
+          "image": {
+            "url": "img/blog/demystifying-php-superglobals.webp",
+            "alt": "4 robots with writing above their heads => GET, POST, ENV & SERVER"
+          },
           "url": "https://medium.com/@philippebeck/demystifying-php-superglobals-7b24c3cc450f"
         },
         {
-          "title": "Discovering PHP Basics",
+          "caption": "Discovering PHP Basics",
           "detail": "A comprehensive guide to getting started with PHP & understanding essential concepts",
-          "image": "img/blog/discovering-php-basics.webp",
-          "alt": "PHP Logo",
+          "image": {
+            "url": "img/blog/discovering-php-basics.webp",
+            "alt": "PHP Logo"
+          },
           "url": "https://medium.com/@philippebeck/discovering-php-basics-4601e74c488e"
         },
         {
-          "title": "Discover PHP Date/Time Functions",
+          "caption": "Discover PHP Date/Time Functions",
           "detail": "Learn How to Manipulate Dates & Times in PHP Like a Pro",
-          "image": "img/blog/discover-php-date-time-functions.webp",
-          "alt": "A very graphical calendar with the word PHP & an old clock in an imaginary world",
+          "image": {
+            "url": "img/blog/discover-php-date-time-functions.webp",
+            "alt": "A very graphical calendar with the word PHP & an old clock in an imaginary world"
+          },
           "url": "https://medium.com/@philippebeck/discover-php-date-time-functions-781876b43b95"
         },
         {
-          "title": "Exploring Number Manipulation in PHP",
+          "caption": "Exploring Number Manipulation in PHP",
           "detail": "A comprehensive guide to working with numbers in PHP, from basic operations to advanced techniques",
-          "image": "img/blog/exploring-number-manipulation-in-php.webp",
-          "alt": "A world of numbers, with landscapes & people",
+          "image": {
+            "url": "img/blog/exploring-number-manipulation-in-php.webp",
+            "alt": "A world of numbers, with landscapes & people"
+          },
           "url": "https://medium.com/@philippebeck/exploring-number-manipulation-in-php-e51c85b44630"
         },
         {
-          "title": "Main Best Practices in PHP",
+          "caption": "Main Best Practices in PHP",
           "detail": "Explore essential PHP best practices for clean, efficient & maintainable code",
-          "image": "img/blog/main-best-practices-in-php.webp",
-          "alt": "A modern web agency in a small street, with the PHP logo as an entrance sign",
+          "image": {
+            "url": "img/blog/main-best-practices-in-php.webp",
+            "alt": "A modern web agency in a small street, with the PHP logo as an entrance sign"
+          },
           "url": "https://medium.com/@philippebeck/main-best-practices-in-php-ceff378df8f1"
         },
         {
-          "title": "Mastering PHP Array Functions",
+          "caption": "Mastering PHP Array Functions",
           "detail": "Discover Essential Functions for Manipulating & Managing Arrays in PHP, Including Sorting, Filtering & Transformation Functions",
-          "image": "img/blog/mastering-php-array-functions.webp",
-          "alt": "The 3 letters PHP is wrote in the center of the image, with around many screens of various data arrays, these all things between 2 opened human hands",
+          "image": {
+            "url": "img/blog/mastering-php-array-functions.webp",
+            "alt": "The 3 letters PHP is wrote in the center of the image, with around many screens of various data arrays, these all things between 2 opened human hands"
+          },
           "url": "https://medium.com/@philippebeck/mastering-php-array-functions-0038dd2a076d"
         },
         {
-          "title": "Mastering String Functions in PHP",
+          "caption": "Mastering String Functions in PHP",
           "detail": "Discover PHP’s native string manipulation functions & learn how to use them effectively",
-          "image": "img/blog/mastering-string-functions-in-php.webp",
-          "alt": "A strange object inside 4 hands, with PHP written in the center & curiously shaped buttons, all surrounded by various character strings",
+          "image": {
+            "url": "img/blog/mastering-string-functions-in-php.webp",
+            "alt": "A strange object inside 4 hands, with PHP written in the center & curiously shaped buttons, all surrounded by various character strings"
+          },
           "url": "https://medium.com/@philippebeck/mastering-string-functions-in-php-997775b1e8da"
         },
         {
-          "title": "OOP & MVC in PHP",
+          "caption": "OOP & MVC in PHP",
           "detail": "Understanding Object-Oriented Programming & Model-View-Controller Architecture in PHP : A Comprehensive Guide",
-          "image": "img/blog/oop-mvc-in-php.webp",
-          "alt": "A factory production chain with the title : PHP Factory, with 3 separated sections where each section have a title of those following : Model, View & Controller",
+          "image": {
+            "url": "img/blog/oop-mvc-in-php.webp",
+            "alt": "A factory production chain with the title : PHP Factory, with 3 separated sections where each section have a title of those following : Model, View & Controller"
+          },
           "url": "https://medium.com/@philippebeck/oop-mvc-in-php-c0a373d7d18a"
         }
       ]
     },
     {
       "title": {
-        "name": "Sass",
-        "icon": "sass"
+        "heading": {
+          "text": "Sass"
+        },
+        "icon": {
+          "name": "sass"
+        }
       },
       "gallery": [
         {
-          "title": "Unraveling the Magic of Sass",
+          "caption": "Unraveling the Magic of Sass",
           "detail": "A Beginner’s Guide to Sass Basics: Discover the Power & Flexibility of Sass & Accelerate Your CSS Development",
-          "image": "img/blog/unraveling-the-magic-of-sass.webp",
-          "alt": "Sass Logo",
+          "image": {
+            "url": "img/blog/unraveling-the-magic-of-sass.webp",
+            "alt": "Sass Logo"
+          },
           "url": "https://medium.com/@philippebeck/unraveling-the-magic-of-sass-d18aeffe40c4"
         }
       ]
@@ -274,25 +360,47 @@
   ],
   "content": {
     "header": {
-      "title": "Philippe Beck",
+      "heading": {
+        "text": "Philippe Beck",
+        "level": "1"
+      },
+      "icon": {
+        "name": "user-ninja",
+        "cat": "solid"
+      },
       "subtitle": "Fullstack Developer & Web Trainer"
     },
     "portfolio": {
-      "title": "Portfolio",
-      "icon": "images",
-      "cat": "regular",
+      "heading": {
+        "text": "Portfolio",
+        "level": "2"
+      },
+      "icon": {
+        "name": "code",
+        "cat": "solid"
+      },
       "subtitle": "My projects are hosted on GitHub"
     },
     "blog": {
-      "title": "Blog",
-      "icon": "blog",
-      "cat": "solid",
+      "heading": {
+        "text": "Blog",
+        "level": "2"
+      },
+      "icon": {
+        "name": "blog",
+        "cat": "solid"
+      },
       "subtitle": "My articles are hosted on Medium"
     },
     "links": {
-      "title": "Links",
-      "icon": "link",
-      "cat": "solid",
+      "heading": {
+        "text": "Links",
+        "level": "2"
+      },
+      "icon": {
+        "name": "link",
+        "cat": "solid"
+      },
       "subtitle": "Be curious!"
     }
   },
@@ -340,9 +448,12 @@
   "links": [
     {
       "title": {
-        "name": "HTML",
-        "lvl": "3",
-        "icon": "html5"
+        "heading": {
+          "text": "HTML"
+        },
+        "icon": {
+          "name": "html5"
+        }
       },
       "list": [
         {
@@ -441,9 +552,12 @@
     },
     {
       "title": {
-        "name": "CSS",
-        "lvl": "3",
-        "icon": "css3"
+        "heading": {
+          "text": "CSS"
+        },
+        "icon": {
+          "name": "css3"
+        }
       },
       "list": [
         {
@@ -578,9 +692,12 @@
     },
     {
       "title": {
-        "name": "JS",
-        "lvl": "3",
-        "icon": "square-js"
+        "heading": {
+          "text": "JavaScript"
+        },
+        "icon": {
+          "name": "square-js"
+        }
       },
       "list": [
         {
@@ -747,9 +864,12 @@
     },
     {
       "title": {
-        "name": "Vue",
-        "lvl": "3",
-        "icon": "vuejs"
+        "heading": {
+          "text": "Vue"
+        },
+        "icon": {
+          "name": "vuejs"
+        }
       },
       "list": [
         {
@@ -904,9 +1024,12 @@
     },
     {
       "title": {
-        "name": "Node",
-        "lvl": "3",
-        "icon": "node-js"
+        "heading": {
+          "text": "Node"
+        },
+        "icon": {
+          "name": "node-js"
+        }
       },
       "list": [
         {
@@ -949,9 +1072,12 @@
     },
     {
       "title": {
-        "name": "PHP",
-        "lvl": "3",
-        "icon": "php"
+        "heading": {
+          "text": "PHP"
+        },
+        "icon": {
+          "name": "php"
+        }
       },
       "list": [
         {
@@ -1042,9 +1168,12 @@
     },
     {
       "title": {
-        "name": "Python",
-        "lvl": "3",
-        "icon": "python"
+        "heading": {
+          "text": "Python"
+        },
+        "icon": {
+          "name": "python"
+        }
       },
       "list": [
         {
@@ -1187,10 +1316,13 @@
     },
     {
       "title": {
-        "name": "DB",
-        "lvl": "3",
-        "icon": "database",
-        "cat": "solid"
+        "heading": {
+          "text": "DataBase"
+        },
+        "icon": {
+          "name": "database",
+          "cat": "solid"
+        }
       },
       "list": [
         {
@@ -1241,9 +1373,12 @@
     },
     {
       "title": {
-        "name": "Git",
-        "lvl": "3",
-        "icon": "square-git"
+        "heading": {
+          "text": "Git"
+        },
+        "icon": {
+          "name": "square-git"
+        }
       },
       "list": [
         {
@@ -1302,9 +1437,12 @@
     },
     {
       "title": {
-        "name": "Dev",
-        "lvl": "3",
-        "icon": "dev"
+        "heading": {
+          "text": "Others"
+        },
+        "icon": {
+          "name": "dev"
+        }
       },
       "list": [
         {
@@ -1474,124 +1612,162 @@
       ]
     }
   ],
-  "nav": [
-    {
-      "url": "#portfolio",
-      "text": "Portfolio",
-      "iconCat": "regular",
-      "iconName": "images"
-    },
-    {
-      "url": "#blog",
-      "text": "Blog",
+  "nav": {
+    "logo": {
+      "url": "#intro",
+      "text": "Logo",
       "iconCat": "solid",
-      "iconName": "blog"
+      "iconName": "user-ninja"
     },
-    {
-      "url": "#links",
-      "text": "Links",
-      "iconCat": "solid",
-      "iconName": "link"
-    },
-    {
+    "links": [
+      {
+        "url": "#portfolio",
+        "text": "Portfolio",
+        "iconCat": "solid",
+        "iconName": "code"
+      },
+      {
+        "url": "#blog",
+        "text": "Blog",
+        "iconCat": "solid",
+        "iconName": "blog"
+      },
+      {
+        "url": "#links",
+        "text": "Links",
+        "iconCat": "solid",
+        "iconName": "link"
+      }
+    ],
+    "contact": {
       "url": "mailto:contact@philippebeck.net",
       "text": "Contact",
       "iconCat": "regular",
       "iconName": "paper-plane"
     }
-  ],
+  },
   "portfolio": [
     {
       "title": {
-        "name": "Packages",
-        "icon": "cubes",
-        "cat": "solid"
+        "heading": {
+          "text": "Packages"
+        },
+        "icon": {
+          "name": "cubes",
+          "cat": "solid"
+        }
       },
       "gallery": [
         {
-          "title": "Animadio",
+          "caption": "Animadio",
           "detail": "CSS Library made with Sass",
-          "image": "img/portfolio/animadio.webp",
-          "alt": "Sass Logo",
+          "image": {
+            "url": "img/portfolio/animadio.webp",
+            "alt": "Sass Logo"
+          },
           "url": "https://www.npmjs.com/package/animadio"
         },
         {
-          "title": "Vesan",
+          "caption": "Vesan",
           "detail": "Vue Framework with Vuex",
-          "image": "img/portfolio/vesan.webp",
-          "alt": "Vue Logo",
+          "image": {
+            "url": "img/portfolio/vesan.webp",
+            "alt": "Vue Logo"
+          },
           "url": "https://www.npmjs.com/package/vesan"
         },
         {
-          "title": "Nens",
+          "caption": "Nens",
           "detail": "Node/Express Framework with MySQL",
-          "image": "img/portfolio/nens.webp",
-          "alt": "Node Logo",
+          "image": {
+            "url": "img/portfolio/nens.webp",
+            "alt": "Node Logo"
+          },
           "url": "https://www.npmjs.com/package/nens"
         },
         {
-          "title": "Pam",
+          "caption": "Pam",
           "detail": "PHP Adaptive Microframework",
-          "image": "img/portfolio/pam.webp",
-          "alt": "PHP Logo",
+          "image": {
+            "url": "img/portfolio/pam.webp",
+            "alt": "PHP Logo"
+          },
           "url": "https://packagist.org/packages/philippebeck/pam"
         }
       ]
     },
     {
       "title": {
-        "name": "Websites",
-        "icon": "desktop",
-        "cat": "regular"
+        "heading": {
+          "text": "Websites"
+        },
+        "icon": {
+          "name": "sitemap",
+          "cat": "solid"
+        }
       },
       "gallery": [
         {
-          "title": "Animadio Doc",
+          "caption": "Animadio Doc",
           "detail": "Website of the Animadio documentation",
-          "image": "img/portfolio/animadio-doc.webp",
-          "alt": "Homepage of the Animadio Website",
+          "image": {
+            "url": "img/portfolio/animadio-doc.webp",
+            "alt": "Homepage of the Animadio Website"
+          },
           "url": "https://github.com/philippebeck/animadio.org"
         },
         {
-          "title": "Asperger",
+          "caption": "Asperger",
           "detail": "Asperger's syndrome website offering diagnostic tests",
-          "image": "img/portfolio/asperger.webp",
-          "alt": "Homepage of the Asperger website",
+          "image": {
+            "url": "img/portfolio/asperger.webp",
+            "alt": "Homepage of the Asperger website"
+          },
           "url": "https://github.com/philippebeck/asperger"
         },
         {
-          "title": "Astronomy",
+          "caption": "Astronomy",
           "detail": "Astronomy website using NASA & CDS APIs",
-          "image": "img/portfolio/astronomy.webp",
-          "alt": "Homepage of the Astronomy Website",
+          "image": {
+            "url": "img/portfolio/astronomy.webp",
+            "alt": "Homepage of the Astronomy Website"
+          },
           "url": "https://github.com/philippebeck/astronomy"
         },
         {
-          "title": "DevsAgency",
+          "caption": "DevsAgency",
           "detail": "Website of a digital agency offering development services",
-          "image": "img/portfolio/devsagency.webp",
-          "alt": "Homepage of the DevsAgency Website",
+          "image": {
+            "url": "img/portfolio/devsagency.webp",
+            "alt": "Homepage of the DevsAgency Website"
+          },
           "url": "https://github.com/philippebeck/devsagency"
         },
         {
-          "title": "Kasa",
+          "caption": "Kasa",
           "detail": "Website of a rental agency",
-          "image": "img/portfolio/kasa.webp",
-          "alt": "Homepage of the Kasa Website",
+          "image": {
+            "url": "img/portfolio/kasa.webp",
+            "alt": "Homepage of the Kasa Website"
+          },
           "url": "https://github.com/philippebeck/kasa"
         },
         {
-          "title": "Pam Doc",
+          "caption": "Pam Doc",
           "detail": "Website of the Pam documentation",
-          "image": "img/portfolio/pam-doc.webp",
-          "alt": "Homepage of the Pam Website",
+          "image": {
+            "url": "img/portfolio/pam-doc.webp",
+            "alt": "Homepage of the Pam Website"
+          },
           "url": "https://github.com/philippebeck/pam"
         },
         {
-          "title": "Tools2Code",
+          "caption": "Tools2Code",
           "detail": "Website of developer resources",
-          "image": "img/portfolio/tools2code.webp",
-          "alt": "Homepage of the Tools2Code Website",
+          "image": {
+            "url": "img/portfolio/tools2code.webp",
+            "alt": "Homepage of the Tools2Code Website"
+          },
           "url": "github.com/philippebeck/tools2code"
         }
       ]
