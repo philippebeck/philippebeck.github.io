@@ -18,8 +18,7 @@ const Links = () => {
 
     <article id="links">
       <Title
-        title={content.links.title}
-        cat={content.links.cat}
+        heading={content.links.heading}
         icon={content.links.icon}
         subtitle={content.links.subtitle}
       />
@@ -28,8 +27,7 @@ const Links = () => {
 
       <section key={index}>
         <Title
-          title={link.title.name}
-          lvl={link.title.lvl}
+          heading={link.title.heading}
           icon={link.title.icon}
           cat={link.title.cat}
         />

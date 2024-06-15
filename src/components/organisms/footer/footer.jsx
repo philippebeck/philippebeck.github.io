@@ -28,6 +28,7 @@ const Footer = () => {
                 <Icon
                   cat="brands"
                   isHidden="false"
+                  option="1x"
                   name={item.icon}
                 />}
             />

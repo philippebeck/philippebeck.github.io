@@ -1,8 +1,7 @@
-import { nav } from '../../../assets/data.json'
+import { content, nav } from '../../../assets/data.json'
 import logo from '../../../assets/logo.webp'
 
 import Icon from '../../atoms/icon/icon'
-import Image from '../../atoms/image/image'
 import Link from '../../atoms/link/link'
 
 import './navbar.scss'
@@ -20,13 +19,18 @@ const Navbar = () => {
 
     <nav id="navbar">
       <Link
-        url="#intro"
-        label="Logo"
-        content={<Image url={logo} alt="Logo" />}
+        url={nav.logo.url}
+        label={nav.logo.text}
+        content={
+          <Icon 
+            name={nav.logo.iconName}
+            cat={nav.logo.iconCat}
+          />
+        }
       />
 
       <ul>
-        { nav.map((item, index) =>
+        { nav.links.map((item, index) =>
           <li key={index}>
 
             <Link
@@ -39,7 +43,6 @@ const Navbar = () => {
                     cat={item.iconCat}
                     isHidden="false"
                     name={item.iconName}
-                    option="2x"
                   />
                   <b>{item.text}</b>
                 </>
@@ -48,6 +51,17 @@ const Navbar = () => {
           </li>
         )}
       </ul>
+
+      <Link
+        url={nav.contact.url}
+        label={nav.contact.text}
+        content={
+          <Icon 
+            name={nav.contact.iconName}
+            cat={nav.contact.iconCat}
+          />
+        }
+      />
     </nav>
   )
 }

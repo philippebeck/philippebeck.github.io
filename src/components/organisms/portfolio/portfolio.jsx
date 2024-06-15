@@ -17,9 +17,8 @@ const Portfolio = () => {
 
     <article id="portfolio">
       <Title
-        title={content.portfolio.title}
+        heading={content.portfolio.heading}
         icon={content.portfolio.icon}
-        cat={content.portfolio.cat}
         subtitle={content.portfolio.subtitle}
       />
 

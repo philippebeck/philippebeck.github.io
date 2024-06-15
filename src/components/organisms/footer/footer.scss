@@ -40,6 +40,10 @@ footer {
     transition: transform 500ms;
   }
 
+  i {
+    color: $slate;
+  }
+
   //! ********** XS **********
 
   @media (min-width: $xs) {

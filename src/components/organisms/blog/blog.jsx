@@ -17,9 +17,8 @@ const Blog = () => {
 
     <article id="blog">
       <Title
-        title={content.blog.title}
+        heading={content.blog.heading}
         icon={content.blog.icon}
-        cat={content.blog.cat}
         subtitle={content.blog.subtitle}
       />
 

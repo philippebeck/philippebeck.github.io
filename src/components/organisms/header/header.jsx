@@ -16,16 +16,14 @@ const Header = () => {
 
     <header id="intro">
       <Title 
-        title={content.header.title} 
-        lvl="1" 
+        heading={content.header.heading}
+        icon={content.header.icon}
         subtitle={<strong>{content.header.subtitle}</strong>}
       />
 
       <ul>
         { header.map((item, index) =>
-          <li key={index}>
-            {item}
-          </li>
+          <li key={index}>{item}</li>
         )}
       </ul>
     </header>
