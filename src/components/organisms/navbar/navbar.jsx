@@ -1,5 +1,4 @@
-import { content, nav } from '../../../assets/data.json'
-import logo from '../../../assets/logo.webp'
+import { nav } from '../../../assets/data.json'
 
 import Icon from '../../atoms/icon/icon'
 import Link from '../../atoms/link/link'
