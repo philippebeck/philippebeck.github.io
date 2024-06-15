@@ -26,7 +26,7 @@ import './icon.scss'
  * @return {JSX.Element}
  *  The rendered icon component.
  */
-const Icon = ({name, cat="brands", isHidden="true", option="1x"}) => {
+const Icon = ({name, cat="brands", isHidden="true", option="2x"}) => {
 
   return (
     <i
