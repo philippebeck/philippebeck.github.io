@@ -25,7 +25,10 @@ const Gallery = ({ title, gallery }) => {
   return (
 
     <section className="gallery">
-      <Title title={title.name} lvl="3" icon={title.icon} cat={title.cat} />
+      <Title 
+        heading={title.heading}
+        icon={title.icon}
+      />
 
       <ul>
         { gallery.map((item, index) =>
@@ -37,9 +40,8 @@ const Gallery = ({ title, gallery }) => {
               content={
 
                 <Card
-                  url={item.image}
-                  alt={item.alt}
-                  content={item.title}
+                  image={item.image}
+                  caption={item.caption}
                 />
               }
             />

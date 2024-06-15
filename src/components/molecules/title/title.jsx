@@ -5,23 +5,24 @@ import "./title.scss"
 /**
  * ? TITLE COMPONENT
  * * Renders a title component with the specified
- * * title, level, category, icon & subtitle.
+ * * heading, icon & subtitle.
  *
  * @param {Object} props
  *  The properties for the Title component.
  *
- * @param {string} props.title
- *  The title of the component.
+ * @param {Object} props.heading
+ *  The heading object of the title.
+ * @param {string} props.heading.level
+ *  The level of the heading.
+ * @param {string} props.heading.text
+ *  The text of the heading.
  *
- * @param {string} [props.lvl="2"]
- *  The level of the title (1, 2, 3, or 4).
- *  Defaults to 2.
- *
- * @param {string} props.cat
- *  The category of the title.
- *
- * @param {string} [props.icon=""]
- *  The icon for the title.
+ * @param {Object} props.icon
+ *  The icon object for the title.
+ * @param {string} props.icon.name
+ *  The name of the icon.
+ * @param {string} props.icon.cat
+ *  The category of the icon.
  *
  * @param {string} [props.subtitle=""]
  *  The subtitle for the title.
@@ -29,24 +30,18 @@ import "./title.scss"
  * @return {JSX.Element}
  *  The rendered title component.
  */
-const Title = ({ title, lvl="2", cat, icon="", subtitle="" }) => {
+const Title = ({ heading, icon, subtitle="" }) => {
   return (
 
     <hgroup>
+      <p>
+        <Icon name={icon.name} cat={icon.cat} />
+      </p>
       {
-        lvl === "1" ? <h1>{title}</h1> :
+        heading.level === "1" ? <h1>{heading.text}</h1> :
+        heading.level === "2" ? <h2>{heading.text}</h2> :
 
-        lvl === "2" ? <h2>
-          <Icon name={icon} cat={cat} />
-          {title}
-        </h2> :
-
-        lvl === "3" ? <h3>
-          <Icon name={icon} cat={cat} />
-          {title}
-        </h3> :
-
-        <h4>{title}</h4>
+        <h3>{heading.text}</h3>
       }
       {
         subtitle && <p>{subtitle}</p>
