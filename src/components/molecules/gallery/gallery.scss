@@ -7,14 +7,11 @@ $gallery-gap: 50px;
 //! ********** MAIN **********
 
 .gallery {
-
-  ul {
-    display: flex;
-    flex-flow: wrap;
-    gap: $gallery-gap;
-    place-content: center;
-    margin: 50px 0 100px;
-  }
+  display: flex;
+  flex-flow: wrap;
+  gap: $gallery-gap;
+  place-content: center;
+  margin: 50px 0 100px;
 
   li {
     width: 100%;
