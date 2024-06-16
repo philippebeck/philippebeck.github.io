@@ -32,6 +32,7 @@ $title-ratios: (
 
     & + p {
       font-size: calc($font-size * #{$subtitle-ratio});
+      color: $slate;
     }
   }
 }

@@ -9,17 +9,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: $blue;
+    background-color: $secondary;
     color: $white;
     cursor: pointer;
   }
 
-  .isClosed>* {
+  .isClosed > * {
     color: $white;
   }
 
-  .isOpen>* {
-    color: $secondary;
+  .isOpen > * {
+    color: $yellow;
   }
 
   header {
