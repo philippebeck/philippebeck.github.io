@@ -1,0 +1,20 @@
+@import "../../../assets/app.scss";
+
+[id="links"] {
+
+  &:hover > hgroup i {
+    animation: turn-x 2s linear infinite reverse;
+  }
+
+  .collapse {
+
+    .translate {
+      animation: grow-min 1s ease-in-out;
+    }
+
+    &:hover i,
+    &:focus i {
+      animation: turn-yz 2s linear infinite reverse;
+    }
+  }
+}

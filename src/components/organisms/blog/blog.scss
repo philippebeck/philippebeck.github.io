@@ -1,0 +1,22 @@
+@import "../../../assets/app.scss";
+
+[id="blog"] {
+  border: solid 2px $gray;
+  background-color: $silver;
+
+  &:hover > hgroup i {
+    animation: turn-y 2s linear infinite reverse;
+  }
+
+  .collapse {
+
+    .translate {
+      animation: slide-left 1s ease-in-out;
+    }
+
+    &:hover i,
+    &:focus i {
+      animation: turn-xz 2s linear infinite reverse;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../../assets/app.scss";
+
+[id="portfolio"] {
+
+  &:hover > hgroup i,
+  &:focus > hgroup i {
+    animation: turn-z 2s linear infinite reverse;
+  }
+
+  .collapse {
+
+    .translate {
+      animation: slide-right 1s ease-in-out;
+    }
+
+    &:hover i,
+    &:focus i {
+      animation: turn-xy 2s linear infinite reverse;
+    }
+  }
+}
