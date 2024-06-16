@@ -1,0 +1,65 @@
+@import "../../../assets/app.scss";
+
+//! ********** MAIN **********
+
+.collapse {
+
+  hgroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: $blue;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .isClosed>* {
+    color: $white;
+  }
+
+  .isOpen>* {
+    color: $secondary;
+  }
+
+  header {
+    margin: auto;
+    width: 100%;
+
+    //! ********** XS **********
+
+    @media (min-width: $xs) {
+      width: 90%;
+    }
+
+    //! ********** SM **********
+
+    @media (min-width: $sm) {
+      width: 80%;
+    }
+
+    //! ********** MD **********
+
+    @media (min-width: $md) {
+      width: 70%;
+    }
+
+    //! ********** LG **********
+
+    @media (min-width: $lg) {
+      width: 60%;
+    }
+
+    //! ********** XL **********
+
+    @media (min-width: $xl) {
+      width: 50%;
+    }
+
+    //! ********** WD **********
+
+    @media (min-width: $wd) {
+      width: 40%;
+    }
+  }
+}
