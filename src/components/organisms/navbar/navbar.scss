@@ -15,7 +15,7 @@ $gap: 10px;
   place-content: space-between;
   place-items: center;
   position: fixed;
-  z-index: 10;
+  z-index: 1000;
   top: 0;
   box-sizing: border-box;
   padding: $padding-y $padding-x;

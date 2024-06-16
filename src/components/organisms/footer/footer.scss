@@ -13,6 +13,7 @@ footer {
   display: flex;
   place-content: center;
   position: fixed;
+  z-index: 1000;
   bottom: 5px;
   width: 100%;
 
