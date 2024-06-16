@@ -1,7 +1,8 @@
-import { blog, content } from '../../../assets/data.json'
+import { blog } from '../../../assets/data.json'
 
-import Title from '../../molecules/title/title'
+import Collapse from '../../molecules/collapse/collapse'
 import Gallery from '../../molecules/gallery/gallery'
+import Title from '../../molecules/title/title'
 
 import './blog.scss'
 
@@ -17,16 +18,20 @@ const Blog = () => {
 
     <article id="blog">
       <Title
-        heading={content.blog.heading}
-        icon={content.blog.icon}
-        subtitle={content.blog.subtitle}
+        heading={blog.title.heading}
+        icon={blog.title.icon}
+        subtitle={blog.title.subtitle}
       />
 
-      { blog.map((article, index) =>
-        <Gallery
+      { blog.data.map((article, index) =>
+        <Collapse
           key={index}
           title={article.title}
-          gallery={article.gallery}
+          content={
+            <Gallery
+              gallery={article.gallery}
+            />
+          }
         />
       )}
     </article>

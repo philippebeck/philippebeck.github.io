@@ -1,4 +1,4 @@
-import { content, header } from '../../../assets/data.json'
+import { header } from '../../../assets/data.json'
 
 import Title from '../../molecules/title/title'
 
@@ -16,13 +16,13 @@ const Header = () => {
 
     <header id="intro">
       <Title 
-        heading={content.header.heading}
-        icon={content.header.icon}
-        subtitle={<strong>{content.header.subtitle}</strong>}
+        heading={header.title.heading}
+        icon={header.title.icon}
+        subtitle={<strong>{header.title.subtitle}</strong>}
       />
 
       <ul>
-        { header.map((item, index) =>
+        { header.data.map((item, index) =>
           <li key={index}>{item}</li>
         )}
       </ul>

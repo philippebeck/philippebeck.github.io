@@ -1,5 +1,6 @@
-import { content, links } from '../../../assets/data.json'
+import { links } from '../../../assets/data.json'
 
+import Collapse from '../../molecules/collapse/collapse'
 import List from '../../molecules/list/list'
 import Title from '../../molecules/title/title'
 
@@ -18,22 +19,21 @@ const Links = () => {
 
     <article id="links">
       <Title
-        heading={content.links.heading}
-        icon={content.links.icon}
-        subtitle={content.links.subtitle}
+        heading={links.title.heading}
+        icon={links.title.icon}
+        subtitle={links.title.subtitle}
       />
 
-      { links.map((link, index) =>
+      {links.data.map((link, index) =>
 
-      <section key={index}>
-        <Title
-          heading={link.title.heading}
-          icon={link.title.icon}
-          cat={link.title.cat}
+        <Collapse
+          key={index}
+          title={link.title}
+          content={
+
+            <List array={link.list} />
+          }
         />
-
-        <List array={link.list} />
-        </section>
       )}
     </article>
   )

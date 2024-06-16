@@ -1,5 +1,6 @@
-import { content, portfolio } from '../../../assets/data.json'
+import { portfolio } from '../../../assets/data.json'
 
+import Collapse from '../../molecules/collapse/collapse'
 import Gallery from '../../molecules/gallery/gallery'
 import Title from '../../molecules/title/title'
 
@@ -17,16 +18,21 @@ const Portfolio = () => {
 
     <article id="portfolio">
       <Title
-        heading={content.portfolio.heading}
-        icon={content.portfolio.icon}
-        subtitle={content.portfolio.subtitle}
+        heading={portfolio.title.heading}
+        icon={portfolio.title.icon}
+        subtitle={portfolio.title.subtitle}
       />
 
-      { portfolio.map((project, index) =>
-        <Gallery
+      { portfolio.data.map((project, index) =>
+        <Collapse
           key={index}
           title={project.title}
-          gallery={project.gallery}
+          content={
+
+            <Gallery
+              gallery={project.gallery}
+            />
+          }
         />
       )}
     </article>
