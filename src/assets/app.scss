@@ -67,22 +67,74 @@ $sans-serif: Geo, Helvetica, sans-serif;
 $serif: Trocchi, Times, serif;
 $monospace: "Ubuntu Mono", Courier, monospace;
 
-//! ********** MAIN **********
+//! ********** ROTATE **********
 
-html {
-  scroll-behavior: smooth;
+@keyframes turn-x {
+  from {
+    transform: rotateX(360deg);
+  }
 }
 
-body {
-  margin: 0;
-  text-align: center;
-  font-family: $sans-serif;
-  font-size: 1.2rem;
-  background-color: $white;
+@keyframes turn-y {
+  from {
+    transform: rotateY(360deg);
+  }
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@keyframes turn-z {
+  from {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes turn-xy {
+  from {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+
+@keyframes turn-xz {
+  from {
+    transform: rotate3d(1, 0, 1, 360deg);
+  }
+}
+
+@keyframes turn-yz {
+  from {
+    transform: rotate3d(0, 1, 1, 360deg);
+  }
+}
+
+@keyframes turn-3d {
+  from {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+//! ********** SCALE **********
+
+@keyframes grow-min {
+  from {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@keyframes grow-max {
+  from {
+    transform: scale(0, 0);
+  }
+}
+
+//! ********** TRANSLATE **********
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
 }
