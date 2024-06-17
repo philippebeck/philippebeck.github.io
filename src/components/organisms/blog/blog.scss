@@ -1,10 +1,9 @@
 @import "../../../assets/app.scss";
 
 [id="blog"] {
-  border: solid 2px $slate;
-  background-color: $silver;
 
-  &:hover > hgroup i {
+  &:hover > hgroup i,
+  &:focus > hgroup i {
     animation: turn-y 2s linear infinite reverse;
   }
 

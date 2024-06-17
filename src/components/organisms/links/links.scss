@@ -2,7 +2,8 @@
 
 [id="links"] {
 
-  &:hover > hgroup i {
+  &:hover > hgroup i,
+  &:focus > hgroup i {
     animation: turn-x 2s linear infinite reverse;
   }
 
