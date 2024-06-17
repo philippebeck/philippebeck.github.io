@@ -9,8 +9,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    margin: 10px 0 20px;
     background-color: $secondary;
     cursor: pointer;
+
+    h3,
+    p {
+      margin: 5px;
+    }
   }
 
   .isClosed > * {
@@ -29,37 +35,37 @@
     //! ********** XS **********
 
     @media (min-width: $xs) {
-      width: 90%;
+      width: 80%;
     }
 
     //! ********** SM **********
 
     @media (min-width: $sm) {
-      width: 80%;
+      width: 60%;
     }
 
     //! ********** MD **********
 
     @media (min-width: $md) {
-      width: 70%;
+      width: 50%;
     }
 
     //! ********** LG **********
 
     @media (min-width: $lg) {
-      width: 60%;
+      width: 40%;
     }
 
     //! ********** XL **********
 
     @media (min-width: $xl) {
-      width: 50%;
+      width: 35%;
     }
 
     //! ********** WD **********
 
     @media (min-width: $wd) {
-      width: 40%;
+      width: 30%;
     }
   }
 }
