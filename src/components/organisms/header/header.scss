@@ -17,12 +17,12 @@ $font-size: 1.2rem;
     flex-flow: column;
     gap: 10px;
     margin: auto;
-    border: solid 2px $slate;
+    border: solid 2px $silver;
     border-radius: 20px;
     padding: 20px;
     width: fit-content;
     font-size: $font-size;
-    background-color: $silver;
+    background-color: $gray;
     animation: grow-max 1s;
 
     //! ********** XS **********

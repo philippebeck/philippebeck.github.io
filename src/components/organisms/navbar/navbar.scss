@@ -22,7 +22,7 @@ $gap: 10px;
   width: 100%;
   font-size: $font-size;
   background-color: $primary;
-  color: $white;
+  color: $black;
 
   img {
     height: $height;
@@ -35,7 +35,7 @@ $gap: 10px;
 
   a:hover,
   a:focus {
-    color: $green;
+    color: $gray;
     transform: scale(0.9);
     transition: all 500ms;
   }

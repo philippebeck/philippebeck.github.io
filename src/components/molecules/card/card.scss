@@ -8,10 +8,10 @@ $radius: 10px;
 
 .card {
   margin: 0;
-  border: solid 2px $slate;
+  border: solid 2px $silver;
   border-radius: $radius;
   width: 100%;
-  background-color: $slate;
+  background-color: $gray;
 
   &:hover,
   &:focus {
@@ -33,12 +33,12 @@ $radius: 10px;
     border-radius: 0 0 $radius $radius;
     padding: 10px;
     height: 80px;
-    background-color: $slate;
+    background-color: $gray;
     color: $white;
   }
 
   &:hover figcaption,
   &:focus figcaption {
-    color: $yellow;
+    color: $secondary;
   }
 }

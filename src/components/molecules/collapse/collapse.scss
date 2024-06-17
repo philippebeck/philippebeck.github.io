@@ -10,16 +10,16 @@
     align-items: center;
     border-radius: 10px;
     background-color: $secondary;
-    color: $white;
     cursor: pointer;
   }
 
   .isClosed > * {
-    color: $white;
+    color: $gray;
   }
 
   .isOpen > * {
-    color: $yellow;
+    background-color: $primary;
+    color: $black;
   }
 
   header {
