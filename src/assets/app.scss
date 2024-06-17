@@ -19,15 +19,12 @@ $breakpoints: (
 
 //! ********** COLORS **********
 
-$primary:   hsl(270, 100%, 20%);
-$secondary: hsl(210, 100%, 20%);
-$yellow:    hsl( 60, 100%, 80%);
-$green:     hsl(120, 100%, 80%);
-
-$black:  hsl(0, 0%,  5%);
-$slate:  hsl(0, 0%, 20%);
-$silver: hsl(0, 0%, 80%);
-$white:  hsl(0, 0%, 95%);
+$primary:   hsl(270, 100%, 80%);
+$secondary: hsl(120, 100%, 80%);
+$white:     hsl(  0,   0%, 95%);
+$silver:    hsl(  0,   0%, 80%);
+$gray:      hsl(  0,   0%, 20%);
+$black:     hsl(  0,   0%,  5%);
 
 //! ********** FONTS **********
 
