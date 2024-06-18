@@ -18,7 +18,7 @@ const Header = () => {
     <header id="intro">
       <Title 
         heading={header.title.heading}
-        subtitle={<strong>{header.title.subtitle}</strong>}
+        subtitle={<h2>{header.title.subtitle}</h2>}
         prefix={
 
           <Icon
