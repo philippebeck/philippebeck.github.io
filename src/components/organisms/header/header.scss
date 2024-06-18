@@ -8,7 +8,8 @@ $font-size: 1.2rem;
 
 [id="intro"] {
 
-  &:hover>hgroup i {
+  &:hover > hgroup i,
+  &:focus > hgroup i {
     animation: turn-3d 2s linear infinite reverse;
   }
 
