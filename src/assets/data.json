@@ -24,6 +24,12 @@
         "text": "Links",
         "iconCat": "solid",
         "iconName": "link"
+      },
+      {
+        "url": "#about",
+        "text": "About",
+        "iconCat": "regular",
+        "iconName": "address-card"
       }
     ],
     "contact": {
@@ -1745,6 +1751,32 @@
           }
         ]
       }
+    ]
+  },
+  "about": {
+    "title": {
+      "heading": {
+        "text": "About",
+        "level": "2"
+      },
+      "icon": {
+        "name": "address-card",
+        "cat": "regular"
+      },
+      "subtitle": "You can find some more information about me here..."
+    },
+    "data": [
+      "Languages: French (Native), English (Professional), Japanese (Elementary)",
+      "Frontend Technos: HTML, CSS, Sass, JavaScript, TypeScript, React, Vue",
+      "Backend Technos: Node, PHP, Python, SQL, MongoDB",
+      "Dev Tools: VSCode, GitHub, GitKraken, FileZilla",
+      "OS: Linux, Windows, Android",
+      "Remote Work: Worldwide",
+      "Onsite Work: France, Japan",
+      "Driver License: B",
+      "Hobbies: space & robotics, geology & astronomy",
+      "Sports: baseball, tennis, footing, martial arts, swimming, ski",
+      "Entertainment: manga & video games, music & dramas"
     ]
   },
   "footer": [
