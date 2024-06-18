@@ -1,0 +1,30 @@
+@import "../../../assets/app.scss";
+
+//! ********** VARIABLES **********
+
+$font-size: 1.2rem;
+
+//! ********** MAIN **********
+
+[id="about"] {
+  margin-bottom: 100px;
+
+  &:hover > hgroup i,
+  &:focus > hgroup i {
+    animation: turn-xy 2s linear infinite reverse;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin: auto;
+    border: solid 2px $silver;
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    font-size: $font-size;
+    background-color: $gray;
+    animation: grow-max 1s;
+  }
+}
