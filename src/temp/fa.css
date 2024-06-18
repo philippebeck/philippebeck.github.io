@@ -678,6 +678,34 @@
   content: "\f0e8";
 }
 
+.fa-language::before {
+  content: "\f1ab";
+}
+
+.fa-house-laptop::before {
+  content: "\e066";
+}
+
+.fa-building-circle-check::before {
+  content: "\e4d2";
+}
+
+.fa-id-card::before {
+  content: "\f2c2";
+}
+
+.fa-atom::before {
+  content: "\f5d2";
+}
+
+.fa-person-biking::before {
+  content: "\f84a";
+}
+
+.fa-chess::before {
+  content: "\f439";
+}
+
 .sr-only,
 .fa-sr-only {
   position: absolute;
