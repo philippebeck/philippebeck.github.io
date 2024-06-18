@@ -1,8 +1,10 @@
 import { links } from '../../../assets/data.json'
 
+import Icon from '../../atoms/icon/icon'
+import Title from '../../atoms/title/title'
+
 import Collapse from '../../molecules/collapse/collapse'
 import List from '../../molecules/list/list'
-import Title from '../../molecules/title/title'
 
 import './links.scss'
 
@@ -20,8 +22,14 @@ const Links = () => {
     <article id="links">
       <Title
         heading={links.title.heading}
-        icon={links.title.icon}
         subtitle={links.title.subtitle}
+        prefix={
+
+          <Icon
+            name={links.title.icon.name}
+            cat={links.title.icon.cat}
+          />
+        }
       />
 
       {links.data.map((link, index) =>

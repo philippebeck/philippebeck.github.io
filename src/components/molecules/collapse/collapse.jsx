@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import Title from "../../molecules/title/title";
+import Icon from "../../atoms/icon/icon";
+import Title from "../../atoms/title/title";
 
 import "./collapse.scss";
 
@@ -31,7 +32,13 @@ const Collapse = ({ title, content }) => {
 
         <Title
           heading={title.heading}
-          icon={title.icon}
+          prefix={
+
+            <Icon
+              name={title.icon.name}
+              cat={title.icon.cat}
+            />
+          }
         />
       </header>
 

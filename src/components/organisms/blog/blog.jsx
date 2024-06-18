@@ -1,8 +1,10 @@
 import { blog } from '../../../assets/data.json'
 
+import Icon from '../../atoms/icon/icon'
+import Title from '../../atoms/title/title'
+
 import Collapse from '../../molecules/collapse/collapse'
 import Gallery from '../../molecules/gallery/gallery'
-import Title from '../../molecules/title/title'
 
 import './blog.scss'
 
@@ -19,8 +21,14 @@ const Blog = () => {
     <article id="blog">
       <Title
         heading={blog.title.heading}
-        icon={blog.title.icon}
         subtitle={blog.title.subtitle}
+        prefix={
+
+          <Icon
+            name={blog.title.icon.name}
+            cat={blog.title.icon.cat}
+          />
+        }
       />
 
       { blog.data.map((article, index) =>

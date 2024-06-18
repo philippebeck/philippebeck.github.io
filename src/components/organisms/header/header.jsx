@@ -1,6 +1,7 @@
 import { header } from '../../../assets/data.json'
 
-import Title from '../../molecules/title/title'
+import Icon from '../../atoms/icon/icon'
+import Title from '../../atoms/title/title'
 
 import './header.scss'
 
@@ -17,8 +18,14 @@ const Header = () => {
     <header id="intro">
       <Title 
         heading={header.title.heading}
-        icon={header.title.icon}
         subtitle={<strong>{header.title.subtitle}</strong>}
+        prefix={
+
+          <Icon
+            name={header.title.icon.name}
+            cat={header.title.icon.cat}
+          />
+        }
       />
 
       <ul>

@@ -1,8 +1,10 @@
 import { portfolio } from '../../../assets/data.json'
 
+import Icon from '../../atoms/icon/icon'
+import Title from '../../atoms/title/title'
+
 import Collapse from '../../molecules/collapse/collapse'
 import Gallery from '../../molecules/gallery/gallery'
-import Title from '../../molecules/title/title'
 
 import './portfolio.scss'
 
@@ -19,8 +21,14 @@ const Portfolio = () => {
     <article id="portfolio">
       <Title
         heading={portfolio.title.heading}
-        icon={portfolio.title.icon}
         subtitle={portfolio.title.subtitle}
+        prefix={
+
+          <Icon
+            name={portfolio.title.icon.name}
+            cat={portfolio.title.icon.cat}
+          />
+        }
       />
 
       { portfolio.data.map((project, index) =>
