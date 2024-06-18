@@ -1,5 +1,6 @@
+import Card from '../../atoms/card/card'
+import Image from '../../atoms/image/image'
 import Link from '../../atoms/link/link'
-import Card from '../../molecules/card/card'
 
 import './gallery.scss'
 
@@ -30,8 +31,14 @@ const Gallery = ({ gallery }) => {
           content={
 
             <Card
-              image={item.image}
               caption={item.caption}
+              content={
+
+                <Image 
+                  url={item.image.url}
+                  alt={item.image.alt}
+                />
+              }
             />
           }
         />
