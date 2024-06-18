@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
 
-    <nav id="navbar">
+    <nav>
       <Link
         url={nav.logo.url}
         label={nav.logo.text}
