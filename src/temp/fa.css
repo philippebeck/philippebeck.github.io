@@ -662,6 +662,10 @@
   content: "\f0c1";
 }
 
+.fa-address-card::before {
+  content: "\f2bb"; 
+}
+
 .fa-paper-plane::before {
   content: "\f1d8";
 }
