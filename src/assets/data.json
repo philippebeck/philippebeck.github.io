@@ -49,16 +49,17 @@
         "name": "user-ninja",
         "cat": "solid"
       },
-      "subtitle": "Fullstack Developer & Web Trainer - Remote Work Worldwide"
+      "subtitle": "Fullstack Developer & Web Trainer"
     },
     "data": [
-      "🧑‍💻 Fullstack Developer, currently on React, Vue & Node",
-      "🧑‍🎓 Web Trainer, mainly @OpenClassrooms",
+      "⌨️ Fullstack Developer, currently on React, Vue & Node",
+      "🎓 Web Trainer, mainly @OpenClassrooms",
+      "🌏 Remote Work Worldwide",
       "🖼️ Frontend: HTML, CSS, Sass, JS, TS, React, Vue",
-      "🧠 Backend: Node, PHP, Python, SQL, MongoDB",
-      "🛠️ Dev Tools: VScode, GitHub, GitKraken, FileZilla",
+      "⚙️ Backend: Node, PHP, Python, SQL, MongoDB",
+      "🛠️ Dev Tools: VSCode, GitHub, GitKraken, FileZilla",
       "🖥️ OS: Linux, Windows, Android",
-      "📚 I write articles about Dev on Medium"
+      "📜 I write articles about Dev on Medium"
     ]
   },
   "portfolio": {
@@ -1763,7 +1764,7 @@
         "name": "address-card",
         "cat": "regular"
       },
-      "subtitle": "You can find some more information about me here..."
+      "subtitle": "You can find additional information about me here..."
     },
     "data": [
       {
@@ -1785,48 +1786,6 @@
       {
         "title": {
           "heading": {
-            "text": "Remote Work"
-          },
-          "icon": {
-            "name": "house-laptop",
-            "cat": "solid"
-          }
-        },
-        "data": [
-          "🗺️ Worldwide"
-        ]
-      },
-      {
-        "title": {
-          "heading": {
-            "text": "Onsite Work"
-          },
-          "icon": {
-            "name": "building-circle-check",
-            "cat": "solid"
-          }
-        },
-        "data": [
-          "🗾 Japan"
-        ]
-      },
-      {
-        "title": {
-          "heading": {
-            "text": "Driver License"
-          },
-          "icon": {
-            "name": "id-card",
-            "cat": "regular"
-          }
-        },
-        "data": [
-          "🚘 Car"
-        ]
-      },
-      {
-        "title": {
-          "heading": {
             "text": "Hobbies"
           },
           "icon": {
@@ -1835,10 +1794,11 @@
           }
         },
         "data": [
-          "🔭 Astronomy",
-          "🤖 Robotics",
-          "🌏 Geology",
-          "🧬 Biology"
+          "🖥️ Computer Science",
+          "🔭 Astronomy & Space",
+          "🤖 Robotics & High Tech",
+          "🌏 Geology & Nature",
+          "🧬 Biology & Animals"
         ]
       },
       {
@@ -1852,13 +1812,12 @@
           }
         },
         "data": [
-          "🏃 Footing",
-          "🚵 Biking",
-          "🥽 Swimming",
-          "⛷️ Ski",
-          "⚾ Baseball",
-          "🎾 Tennis",
+          "🚵 Mountain Biking",
           "🏓 Table Tennis",
+          "⛷️ Alpine Skiing",
+          "🎾 Tennis",
+          "🥽 Swimming",
+          "⚾ Baseball",
           "🥋 Martial Arts"
         ]
       },
@@ -1873,12 +1832,12 @@
           }
         },
         "data": [
-          "💬 Manga",
-          "🎸 Music",
-          "📖 Sci-Fi Books",
-          "🎬 Movie Theater",
-          "📺 Dramas",
-          "🎮 Video Games"
+          "🎮 Japanese Video Games",
+          "💬 Japanese Manga",
+          "🎬 American Sci-Fi Cinema",
+          "📚 American Sci-Fi Books",
+          "📺 Korean Dramas",
+          "🎸 Pop, Rock & Electro Music"
         ]
       }
     ]
