@@ -14,30 +14,106 @@ $font-size: 1.2rem;
     animation: turn-xy 2s linear infinite reverse;
   }
 
+  & > ul {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
   section {
     margin-top: 50px;
+    width: 100%;
 
     &:hover > hgroup i,
     &:focus > hgroup i {
       animation: turn-xz 2s linear infinite reverse;
     }
+
+    hgroup {
+      margin-bottom: 20px;
+    }
+
+    & > ul {
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+      margin: auto;
+      border: solid 2px $silver;
+      border-radius: 20px;
+      padding: 20px;
+      width: fit-content;
+      font-size: $font-size;
+      background-color: $gray;
+      animation: grow-max 1s;
+    }
   }
 
-  hgroup {
-    margin-bottom: 20px;
+  //! ********** XS **********
+
+  @media (min-width: $xs) {
+    section > ul {
+      font-size: calc($font-size * 1.1);
+    }
   }
 
-  ul {
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
-    margin: auto;
-    border: solid 2px $silver;
-    border-radius: 20px;
-    padding: 20px;
-    width: fit-content;
-    font-size: $font-size;
-    background-color: $gray;
-    animation: grow-max 1s;
+  //! ********** SM **********
+
+  @media (min-width: $sm) {
+    & > ul {
+      flex-flow: row wrap;
+      gap: 30px;
+      place-content: center;
+
+      & > li {
+        width: calc((100% - 30px) / 2);
+      }
+    }
+
+    section > ul {
+      font-size: calc($font-size * 1.2);
+    }
+  }
+
+  //! ********** MD **********
+
+  @media (min-width: $md) {
+    section > ul {
+      font-size: calc($font-size * 1.3);
+    }
+  }
+
+  //! ********** LG **********
+
+  @media (min-width: $lg) {
+    & > ul {
+      & > li {
+        width: calc((100% - 60px) / 3);
+      }
+    }
+
+    section > ul {
+      font-size: calc($font-size * 1.4);
+    }
+  }
+
+  //! ********** XL **********
+
+  @media (min-width: $xl) {
+    section > ul {
+      font-size: calc($font-size * 1.5);
+    }
+  }
+
+  //! ********** WD **********
+
+  @media (min-width: $wd) {
+    & > ul {
+      & > li {
+        width: calc((100% - 90px) / 4);
+      }
+    }
+
+    section > ul {
+      font-size: calc($font-size * 1.6);
+    }
   }
 }

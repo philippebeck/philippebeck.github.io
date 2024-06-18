@@ -8,7 +8,7 @@ import './about.scss'
 const About = () => {
   return (
     <article id="about">
-      <Title 
+      <Title
         heading={about.title.heading}
         subtitle={about.title.subtitle}
         prefix={
@@ -20,29 +20,31 @@ const About = () => {
         }
       />
 
-      { about.data.map((item, index) =>
+      <ul>
+        {about.data.map((item, index) =>
+          <li key={index}>
+            <section>
 
-      <section key={index}>
-        <Title
-          heading={item.title.heading}
-          prefix={
+              <Title
+                heading={item.title.heading}
+                prefix={
 
-            <Icon
-              name={item.title.icon.name}
-              cat={item.title.icon.cat}
-            />
-          }
-        />
+                  <Icon
+                    name={item.title.icon.name}
+                    cat={item.title.icon.cat}
+                  />
+                }
+              />
 
-        <ul>
-          { item.data.map((subitem, subindex) =>
-
-            <li key={subindex}>{subitem}</li>
-          )}
-        </ul>
-      </section>
-      )}
-
+              <ul>
+                {item.data.map((subitem, subindex) =>
+                  <li key={subindex}>{subitem}</li>
+                )}
+              </ul>
+            </section>
+          </li>
+        )}
+      </ul>
     </article>
   )
 }
