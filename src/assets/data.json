@@ -52,13 +52,13 @@
       "subtitle": "Fullstack Developer & Web Trainer - Remote Work Worldwide"
     },
     "data": [
-      "🤖 Fullstack Developer, currently on React, Vue & Node",
-      "💼 Web Trainer, mainly @OpenClassrooms",
-      "🌱 FrontEnd packages made : Animadio & Vesan",
-      "📦 BackEnd packages made : Nens & Pam",
-      "❤️ I love writing HTML, CSS, JS & Python",
-      "📚 I write articles about Dev on Medium",
-      "🔭 Passionate about Nature, Space & Technology"
+      "🧑‍💻 Fullstack Developer, currently on React, Vue & Node",
+      "🧑‍🎓 Web Trainer, mainly @OpenClassrooms",
+      "🖼️ Frontend: HTML, CSS, Sass, JS, TS, React, Vue",
+      "🧠 Backend: Node, PHP, Python, SQL, MongoDB",
+      "🛠️ Dev Tools: VScode, GitHub, GitKraken, FileZilla",
+      "🖥️ OS: Linux, Windows, Android",
+      "📚 I write articles about Dev on Medium"
     ]
   },
   "portfolio": {
@@ -1766,17 +1766,121 @@
       "subtitle": "You can find some more information about me here..."
     },
     "data": [
-      "Languages: French (Native), English (Professional), Japanese (Elementary)",
-      "Frontend Technos: HTML, CSS, Sass, JavaScript, TypeScript, React, Vue",
-      "Backend Technos: Node, PHP, Python, SQL, MongoDB",
-      "Dev Tools: VSCode, GitHub, GitKraken, FileZilla",
-      "OS: Linux, Windows, Android",
-      "Remote Work: Worldwide",
-      "Onsite Work: France, Japan",
-      "Driver License: B",
-      "Hobbies: space & robotics, geology & astronomy",
-      "Sports: baseball, tennis, footing, martial arts, swimming, ski",
-      "Entertainment: manga & video games, music & dramas"
+      {
+        "title": {
+          "heading": {
+            "text": "Languages"
+          },
+          "icon": {
+            "name": "language",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🇫🇷 French: Native",
+          "🇬🇧 English: Professional",
+          "🇯🇵 Japanese: Elementary"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Remote Work"
+          },
+          "icon": {
+            "name": "house-laptop",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🗺️ Worldwide"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Onsite Work"
+          },
+          "icon": {
+            "name": "building-circle-check",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🗾 Japan"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Driver License"
+          },
+          "icon": {
+            "name": "id-card",
+            "cat": "regular"
+          }
+        },
+        "data": [
+          "🚘 Car"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Hobbies"
+          },
+          "icon": {
+            "name": "atom",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🔭 Astronomy",
+          "🤖 Robotics",
+          "🌏 Geology",
+          "🧬 Biology"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Sports"
+          },
+          "icon": {
+            "name": "person-biking",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🏃 Footing",
+          "🚵 Biking",
+          "🥽 Swimming",
+          "⛷️ Ski",
+          "⚾ Baseball",
+          "🎾 Tennis",
+          "🏓 Table Tennis",
+          "🥋 Martial Arts"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Entertainment"
+          },
+          "icon": {
+            "name": "chess",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "💬 Manga",
+          "🎸 Music",
+          "📖 Sci-Fi Books",
+          "🎬 Movie Theater",
+          "📺 Dramas",
+          "🎮 Video Games"
+        ]
+      }
     ]
   },
   "footer": [
