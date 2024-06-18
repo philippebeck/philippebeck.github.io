@@ -14,6 +14,19 @@ $font-size: 1.2rem;
     animation: turn-xy 2s linear infinite reverse;
   }
 
+  section {
+    margin-top: 50px;
+
+    &:hover > hgroup i,
+    &:focus > hgroup i {
+      animation: turn-xz 2s linear infinite reverse;
+    }
+  }
+
+  hgroup {
+    margin-bottom: 20px;
+  }
+
   ul {
     display: flex;
     flex-flow: column;

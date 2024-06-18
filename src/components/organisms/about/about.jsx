@@ -7,7 +7,7 @@ import './about.scss'
 
 const About = () => {
   return (
-    <section id="about">
+    <article id="about">
       <Title 
         heading={about.title.heading}
         subtitle={about.title.subtitle}
@@ -20,12 +20,30 @@ const About = () => {
         }
       />
 
-      <ul>
-        { about.data.map((item, index) =>
-          <li key={index}>{item}</li>
-        )}
-      </ul>
-    </section>
+      { about.data.map((item, index) =>
+
+      <section key={index}>
+        <Title
+          heading={item.title.heading}
+          prefix={
+
+            <Icon
+              name={item.title.icon.name}
+              cat={item.title.icon.cat}
+            />
+          }
+        />
+
+        <ul>
+          { item.data.map((subitem, subindex) =>
+
+            <li key={subindex}>{subitem}</li>
+          )}
+        </ul>
+      </section>
+      )}
+
+    </article>
   )
 }
 
