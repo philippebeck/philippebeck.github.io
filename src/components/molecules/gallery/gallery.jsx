@@ -18,11 +18,11 @@ import './gallery.scss'
  * @return {JSX.Element}
  *  The rendered gallery component.
  */
-const Gallery = ({ gallery }) => {
+const Gallery = ({ array }) => {
   return (
 
   <ul className="gallery">
-    { gallery.map((item, index) =>
+    { array.map((item, index) =>
       <li key={index}>
 
         <Link

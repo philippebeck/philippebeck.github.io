@@ -37,7 +37,7 @@ const Blog = () => {
           title={article.title}
           content={
             <Gallery
-              gallery={article.gallery}
+              array={article.gallery}
             />
           }
         />

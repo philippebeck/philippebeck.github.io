@@ -38,7 +38,7 @@ const Portfolio = () => {
           content={
 
             <Gallery
-              gallery={project.gallery}
+              array={project.gallery}
             />
           }
         />
