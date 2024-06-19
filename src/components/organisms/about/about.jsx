@@ -8,11 +8,11 @@ import './about.scss'
 const About = () => {
   return (
     <article id="about">
+
       <Title
         heading={about.title.heading}
         subtitle={about.title.subtitle}
         prefix={
-
           <Icon
             name={about.title.icon.name}
             cat={about.title.icon.cat}
@@ -28,7 +28,6 @@ const About = () => {
               <Title
                 heading={item.title.heading}
                 prefix={
-
                   <Icon
                     name={item.title.icon.name}
                     cat={item.title.icon.cat}
