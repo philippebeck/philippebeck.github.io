@@ -62,74 +62,36 @@ $sans-serif: Geo, Helvetica, sans-serif;
 $serif: Trocchi, Times, serif;
 $monospace: "Ubuntu Mono", Courier, monospace;
 
-//! ********** ROTATE **********
+//! ********** TRANSFORM **********
 
-@keyframes turn-x {
-  from {
-    transform: rotateX(360deg);
+$transforms: (
+  "slide-right":  translateX(-100%),
+  "slide-left":   translateX(100%),
+
+  "turn-x":   rotateX(360deg),
+  "turn-y":   rotateY(360deg),
+  "turn-z":   rotateZ(360deg),
+  "turn-xy":  rotate3d(1, 1, 0, 360deg),
+  "turn-xz":  rotate3d(1, 0, 1, 360deg),
+  "turn-yz":  rotate3d(0, 1, 1, 360deg),
+  "turn-3d":  rotate3d(1, 1, 1, 360deg),
+
+  "grow-min":   scale(0.7, 0.7),
+  "grow-max":   scale(0, 0),
+  "flip-x":     scale(1, -1),
+  "flip-y":     scale(-1, 1),
+) !default;
+
+//! ********** KEYFRAMES **********
+
+@mixin keyframes($key, $value) {
+  @keyframes #{$key} {
+    from {
+      transform: #{$value};
+    }
   }
 }
 
-@keyframes turn-y {
-  from {
-    transform: rotateY(360deg);
-  }
-}
-
-@keyframes turn-z {
-  from {
-    transform: rotateZ(360deg);
-  }
-}
-
-@keyframes turn-xy {
-  from {
-    transform: rotate3d(1, 1, 0, 360deg);
-  }
-}
-
-@keyframes turn-xz {
-  from {
-    transform: rotate3d(1, 0, 1, 360deg);
-  }
-}
-
-@keyframes turn-yz {
-  from {
-    transform: rotate3d(0, 1, 1, 360deg);
-  }
-}
-
-@keyframes turn-3d {
-  from {
-    transform: rotate3d(1, 1, 1, 360deg);
-  }
-}
-
-//! ********** SCALE **********
-
-@keyframes grow-min {
-  from {
-    transform: scale(0.5, 0.5);
-  }
-}
-
-@keyframes grow-max {
-  from {
-    transform: scale(0, 0);
-  }
-}
-
-//! ********** TRANSLATE **********
-
-@keyframes slide-right {
-  0% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(100%);
-  }
+@each $key, $value in $transforms {
+  @include keyframes($key, $value);
 }
