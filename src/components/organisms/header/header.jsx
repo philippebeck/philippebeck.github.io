@@ -16,11 +16,12 @@ const Header = () => {
   return (
 
     <header id="intro">
-      <Title 
+      <Title
         heading={header.title.heading}
-        subtitle={<h2>{header.title.subtitle}</h2>}
+        subtitle={
+          <strong>{header.title.subtitle}</strong>
+        }
         prefix={
-
           <Icon
             name={header.title.icon.name}
             cat={header.title.icon.cat}
@@ -29,7 +30,7 @@ const Header = () => {
       />
 
       <ul>
-        { header.data.map((item, index) =>
+        {header.data.map((item, index) =>
           <li key={index}>{item}</li>
         )}
       </ul>
