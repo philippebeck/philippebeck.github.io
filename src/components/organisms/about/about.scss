@@ -89,6 +89,8 @@ $font-size: 1.1rem;
 
   @media (min-width: $lg) {
     & > ul {
+      place-content: center;
+
       & > li {
         width: calc((100% - 60px) / 3);
       }
