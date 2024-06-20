@@ -31,18 +31,22 @@ const Portfolio = () => {
         }
       />
 
-      { portfolio.data.map((project, index) =>
-        <Collapse
-          key={index}
-          title={project.title}
-          content={
+      <ul>
+        {portfolio.data.map((project, index) =>
+          <li key={index}>
 
-            <Gallery
-              array={project.gallery}
+            <Collapse
+              title={project.title}
+              content={
+
+                <Gallery
+                  array={project.gallery}
+                />
+              }
             />
-          }
-        />
-      )}
+          </li>
+        )}
+      </ul>
     </article>
   )
 }

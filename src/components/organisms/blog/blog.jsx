@@ -31,17 +31,24 @@ const Blog = () => {
         }
       />
 
-      { blog.data.map((article, index) =>
-        <Collapse
-          key={index}
-          title={article.title}
-          content={
-            <Gallery
-              array={article.gallery}
+      <ul>
+        {blog.data.map((article, index) =>
+          <li key={index}>
+
+            <Collapse
+              key={index}
+              title={article.title}
+              content={
+
+                <Gallery
+                  array={article.gallery}
+                />
+              }
             />
-          }
-        />
-      )}
+          </li>
+        )}
+      </ul>
+
     </article>
   )
 }
