@@ -432,27 +432,6 @@
       {
         "title": {
           "heading": {
-            "text": "Sass"
-          },
-          "icon": {
-            "name": "sass"
-          }
-        },
-        "gallery": [
-          {
-            "caption": "Unraveling the Magic of Sass",
-            "detail": "A Beginner’s Guide to Sass Basics: Discover the Power & Flexibility of Sass & Accelerate Your CSS Development",
-            "image": {
-              "url": "img/blog/unraveling-the-magic-of-sass.webp",
-              "alt": "Sass Logo"
-            },
-            "url": "https://medium.com/@philippebeck/unraveling-the-magic-of-sass-d18aeffe40c4"
-          }
-        ]
-      },
-      {
-        "title": {
-          "heading": {
             "text": "JavaScript"
           },
           "icon": {
