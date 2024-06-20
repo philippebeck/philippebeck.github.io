@@ -35,6 +35,7 @@ const Links = () => {
       <ul>
         {links.data.map((link, index) =>
           <li key={index}>
+
             <Collapse
               title={link.title}
               content={
@@ -45,7 +46,6 @@ const Links = () => {
           </li>
         )}
       </ul>
-
     </article>
   )
 }
