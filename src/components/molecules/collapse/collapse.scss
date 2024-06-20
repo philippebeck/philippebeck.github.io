@@ -1,5 +1,9 @@
 @import "../../../assets/app.scss";
 
+//! ********** VARIABLES **********
+
+$width: 220px;
+
 //! ********** MAIN **********
 
 .collapse {
@@ -30,42 +34,42 @@
 
   header {
     margin: auto;
-    width: 100%;
+    width: $width;
 
     //! ********** XS **********
 
     @media (min-width: $xs) {
-      width: 80%;
+      width: calc($width + 10px);
     }
 
     //! ********** SM **********
 
     @media (min-width: $sm) {
-      width: 60%;
+      width: calc($width + 20px);
     }
 
     //! ********** MD **********
 
     @media (min-width: $md) {
-      width: 50%;
+      width: calc($width + 30px);
     }
 
     //! ********** LG **********
 
     @media (min-width: $lg) {
-      width: 40%;
+      width: calc($width + 40px);
     }
 
     //! ********** XL **********
 
     @media (min-width: $xl) {
-      width: 35%;
+      width: calc($width + 60px);
     }
 
     //! ********** WD **********
 
     @media (min-width: $wd) {
-      width: 30%;
+      width: calc($width + 80px);
     }
   }
 }
