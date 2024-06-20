@@ -33,41 +33,41 @@ ul {
   position: relative;
   z-index: 100;
   border-top: solid 2px $silver;
-  padding: calc($padding * 2) $padding;
+  padding: calc($padding * 2) calc($padding / 2);
 
   //! ********** XS **********
 
   @media (min-width: $xs) {
-    padding: calc($padding * 3) calc($padding * 2);
+    padding: calc($padding * 3) $padding;
   }
 
   //! ********** SM **********
 
   @media (min-width: $sm) {
-    padding: calc($padding * 4) calc($padding * 3);
+    padding: calc($padding * 4) calc($padding * 2);
   }
 
   //! ********** MD **********
 
   @media (min-width: $md) {
-    padding: calc($padding * 5) calc($padding * 4);
+    padding: calc($padding * 5) calc($padding * 3);
   }
 
   //! ********** LG **********
 
   @media (min-width: $lg) {
-    padding: calc($padding * 6) calc($padding * 5);
+    padding: calc($padding * 6) calc($padding * 4);
   }
 
   //! ********** XL **********
 
   @media (min-width: $xl) {
-    padding: calc($padding * 7) calc($padding * 6);
+    padding: calc($padding * 7) calc($padding * 5);
   }
 
   //! ********** WD **********
 
   @media (min-width: $wd) {
-    padding: calc($padding * 8) calc($padding * 7);
+    padding: calc($padding * 8) calc($padding * 6);
   }
 }
