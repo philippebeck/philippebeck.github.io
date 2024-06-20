@@ -72,7 +72,7 @@
         "name": "code",
         "cat": "solid"
       },
-      "subtitle": "All my projects are hosted on GitHub & those that are packages are mainly published on NPM"
+      "subtitle": "All my projects are hosted on GitHub & some packages are published on NPM or Packagist"
     },
     "data": [
       {
@@ -87,7 +87,7 @@
         },
         "gallery": [
           {
-            "caption": "Animadio Doc",
+            "caption": "Animadio Doc (Twig, PHP)",
             "detail": "Website of the Animadio documentation",
             "image": {
               "url": "img/portfolio/animadio-doc.webp",
@@ -96,7 +96,7 @@
             "url": "https://github.com/philippebeck/animadio.org"
           },
           {
-            "caption": "Asperger",
+            "caption": "Asperger (Twig, PHP)",
             "detail": "Asperger's syndrome website offering diagnostic tests",
             "image": {
               "url": "img/portfolio/asperger.webp",
@@ -105,7 +105,7 @@
             "url": "https://github.com/philippebeck/asperger"
           },
           {
-            "caption": "Astronomy",
+            "caption": "Astronomy (Twig, PHP)",
             "detail": "Astronomy website using NASA & CDS APIs",
             "image": {
               "url": "img/portfolio/astronomy.webp",
@@ -114,7 +114,7 @@
             "url": "https://github.com/philippebeck/astronomy"
           },
           {
-            "caption": "DevsAgency",
+            "caption": "DevsAgency (Twig, PHP)",
             "detail": "Website of a digital agency offering development services",
             "image": {
               "url": "img/portfolio/devsagency.webp",
@@ -123,7 +123,7 @@
             "url": "https://github.com/philippebeck/devsagency"
           },
           {
-            "caption": "Kasa",
+            "caption": "Kasa (JSX, CSS, HTML)",
             "detail": "Website of a rental agency",
             "image": {
               "url": "img/portfolio/kasa.webp",
@@ -132,22 +132,22 @@
             "url": "https://github.com/philippebeck/kasa"
           },
           {
-            "caption": "Pam Doc",
+            "caption": "Pam Doc (Twig, PHP)",
             "detail": "Website of the Pam documentation",
             "image": {
               "url": "img/portfolio/pam-doc.webp",
               "alt": "Homepage of the Pam Website"
             },
-            "url": "https://github.com/philippebeck/pam"
+            "url": "https://github.com/philippebeck/pam.net"
           },
           {
-            "caption": "Tools2Code",
+            "caption": "Tools2Code (Twig, PHP)",
             "detail": "Website of developer resources",
             "image": {
               "url": "img/portfolio/tools2code.webp",
               "alt": "Homepage of the Tools2Code Website"
             },
-            "url": "github.com/philippebeck/tools2code"
+            "url": "https://github.com/philippebeck/tools2code"
           }
         ]
       },
@@ -163,40 +163,40 @@
         },
         "gallery": [
           {
-            "caption": "Animadio",
+            "caption": "Animadio (SCSS, JS)",
             "detail": "CSS Library made with Sass",
             "image": {
               "url": "img/portfolio/animadio.webp",
               "alt": "Sass Logo"
             },
-            "url": "https://www.npmjs.com/package/animadio"
+            "url": "https://github.com/philippebeck/animadio"
           },
           {
-            "caption": "Vesan",
+            "caption": "Vesan (Vue, JS)",
             "detail": "Vue Framework with Vuex",
             "image": {
               "url": "img/portfolio/vesan.webp",
               "alt": "Vue Logo"
             },
-            "url": "https://www.npmjs.com/package/vesan"
+            "url": "https://github.com/philippebeck/vesan"
           },
           {
-            "caption": "Nens",
+            "caption": "Nens (JS)",
             "detail": "Node/Express Framework with MySQL",
             "image": {
               "url": "img/portfolio/nens.webp",
               "alt": "Node Logo"
             },
-            "url": "https://www.npmjs.com/package/nens"
+            "url": "https://github.com/philippebeck/nens"
           },
           {
-            "caption": "Pam",
+            "caption": "Pam (PHP)",
             "detail": "PHP Adaptive Microframework",
             "image": {
               "url": "img/portfolio/pam.webp",
               "alt": "PHP Logo"
             },
-            "url": "https://packagist.org/packages/philippebeck/pam"
+            "url": "https://github.com/philippebeck/pam"
           }
         ]
       }
