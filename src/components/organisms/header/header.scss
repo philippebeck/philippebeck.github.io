@@ -2,7 +2,8 @@
 
 //! ********** VARIABLES **********
 
-$font-size: 1.2rem;
+$font-size: 1.1rem;
+$padding: 10px;
 
 //! ********** MAIN **********
 
@@ -20,7 +21,7 @@ $font-size: 1.2rem;
     margin: auto;
     border: solid 2px $white;
     border-radius: 20px;
-    padding: 20px;
+    padding: calc($padding / 2);
     width: fit-content;
     font-size: $font-size;
     background-color: $silver;
@@ -36,6 +37,7 @@ $font-size: 1.2rem;
     //! ********** SM **********
 
     @media (min-width: $sm) {
+      padding: $padding;
       font-size: calc($font-size * 1.2);
     }
 
@@ -49,6 +51,7 @@ $font-size: 1.2rem;
 
     @media (min-width: $lg) {
       font-size: calc($font-size * 1.4);
+      padding: calc($padding * 2);
     }
 
     //! ********** XL **********
