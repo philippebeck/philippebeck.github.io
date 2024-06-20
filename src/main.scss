@@ -25,6 +25,18 @@ ul {
   list-style: none;
 }
 
+[id="portfolio"],
+[id="blog"],
+[id="links"] {
+
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+    place-content: center;
+  }
+}
+
 [id="intro"],
 [id="portfolio"],
 [id="blog"],
