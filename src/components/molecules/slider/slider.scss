@@ -1,0 +1,59 @@
+@import "../../../assets/app.scss";
+
+.slider {
+
+
+  div > * {
+    position: absolute;
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  [class*="fa-circle-"] {
+    top: calc(50% - 12px);
+    cursor: pointer;
+  }
+
+  .fa-circle-left {
+    left: 10px;
+  }
+
+  .fa-circle-right {
+    right: 10px;
+  }
+
+  b {
+    display: none;
+  }
+
+  @media (min-width: $sm) {
+    img {
+      border-radius: var(--radius-lg);
+      height: 415px;
+    }
+
+    i {
+      font-size: 5rem;
+    }
+
+    [class*="fa-circle-"] {
+      top: calc(50% - 40px);
+    }
+
+    .fa-circle-left {
+      left: 10px;
+    }
+
+    .fa-circle-right {
+      right: 10px;
+    }
+
+    b {
+      display: block;
+      bottom: 20px;
+      left: calc(50% - 12px);
+    }
+  }
+}
