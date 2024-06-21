@@ -1,0 +1,61 @@
+@import "../../../assets/app.scss";
+
+[id="stats"] {
+
+  &:hover>hgroup i,
+  &:focus>hgroup i {
+    animation: turn-z 2s linear infinite reverse;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    place-content: center;
+    place-items: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: $xs) {
+    img {
+      width: 300px;
+    }
+  }
+
+  @media (min-width: $sm) {
+    img {
+      width: 500px;
+    }
+  }
+
+  @media (min-width: $md) {
+    img {
+      width: 600px;
+    }
+  }
+
+  @media (min-width: $lg) {
+    ul {
+    flex-flow: wrap;
+    }
+
+    img {
+      width: 700px;
+    }
+  }
+
+  @media (min-width: $xl) {
+    img {
+      width: 750px;
+    }
+  }
+
+  @media (min-width: $wd) {
+    img {
+      width: 800px;
+    }
+  }
+}
