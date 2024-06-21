@@ -14,22 +14,28 @@
         "iconName": "code"
       },
       {
+        "url": "#stats",
+        "text": "Stats",
+        "iconCat": "solid",
+        "iconName": "chart-pie"
+      },
+      {
         "url": "#blog",
         "text": "Blog",
         "iconCat": "solid",
         "iconName": "blog"
       },
       {
-        "url": "#links",
-        "text": "Links",
-        "iconCat": "solid",
-        "iconName": "link"
-      },
-      {
         "url": "#about",
         "text": "About",
         "iconCat": "regular",
         "iconName": "address-card"
+      },
+      {
+        "url": "#links",
+        "text": "Links",
+        "iconCat": "solid",
+        "iconName": "link"
       }
     ],
     "contact": {
@@ -265,6 +271,19 @@
         ]
       }
     ]
+  },
+  "stats": {
+    "title": {
+      "heading": {
+        "text": "Stats",
+        "level": "2"
+      },
+      "icon": {
+        "name": "chart-pie",
+        "cat": "solid"
+      },
+      "subtitle": "Here are some stats about my IT development skills"
+    }
   },
   "blog": {
     "title": {
@@ -613,6 +632,95 @@
             },
             "url": "https://medium.com/@philippebeck/oop-mvc-in-php-c0a373d7d18a"
           }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": {
+      "heading": {
+        "text": "About",
+        "level": "2"
+      },
+      "icon": {
+        "name": "address-card",
+        "cat": "regular"
+      },
+      "subtitle": "You can find additional information about me here..."
+    },
+    "data": [
+      {
+        "title": {
+          "heading": {
+            "text": "Languages"
+          },
+          "icon": {
+            "name": "language",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🇫🇷 French: Native",
+          "🇬🇧 English: Professional",
+          "🇯🇵 Japanese: Elementary",
+          "🇰🇷 Korean: Beginner"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Hobbies"
+          },
+          "icon": {
+            "name": "atom",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🖥️ Computer Science",
+          "🔭 Astronomy & Space",
+          "🤖 Robotics & High Tech",
+          "🌏 Geology & Nature",
+          "🧬 Biology & Animals"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Sports"
+          },
+          "icon": {
+            "name": "person-biking",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🚵 Mountain Biking",
+          "🏓 Table Tennis",
+          "⛷️ Alpine Skiing",
+          "🎾 Tennis",
+          "🥽 Swimming",
+          "⚾ Baseball",
+          "🥋 Martial Arts"
+        ]
+      },
+      {
+        "title": {
+          "heading": {
+            "text": "Entertainment"
+          },
+          "icon": {
+            "name": "chess",
+            "cat": "solid"
+          }
+        },
+        "data": [
+          "🎮 Japanese Video Games",
+          "🎎 Japanese Manga",
+          "🎬 American Sci-Fi Cinema",
+          "📚 American Sci-Fi Books",
+          "📺 Korean Dramas",
+          "🎸 Pop, Rock & Electro Music"
         ]
       }
     ]
@@ -1793,95 +1901,6 @@
             "name": "Web.dev",
             "url": "https://web.dev"
           }
-        ]
-      }
-    ]
-  },
-  "about": {
-    "title": {
-      "heading": {
-        "text": "About",
-        "level": "2"
-      },
-      "icon": {
-        "name": "address-card",
-        "cat": "regular"
-      },
-      "subtitle": "You can find additional information about me here..."
-    },
-    "data": [
-      {
-        "title": {
-          "heading": {
-            "text": "Languages"
-          },
-          "icon": {
-            "name": "language",
-            "cat": "solid"
-          }
-        },
-        "data": [
-          "🇫🇷 French: Native",
-          "🇬🇧 English: Professional",
-          "🇯🇵 Japanese: Elementary",
-          "🇰🇷 Korean: Beginner"
-        ]
-      },
-      {
-        "title": {
-          "heading": {
-            "text": "Hobbies"
-          },
-          "icon": {
-            "name": "atom",
-            "cat": "solid"
-          }
-        },
-        "data": [
-          "🖥️ Computer Science",
-          "🔭 Astronomy & Space",
-          "🤖 Robotics & High Tech",
-          "🌏 Geology & Nature",
-          "🧬 Biology & Animals"
-        ]
-      },
-      {
-        "title": {
-          "heading": {
-            "text": "Sports"
-          },
-          "icon": {
-            "name": "person-biking",
-            "cat": "solid"
-          }
-        },
-        "data": [
-          "🚵 Mountain Biking",
-          "🏓 Table Tennis",
-          "⛷️ Alpine Skiing",
-          "🎾 Tennis",
-          "🥽 Swimming",
-          "⚾ Baseball",
-          "🥋 Martial Arts"
-        ]
-      },
-      {
-        "title": {
-          "heading": {
-            "text": "Entertainment"
-          },
-          "icon": {
-            "name": "chess",
-            "cat": "solid"
-          }
-        },
-        "data": [
-          "🎮 Japanese Video Games",
-          "🎎 Japanese Manga",
-          "🎬 American Sci-Fi Cinema",
-          "📚 American Sci-Fi Books",
-          "📺 Korean Dramas",
-          "🎸 Pop, Rock & Electro Music"
         ]
       }
     ]
