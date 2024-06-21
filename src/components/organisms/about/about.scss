@@ -7,7 +7,6 @@ $font-size: 1.1rem;
 //! ********** MAIN **********
 
 [id="about"] {
-  margin-bottom: 50px;
 
   &:hover > hgroup i,
   &:focus > hgroup i {
@@ -49,6 +48,7 @@ $font-size: 1.1rem;
 
   @media (min-width: $xs) {
     section > ul {
+      height: 200px;
       font-size: calc($font-size * 1.1);
     }
   }
