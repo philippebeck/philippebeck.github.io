@@ -1,10 +1,13 @@
 import { blog } from '../../../assets/data.json'
 
+import Card from '../../atoms/card/card'
 import Icon from '../../atoms/icon/icon'
+import Image from '../../atoms/image/image'
+import Link from '../../atoms/link/link'
+import List from '../../atoms/list/list'
 import Title from '../../atoms/title/title'
 
 import Collapse from '../../molecules/collapse/collapse'
-import Gallery from '../../molecules/gallery/gallery'
 
 import './blog.scss'
 
@@ -40,8 +43,28 @@ const Blog = () => {
               title={article.title}
               content={
 
-                <Gallery
-                  array={article.gallery}
+                <List
+                  list={article.gallery.map((item, i) =>
+
+                    <Link
+                      key={i}
+                      url={item.url}
+                      title={item.detail}
+                      content={
+
+                        <Card
+                          caption={item.caption}
+                          content={
+
+                            <Image
+                              url={item.image.url}
+                              alt={item.image.alt}
+                            />
+                          }
+                        />
+                      }
+                    />
+                  )}
                 />
               }
             />

@@ -1,10 +1,13 @@
 import { portfolio } from '../../../assets/data.json'
 
+import Card from '../../atoms/card/card'
 import Icon from '../../atoms/icon/icon'
+import Image from '../../atoms/image/image'
+import Link from '../../atoms/link/link'
+import List from '../../atoms/list/list'
 import Title from '../../atoms/title/title'
 
 import Collapse from '../../molecules/collapse/collapse'
-import Gallery from '../../molecules/gallery/gallery'
 
 import './portfolio.scss'
 
@@ -39,8 +42,28 @@ const Portfolio = () => {
               title={project.title}
               content={
 
-                <Gallery
-                  array={project.gallery}
+                <List
+                  list={project.gallery.map((item, i) =>
+
+                    <Link
+                      key={i}
+                      url={item.url}
+                      title={item.detail}
+                      content={
+
+                        <Card
+                          caption={item.caption}
+                          content={
+
+                            <Image
+                              url={item.image.url}
+                              alt={item.image.alt}
+                            />
+                          }
+                        />
+                      }
+                    />
+                  )}
                 />
               }
             />
