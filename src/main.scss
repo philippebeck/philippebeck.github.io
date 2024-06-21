@@ -29,11 +29,15 @@ ul {
 [id="blog"],
 [id="links"] {
 
-  ul {
+  & > ul {
     display: flex;
     flex-flow: wrap;
     gap: 30px;
     place-content: center;
+
+    hgroup {
+      margin: 0;
+    }
   }
 }
 
