@@ -3,6 +3,7 @@ import { footer } from '../../../assets/data.json'
 import './footer.scss'
 
 import Icon from '../../atoms/icon/icon'
+import List from '../../atoms/list/list'
 import Link from '../../atoms/link/link'
 
 /**
@@ -17,25 +18,24 @@ const Footer = () => {
 
   return (
     <footer>
-      <ul>
-        { footer.map((item, index) =>
-          <li key={index}>
 
-            <Link
-              url={item.url} 
-              label={item.name}
-              content={
+      <List
+        array={footer.map((item) =>
 
-                <Icon
-                  cat="brands"
-                  name={item.icon}
-                  option="1x"
-                  isHidden="false"
-                />}
-            />
-          </li>
+          <Link
+            url={item.url}
+            label={item.name}
+            content={
+
+              <Icon
+                cat="brands"
+                name={item.icon}
+                option="1x"
+                isHidden="false"
+              />}
+          />
         )}
-      </ul>
+      />
     </footer>
   )
 }

@@ -2,6 +2,7 @@ import { nav } from '../../../assets/data.json'
 
 import Icon from '../../atoms/icon/icon'
 import Link from '../../atoms/link/link'
+import List from '../../atoms/list/list'
 
 import './navbar.scss'
 
@@ -23,7 +24,8 @@ const Navbar = () => {
         url={logo.url}
         label={logo.text}
         content={
-          <Icon 
+
+          <Icon
             name={logo.icon.name}
             cat={logo.icon.cat}
             isHidden="false"
@@ -31,33 +33,33 @@ const Navbar = () => {
         }
       />
 
-      <ul>
-        { links.map((item, index) =>
-          <li key={index}>
+      <List
+        array={links.map((item) =>
 
-            <Link
-              url={item.url}
-              label={item.text}
-              content={
-                <>
-                  <Icon 
-                    cat={item.icon.cat}
-                    name={item.icon.name}
-                    isHidden="false"
-                  />
-                  <b>{item.text}</b>
-                </>
-              }
-            />
-          </li>
+          <Link
+            url={item.url}
+            label={item.text}
+            content={
+
+              <>
+                <Icon
+                  cat={item.icon.cat}
+                  name={item.icon.name}
+                  isHidden="false"
+                />
+                <b>{item.text}</b>
+              </>
+            }
+          />
         )}
-      </ul>
+      />
 
       <Link
         url={contact.url}
         label={contact.text}
         content={
-          <Icon 
+
+          <Icon
             name={contact.icon.name}
             cat={contact.icon.cat}
             isHidden="false"

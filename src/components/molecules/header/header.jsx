@@ -1,6 +1,7 @@
 import { header } from '../../../assets/data.json'
 
 import Icon from '../../atoms/icon/icon'
+import List from '../../atoms/list/list'
 import Title from '../../atoms/title/title'
 
 import './header.scss'
@@ -21,9 +22,7 @@ const Header = () => {
 
       <Title
         heading={title.heading}
-        subtitle={
-          <strong>{title.subtitle}</strong>
-        }
+        subtitle={<strong>{title.subtitle}</strong>}
         prefix={
 
           <Icon
@@ -33,11 +32,11 @@ const Header = () => {
         }
       />
 
-      <ul>
-        {data.map((item, index) =>
-          <li key={index}>{item}</li>
+      <List
+        array={data.map((item) =>
+          { item }
         )}
-      </ul>
+      />
     </header>
   )
 }
