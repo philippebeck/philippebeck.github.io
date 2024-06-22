@@ -3,7 +3,7 @@ import './icon.scss'
 /**
  * ? ICON COMPONENT
  * * Renders an icon component with the specified
- * * name, category, visibility & option.
+ * * name, category, option, visibility & event.
  *
  * @param {Object} props
  *  The properties for the Icon component.
@@ -15,20 +15,33 @@ import './icon.scss'
  *  The category of the icon.
  *  Defaults to "brands".
  *
- * @param {string} [props.isHidden="true"]
- *  Whether the icon is aria-hidden or not.
- *  Defaults to "true".
- *
- * @param {string} [props.option="1x"]
+ * @param {string} [props.option="2x"]
  *  The option of the icon.
- *  Defaults to size "1x".
+ *  Defaults to size "2x".
+ *
+ * @param {string} [props.isHidden=true]
+ *  Whether the icon is aria-hidden or not.
+ *  Defaults to true.
+ *
+ * @param {string} [props.event=""]
+ *  The event to be triggered when the icon is clicked.
+ *  Defaults to an empty string.
  *
  * @return {JSX.Element}
  *  The rendered icon component.
  */
-const Icon = ({name, cat="brands", isHidden="true", option="2x"}) => {
+const Icon = ({name, cat="brands", option="2x", isHidden=true, event=""}) => {
+  const hasEvent = event !== "";
 
   return (
+    hasEvent
+    ?
+    <i
+      className={`fa-${cat} fa-${name} fa-${option}`}
+      aria-hidden={isHidden}
+      onClick={event}
+    ></i>
+    :
     <i
       className={`fa-${cat} fa-${name} fa-${option} fa-fw`}
       aria-hidden={isHidden}
