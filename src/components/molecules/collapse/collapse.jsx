@@ -50,9 +50,9 @@ const Collapse = ({ title, content }) => {
         />
       </header>
 
-      { isOpen &&
+      {isOpen &&
         <aside className="translate">
-          { content }
+          {content}
         </aside>
       }
     </section>

@@ -24,7 +24,7 @@ import "./slider.scss";
  * @return {JSX.Element}
  *  The rendered Slider Molecule.
  */
-const Slider = ({ array, timer = 5000 }) => {
+const Slider = ({ array, timer=5000 }) => {
 
   const LENGTH        = array.length;
   const [i, setIndex] = useState(0);
@@ -49,6 +49,7 @@ const Slider = ({ array, timer = 5000 }) => {
 
       {LENGTH > 1 && (
         <nav>
+
           <Icon
             name="chevron-left"
             cat="solid"

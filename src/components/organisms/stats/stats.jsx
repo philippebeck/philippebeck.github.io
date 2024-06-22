@@ -21,17 +21,18 @@ const Stats = () => {
 
   return (
     <article id="stats">
+
       <Title
         heading={title.heading}
         subtitle={title.subtitle}
         prefix={
-          
-          <Icon 
+
+          <Icon
             name={title.icon.name}
             cat={title.icon.cat}
           />
         }
-        />
+      />
 
       <Slider
         array={data.map((item, index) =>
