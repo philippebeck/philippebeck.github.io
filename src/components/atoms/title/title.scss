@@ -2,6 +2,8 @@
 
 //! ********** VARIABLES **********
 
+$gap: 10px;
+$margin: 10px;
 $title-size: 1.2rem;
 $subtitle-ratio: 0.6;
 
@@ -40,14 +42,17 @@ $title-ratios: (
 //! ********** MAIN **********
 
 .title {
-  margin: 10px 0 20px;
+  display: flex;
+  flex-flow: column;
+  gap: $gap;
+  margin: $margin 0;
+  font-family: $serif;
 
   h1,
   h2,
   h3,
   p {
-    margin: 10px 5px;
-    font-family: $serif;
+    margin: 0;
   }
 
   @each $breakpoint-type, $breakpoint-size in $breakpoints {
@@ -62,5 +67,47 @@ $title-ratios: (
         }
       }
     }
+  }
+
+  //? ********** XS **********
+
+  @media (min-width: $xs) {
+    gap: calc($gap * 1.1);
+    margin: calc($margin * 1.1) 0 calc($margin * 1.2);
+  }
+
+  //? ********** SM **********
+
+  @media (min-width: $sm) {
+    gap: calc($gap * 1.2);
+    margin: calc($margin * 1.2) 0 calc($margin * 1.4);
+  }
+
+  //? ********** MD **********
+
+  @media (min-width: $md) {
+    gap: calc($gap * 1.3);
+    margin: calc($margin * 1.3) 0 calc($margin * 1.6);
+  }
+
+  //? ********** LG **********
+
+  @media (min-width: $lg) {
+    gap: calc($gap * 1.4);
+    margin: calc($margin * 1.4) 0 calc($margin * 1.8);
+  }
+
+  //? ********** XL **********
+
+  @media (min-width: $xl) {
+    gap: calc($gap * 1.5);
+    margin: calc($margin * 1.5) 0 calc($margin * 2);
+  }
+
+  //? ********** WD **********
+
+  @media (min-width: $wd) {
+    gap: calc($gap * 1.6);
+    margin: calc($margin * 1.6) 0 calc($margin * 2.2);
   }
 }
