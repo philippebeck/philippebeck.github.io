@@ -49,7 +49,7 @@ const Portfolio = () => {
 
                   <Link
                     url={item.url}
-                    title={item.detail}
+                    label={item.detail}
                     content={
 
                       <Card
