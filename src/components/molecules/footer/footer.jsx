@@ -1,10 +1,10 @@
 import { footer } from '../../../assets/data.json'
 
-import './footer.scss'
-
 import Icon from '../../atoms/icon/icon'
 import List from '../../atoms/list/list'
 import Link from '../../atoms/link/link'
+
+import './footer.scss'
 
 /**
  * ? FOOTER MOLECULE
