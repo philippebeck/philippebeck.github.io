@@ -17,13 +17,14 @@ import './card.scss'
  * @return {JSX.Element}
  *  The rendered Card Atom.
  */
-const Card = ({ content, caption }) => {
+const Card = ({ content, caption="" }) => {
   return (
 
     <figure className="card">
-      { content }
-
-      <figcaption>{caption}</figcaption>
+      {content}
+      {
+        caption && <figcaption>{caption}</figcaption>
+      }
     </figure>
   )
 }
