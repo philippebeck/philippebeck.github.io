@@ -32,21 +32,18 @@ import './icon.scss'
  * @return {JSX.Element}
  *  The rendered Icon Atom.
  */
-const Icon = ({name, cat="brands", option="2x", isHidden=true, event=""}) => {
-  const hasEvent = event !== "";
+const Icon = ({ name, cat = "brands", option = "2x", isHidden = true, event = "" }) => {
 
   return (
-    hasEvent
-    ?
     <i
-      className={`fa-${cat} fa-${name} fa-${option}`}
+      {...(event
+        ?
+        { 'className': `fa-${cat} fa-${name} fa-${option}` }
+        :
+        { 'className': `fa-${cat} fa-${name} fa-${option} fa-fw` }
+      )}
       aria-hidden={isHidden}
-      onClick={event}
-    ></i>
-    :
-    <i
-      className={`fa-${cat} fa-${name} fa-${option} fa-fw`}
-      aria-hidden={isHidden}
+      {...(event ? { 'onClick': event } : {})}
     ></i>
   )
 }
