@@ -15,11 +15,11 @@ import "./list.scss"
  * @return {JSX.Element}
  *  The rendered List Atom.
  */
-const List = ({ list }) => {
+const List = ({ array }) => {
   return (
 
     <ul className="list">
-      {list.map((item, index) =>
+      {array.map((item, index) =>
 
         <li key={index}>
           {item}
