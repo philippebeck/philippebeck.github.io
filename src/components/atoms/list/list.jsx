@@ -16,8 +16,8 @@ import "./list.scss"
  *  The rendered List Atom.
  */
 const List = ({ array }) => {
-  return (
 
+  return (
     <ul className="list">
       {array.map((item, index) =>
 
