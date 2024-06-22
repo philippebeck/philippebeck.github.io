@@ -13,35 +13,36 @@ import './navbar.scss'
  *  The rendered Navbar component.
  */
 const Navbar = () => {
+  const { logo, links, contact } = nav;
 
   return (
+    <nav className="navbar">
 
-    <nav>
       <Link
-        url={nav.logo.url}
-        label={nav.logo.text}
+        url={logo.url}
+        label={logo.text}
         content={
           <Icon 
-            name={nav.logo.iconName}
-            cat={nav.logo.iconCat}
+            name={logo.icon.name}
+            cat={logo.icon.cat}
+            isHidden="false"
           />
         }
       />
 
       <ul>
-        { nav.links.map((item, index) =>
+        { links.map((item, index) =>
           <li key={index}>
 
             <Link
               url={item.url}
               label={item.text}
               content={
-
                 <>
                   <Icon 
-                    cat={item.iconCat}
+                    cat={item.icon.cat}
+                    name={item.icon.name}
                     isHidden="false"
-                    name={item.iconName}
                   />
                   <b>{item.text}</b>
                 </>
@@ -52,12 +53,13 @@ const Navbar = () => {
       </ul>
 
       <Link
-        url={nav.contact.url}
-        label={nav.contact.text}
+        url={contact.url}
+        label={contact.text}
         content={
           <Icon 
-            name={nav.contact.iconName}
-            cat={nav.contact.iconCat}
+            name={contact.icon.name}
+            cat={contact.icon.cat}
+            isHidden="false"
           />
         }
       />
