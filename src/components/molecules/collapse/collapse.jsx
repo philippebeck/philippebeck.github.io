@@ -30,12 +30,18 @@ const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleCollapse = () => setIsOpen(!isOpen);
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' || event.key === ' ') toggleCollapse();
+  };
+
   return (
     <section className="collapse">
 
       <header
-        onClick={toggleCollapse}
         className={isOpen ? 'isOpen' : 'isClosed'}
+        tabIndex={0}
+        onClick={toggleCollapse}
+        onKeyDown={handleKeyDown}
       >
 
         <Title

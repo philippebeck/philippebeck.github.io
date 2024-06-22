@@ -7,15 +7,21 @@ $width: 220px;
 //! ********** MAIN **********
 
 .collapse {
+  header {
+    border-radius: 10px;
+    background-color: $secondary;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+    }
+  }
 
   hgroup {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin: 10px 0 20px;
-    background-color: $secondary;
-    cursor: pointer;
 
     h3,
     p {
