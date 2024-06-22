@@ -1,20 +1,18 @@
 @import "../../../assets/app.scss";
 
 [id="blog"] {
-
   &:hover > hgroup i,
   &:focus > hgroup i {
     animation: turn-y 2s linear infinite reverse;
   }
 
   .collapse {
-
     .translate {
       animation: slide-left 500ms ease-in-out;
     }
 
-    &:hover i,
-    &:focus i {
+    header:hover i,
+    header:focus i {
       animation: turn-xz 2s linear infinite reverse;
     }
   }

@@ -9,13 +9,12 @@
   }
 
   .collapse {
-
     .translate {
       animation: grow-min 500ms ease-in-out;
     }
 
-    &:hover i,
-    &:focus i {
+    header:hover i,
+    header:focus i {
       animation: turn-yz 2s linear infinite reverse;
     }
   }
