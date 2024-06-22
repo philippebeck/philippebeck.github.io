@@ -2,7 +2,6 @@
 
 //! ********** VARIABLES **********
 
-$font-size: 1.1rem;
 $padding: 10px;
 
 //! ********** MAIN **********
@@ -15,55 +14,25 @@ $padding: 10px;
   }
 
   ul {
-    display: flex;
     flex-flow: column;
-    gap: 10px;
     margin: auto;
-    border: solid 2px $white;
     border-radius: 20px;
     padding: calc($padding / 2);
     width: fit-content;
-    font-size: $font-size;
     background-color: $silver;
     color: $black;
     animation: grow-max 1s;
-
-    //! ********** XS **********
-
-    @media (min-width: $xs) {
-      font-size: calc($font-size * 1.1);
-    }
 
     //! ********** SM **********
 
     @media (min-width: $sm) {
       padding: $padding;
-      font-size: calc($font-size * 1.2);
-    }
-
-    //! ********** MD **********
-
-    @media (min-width: $md) {
-      font-size: calc($font-size * 1.3);
     }
 
     //! ********** LG **********
 
     @media (min-width: $lg) {
-      font-size: calc($font-size * 1.4);
       padding: calc($padding * 2);
-    }
-
-    //! ********** XL **********
-
-    @media (min-width: $xl) {
-      font-size: calc($font-size * 1.5);
-    }
-
-    //! ********** WD **********
-
-    @media (min-width: $wd) {
-      font-size: calc($font-size * 1.6);
     }
   }
 }
