@@ -1,34 +1,36 @@
 import './icon.scss'
 
 /**
- * ? ICON COMPONENT
- * * Renders an icon component with the specified
- * * name, category, option, visibility & event.
+ * ? ICON ATOM
+ * * Renders the Icon Atom
+ * * with the specified Name, 
+ * * Category, Option, Visibility & Event.
  *
  * @param {Object} props
- *  The properties for the Icon component.
+ *  The Properties for the Icon Atom.
  *
  * @param {string} props.name
- *  The name of the icon.
+ *  The Name of the Icon.
  *
  * @param {string} [props.cat="brands"]
- *  The category of the icon.
+ *  The Category of the Icon.
  *  Defaults to "brands".
  *
  * @param {string} [props.option="2x"]
- *  The option of the icon.
+ *  The Option of the Icon.
  *  Defaults to size "2x".
  *
- * @param {string} [props.isHidden=true]
- *  Whether the icon is aria-hidden or not.
+ * @param {boolean} [props.isHidden=true]
+ *  Whether the Icon is aria-hidden or not.
  *  Defaults to true.
  *
- * @param {string} [props.event=""]
- *  The event to be triggered when the icon is clicked.
+ * @param {Function|string} [props.event=""]
+ *  The optional Event to be triggered
+ *  when the Icon is clicked.
  *  Defaults to an empty string.
  *
  * @return {JSX.Element}
- *  The rendered icon component.
+ *  The rendered Icon Atom.
  */
 const Icon = ({name, cat="brands", option="2x", isHidden=true, event=""}) => {
   const hasEvent = event !== "";

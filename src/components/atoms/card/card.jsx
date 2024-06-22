@@ -1,21 +1,21 @@
 import './card.scss'
 
 /**
- * ? CARD COMPONENT
- * * Renders a card component with
- * * a content & a caption.
+ * ? CARD ATOM
+ * * Renders the Card Atom
+ * * with a Content & an optional Caption.
  *
  * @param {Object} props
- *  The properties for the Card component.
+ *  The Properties for the Card Atom.
  *
- * @param {Object} props.content
- *  The main content of the card.
+ * @param {HTMLElement} props.content
+ *  The main Content of the Card.
  *
- * @param {ReactNode} props.caption
- *  The caption of the card.
+ * @param {HTMLElement|string} [props.caption=""]
+ *  The optional Caption of the Card.
  *
  * @return {JSX.Element}
- *  The rendered card component.
+ *  The rendered Card Atom.
  */
 const Card = ({ content, caption }) => {
   return (

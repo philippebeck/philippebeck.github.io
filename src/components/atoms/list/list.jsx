@@ -1,17 +1,19 @@
 import "./list.scss"
 
 /**
- * ? LIST COMPONENT
- * * Renders a list of items as an unordered list.
+ * ? LIST ATOM
+ * * Renders the list Atom
+ * * with the specified Array of items
+ * * as an unordered list.
  *
  * @param {Object} props
- *  The properties for the List component.
+ *  The Properties for the List Atom.
  *
- * @param {Array} props.list
- *  The array of items to render in the list
+ * @param {Array} props.array
+ *  The Array of items to render in the List.
  *
  * @return {JSX.Element}
- *  The rendered list component
+ *  The rendered List Atom.
  */
 const List = ({ list }) => {
   return (

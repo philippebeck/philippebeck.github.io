@@ -1,30 +1,31 @@
 import './link.scss'
 
 /**
- * ? LINK COMPONENT
- * * Renders a link component with the specified
- * * URL, content, title, label & design.
+ * ? LINK ATOM
+ * * Renders the Link Atom
+ * * with the specified URL,
+ * * content, title, label & design.
  *
  * @param {Object} props
- *  The properties for the Link component.
+ *  The Properties for the Link Atom.
  *
- * @param {ReactNode} props.content
- *  The content of the link.
+ * @param {HTMLElement|string} props.content
+ *  The Content of the Link.
  *
  * @param {string} props.url
- *  The URL of the link.
+ *  The URL of the Link.
  *
  * @param {string} [props.design=""]
- *  The design class for the link.
+ *  The optional Design Class of the Link.
  *
  * @param {string} [props.label=""]
- *  The label for the link.
+ *  The optional Label of the Link.
  *
  * @param {string} [props.title=""]
- *  The title of the link.
+ *  The optional Title of the Link.
  *
  * @return {JSX.Element}
- *  The rendered link component.
+ *  The rendered Link Atom.
  */
 const Link = ({content, url, design="", label="", title=""}) => {
   const isExternalLink = url.startsWith('https');

@@ -1,25 +1,26 @@
 import './image.scss'
 
 /**
- * ? IMAGE COMPONENT
- * * Renders an image component with the specified
- * * URL & alternative text.
+ * ? IMAGE ATOM
+ * * Renders the Image Atom
+ * * with the specified URL
+ * * & alternative text.
  *
  * @param {Object} props
- *  The properties for the Image component.
+ *  The Properties for the Image Atom.
  *
  * @param {string} props.url
- *  The URL of the image.
+ *  The URL of the Image.
  *
  * @param {string} props.alt
- *  The alternative text for the image.
+ *  The Alternative Text for the Image.
  * 
  * @return {JSX.Element}
- *  The rendered image component.
+ *  The rendered Image Atom.
  */
 const Image = ({ url, alt }) => {
-
   return (
+
     <img
       src={url}
       alt={alt}
