@@ -19,9 +19,10 @@ import './image.scss'
  *  The rendered Image Atom.
  */
 const Image = ({ url, alt }) => {
-  return (
 
+  return (
     <img
+      className="image"
       src={url}
       alt={alt}
       loading="lazy"
