@@ -6,7 +6,6 @@ $font-size: 0.7rem;
 $padding-x: 10px;
 $padding-y: 2px;
 $height: 30px;
-$gap: 5px;
 
 //! ********** MAIN **********
 
@@ -24,13 +23,8 @@ $gap: 5px;
   background-color: $primary;
   color: $black;
 
-  img {
-    height: $height;
-  }
-
   ul {
-    display: flex;
-    gap: $gap;
+    flex-flow: nowrap;
   }
 
   a:hover,
@@ -49,14 +43,6 @@ $gap: 5px;
   @media (min-width: $xs) {
     padding: calc($padding-y + 1px) calc($padding-x * 2);
     font-size: calc($font-size + 0.1rem);
-
-    img {
-      height: calc($height + 5px);
-    }
-
-    ul {
-      gap: calc($gap * 2);
-    }
   }
 
   //! ********** SM **********
@@ -64,14 +50,6 @@ $gap: 5px;
   @media (min-width: $sm) {
     padding: calc($padding-y + 2px) calc($padding-x * 3);
     font-size: calc($font-size + 0.2rem);
-
-    img {
-      height: calc($height + 10px);
-    }
-
-    ul {
-      gap: calc($gap * 3);
-    }
 
     a {
       display: flex;
@@ -90,14 +68,6 @@ $gap: 5px;
   @media (min-width: $md) {
     padding: calc($padding-y + 3px) calc($padding-x * 4);
     font-size: calc($font-size + 0.3rem);
-
-    img {
-      height: calc($height + 15px);
-    }
-
-    ul {
-      gap: calc($gap * 4);
-    }
   }
 
   //! ********** LG **********
@@ -105,14 +75,6 @@ $gap: 5px;
   @media (min-width: $lg) {
     padding: calc($padding-y + 4px) calc($padding-x * 5);
     font-size: calc($font-size + 0.4rem);
-
-    img {
-      height: calc($height + 20px);
-    }
-
-    ul {
-      gap: calc($gap * 5);
-    }
 
     b {
       text-transform: capitalize;
@@ -124,14 +86,6 @@ $gap: 5px;
   @media (min-width: $xl) {
     padding: calc($padding-y + 5px) calc($padding-x * 6);
     font-size: calc($font-size + 0.5rem);
-
-    img {
-      height: calc($height + 25px);
-    }
-
-    ul {
-      gap: calc($gap * 6);
-    }
   }
 
   //! ********** WD **********
@@ -139,13 +93,5 @@ $gap: 5px;
   @media (min-width: $wd) {
     padding: calc($padding-y + 6px) calc($padding-x * 7);
     font-size: calc($font-size + 0.6rem);
-
-    img {
-      height: calc($height + 30px);
-    }
-
-    ul {
-      gap: calc($gap * 7);
-    }
   }
 }

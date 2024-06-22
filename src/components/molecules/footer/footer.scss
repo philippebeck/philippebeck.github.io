@@ -2,7 +2,6 @@
 
 //! ********** VARIABLES **********
 
-$gap: 5px;
 $width: 30px;
 $height: 30px;
 $font-size: 1.2rem;
@@ -16,12 +15,6 @@ footer {
   z-index: 1000;
   bottom: 5px;
   width: 100%;
-
-  ul {
-    display: flex;
-    gap: $gap;
-    place-content: center;
-  }
 
   li {
     display: flex;
@@ -48,10 +41,6 @@ footer {
   //! ********** XS **********
 
   @media (min-width: $xs) {
-    ul {
-      gap: calc($gap * 2);
-    }
-
     li {
       width: calc($width + 5px);
       height: calc($height + 5px);
@@ -62,10 +51,6 @@ footer {
   //! ********** SM **********
 
   @media (min-width: $sm) {
-    ul {
-      gap: calc($gap * 3);
-    }
-
     li {
       width: calc($width + 10px);
       height: calc($height + 10px);
@@ -76,10 +61,6 @@ footer {
   //! ********** MD **********
 
   @media (min-width: $md) {
-    ul {
-      gap: calc($gap * 4);
-    }
-
     li {
       width: calc($width + 15px);
       height: calc($height + 15px);
@@ -90,10 +71,6 @@ footer {
   //! ********** LG **********
 
   @media (min-width: $lg) {
-    ul {
-      gap: calc($gap * 5);
-    }
-
     li {
       width: calc($width + 20px);
       height: calc($height + 20px);
@@ -104,10 +81,6 @@ footer {
   //! ********** XL **********
 
   @media (min-width: $xl) {
-    ul {
-      gap: calc($gap * 6);
-    }
-
     li {
       width: calc($width + 25px);
       height: calc($height + 25px);
@@ -118,10 +91,6 @@ footer {
   //! ********** WD **********
 
   @media (min-width: $wd) {
-    ul {
-      gap: calc($gap * 7);
-    }
-
     li {
       width: calc($width + 30px);
       height: calc($height + 30px);

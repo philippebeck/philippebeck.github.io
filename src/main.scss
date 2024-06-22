@@ -19,36 +19,12 @@ body {
   color: $white
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-[id="portfolio"],
-[id="blog"],
-[id="links"] {
-
-  & > ul {
-    display: flex;
-    flex-flow: wrap;
-    gap: 20px;
-    place-content: center;
-
-    hgroup {
-      margin: 0;
-    }
-  }
-}
-
 [id="intro"],
 [id="portfolio"],
 [id="stats"],
 [id="blog"],
 [id="links"],
 [id="about"] {
-  position: relative;
-  z-index: 100;
   border-top: solid 2px $silver;
   padding: calc($padding * 2) calc($padding / 2);
 
