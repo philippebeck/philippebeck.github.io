@@ -2,8 +2,7 @@
 
 //! ********** VARIABLES **********
 
-$gap: 50px;
-$font-size: 1rem;
+$gap: 5px;
 
 //! ********** MAIN **********
 
@@ -12,55 +11,43 @@ $font-size: 1rem;
   flex-flow: wrap;
   gap: $gap;
   place-content: center;
-  margin: 50px 0 100px;
+  margin: 0;
   padding: 0;
   list-style: none;
 
-  li {
-    width: 100%;
-    font-size: $font-size;
+  //! ********** XS **********
 
-    & > * {
-      width: 100%;
-    }
+  @media (min-width: $xs) {
+    gap: calc($gap * 2);
+  }
 
-    //! ********** XS **********
+  //! ********** SM **********
 
-    @media (min-width: $xs) {
-      width: calc((100% - $gap) / 2);
-      font-size: calc($font-size * 1.1);
-    }
+  @media (min-width: $sm) {
+    gap: calc($gap * 4);
+  }
 
-    //! ********** SM **********
+  //! ********** MD **********
 
-    @media (min-width: $sm) {
-      font-size: calc($font-size * 1.2);
-    }
+  @media (min-width: $md) {
+    gap: calc($gap * 6);
+  }
 
-    //! ********** MD **********
+  //! ********** LG **********
 
-    @media (min-width: $md) {
-      width: calc((100% - 2 * $gap) / 3);
-      font-size: calc($font-size * 1.3);
-    }
+  @media (min-width: $lg) {
+    gap: calc($gap * 8);
+  }
 
-    //! ********** LG **********
+  //! ********** XL **********
 
-    @media (min-width: $lg) {
-      font-size: calc($font-size * 1.4);
-    }
+  @media (min-width: $xl) {
+    gap: calc($gap * 10);
+  }
 
-    //! ********** XL **********
+  //! ********** WD **********
 
-    @media (min-width: $xl) {
-      width: calc((100% - 3 * $gap) / 4);
-      font-size: calc($font-size * 1.5);
-    }
-
-    //! ********** WD **********
-
-    @media (min-width: $wd) {
-      font-size: calc($font-size * 1.6);
-    }
+  @media (min-width: $wd) {
+    gap: calc($gap * 12);
   }
 }
