@@ -4,7 +4,7 @@ import './link.scss'
  * ? LINK ATOM
  * * Renders the Link Atom
  * * with the specified URL,
- * * content, title, label & design.
+ * * content, design & optional Label.
  *
  * @param {Object} props
  *  The Properties for the Link Atom.
@@ -15,40 +15,28 @@ import './link.scss'
  * @param {string} props.url
  *  The URL of the Link.
  *
- * @param {string} [props.design=""]
- *  The optional Design Class of the Link.
+ * @param {string} [props.design="link"]
+ *  The Design Class of the Link.
+ *  Defaults to "link".
  *
  * @param {string} [props.label=""]
  *  The optional Label of the Link.
- *
- * @param {string} [props.title=""]
- *  The optional Title of the Link.
+ *  Defaults to an empty string.
  *
  * @return {JSX.Element}
  *  The rendered Link Atom.
  */
-const Link = ({content, url, design="", label="", title=""}) => {
+const Link = ({ content, url, design = "link", label = "" }) => {
   const isExternalLink = url.startsWith('https');
 
   return (
-    isExternalLink
-    ?
     <a
+      className={`${design}`}
       href={url}
-      className={design}
-      aria-label={label}
-      title={title}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      {content}
-    </a>
-    :
-    <a 
-      href={url} 
-      className={design} 
-      aria-label={label}
-      title={title}
+      {...(label ? { 'aria-label': label } : {})}
+      {...(label ? { 'title': label } : {})}
+      {...(isExternalLink ? { 'rel': 'noopener noreferrer' } : {})}
+      {...(isExternalLink ? { 'target': '_blank' } : {})}
     >
       {content}
     </a>
