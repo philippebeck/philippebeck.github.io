@@ -6,11 +6,12 @@ import Link from '../../atoms/link/link'
 import './navbar.scss'
 
 /**
- * ? NAVBAR COMPONENT
- * * Renders the Navbar component.
+ * ? NAVBAR MOLECULE
+ * * Renders the Navbar Molecule
+ * * that displays the navigation links
  *
  * @return {JSX.Element}
- *  The rendered Navbar component.
+ *  The rendered Navbar Molecule.
  */
 const Navbar = () => {
   const { logo, links, contact } = nav;

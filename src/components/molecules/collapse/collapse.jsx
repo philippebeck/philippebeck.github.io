@@ -6,16 +6,24 @@ import Title from "../../atoms/title/title";
 import "./collapse.scss";
 
 /**
- * ? COLLAPSE
- * * Renders a collapsible section with a title & a content.
+ * ? COLLAPSE MOLECULE
+ * * Renders the Collapse Molecule
+ * * that displays the Title &
+ * * that allows the user to expand
+ * * or collapse the Content
  *
- * @param {Object} props - The properties for the collapse.
+ * @param {Object} props
+ *  The Properties for the Collapse Molecule.
  *
- * @param {string} props.title - The title of the collapse.
- * @param {string} props.content - The content to be displayed
- *  when the collapse is expanded.
+ * @param {Object} props.title
+ *  The Title of the Collapse.
+ * 
+ * @param {HTMLElement|string} props.content
+ *  The Content to be displayed
+ *  when the Collapse is expanded.
  *
- * @return {JSX.Element} - The rendered collapse component.
+ * @return {JSX.Element}
+ *  The rendered Collapse Molecule.
  */
 const Collapse = ({ title, content }) => {
 

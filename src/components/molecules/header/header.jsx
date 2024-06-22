@@ -6,11 +6,12 @@ import Title from '../../atoms/title/title'
 import './header.scss'
 
 /**
- * ? HEADER COMPONENT
- * * Renders the Header component.
+ * ? HEADER MOLECULE
+ * * Renders the Header Molecule
+ * * that displays the main information
  *
  * @return {JSX.Element}
- *  The rendered Header component.
+ *  The rendered Header Molecule.
  */
 const Header = () => {
   const { title, data } = header;

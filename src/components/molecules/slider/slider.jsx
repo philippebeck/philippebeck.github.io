@@ -5,21 +5,24 @@ import Icon from "../../atoms/icon/icon";
 import "./slider.scss";
 
 /**
- * ? SLIDER
- * * Slider component that displays a set of elements.
+ * ? SLIDER MOLECULE
+ * * Renders the Slider Molecule
+ * * that displays an Array of items,
+ * * & allows the user to navigate through
+ * * or to watch them in auto sequence
  *
  * @param {Object} props
- *  The properties for the Slider component.
+ *  The Properties for the Slider Molecule.
  *
- * @param {array} props.array
- *  Array of items to be displayed in the slider
+ * @param {Array} props.array
+ *  The Array of items to be displayed in the Slider
  *
  * @param {number} [props.timer=5000]
- *  The timer for the slider
+ *  The Timer of the Slider
  *  Defaults to 5000
  *
- * @return {JSX}
- *  The JSX element representing the Slider component
+ * @return {JSX.Element}
+ *  The rendered Slider Molecule.
  */
 const Slider = ({ array, timer = 5000 }) => {
 

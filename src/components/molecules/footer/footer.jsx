@@ -6,11 +6,12 @@ import Icon from '../../atoms/icon/icon'
 import Link from '../../atoms/link/link'
 
 /**
- * ? FOOTER COMPONENT
- * * Renders the Footer component.
+ * ? FOOTER MOLECULE
+ * * Renders the Footer Molecule
+ * * that displays a list of social links
  *
  * @return {JSX.Element}
- *  The rendered Footer component.
+ *  The rendered Footer Molecule.
  */
 const Footer = () => {
 
