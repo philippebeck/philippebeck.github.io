@@ -2,28 +2,31 @@ import { about } from '../../../assets/data.json'
 
 import Icon from '../../atoms/icon/icon'
 import Title from '../../atoms/title/title'
+
 import Slider from '../../molecules/slider/slider'
 
 import './about.scss'
 
 const About = () => {
+  const { title, data } = about;
+
   return (
     <article id="about">
 
       <Title
-        heading={about.title.heading}
-        subtitle={about.title.subtitle}
+        heading={title.heading}
+        subtitle={title.subtitle}
         prefix={
 
           <Icon
-            name={about.title.icon.name}
-            cat={about.title.icon.cat}
+            name={title.icon.name}
+            cat={title.icon.cat}
           />
         }
       />
 
       <Slider
-        array={about.data.map((item, index) =>
+        array={data.map((item, index) =>
           <section key={index}>
 
             <Title
@@ -44,7 +47,6 @@ const About = () => {
             </ul>
           </section>
         )}
-        timer="5000"
       />
     </article>
   )
