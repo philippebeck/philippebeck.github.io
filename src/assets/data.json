@@ -3,46 +3,60 @@
     "logo": {
       "url": "#intro",
       "text": "Logo",
-      "iconCat": "solid",
-      "iconName": "user-ninja"
+      "icon": {
+        "cat": "solid",
+        "name": "user-ninja"
+      }
     },
     "links": [
       {
         "url": "#portfolio",
         "text": "Portfolio",
-        "iconCat": "solid",
-        "iconName": "code"
+        "icon": {
+          "cat": "solid",
+          "name": "code"
+        }
       },
       {
         "url": "#stats",
         "text": "Stats",
-        "iconCat": "solid",
-        "iconName": "chart-pie"
+        "icon": {
+          "cat": "solid",
+          "name": "chart-pie"
+        }
       },
       {
         "url": "#blog",
         "text": "Blog",
-        "iconCat": "solid",
-        "iconName": "blog"
+        "icon": {
+          "cat": "solid",
+          "name": "blog"
+        }
       },
       {
         "url": "#about",
         "text": "About",
-        "iconCat": "regular",
-        "iconName": "address-card"
+        "icon": {
+          "cat": "regular",
+          "name": "address-card"
+        }
       },
       {
         "url": "#links",
         "text": "Links",
-        "iconCat": "solid",
-        "iconName": "link"
+        "icon": {
+          "cat": "solid",
+          "name": "link"
+        }
       }
     ],
     "contact": {
       "url": "mailto:contact@philippebeck.net",
       "text": "Contact",
-      "iconCat": "regular",
-      "iconName": "paper-plane"
+      "icon": {
+        "cat": "regular",
+        "name": "paper-plane"
+      }
     }
   },
   "header": {
@@ -231,7 +245,6 @@
             },
             "url": "https://github.com/philippebeck/devsagency"
           },
-
           {
             "caption": "Pam Doc: Twig & PHP (2020)",
             "detail": "Website of the Pam documentation",
@@ -283,7 +296,21 @@
         "cat": "solid"
       },
       "subtitle": "Here are some stats about my IT development skills"
-    }
+    },
+    "data": [
+      {
+        "url": "https://github-readme-stats.vercel.app/api?username=philippebeck&theme=midnight-purple&show_icons=true",
+        "alt": "GitHub Stats"
+      },
+      {
+        "url": "https://github-readme-streak-stats.herokuapp.com/?user=philippebeck&theme=midnight-purple",
+        "alt": "GitHub Streaks"
+      },
+      {
+        "url": "https://github-readme-stats.vercel.app/api/top-langs/?username=philippebeck&layout=compact&theme=midnight-purple",
+        "alt": "Most Used Languages"
+      }
+    ]
   },
   "blog": {
     "title": {
@@ -707,7 +734,7 @@
       {
         "title": {
           "heading": {
-            "text": "Entertainment"
+            "text": "Fun"
           },
           "icon": {
             "name": "chess",
