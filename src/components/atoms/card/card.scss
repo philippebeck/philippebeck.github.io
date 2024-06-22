@@ -7,11 +7,12 @@ $radius: 10px;
 //! ********** MAIN **********
 
 .card {
+  box-sizing: border-box;
   margin: 0;
-  border: solid 2px $silver;
+  border: solid 2px $white;
   border-radius: $radius;
   width: 100%;
-  background-color: $gray;
+  background-color: $white;
 
   &:hover,
   &:focus {
@@ -27,13 +28,12 @@ $radius: 10px;
     display: flex;
     place-content: center;
     place-items: center;
-    margin-top: -5px;
     box-sizing: border-box;
+    margin-top: -5px;
     border-radius: 0 0 $radius $radius;
-    padding: 10px;
-    height: 80px;
+    padding: 5px 10px;
+    height: 50px;
     background-color: $gray;
-    color: $white;
   }
 
   &:hover figcaption,
