@@ -3,6 +3,7 @@ import { stats } from '../../../assets/data.json'
 import Icon from '../../atoms/icon/icon'
 import Image from '../../atoms/image/image'
 import Title from '../../atoms/title/title'
+
 import Slider from '../../molecules/slider/slider'
 
 import './stats.scss'
@@ -16,36 +17,31 @@ import './stats.scss'
  *  Rendered statistics component
  */
 const Stats = () => {
-  return (
+  const { title, data } = stats;
 
+  return (
     <article id="stats">
       <Title
-        heading={stats.title.heading}
-        subtitle={stats.title.subtitle}
+        heading={title.heading}
+        subtitle={title.subtitle}
         prefix={
           
           <Icon 
-            name={stats.title.icon.name}
-            cat={stats.title.icon.cat}
+            name={title.icon.name}
+            cat={title.icon.cat}
           />
         }
         />
 
       <Slider
-        array={[
+        array={data.map((item, index) =>
+
           <Image
-            url="https://github-readme-stats.vercel.app/api?username=philippebeck&amp;theme=midnight-purple&amp;show_icons=true"
-            alt="GitHub Stats" />
-          ,
-          <Image
-            url="https://github-readme-streak-stats.herokuapp.com/?user=philippebeck&amp;theme=midnight-purple"
-            alt="GitHub Streaks" />
-          ,
-          <Image
-            url="https://github-readme-stats.vercel.app/api/top-langs/?username=philippebeck&amp;layout=compact&amp;theme=midnight-purple"
-            alt="Most Used Languages" />
-        ]}
-        timer="5000"
+            key={index}
+            url={item.url}
+            alt={item.alt}
+          />
+        )}
       />
     </article>
   )
