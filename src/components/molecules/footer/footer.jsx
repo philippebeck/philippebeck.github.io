@@ -13,8 +13,8 @@ import Link from '../../atoms/link/link'
  *  The rendered Footer component.
  */
 const Footer = () => {
-  return (
 
+  return (
     <footer>
       <ul>
         { footer.map((item, index) =>
@@ -27,9 +27,9 @@ const Footer = () => {
 
                 <Icon
                   cat="brands"
-                  isHidden="false"
-                  option="1x"
                   name={item.icon}
+                  option="1x"
+                  isHidden="false"
                 />}
             />
           </li>
