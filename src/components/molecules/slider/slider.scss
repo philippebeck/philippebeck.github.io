@@ -1,59 +1,80 @@
 @import "../../../assets/app.scss";
 
+$width: 20px;
+$height: 32px;
+
 .slider {
+  position: relative;
+  margin: 0;
+  padding: 0 $width $height;
 
-
-  div > * {
-    position: absolute;
+  & + * {
+    display: flex;
+    flex-flow: column;
+    place-content: center;
+    place-items: center;
   }
 
-  i {
-    font-size: 1.5rem;
-  }
-
-  [class*="fa-circle-"] {
-    top: calc(50% - 12px);
-    cursor: pointer;
-  }
-
-  .fa-circle-left {
-    left: 10px;
-  }
-
-  .fa-circle-right {
-    right: 10px;
-  }
-
-  b {
-    display: none;
-  }
-
-  @media (min-width: $sm) {
-    img {
-      border-radius: var(--radius-lg);
-      height: 415px;
-    }
-
+  nav {
     i {
-      font-size: 5rem;
+      position: absolute;
+      font-size: 2rem;
+      color: $white;
+      cursor: pointer;
     }
 
-    [class*="fa-circle-"] {
-      top: calc(50% - 40px);
+    [class*="left"],
+    [class*="right"] {
+      top: calc(50% - 36px);
     }
 
-    .fa-circle-left {
-      left: 10px;
+    [class*="left"] {
+      left: 0;
     }
 
-    .fa-circle-right {
-      right: 10px;
+    [class*="right"] {
+      right: 0;
+    }
+
+    [class*="play"],
+    [class*="pause"] {
+      left: calc(50% - 12px);
+      bottom: 0;
     }
 
     b {
-      display: block;
-      bottom: 20px;
-      left: calc(50% - 12px);
+      display: none;
+    }
+
+    @media (min-width: $sm) {
+      i {
+        font-size: 5rem;
+      }
+
+      [class*="left"],
+      [class*="right"] {
+        top: calc(50% - 40px);
+      }
+
+      [class*="left"] {
+        left: 10px;
+      }
+
+      [class*="right"] {
+        right: 10px;
+      }
+
+      [class*="play"],
+      [class*="pause"] {
+        left: calc(50% - 12px);
+        bottom: 10px;
+      }
+
+      b {
+        display: block;
+        bottom: 20px;
+        left: calc(50% - 12px);
+      }
     }
   }
 }

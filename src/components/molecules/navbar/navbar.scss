@@ -6,11 +6,11 @@ $font-size: 0.7rem;
 $padding-x: 10px;
 $padding-y: 2px;
 $height: 30px;
-$gap: 10px;
+$gap: 5px;
 
 //! ********** MAIN **********
 
-nav {
+.navbar {
   display: flex;
   place-content: space-between;
   place-items: center;
