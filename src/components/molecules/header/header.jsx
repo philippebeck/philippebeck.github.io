@@ -34,7 +34,7 @@ const Header = () => {
 
       <List
         array={data.map((item) =>
-          { item }
+          <>{ item }</>
         )}
       />
     </header>

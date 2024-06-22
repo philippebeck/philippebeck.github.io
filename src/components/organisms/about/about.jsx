@@ -51,7 +51,7 @@ const About = () => {
 
             <List
               array={item.data.map((subitem) => 
-                { subitem }
+                <>{ subitem }</>
               )}
             />
           </section>
