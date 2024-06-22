@@ -12,11 +12,12 @@ import Collapse from '../../molecules/collapse/collapse'
 import './portfolio.scss'
 
 /**
- * ? PORTFOLIO COMPONENT
- * * Renders the Portfolio component.
+ * ? PORTFOLIO ORGANISM
+ * * Renders the Portfolio Organism
+ * * that displays a list of projects
  *
  * @return {JSX.Element}
- *  The rendered Portfolio component.
+ *  The rendered Portfolio Organism.
  */
 const Portfolio = () => {
   const { title, data } = portfolio;

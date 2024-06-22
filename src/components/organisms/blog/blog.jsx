@@ -12,11 +12,12 @@ import Collapse from '../../molecules/collapse/collapse'
 import './blog.scss'
 
 /**
- * ? BLOG COMPONENT
- * * Renders the Blog component.
+ * ? BLOG ORGANISM
+ * * Renders the Blog Organism
+ * * that displays a list of articles
  *
  * @return {JSX.Element}
- *  The rendered Blog component.
+ *  The rendered Blog Organism.
  */
 const Blog = () => {
   const { title, data } = blog;

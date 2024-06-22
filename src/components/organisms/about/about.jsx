@@ -7,6 +7,14 @@ import Slider from '../../molecules/slider/slider'
 
 import './about.scss'
 
+/**
+ * ? ABOUT ORGANISM
+ * * Renders the About Organism
+ * * that displays a list of information
+ *
+ * @return {JSX.Element}
+ *  The rendered About Organism.
+ */
 const About = () => {
   const { title, data } = about;
 

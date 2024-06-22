@@ -9,12 +9,12 @@ import Slider from '../../molecules/slider/slider'
 import './stats.scss'
 
 /**
- * ? STATS
- * * Renders statistics related to GitHub like 
- * * stats, streaks & most used languages.
+ * ? STATS ORGANISM
+ * * Renders the Stats Organism
+ * * that displays a list of stats
  *
  * @return {JSX.Element}
- *  Rendered statistics component
+ *  The rendered Stats Organism.
  */
 const Stats = () => {
   const { title, data } = stats;

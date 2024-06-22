@@ -10,12 +10,12 @@ import Collapse from '../../molecules/collapse/collapse'
 import './links.scss'
 
 /**
- * ? LINKS COMPONENT
- * * Renders a component that displays
- * * a list of links categorized by technology.
+ * ? LINKS ORGANISM
+ * * Renders the Links Organism
+ * * that displays a list of links
  *
  * @return {JSX.Element}
- *  The rendered component.
+ *  The rendered Links Organism.
  */
 const Links = () => {
   const { title, data } = links;
