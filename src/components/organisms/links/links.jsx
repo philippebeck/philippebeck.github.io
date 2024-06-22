@@ -18,23 +18,25 @@ import './links.scss'
  *  The rendered component.
  */
 const Links = () => {
-  return (
+  const { title, data } = links;
 
+  return (
     <article id="links">
+
       <Title
-        heading={links.title.heading}
-        subtitle={links.title.subtitle}
+        heading={title.heading}
+        subtitle={title.subtitle}
         prefix={
 
           <Icon
-            name={links.title.icon.name}
-            cat={links.title.icon.cat}
+            name={title.icon.name}
+            cat={title.icon.cat}
           />
         }
       />
 
       <ul>
-        {links.data.map((link, index) =>
+        {data.map((link, index) =>
           <li key={index}>
 
             <Collapse

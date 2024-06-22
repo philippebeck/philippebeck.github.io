@@ -19,23 +19,25 @@ import './portfolio.scss'
  *  The rendered Portfolio component.
  */
 const Portfolio = () => {
-  return (
+  const { title, data } = portfolio;
 
+  return (
     <article id="portfolio">
+
       <Title
-        heading={portfolio.title.heading}
-        subtitle={portfolio.title.subtitle}
+        heading={title.heading}
+        subtitle={title.subtitle}
         prefix={
 
           <Icon
-            name={portfolio.title.icon.name}
-            cat={portfolio.title.icon.cat}
+            name={title.icon.name}
+            cat={title.icon.cat}
           />
         }
       />
 
       <ul>
-        {portfolio.data.map((project, index) =>
+        {data.map((project, index) =>
           <li key={index}>
 
             <Collapse

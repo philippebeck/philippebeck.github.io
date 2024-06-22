@@ -19,23 +19,25 @@ import './blog.scss'
  *  The rendered Blog component.
  */
 const Blog = () => {
-  return (
+  const { title, data } = blog;
 
+  return (
     <article id="blog">
+
       <Title
-        heading={blog.title.heading}
-        subtitle={blog.title.subtitle}
+        heading={title.heading}
+        subtitle={title.subtitle}
         prefix={
 
           <Icon
-            name={blog.title.icon.name}
-            cat={blog.title.icon.cat}
+            name={title.icon.name}
+            cat={title.icon.cat}
           />
         }
       />
 
       <ul>
-        {blog.data.map((article, index) =>
+        {data.map((article, index) =>
           <li key={index}>
 
             <Collapse
@@ -71,7 +73,6 @@ const Blog = () => {
           </li>
         )}
       </ul>
-
     </article>
   )
 }
