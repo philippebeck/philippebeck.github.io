@@ -37,43 +37,39 @@ const Blog = () => {
         }
       />
 
-      <ul>
-        {data.map((article, index) =>
-          <li key={index}>
+      <List
+        array={data.map((article) =>
 
-            <Collapse
-              key={index}
-              title={article.title}
-              content={
+          <Collapse
+            title={article.title}
+            content={
 
-                <List
-                  list={article.gallery.map((item, i) =>
+              <List
+                array={article.gallery.map((item) =>
 
-                    <Link
-                      key={i}
-                      url={item.url}
-                      title={item.detail}
-                      content={
+                  <Link
+                    url={item.url}
+                    title={item.detail}
+                    content={
 
-                        <Card
-                          caption={item.caption}
-                          content={
+                      <Card
+                        caption={item.caption}
+                        content={
 
-                            <Image
-                              url={item.image.url}
-                              alt={item.image.alt}
-                            />
-                          }
-                        />
-                      }
-                    />
-                  )}
-                />
-              }
-            />
-          </li>
+                          <Image
+                            url={item.image.url}
+                            alt={item.image.alt}
+                          />
+                        }
+                      />
+                    }
+                  />
+                )}
+              />
+            }
+          />
         )}
-      </ul>
+      />
     </article>
   )
 }

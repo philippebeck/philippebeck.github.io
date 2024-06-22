@@ -35,29 +35,27 @@ const Links = () => {
         }
       />
 
-      <ul>
-        {data.map((link, index) =>
-          <li key={index}>
+      <List
+        array={data.map((link) =>
 
-            <Collapse
-              title={link.title}
-              content={
+          <Collapse
+            title={link.title}
+            content={
 
-                <List
-                  list={link.list.map((item, i) =>
+              <List
+                array={link.list.map((item) =>
 
                   <Link
-                    key={i}
                     url={item.url}
                     content={item.name}
                     design="btn"
                   />
-                )}/>
-              }
-            />
-          </li>
+                )}
+              />
+            }
+          />
         )}
-      </ul>
+      />
     </article>
   )
 }

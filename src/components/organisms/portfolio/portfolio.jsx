@@ -37,42 +37,39 @@ const Portfolio = () => {
         }
       />
 
-      <ul>
-        {data.map((project, index) =>
-          <li key={index}>
+      <List
+        array={data.map((project) =>
 
-            <Collapse
-              title={project.title}
-              content={
+          <Collapse
+            title={project.title}
+            content={
 
-                <List
-                  list={project.gallery.map((item, i) =>
+              <List
+                array={project.gallery.map((item) =>
 
-                    <Link
-                      key={i}
-                      url={item.url}
-                      title={item.detail}
-                      content={
+                  <Link
+                    url={item.url}
+                    title={item.detail}
+                    content={
 
-                        <Card
-                          caption={item.caption}
-                          content={
+                      <Card
+                        caption={item.caption}
+                        content={
 
-                            <Image
-                              url={item.image.url}
-                              alt={item.image.alt}
-                            />
-                          }
-                        />
-                      }
-                    />
-                  )}
-                />
-              }
-            />
-          </li>
+                          <Image
+                            url={item.image.url}
+                            alt={item.image.alt}
+                          />
+                        }
+                      />
+                    }
+                  />
+                )}
+              />
+            }
+          />
         )}
-      </ul>
+      />
     </article>
   )
 }

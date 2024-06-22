@@ -1,6 +1,7 @@
 import { about } from '../../../assets/data.json'
 
 import Icon from '../../atoms/icon/icon'
+import List from '../../atoms/list/list'
 import Title from '../../atoms/title/title'
 
 import Slider from '../../molecules/slider/slider'
@@ -34,8 +35,8 @@ const About = () => {
       />
 
       <Slider
-        array={data.map((item, index) =>
-          <section key={index}>
+        array={data.map((item) =>
+          <section>
 
             <Title
               heading={item.title.heading}
@@ -48,11 +49,11 @@ const About = () => {
               }
             />
 
-            <ul>
-              {item.data.map((subitem, subindex) =>
-                <li key={subindex}>{subitem}</li>
+            <List
+              array={item.data.map((subitem) => 
+                { subitem }
               )}
-            </ul>
+            />
           </section>
         )}
       />
