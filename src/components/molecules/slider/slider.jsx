@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import Icon from "../../atoms/icon/icon";
+
 import "./slider.scss";
 
 /**
@@ -12,18 +14,24 @@ import "./slider.scss";
  * @param {array} props.array
  *  Array of items to be displayed in the slider
  *
+ * @param {number} [props.timer=5000]
+ *  The timer for the slider
+ *  Defaults to 5000
+ *
  * @return {JSX}
  *  The JSX element representing the Slider component
  */
-const Slider = ({ array, timer }) => {
+const Slider = ({ array, timer = 5000 }) => {
 
-  const LENGTH            = array.length;
-  const [i, setIndex]     = useState(0);
-  const [isAuto, setAuto] = useState(true);
+  const LENGTH        = array.length;
+  const [i, setIndex] = useState(0);
 
-  const goNext      = () => setIndex((i) => (i + 1) % LENGTH);
-  const goPrevious  = () => setIndex((i) => (i - 1 + LENGTH) % LENGTH);
-  const toggleAuto  = () => setAuto((state) => !state);
+  let [isAuto, setAuto]              = useState(true);
+  if (timer === 0) [isAuto, setAuto] = useState(false);
+
+  const goNext     = () => setIndex((i) => (i + 1) % LENGTH);
+  const goPrevious = () => setIndex((i) => (i - 1 + LENGTH) % LENGTH);
+  const toggleAuto = () => setAuto((state) => !state);
 
   useEffect(() => {
     let interval;
@@ -34,29 +42,33 @@ const Slider = ({ array, timer }) => {
 
   return (
     <figure className="slider">
-
       {array[i]}
+
       {LENGTH > 1 && (
+        <nav>
+          <Icon
+            name="chevron-left"
+            cat="solid"
+            isHidden="false"
+            event={goPrevious}
+          />
 
-        <div>
-          <i
-            className="fa-regular fa-circle-left"
-            onClick={goPrevious}
-          ></i>
+          <Icon
+            name="chevron-right"
+            cat="solid"
+            isHidden="false"
+            event={goNext}
+          />
 
-          <i
-            className="fa-regular fa-circle-right"
-            onClick={goNext}
-          ></i>
-
-          <i
-            className={`fa-regular ${isAuto ? 'fa-circle-pause' : 'fa-circle-play'}`}
-            onClick={toggleAuto}
-          ></i>
+          <Icon
+            name={isAuto ? 'pause' : 'play'}
+            cat="solid"
+            isHidden="false"
+            event={toggleAuto}
+          />
 
           <b>{i + 1} / {LENGTH}</b>
-        </div>
-
+        </nav>
       )}
     </figure>
   )
