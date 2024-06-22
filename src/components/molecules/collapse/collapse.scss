@@ -2,13 +2,14 @@
 
 //! ********** VARIABLES **********
 
+$radius: 10px;
 $width: 220px;
 
 //! ********** MAIN **********
 
 .collapse {
   header {
-    border-radius: 10px;
+    border-radius: $radius;
     background-color: $secondary;
     cursor: pointer;
 
@@ -16,16 +17,9 @@ $width: 220px;
     &:focus {
       background-color: $white;
     }
-  }
 
-  hgroup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h3,
-    p {
-      margin: 5px;
+    & > * {
+      margin: 0;
     }
   }
 
@@ -34,6 +28,7 @@ $width: 220px;
   }
 
   .isOpen > * {
+    border-radius: $radius;
     background-color: $primary;
     color: $black;
   }
