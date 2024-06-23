@@ -15,5 +15,37 @@
     &:focus i {
       animation: turn-xy 2s linear infinite reverse;
     }
+
+    //? ********** SM **********
+
+    @media (min-width: $sm) {
+      li {
+        width: calc((100% - 15px) / 2);
+      }
+    }
+
+    //? ********** MD **********
+
+    @media (min-width: $md) {
+      li {
+        width: calc((100% - 40px) / 3);
+      }
+    }
+
+    //? ********** XL **********
+
+    @media (min-width: $xl) {
+      li {
+        width: calc((100% - 50px) / 3);
+      }
+    }
+
+    //? ********** WD **********
+
+    @media (min-width: $wd) {
+      li {
+        width: calc((100% - 90px) / 4);
+      }
+    }
   }
 }
