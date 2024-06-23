@@ -1,9 +1,9 @@
 @import "../../../assets/app.scss";
 
 [id="portfolio"] {
-  &:hover > hgroup i,
-  &:focus > hgroup i {
-    animation: turn-z 2s linear infinite reverse;
+  &:hover > *:first-child i,
+  &:focus > *:first-child i {
+    animation: turn-x 2s linear infinite reverse;
   }
 
   .collapse {
@@ -11,8 +11,8 @@
       animation: slide-right 500ms ease-in-out;
     }
 
-    header:hover i,
-    header:focus i {
+    &:hover i,
+    &:focus i {
       animation: turn-xy 2s linear infinite reverse;
     }
   }

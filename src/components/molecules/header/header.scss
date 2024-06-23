@@ -14,9 +14,9 @@ $height: 180px;
   flex-flow: column;
   gap: $gap;
 
-  &:hover>hgroup i,
-  &:focus>hgroup i {
-    animation: turn-3d 2s linear infinite reverse;
+  &:hover > *:first-child i,
+  &:focus > *:first-child i {
+    animation: turn-y 2s linear infinite reverse;
   }
 
   ul {

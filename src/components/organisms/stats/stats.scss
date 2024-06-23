@@ -2,8 +2,8 @@
 
 [id="stats"] {
 
-  &:hover > hgroup i,
-  &:focus > hgroup i {
+  &:hover > *:first-child i,
+  &:focus > *:first-child i {
     animation: turn-z 2s linear infinite reverse;
   }
 

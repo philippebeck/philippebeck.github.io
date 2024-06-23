@@ -1,8 +1,8 @@
 @import "../../../assets/app.scss";
 
 [id="blog"] {
-  &:hover > hgroup i,
-  &:focus > hgroup i {
+  &:hover > *:first-child i,
+  &:focus > *:first-child i {
     animation: turn-y 2s linear infinite reverse;
   }
 
@@ -11,8 +11,8 @@
       animation: slide-left 500ms ease-in-out;
     }
 
-    header:hover i,
-    header:focus i {
+    &:hover i,
+    &:focus i {
       animation: turn-xz 2s linear infinite reverse;
     }
   }

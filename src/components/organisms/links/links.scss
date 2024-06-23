@@ -3,9 +3,9 @@
 [id="links"] {
   margin-bottom: 50px;
 
-  &:hover > hgroup i,
-  &:focus > hgroup i {
-    animation: turn-x 2s linear infinite reverse;
+  &:hover > *:first-child i,
+  &:focus > *:first-child i {
+    animation: turn-z 2s linear infinite reverse;
   }
 
   .collapse {
@@ -13,8 +13,8 @@
       animation: grow-min 500ms ease-in-out;
     }
 
-    header:hover i,
-    header:focus i {
+    &:hover i,
+    &:focus i {
       animation: turn-yz 2s linear infinite reverse;
     }
   }
