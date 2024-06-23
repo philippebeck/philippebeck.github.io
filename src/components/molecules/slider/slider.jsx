@@ -70,10 +70,10 @@ const Slider = ({ array, timer=5000 }) => {
             isHidden="false"
             event={toggleAuto}
           />
-
-          <b>{i + 1} / {LENGTH}</b>
         </nav>
       )}
+
+      <progress value={(i + 1) / LENGTH}></progress>
     </figure>
   )
 }
