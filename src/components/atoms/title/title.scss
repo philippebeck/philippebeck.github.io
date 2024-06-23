@@ -2,8 +2,9 @@
 
 //! ********** VARIABLES **********
 
-$gap: 10px;
+$gap: 5px;
 $margin: 10px;
+$padding: 5px;
 $title-size: 1.2rem;
 $subtitle-ratio: 0.6;
 
@@ -46,6 +47,7 @@ $title-ratios: (
   flex-flow: column;
   gap: $gap;
   margin: $margin 0;
+  padding: $padding;
   font-family: $serif;
 
   h1,
