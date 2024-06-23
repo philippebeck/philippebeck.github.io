@@ -22,11 +22,15 @@ import './link.scss'
  * @param {string} [props.label=""]
  *  The optional Label of the Link.
  *  Defaults to an empty string.
+ * 
+ * @param {string} [props.title=""]
+ *  The optional Title of the Link.
+ *  Defaults to an empty string.
  *
  * @return {JSX.Element}
  *  The rendered Link Atom.
  */
-const Link = ({ content, url, design = "link", label = "" }) => {
+const Link = ({ content, url, design = "link", label = "", title = "" }) => {
   const isExternalLink = url.startsWith('https');
 
   return (
@@ -34,7 +38,7 @@ const Link = ({ content, url, design = "link", label = "" }) => {
       className={`${design}`}
       href={url}
       {...(label ? { 'aria-label': label } : {})}
-      {...(label ? { 'title': label } : {})}
+      {...(title ? { 'title': title } : {})}
       {...(isExternalLink ? { 'rel': 'noopener noreferrer' } : {})}
       {...(isExternalLink ? { 'target': '_blank' } : {})}
     >
