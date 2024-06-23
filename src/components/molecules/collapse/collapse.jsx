@@ -41,9 +41,9 @@ const Collapse = ({ title, content }) => {
         />
       </summary>
 
-      <div className="translate">
+      <figure className="translate">
         {content}
-      </div>
+      </figure>
     </details>
   )
 }
