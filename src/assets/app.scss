@@ -65,6 +65,9 @@ $monospace: "Ubuntu Mono", Courier, monospace;
 //! ********** TRANSFORM **********
 
 $transforms: (
+  "grow-min": scale(0.7, 0.7),
+  "grow-max": scale(0, 0),
+
   "slide-right":  translateX(-100%),
   "slide-left":   translateX(100%),
 
@@ -74,12 +77,7 @@ $transforms: (
   "turn-xy":  rotate3d(1, 1, 0, 360deg),
   "turn-xz":  rotate3d(1, 0, 1, 360deg),
   "turn-yz":  rotate3d(0, 1, 1, 360deg),
-  "turn-3d":  rotate3d(1, 1, 1, 360deg),
-
-  "grow-min":   scale(0.7, 0.7),
-  "grow-max":   scale(0, 0),
-  "flip-x":     scale(1, -1),
-  "flip-y":     scale(-1, 1),
+  "turn-3d":  rotate3d(1, 1, 1, 360deg)
 ) !default;
 
 //! ********** KEYFRAMES **********
