@@ -29,19 +29,52 @@ const Slider = ({ array, timer=5000 }) => {
   const LENGTH        = array.length;
   const [i, setIndex] = useState(0);
 
-  let [isAuto, setAuto]              = useState(true);
-  if (timer === 0) [isAuto, setAuto] = useState(false);
-
   const goNext     = () => setIndex((i) => (i + 1) % LENGTH);
   const goPrevious = () => setIndex((i) => (i - 1 + LENGTH) % LENGTH);
   const toggleAuto = () => setAuto((state) => !state);
+
+  //! ********** AUTOPLAY **********
+
+  let [isAuto, setAuto]              = useState(true);
+  if (timer === 0) [isAuto, setAuto] = useState(false);
 
   useEffect(() => {
     let interval;
     if (isAuto) interval = setInterval(() => goNext(), timer);
 
     return () => clearInterval(interval);
-  }, [isAuto, LENGTH])
+  }, [isAuto, LENGTH]);
+
+  //! ********** KEYBOARD EVENTS **********
+
+  const handleKeyDown = (event) => {
+    switch (event.key) {
+      case 'ArrowLeft':
+        goPrevious();
+        break;
+      case 'ArrowRight':
+        goNext();
+        break;
+      case 'a':
+      case 'A':
+      case 'p':
+      case 'P':
+        toggleAuto();
+        break;
+      default:
+        break;
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
+  //! ********** RENDER **********
 
   return (
     <figure className="slider">
