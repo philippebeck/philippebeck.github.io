@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Icon from "../../atoms/icon/icon";
 import Title from "../../atoms/title/title";
 
@@ -27,22 +25,9 @@ import "./collapse.scss";
  */
 const Collapse = ({ title, content }) => {
 
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleCollapse = () => setIsOpen(!isOpen);
-
-  const handleKeyDown = (event) => {
-    if (event.key === 'Enter' || event.key === ' ') toggleCollapse();
-  };
-
   return (
-    <section className="collapse">
-
-      <header
-        className={isOpen ? 'isOpen' : 'isClosed'}
-        tabIndex={0}
-        onClick={toggleCollapse}
-        onKeyDown={handleKeyDown}
-      >
+    <details className="collapse">
+      <summary>
 
         <Title
           heading={title.heading}
@@ -54,14 +39,12 @@ const Collapse = ({ title, content }) => {
             />
           }
         />
-      </header>
+      </summary>
 
-      {isOpen &&
-        <aside className="translate">
-          {content}
-        </aside>
-      }
-    </section>
+      <div className="translate">
+        {content}
+      </div>
+    </details>
   )
 }
 
