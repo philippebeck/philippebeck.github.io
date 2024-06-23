@@ -340,7 +340,7 @@
             "detail": "Exploring Usage, Best Practices & Impact of ARIA Attributes for Improved Web Application Accessibility",
             "image": {
               "url": "img/blog/html5-aria.webp",
-              "alt": "A blind person equipped with headphones, in front of a computer screen where it is written some Braille symbols under the word ARIA in uppercase"
+              "alt": "A blind person with headphones, in front of a computer where it is written some Braille symbols"
             },
             "url": "https://medium.com/@philippebeck/html5-aria-df25efdf6f2b"
           },
@@ -376,7 +376,7 @@
             "detail": "Create accessible web content with semantic HTML, form fields, multimedia support, graphics capabilities, geolocation & local storage",
             "image": {
               "url": "img/blog/html5-accessibility.webp",
-              "alt": "A large computer screen in front of a user sitting with big glasses on his nose trying to read some detail"
+              "alt": "A large computer screen in front of a user sitting with big glasses on his nose trying to read"
             },
             "url": "https://medium.com/@philippebeck/html5-accessibility-3705d520045d"
           },
@@ -385,7 +385,7 @@
             "detail": "Optimize loading, rendering & resource management to deliver an exceptional user experience",
             "image": {
               "url": "img/blog/html5-performance.webp",
-              "alt": "a work desk in the shape of a rocket cockpit with a computer in the center ready to take off like a rocket, and a mad scientist around it"
+              "alt": "A work desk with a computer in the center ready to take off with a rocket & mad scientist around it"
             },
             "url": "https://medium.com/@philippebeck/html5-performance-5f65346ccf2f"
           },
@@ -424,7 +424,7 @@
             "detail": "A Guide to Writing Maintainable Styles, learn how to steer clear of bad practices & maintain clean, efficient CSS code",
             "image": {
               "url": "img/blog/css3-bad-practices.webp",
-              "alt": "A traffic sign indicating a ban direction with a computer behind the ban & CSS3 written under this sign, with cars & streets in background"
+              "alt": "A traffic sign indicating a ban direction with a computer & CSS3 written under this sign, with cars"
             },
             "url": "https://medium.com/@philippebeck/css3-bad-practices-0c8453786c84"
           },
@@ -460,7 +460,7 @@
             "detail": "Revolutionizing Responsive Web Design with CSS3",
             "image": {
               "url": "img/blog/css3-mobile-first.webp",
-              "alt": "A race on an Olympic field, between runners represented by machines, like mobile phone, tablet & desktop"
+              "alt": "A race on a field, between runners represented by machines, like mobile phone, tablet & desktop"
             },
             "url": "https://medium.com/@philippebeck/css3-mobile-first-79ef48249a7c"
           },
@@ -469,7 +469,7 @@
             "detail": "Leveraging the Power of Dynamic Styling for Modern Web Development",
             "image": {
               "url": "img/blog/css3-functions.webp",
-              "alt": "A robot with the word CSS3 write on his body, with many arms doing differents things on a wide screen"
+              "alt": "A robot with the word CSS3 write on his body, with many arms doing differents things on a screen"
             },
             "url": "https://medium.com/@philippebeck/css3-functions-339dba7bb123"
           },
@@ -508,7 +508,7 @@
             "detail": "Discover common mistakes to avoid for better JavaScript code",
             "image": {
               "url": "img/blog/avoiding-javascript-pitfalls.webp",
-              "alt": "A traffic sign indicating a ban direction with the 2 letters JS behind the ban & the word Avoid JavaScript Pitfalls written under this sign"
+              "alt": "A traffic sign indicating a ban direction with the words JS & Bad Practices written on it"
             },
             "url": "https://medium.com/@philippebeck/avoiding-javascript-pitfalls-8413e0e3f92e"
           },
@@ -526,7 +526,7 @@
             "detail": "Best Practices & Strategies: mastering error handling to improve code reliability & user experience",
             "image": {
               "url": "img/blog/error-handling-in-javascript.webp",
-              "alt": "A traffic sign indicating a ban direction with robots who have the letters JS on their head behind the ban & the word Errors written under this sign, with messenger robots driving in streets behind it"
+              "alt": "A ban traffic sign with robots who have the words JS on their head & Errors under this sign"
             },
             "url": "https://medium.com/@philippebeck/error-handling-in-javascript-05af95d174bf"
           },
@@ -544,7 +544,7 @@
             "detail": "Explore essential functions & best practices for efficiently manipulating arrays, including map, filter, reduce & much more",
             "image": {
               "url": "img/blog/mastering-arrays-in-javascript.webp",
-              "alt": "A tablet where we see a man with a cat’s head and some data like graphs on screens around this tablet with titles of the methods of the Array object"
+              "alt": "A tablet where we see a man with a cat’s head & some data like graphs on screens around this tablet"
             },
             "url": "https://medium.com/@philippebeck/mastering-arrays-in-javascript-3110c906d6fb"
           },
@@ -562,7 +562,7 @@
             "detail": "A Comprehensive Guide to discover the Fundamentals & Advanced Tips for Using JavaScript Functions Effectively",
             "image": {
               "url": "img/blog/mastering-javascript-functions.webp",
-              "alt": "A machine on which it says JS Functions, with above various blocks of information which seem to fall into it"
+              "alt": "A machine on which it's write JS Functions, with above various blocks which seem to fall into it"
             },
             "url": "https://medium.com/@philippebeck/mastering-javascript-functions-d6ab05129b8f"
           },
@@ -571,7 +571,7 @@
             "detail": "Explore the Powerful String Manipulation Features of JavaScript",
             "image": {
               "url": "img/blog/unveiling-the-secrets-of-the-string-object.webp",
-              "alt": "Letters falling, with technology objects & cogs around a strange object who have words & a curious string inside it, pointing the sun & clouds, with a woman on it side"
+              "alt": "Technology objects & cogs around a strange object, pointing the sun & clouds, with a woman"
             },
             "url": "https://medium.com/@philippebeck/unveiling-the-secrets-of-the-string-object-11943b624dc2"
           }
@@ -637,7 +637,7 @@
             "detail": "Discover Essential Functions for Manipulating & Managing Arrays in PHP, Including Sorting, Filtering & Transformation Functions",
             "image": {
               "url": "img/blog/mastering-php-array-functions.webp",
-              "alt": "The 3 letters PHP is wrote in the center of the image, with around many screens of various data arrays, these all things between 2 opened human hands"
+              "alt": "The word PHP wrote in the center, with around many screens, between 2 opened human hands"
             },
             "url": "https://medium.com/@philippebeck/mastering-php-array-functions-0038dd2a076d"
           },
@@ -646,7 +646,7 @@
             "detail": "Discover PHP’s native string manipulation functions & learn how to use them effectively",
             "image": {
               "url": "img/blog/mastering-string-functions-in-php.webp",
-              "alt": "A strange object inside 4 hands, with PHP written in the center & curiously shaped buttons, all surrounded by various character strings"
+              "alt": "A strange object inside 4 hands, with PHP written in the center & various character strings"
             },
             "url": "https://medium.com/@philippebeck/mastering-string-functions-in-php-997775b1e8da"
           },
@@ -655,7 +655,7 @@
             "detail": "Understanding Object-Oriented Programming & Model-View-Controller Architecture in PHP : A Comprehensive Guide",
             "image": {
               "url": "img/blog/oop-mvc-in-php.webp",
-              "alt": "A factory production chain with the title : PHP Factory, with 3 separated sections where each section have a title of those following : Model, View & Controller"
+              "alt": "A factory production, named PHP Factory, with 3 separated sections: Model, View & Controller"
             },
             "url": "https://medium.com/@philippebeck/oop-mvc-in-php-c0a373d7d18a"
           }
