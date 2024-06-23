@@ -32,7 +32,7 @@ import './icon.scss'
  * @return {JSX.Element}
  *  The rendered Icon Atom.
  */
-const Icon = ({ name, cat = "brands", option = "2x", isHidden = true, event = "" }) => {
+const Icon = ({ name, cat = "brands", option = "2x", isHidden = true, event = ""}) => {
 
   return (
     <i
@@ -44,6 +44,8 @@ const Icon = ({ name, cat = "brands", option = "2x", isHidden = true, event = ""
       )}
       aria-hidden={isHidden}
       {...(event ? { 'onClick': event } : {})}
+      {...(event ? { 'onKeyDown': event } : {})}
+      {...(event ? { 'tabIndex': 0 } : {})}
     ></i>
   )
 }
