@@ -47,7 +47,7 @@ $font-size: 1.1rem;
     }
   }
 
-  //! ********** XS **********
+  //? ********** XS **********
 
   @media (min-width: $xs) {
     section > ul {
@@ -55,7 +55,7 @@ $font-size: 1.1rem;
     }
   }
 
-  //! ********** SM **********
+  //? ********** SM **********
 
   @media (min-width: $sm) {
     & > ul {
@@ -75,7 +75,7 @@ $font-size: 1.1rem;
     }
   }
 
-  //! ********** MD **********
+  //? ********** MD **********
 
   @media (min-width: $md) {
     section > ul {
@@ -84,7 +84,7 @@ $font-size: 1.1rem;
     }
   }
 
-  //! ********** LG **********
+  //? ********** LG **********
 
   @media (min-width: $lg) {
     & > ul {
@@ -101,7 +101,7 @@ $font-size: 1.1rem;
     }
   }
 
-  //! ********** XL **********
+  //? ********** XL **********
 
   @media (min-width: $xl) {
     section > ul {
@@ -110,7 +110,7 @@ $font-size: 1.1rem;
     }
   }
 
-  //! ********** WD **********
+  //? ********** WD **********
 
   @media (min-width: $wd) {
     & > ul {
