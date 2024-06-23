@@ -1,7 +1,9 @@
 @import "../../../assets/app.scss";
 
+$bottom: -5px;
 $width: 20px;
 $height: 32px;
+$font-size: 1.5rem;
 
 .slider {
   position: relative;
@@ -18,14 +20,14 @@ $height: 32px;
   nav {
     i {
       position: absolute;
-      font-size: 2rem;
+      font-size: $font-size;
       color: $white;
       cursor: pointer;
     }
 
     [class*="left"],
-    [class*="right"] {
-      top: calc(50% - 36px);
+    [class*="right"]{
+      top: calc(50% - 40px);
     }
 
     [class*="left"] {
@@ -38,42 +40,121 @@ $height: 32px;
 
     [class*="play"],
     [class*="pause"] {
-      left: calc(50% - 12px);
+      left: calc(50% - 10px);
       bottom: 0;
     }
 
-    b {
-      display: none;
-    }
+    //? ********** XS **********
 
-    @media (min-width: $sm) {
+    @media (min-width: $xs) {
       i {
-        font-size: 5rem;
+        font-size: calc($font-size * 1.5);
       }
 
       [class*="left"],
       [class*="right"] {
-        top: calc(50% - 40px);
-      }
-
-      [class*="left"] {
-        left: 10px;
-      }
-
-      [class*="right"] {
-        right: 10px;
+        top: calc(50% - 48px);
       }
 
       [class*="play"],
       [class*="pause"] {
-        left: calc(50% - 12px);
-        bottom: 10px;
+        left: calc(50% - 14px);
+        bottom: $bottom;
+      }
+    }
+
+    //? ********** SM **********
+
+    @media (min-width: $sm) {
+      i {
+        font-size: calc($font-size * 2);
       }
 
-      b {
-        display: block;
-        bottom: 20px;
-        left: calc(50% - 12px);
+      [class*="left"],
+      [class*="right"] {
+        top: calc(50% - 56px);
+      }
+
+      [class*="play"],
+      [class*="pause"] {
+        left: calc(50% - 18px);
+        bottom: calc($bottom * 2);
+      }
+    }
+
+    //? ********** MD **********
+
+    @media (min-width: $md) {
+      i {
+        font-size: calc($font-size * 2.5);
+      }
+
+      [class*="left"],
+      [class*="right"] {
+        top: calc(50% - 62px);
+      }
+
+      [class*="play"],
+      [class*="pause"] {
+        left: calc(50% - 22px);
+        bottom: calc($bottom * 4);
+      }
+    }
+
+    //? ********** LG **********
+
+    @media (min-width: $lg) {
+      i {
+        font-size: calc($font-size * 3);
+      }
+
+      [class*="left"],
+      [class*="right"] {
+        top: calc(50% - 74px);
+      }
+
+      [class*="play"],
+      [class*="pause"] {
+        left: calc(50% - 26px);
+        bottom: calc($bottom * 6);
+      }
+    }
+
+    //? ********** XL **********
+
+    @media (min-width: $xl) {
+      i {
+        font-size: calc($font-size * 3.5);
+      }
+
+      [class*="left"],
+      [class*="right"] {
+        top: calc(50% - 80px);
+      }
+
+      [class*="play"],
+      [class*="pause"] {
+        left: calc(50% - 30px);
+        bottom: calc($bottom * 8);
+      }
+    }
+
+    //? ********** WD **********
+
+    @media (min-width: $wd) {
+      i {
+        font-size: calc($font-size * 4);
+      }
+
+      [class*="left"],
+      [class*="right"] {
+        top: calc(50% - 90px);
+      }
+
+      [class*="play"],
+      [class*="pause"] {
+        left: calc(50% - 35px);
+        bottom: calc($bottom * 10);
       }
     }
   }
