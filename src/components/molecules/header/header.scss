@@ -2,37 +2,103 @@
 
 //! ********** VARIABLES **********
 
-$padding: 10px;
+$gap: 5px;
+$padding: 5px;
+$width: 100%;
+$height: 180px;
 
 //! ********** MAIN **********
 
 [id="intro"] {
+  display: flex;
+  flex-flow: column;
+  gap: $gap;
 
-  &:hover > hgroup i,
-  &:focus > hgroup i {
+  &:hover>hgroup i,
+  &:focus>hgroup i {
     animation: turn-3d 2s linear infinite reverse;
   }
 
   ul {
-    flex-flow: column;
+    flex-flow: column wrap;
+    box-sizing: border-box;
     margin: auto;
     border-radius: 20px;
-    padding: calc($padding / 2);
+    padding: $padding;
     width: fit-content;
     background-color: $silver;
     color: $black;
     animation: grow-max 1s;
+  }
 
-    //! ********** SM **********
+  //? ********** XS **********
 
-    @media (min-width: $sm) {
-      padding: $padding;
-    }
+  @media (min-width: $xs) {
+    gap: calc($gap * 2);
 
-    //! ********** LG **********
-
-    @media (min-width: $lg) {
+    ul {
       padding: calc($padding * 2);
+    }
+  }
+
+  //? ********** SM **********
+
+  @media (min-width: $sm) {
+    gap: calc($gap * 3);
+
+    ul {
+      place-items: baseline;
+      padding: calc($padding * 3);
+      width: $width;
+      height: $height;
+    }
+  }
+
+  //? ********** MD **********
+
+  @media (min-width: $md) {
+    gap: calc($gap * 4);
+
+    ul {
+      padding: calc($padding * 4);
+      width: calc($width - 10%);
+      height: calc($height + 40px);
+    }
+  }
+
+  //? ********** LG **********
+
+  @media (min-width: $lg) {
+    gap: calc($gap * 5);
+
+    ul {
+      padding: calc($padding * 5);
+      width: calc($width - 20%);
+      height: calc($height + 70px);
+    }
+  }
+
+  //? ********** XL **********
+
+  @media (min-width: $xl) {
+    gap: calc($gap * 6);
+
+    ul {
+      padding: calc($padding * 6);
+      width: calc($width - 25%);
+      height: calc($height + 100px);
+    }
+  }
+
+  //? ********** WD **********
+
+  @media (min-width: $wd) {
+    gap: calc($gap * 7);
+
+    ul {
+      padding: calc($padding * 7);
+      width: calc($width - 30%);
+      height: calc($height + 140px);
     }
   }
 }
