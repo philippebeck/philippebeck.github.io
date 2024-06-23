@@ -16,39 +16,33 @@ $gap: 5px;
   padding: 0;
   list-style: none;
 
-  //! ********** XS **********
+  //? ********** XS **********
 
   @media (min-width: $xs) {
     gap: calc($gap * 2);
   }
 
-  //! ********** SM **********
+  //? ********** SM **********
 
   @media (min-width: $sm) {
+    gap: calc($gap * 3);
+  }
+
+  //? ********** MD **********
+
+  @media (min-width: $md) {
     gap: calc($gap * 4);
   }
 
-  //! ********** MD **********
-
-  @media (min-width: $md) {
-    gap: calc($gap * 6);
-  }
-
-  //! ********** LG **********
-
-  @media (min-width: $lg) {
-    gap: calc($gap * 8);
-  }
-
-  //! ********** XL **********
+  //? ********** XL **********
 
   @media (min-width: $xl) {
-    gap: calc($gap * 10);
+    gap: calc($gap * 5);
   }
 
-  //! ********** WD **********
+  //? ********** WD **********
 
   @media (min-width: $wd) {
-    gap: calc($gap * 12);
+    gap: calc($gap * 6);
   }
 }
