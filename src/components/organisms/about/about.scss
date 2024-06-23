@@ -20,9 +20,10 @@ $font-size: 1.1rem;
 
   section {
     box-sizing: border-box;
+    margin: auto;
     border: solid 2px $silver;
     border-radius: 20px;
-    width: 100%;
+    width: fit-content;
     height: 450px;
     background-color: $gray;
 
@@ -39,6 +40,7 @@ $font-size: 1.1rem;
       display: flex;
       flex-flow: column;
       gap: 10px;
+      place-items: baseline;
       margin: auto;
 
       padding: 10px;
