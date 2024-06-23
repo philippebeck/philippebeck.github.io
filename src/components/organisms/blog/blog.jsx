@@ -49,7 +49,7 @@ const Blog = () => {
 
                   <Link
                     url={item.url}
-                    label={item.detail}
+                    title={item.detail}
                     content={
 
                       <Card
