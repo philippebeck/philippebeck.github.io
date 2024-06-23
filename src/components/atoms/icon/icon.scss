@@ -1,3 +1,17 @@
+//! ********** PROJECTS **********
+
+[open] .fa-cubes,
+*:hover > * > .fa-cubes,
+*:focus > * > * > .fa-cubes {
+  color: #8E44AD;
+}
+
+[open] .fa-sitemap,
+*:hover > * > .fa-sitemap,
+*:focus > * > * > .fa-sitemap {
+  color: #3498DB;
+}
+
 //! ********** TECHNOS **********
 
 [open] .fa-html5,
