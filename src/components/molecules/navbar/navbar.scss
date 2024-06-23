@@ -42,14 +42,14 @@ $height: 30px;
     display: none;
   }
 
-  //! ********** XS **********
+  //? ********** XS **********
 
   @media (min-width: $xs) {
     padding: calc($padding-y + 1px) calc($padding-x * 2);
     font-size: calc($font-size + 0.1rem);
   }
 
-  //! ********** SM **********
+  //? ********** SM **********
 
   @media (min-width: $sm) {
     padding: calc($padding-y + 2px) calc($padding-x * 3);
@@ -61,17 +61,18 @@ $height: 30px;
     }
   }
 
-  //! ********** MD **********
+  //? ********** MD **********
 
   @media (min-width: $md) {
-    padding: calc($padding-y + 3px) calc($padding-x * 4);
+    place-content: space-around;
+    padding: calc($padding-y + 3px) 0;
     font-size: calc($font-size + 0.3rem);
   }
 
-  //! ********** LG **********
+  //? ********** LG **********
 
   @media (min-width: $lg) {
-    padding: calc($padding-y + 4px) calc($padding-x * 5);
+    padding: calc($padding-y + 4px) 0;
     font-size: calc($font-size + 0.4rem);
 
     b {
@@ -79,17 +80,17 @@ $height: 30px;
     }
   }
 
-  //! ********** XL **********
+  //? ********** XL **********
 
   @media (min-width: $xl) {
-    padding: calc($padding-y + 5px) calc($padding-x * 6);
+    padding: calc($padding-y + 5px) 0;
     font-size: calc($font-size + 0.5rem);
   }
 
-  //! ********** WD **********
+  //? ********** WD **********
 
   @media (min-width: $wd) {
-    padding: calc($padding-y + 6px) calc($padding-x * 7);
+    padding: calc($padding-y + 6px) 0;
     font-size: calc($font-size + 0.6rem);
   }
 }
