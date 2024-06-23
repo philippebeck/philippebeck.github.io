@@ -706,7 +706,7 @@
         "data": [
           "🖥️ Computer Science",
           "🔭 Astronomy & Space",
-          "🤖 Robotics & High Tech",
+          "🤖 Robotics & HighTech",
           "🌏 Geology & Nature",
           "🧬 Biology & Animals"
         ]
@@ -742,12 +742,12 @@
           }
         },
         "data": [
-          "🎮 Japanese Video Games",
+          "🎮 Japanese Games",
           "🎎 Japanese Manga",
-          "🎬 American Sci-Fi Cinema",
-          "📚 American Sci-Fi Books",
-          "📺 Korean Dramas",
-          "🎸 Pop, Rock & Electro Music"
+          "🎬 US Sci-Fi Movies",
+          "📚 Sci-Fi Books",
+          "📺 K-Dramas",
+          "🎸 Pop, Rock & Electro"
         ]
       }
     ]
