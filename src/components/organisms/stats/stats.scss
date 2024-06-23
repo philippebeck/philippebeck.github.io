@@ -8,24 +8,24 @@
   }
 
   img {
-    height: 140px;
+    height: 105px;
   }
 
   @media (min-width: $xs) {
     img {
-      width: 300px;
+      height: 115px;
     }
   }
 
   @media (min-width: $sm) {
     img {
-      width: 500px;
+      height: 260px;
     }
   }
 
   @media (min-width: $md) {
     img {
-      width: 600px;
+      height: 340px;
     }
   }
 
@@ -33,21 +33,11 @@
     ul {
     flex-flow: wrap;
     }
-
-    img {
-      width: 700px;
-    }
   }
 
   @media (min-width: $xl) {
     img {
-      width: 750px;
-    }
-  }
-
-  @media (min-width: $wd) {
-    img {
-      width: 800px;
+      height: 390px;
     }
   }
 }
