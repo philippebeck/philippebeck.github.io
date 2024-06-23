@@ -2,75 +2,73 @@
 
 //! ********** VARIABLES **********
 
-$radius: 10px;
-$width: 220px;
+$radius: 5px;
+$width: 150px;
 
 //! ********** MAIN **********
 
 .collapse {
-  header {
-    border-radius: $radius;
-    background-color: $secondary;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      background-color: $white;
-    }
-
-    & > * {
-      margin: 0;
-    }
+  .translate {
+    margin: 20px;
   }
 
-  .isClosed > * {
+  &[open] summary,
+  summary:hover,
+  summary:focus {
+    background-color: $white;
     color: $gray;
   }
 
-  .isOpen > * {
-    border-radius: $radius;
-    background-color: $primary;
-    color: $black;
-  }
-
-  header {
+  summary {
     margin: auto;
+    border-radius: $radius;
     width: $width;
+    list-style: none;
+    background-color: $secondary;
+    color: $black;
+    cursor: pointer;
 
-    //! ********** XS **********
+    :first-child {
+      margin: 0;
+    }
+
+    //? ********** XS **********
 
     @media (min-width: $xs) {
       width: calc($width + 10px);
     }
 
-    //! ********** SM **********
+    //? ********** SM **********
 
     @media (min-width: $sm) {
-      width: calc($width + 20px);
-    }
-
-    //! ********** MD **********
-
-    @media (min-width: $md) {
+      border-radius: calc($radius * 2);
       width: calc($width + 30px);
     }
 
-    //! ********** LG **********
+    //? ********** MD **********
+
+    @media (min-width: $md) {
+      width: calc($width + 50px);
+    }
+
+    //? ********** LG **********
 
     @media (min-width: $lg) {
-      width: calc($width + 40px);
+      border-radius: calc($radius * 3);
+      width: calc($width + 70px);
     }
 
-    //! ********** XL **********
+    //? ********** XL **********
 
     @media (min-width: $xl) {
-      width: calc($width + 60px);
+      width: calc($width + 80px);
     }
 
-    //! ********** WD **********
+    //? ********** WD **********
 
     @media (min-width: $wd) {
-      width: calc($width + 80px);
+      border-radius: calc($radius * 4);
+      width: calc($width + 100px);
     }
   }
 }
