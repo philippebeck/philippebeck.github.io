@@ -12,7 +12,8 @@
     }
 
     &:hover i,
-    &:focus i {
+    &:focus i,
+    &[open] i {
       animation: turn-xy 2s linear infinite reverse;
     }
 
