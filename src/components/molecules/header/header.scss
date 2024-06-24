@@ -4,8 +4,8 @@
 
 $gap: 5px;
 $padding: 5px;
-$width: 100%;
-$height: 180px;
+$width: 90%;
+$height: 200px;
 
 //! ********** MAIN **********
 
@@ -13,6 +13,7 @@ $height: 180px;
   display: flex;
   flex-flow: column;
   gap: $gap;
+  margin-top: 20px;
 
   &:hover > *:first-child i,
   &:focus > *:first-child i {
