@@ -9,7 +9,7 @@
   }
 
   .collapse {
-    .translate {
+    & > figure {
       animation: grow-min 500ms ease-in-out;
     }
 

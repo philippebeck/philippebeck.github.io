@@ -1,29 +1,28 @@
-import { blog } from '../../../assets/data.json'
+import { portfolio } from '../../../assets/data.json'
 
 import Card from '../../atoms/card/card'
+import Collapse from '../../atoms/collapse/collapse'
 import Icon from '../../atoms/icon/icon'
 import Image from '../../atoms/image/image'
 import Link from '../../atoms/link/link'
 import List from '../../atoms/list/list'
 import Title from '../../atoms/title/title'
 
-import Collapse from '../../molecules/collapse/collapse'
-
-import './blog.scss'
+import './portfolio.scss'
 
 /**
- * ? BLOG ORGANISM
- * * Renders the Blog Organism
- * * that displays a list of articles
+ * ? PORTFOLIO ORGANISM
+ * * Renders the Portfolio Organism
+ * * that displays a list of projects
  *
  * @return {JSX.Element}
- *  The rendered Blog Organism.
+ *  The rendered Portfolio Organism.
  */
-const Blog = () => {
-  const { title, data } = blog;
+const Portfolio = () => {
+  const { title, data } = portfolio;
 
   return (
-    <article id="blog">
+    <article id="portfolio">
 
       <Title
         heading={title.heading}
@@ -38,14 +37,26 @@ const Blog = () => {
       />
 
       <List
-        array={data.map((article) =>
+        array={data.map((project) =>
 
           <Collapse
-            title={article.title}
+            title={
+
+              <Title
+                heading={project.title.heading}
+                prefix={
+
+                  <Icon
+                    name={project.title.icon.name}
+                    cat={project.title.icon.cat}
+                  />
+                }
+              />
+            }
             content={
 
               <List
-                array={article.gallery.map((item) =>
+                array={project.gallery.map((item) =>
 
                   <Link
                     url={item.url}
@@ -74,4 +85,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Portfolio

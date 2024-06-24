@@ -1,11 +1,10 @@
 import { links } from '../../../assets/data.json'
 
+import Collapse from '../../atoms/collapse/collapse'
 import Icon from '../../atoms/icon/icon'
 import Link from '../../atoms/link/link'
 import List from '../../atoms/list/list'
 import Title from '../../atoms/title/title'
-
-import Collapse from '../../molecules/collapse/collapse'
 
 import './links.scss'
 
@@ -39,7 +38,19 @@ const Links = () => {
         array={data.map((link) =>
 
           <Collapse
-            title={link.title}
+            title={
+
+              <Title
+                heading={link.title.heading}
+                prefix={
+
+                  <Icon
+                    name={link.title.icon.name}
+                    cat={link.title.icon.cat}
+                  />
+                }
+              />
+            }
             content={
 
               <List

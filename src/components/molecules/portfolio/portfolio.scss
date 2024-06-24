@@ -7,7 +7,7 @@
   }
 
   .collapse {
-    .translate {
+    & > figure {
       animation: slide-right 500ms ease-in-out;
     }
 
