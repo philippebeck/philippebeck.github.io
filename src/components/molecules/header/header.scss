@@ -22,6 +22,7 @@ $height: 180px;
   ul {
     flex-flow: column wrap;
     box-sizing: border-box;
+    overflow: scroll;
     margin: auto;
     border-radius: 20px;
     padding: $padding;
