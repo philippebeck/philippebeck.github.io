@@ -1,118 +1,19 @@
 {
   "@context": "https://schema.org",
-  "@type" : "Person",
-  "name" : "Philippe Beck",
+  "@type": "OnlineBusiness",
+  "name": "Philippe Beck",
   "givenName" : "Philippe",
   "familyName" : "Beck",
-  "image" : "img/philippebeck.webp",
-  "nationality" : "FR",
-  "jobTitle": "Fullstack JS/PHP Developer & IT Development Trainer",
+  "description": "Fullstack JS/PHP Developer & IT Development Trainer - HTML, CSS, Sass, JS, TS, React, Vue, Node, PHP, Python, SQL, MongoDB, Git - Remote Work Worldwide",
+  "url": "https://philippebeck.github.io",
+  "image": "https://philippebeck.github.io/img/philippebeck.webp",
   "taxId": "837 516 855",
-  "telephone" : "+262 693 531 723",
+  "telephone": "+262 693 531 723",
   "email" : "contact@philippebeck.net",
-  "address" : {
-    "@type" : "PostalAddress",
-    "addressCountry" : "FR",
-    "addressLocality" : "Le Tampon",
-    "addressRegion" : "La Réunion",
-    "postalCode" : "97430"
-  },
-  "softwareSourceCode": [
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "Nens",
-      "version": "v1.3.1",
-      "description": "Node/Express Framework with MySQL",
-      "url": "https://github.com/philippebeck/nens",
-      "programmingLanguage": "NodeJS",
-      "image": "img/portfolio/node.webp",
-      "downloadUrl": "https://github.com/philippebeck/nens/archive/refs/heads/main.zip",
-      "license": "Apache-2.0 license",
-      "licenseUrl": "https://github.com/philippebeck/nens/blob/main/LICENSE"
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "Vesan",
-      "version": "v3.0.4",
-      "description": "Vue Framework with Vuex",
-      "url": "https://github.com/philippebeck/vesan",
-      "programmingLanguage": "Vue, JavaScript",
-      "image": "img/portfolio/vue.webp",
-      "downloadUrl": "https://github.com/philippebeck/vesan/archive/refs/heads/main.zip",
-      "license": "Apache-2.0 license",
-      "licenseUrl": "https://github.com/philippebeck/vesan/blob/main/LICENSE"
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "Servidio",
-      "version": "v3.1.1",
-      "description": "JavaScript Frontend Services",
-      "url": "https://github.com/philippebeck/servidio",
-      "programmingLanguage": "JavaScript",
-      "image": "img/portfolio/js.webp",
-      "downloadUrl": "https://github.com/philippebeck/servidio/archive/refs/heads/main.zip",
-      "license": "Apache-2.0 license",
-      "licenseUrl": "https://github.com/philippebeck/servidio/blob/main/LICENSE"
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "Vue-Elt",
-      "version": "v2.5.1-alpha",
-      "description": "Vue Single File Component Library",
-      "url": "https://github.com/philippebeck/vue-elt",
-      "programmingLanguage": "Vue, JavaScript",
-      "image": "img/portfolio/vue.webp",
-      "downloadUrl": "https://github.com/philippebeck/vue-elt/archive/refs/heads/main.zip",
-      "license": "Apache-2.0 license",
-      "licenseUrl": "https://github.com/philippebeck/vue-elt/blob/main/LICENSE"
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "NemJS",
-      "version": "v2.1.3",
-      "description": "JavaScript Backend Services",
-      "url": "https://github.com/philippebeck/nemjs",
-      "programmingLanguage": "NodeJS",
-      "image": "img/portfolio/node.webp",
-      "downloadUrl": "https://github.com/philippebeck/nemjs/archive/refs/heads/main.zip",
-      "license": "Apache-2.0 license",
-      "licenseUrl": "https://github.com/philippebeck/nemjs/blob/main/LICENSE"
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "Animadio",
-      "version": "v6.2.7",
-      "description": "CSS Library made with Sass",
-      "url": "https://github.com/philippebeck/animadio",
-      "programmingLanguage": "Sass, JavaScript",
-      "image": "img/portfolio/sass.webp",
-      "downloadUrl": "https://github.com/philippebeck/animadio/archive/refs/heads/main.zip",
-      "license": "MIT license",
-      "licenseUrl": "https://github.com/philippebeck/animadio/blob/main/LICENSE"
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "Pam",
-      "version": "v5.1.0",
-      "description": "PHP Adaptive Microframework",
-      "url": "https://github.com/philippebeck/pam",
-      "programmingLanguage": "PHP",
-      "image": "img/portfolio/php.webp",
-      "downloadUrl": "https://github.com/philippebeck/pam/archive/refs/heads/main.zip",
-      "license": "MIT license",
-      "licenseUrl": "https://github.com/philippebeck/pam/blob/main/LICENSE"
-    },
-    {
-      "@type": "SoftwareSourceCode",
-      "name": "Sam.scss",
-      "version": "v0.2.5",
-      "description": "Scss Animated Microframework",
-      "url": "https://github.com/philippebeck/sam.scss",
-      "programmingLanguage": "Sass",
-      "image": "img/portfolio/sass.webp",
-      "downloadUrl": "https://github.com/philippebeck/sam.scss/archive/refs/heads/main.zip",
-      "license": "MIT license",
-      "licenseUrl": "https://github.com/philippebeck/sam.scss/blob/main/LICENSE"
-    }
-  ]
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Le Tampon",
+    "addressRegion": "La Réunion",
+    "postalCode": "97430"
+  }
 }
