@@ -80,21 +80,21 @@ const Slider = ({ array, timer=5000 }) => {
       {LENGTH > 1 && (
         <nav>
           <i
-            class="fa-solid fa-chevron-left fa-2x"
+            className="fa-solid fa-chevron-left fa-2x"
             onClick={goPrevious}
             onKeyDown={goPrevious}
             tabIndex="0"
           ></i>
 
           <i
-            class="fa-solid fa-chevron-right fa-2x"
+            className="fa-solid fa-chevron-right fa-2x"
             onClick={goNext}
             onKeyDown={goNext}
             tabIndex="0"
           ></i>
 
           <i
-            class={`fa-solid ${isAuto ? 'fa-pause' : 'fa-play'} fa-2x`}
+            className={`fa-solid ${isAuto ? 'fa-pause' : 'fa-play'} fa-2x`}
             onClick={toggleAuto}
             onKeyDown={toggleAuto}
             tabIndex="0"
