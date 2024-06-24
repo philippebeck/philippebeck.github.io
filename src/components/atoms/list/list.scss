@@ -34,15 +34,21 @@ $gap: 5px;
     gap: calc($gap * 4);
   }
 
+  //? ********** LG **********
+
+  @media (min-width: $lg) {
+    gap: calc($gap * 5);
+  }
+
   //? ********** XL **********
 
   @media (min-width: $xl) {
-    gap: calc($gap * 5);
+    gap: calc($gap * 6);
   }
 
   //? ********** WD **********
 
   @media (min-width: $wd) {
-    gap: calc($gap * 6);
+    gap: calc($gap * 7);
   }
 }
