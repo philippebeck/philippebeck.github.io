@@ -109,8 +109,9 @@
           {
             "caption": {
               "title": "Nens",
-              "technos": "JS",
-              "year": "2023"
+              "technos": [
+                "node-js"
+              ]
             },
             "detail": "Node/Express Framework with MySQL",
             "image": {
@@ -122,8 +123,11 @@
           {
             "caption": {
               "title": "Vesan",
-              "technos": "Vue & JS",
-              "year": "2023"
+              "technos": [
+                "html5",
+                "square-js",
+                "vuejs"
+              ]
             },
             "detail": "Vue Framework with Vuex",
             "image": {
@@ -135,8 +139,9 @@
           {
             "caption": {
               "title": "Servidio",
-              "technos": "JS",
-              "year": "2023"
+              "technos": [
+                "square-js"
+              ]
             },
             "detail": "JavaScript Frontend Services",
             "image": {
@@ -148,8 +153,11 @@
           {
             "caption": {
               "title": "Vue-Elt",
-              "technos": "Vue & JS",
-              "year": "2022"
+              "technos": [
+                "html5",
+                "square-js",
+                "vuejs"
+              ]
             },
             "detail": "Vue Single File Component Library",
             "image": {
@@ -161,8 +169,9 @@
           {
             "caption": {
               "title": "Nemjs",
-              "technos": "JS",
-              "year": "2022"
+              "technos": [
+                "node-js"
+              ]
             },
             "detail": "JavaScript Backend Services",
             "image": {
@@ -174,8 +183,10 @@
           {
             "caption": {
               "title": "Animadio",
-              "technos": "Sass & JS",
-              "year": "2019"
+              "technos": [
+                "sass",
+                "square-js"
+              ]
             },
             "detail": "CSS Library made with Sass",
             "image": {
@@ -187,8 +198,9 @@
           {
             "caption": {
               "title": "Pam",
-              "technos": "PHP",
-              "year": "2018"
+              "technos": [
+                "php"
+              ]
             },
             "detail": "PHP Adaptive Microframework",
             "image": {
@@ -200,8 +212,9 @@
           {
             "caption": {
               "title": "Sam.scss",
-              "technos": "Sass",
-              "year": "2018"
+              "technos": [
+                "sass"
+              ]
             },
             "detail": "Scss Animated Microframework ",
             "image": {
@@ -226,8 +239,11 @@
           {
             "caption": {
               "title": "Portfolio",
-              "technos": "Sass, React & HTML",
-              "year": "2024"
+              "technos": [
+                "html5",
+                "sass",
+                "react"
+              ]
             },
             "detail": "My own Website",
             "image": {
@@ -239,8 +255,11 @@
           {
             "caption": {
               "title": "Kasa",
-              "technos": "React, CSS & HTML",
-              "year": "2024"
+              "technos": [
+                "html5",
+                "css3",
+                "react"
+              ]
             },
             "detail": "Website of a rental agency",
             "image": {
@@ -252,8 +271,11 @@
           {
             "caption": {
               "title": "Links2Code",
-              "technos": "Vue, JS & Shell",
-              "year": "2022"
+              "technos": [
+                "square-js",
+                "vuejs",
+                "node-js"
+              ]
             },
             "detail": "Links for Coding",
             "image": {
@@ -265,8 +287,11 @@
           {
             "caption": {
               "title": "Asperger",
-              "technos": "Twig & PHP",
-              "year": "2020"
+              "technos": [
+                "html5",
+                "css3",
+                "php"
+              ]
             },
             "detail": "Asperger's syndrome website offering diagnostic tests",
             "image": {
@@ -278,8 +303,11 @@
           {
             "caption": {
               "title": "Astronomy",
-              "technos": "Twig & PHP",
-              "year": "2020"
+              "technos": [
+                "html5",
+                "css3",
+                "php"
+              ]
             },
             "detail": "Astronomy website using NASA & CDS APIs",
             "image": {
@@ -291,8 +319,11 @@
           {
             "caption": {
               "title": "DevsAgency",
-              "technos": "Twig & PHP",
-              "year": "2020"
+              "technos": [
+                "html5",
+                "css3",
+                "php"
+              ]
             },
             "detail": "Website of a digital agency offering development services",
             "image": {
@@ -304,8 +335,11 @@
           {
             "caption": {
               "title": "Pam Doc",
-              "technos": "Twig & PHP",
-              "year": "2020"
+              "technos": [
+                "html5",
+                "css3",
+                "php"
+              ]
             },
             "detail": "Website of the Pam documentation",
             "image": {
@@ -317,8 +351,11 @@
           {
             "caption": {
               "title": "Tools2Code",
-              "technos": "Twig, PHP, CSS & JS",
-              "year": "2020"
+              "technos": [
+                "html5",
+                "css3",
+                "php"
+              ]
             },
             "detail": "Website of developer resources",
             "image": {
@@ -330,8 +367,11 @@
           {
             "caption": {
               "title": "Animadio Doc",
-              "technos": "Twig, PHP, JS & CSS",
-              "year": "2019"
+              "technos": [
+                "html5",
+                "square-js",
+                "php"
+              ]
             },
             "detail": "Website of the Animadio documentation",
             "image": {
@@ -343,8 +383,11 @@
           {
             "caption": {
               "title": "WebAgency",
-              "technos": "CSS, HTML, Sass & JS",
-              "year": "2019"
+              "technos": [
+                "html5",
+                "css3",
+                "sass"
+              ]
             },
             "detail": "Junior Web Developer Project 1",
             "image": {
