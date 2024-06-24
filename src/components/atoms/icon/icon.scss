@@ -26,6 +26,12 @@
   color: #1572B6;
 }
 
+[open] .fa-sass,
+*:hover > * > .fa-sass,
+*:focus > * > * > .fa-sass {
+  color: #CD6799;
+}
+
 [open] .fa-square-js,
 *:hover > * > .fa-square-js,
 *:focus > * > * > .fa-square-js {
@@ -36,6 +42,12 @@
 *:hover > * > .fa-vuejs,
 *:focus > * > * > .fa-vuejs {
   color: #42B883;
+}
+
+[open] .fa-react,
+*:hover > * > .fa-react,
+*:focus > * > * > .fa-react {
+  color: #61DAFB;
 }
 
 [open] .fa-node-js,
