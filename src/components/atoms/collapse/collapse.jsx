@@ -1,6 +1,3 @@
-import Icon from "../../atoms/icon/icon";
-import Title from "../../atoms/title/title";
-
 import "./collapse.scss";
 
 /**
@@ -28,20 +25,10 @@ const Collapse = ({ title, content }) => {
   return (
     <details className="collapse">
       <summary>
-
-        <Title
-          heading={title.heading}
-          prefix={
-
-            <Icon
-              name={title.icon.name}
-              cat={title.icon.cat}
-            />
-          }
-        />
+        {title}
       </summary>
 
-      <figure className="translate">
+      <figure>
         {content}
       </figure>
     </details>
