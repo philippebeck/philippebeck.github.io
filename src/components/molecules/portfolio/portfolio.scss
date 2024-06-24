@@ -6,21 +6,39 @@
     animation: turn-x 2s linear infinite reverse;
   }
 
+  figcaption {
+    display: flex;
+    flex-flow: column;
+    place-content: space-evenly;
+
+    & > * {
+      margin: 0;
+    }
+  }
+
   .collapse {
     & > figure {
       animation: slide-right 500ms ease-in-out;
     }
 
-    &:hover i,
-    &:focus i,
-    &[open] i {
+    &:hover summary i,
+    &:focus summary i,
+    &[open] summary i {
       animation: turn-xy 2s linear infinite reverse;
+    }
+
+    //? ********** XS **********
+
+    @media (min-width: $xs) {
+      figure > * > li {
+        width: calc((100% - 10px) / 2);
+      }
     }
 
     //? ********** SM **********
 
     @media (min-width: $sm) {
-      li {
+      figure > * > li {
         width: calc((100% - 15px) / 2);
       }
     }
@@ -28,34 +46,33 @@
     //? ********** MD **********
 
     @media (min-width: $md) {
-      li {
+      figure > * > li {
         width: calc((100% - 40px) / 3);
+      }
+    }
+
+    //? ********** LG **********
+
+    @media (min-width: $lg) {
+      figure > * > li {
+        width: calc((100% - 50px) / 3);
       }
     }
 
     //? ********** XL **********
 
     @media (min-width: $xl) {
-      li {
-        width: calc((100% - 50px) / 3);
+      figure > * > li {
+        width: calc((100% - 90px) / 4);
       }
     }
 
     //? ********** WD **********
 
     @media (min-width: $wd) {
-      li {
-        width: calc((100% - 90px) / 4);
+      figure > * > li {
+        width: calc((100% - 175px) / 5);
       }
-    }
-  }
-
-  figcaption {
-    display: flex;
-    flex-flow: column;
-
-    * {
-      margin: 0;
     }
   }
 }
