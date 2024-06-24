@@ -64,7 +64,7 @@ const Blog = () => {
                     content={
 
                       <Card
-                        caption={item.caption}
+                        caption={<h4>{item.caption}</h4>}
                         content={
 
                           <Image
