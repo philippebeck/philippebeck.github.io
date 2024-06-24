@@ -67,10 +67,17 @@ const Portfolio = () => {
                         caption={
                           <>
                             <h4>{item.caption.title}</h4>
-                            <p>
-                              {item.caption.technos} - 
-                              ({item.caption.year})
-                            </p>
+
+                            <List
+                              array={item.caption.technos.map((techno) =>
+
+                                <Icon
+                                  name={techno}
+                                  option="lg"
+                                  isHidden="false"
+                                />
+                              )}
+                            />
                           </>
                         }
                         content={
