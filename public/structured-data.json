@@ -2,8 +2,6 @@
   "@context": "https://schema.org",
   "@type": "OnlineBusiness",
   "name": "Philippe Beck",
-  "givenName" : "Philippe",
-  "familyName" : "Beck",
   "description": "Fullstack JS/PHP Developer & IT Development Trainer - HTML, CSS, Sass, JS, TS, React, Vue, Node, PHP, Python, SQL, MongoDB, Git - Remote Work Worldwide",
   "url": "https://philippebeck.github.io",
   "image": "https://philippebeck.github.io/img/philippebeck.webp",
