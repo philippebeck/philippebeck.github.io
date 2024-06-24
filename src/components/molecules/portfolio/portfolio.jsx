@@ -64,7 +64,15 @@ const Portfolio = () => {
                     content={
 
                       <Card
-                        caption={item.caption}
+                        caption={
+                          <>
+                            <h4>{item.caption.title}</h4>
+                            <p>
+                              {item.caption.technos} - 
+                              ({item.caption.year})
+                            </p>
+                          </>
+                        }
                         content={
 
                           <Image
