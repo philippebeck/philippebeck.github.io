@@ -2,9 +2,8 @@ import { about } from '../../../assets/data.json'
 
 import Icon from '../../atoms/icon/icon'
 import List from '../../atoms/list/list'
+import Slider from '../../atoms/slider/slider'
 import Title from '../../atoms/title/title'
-
-import Slider from '../../molecules/slider/slider'
 
 import './about.scss'
 

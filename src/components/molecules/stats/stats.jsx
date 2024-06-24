@@ -2,9 +2,8 @@ import { stats } from '../../../assets/data.json'
 
 import Icon from '../../atoms/icon/icon'
 import Image from '../../atoms/image/image'
+import Slider from '../../atoms/slider/slider'
 import Title from '../../atoms/title/title'
-
-import Slider from '../../molecules/slider/slider'
 
 import './stats.scss'
 
