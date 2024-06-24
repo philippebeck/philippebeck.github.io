@@ -776,6 +776,10 @@
   content: "\f3b9";
 }
 
+.fa-react:before {
+  content: "\f41b";
+}
+
 .fa-vuejs:before {
   content: "\f41f";
 }
