@@ -68,8 +68,8 @@ $transforms: (
   "grow-min": scale(0.7, 0.7),
   "grow-max": scale(0, 0),
 
+  "slide-top":    translateY(100%),
   "slide-right":  translateX(-100%),
-  "slide-left":   translateX(100%),
 
   "turn-x":   rotateX(360deg),
   "turn-y":   rotateY(360deg),
