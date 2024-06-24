@@ -24,28 +24,15 @@ import './icon.scss'
  *  Whether the Icon is aria-hidden or not.
  *  Defaults to true.
  *
- * @param {Function|string} [props.event=""]
- *  The optional Event to be triggered
- *  when the Icon is clicked.
- *  Defaults to an empty string.
- *
  * @return {JSX.Element}
  *  The rendered Icon Atom.
  */
-const Icon = ({ name, cat = "brands", option = "2x", isHidden = true, event = ""}) => {
+const Icon = ({ name, cat = "brands", option = "2x", isHidden = true}) => {
 
   return (
     <i
-      {...(event
-        ?
-        { 'className': `fa-${cat} fa-${name} fa-${option}` }
-        :
-        { 'className': `fa-${cat} fa-${name} fa-${option} fa-fw` }
-      )}
+      className={ `fa-${cat} fa-${name} fa-${option} fa-fw` }
       aria-hidden={isHidden}
-      {...(event ? { 'onClick': event } : {})}
-      {...(event ? { 'onKeyDown': event } : {})}
-      {...(event ? { 'tabIndex': 0 } : {})}
     ></i>
   )
 }
