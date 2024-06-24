@@ -107,7 +107,11 @@
         },
         "gallery": [
           {
-            "caption": "Nens: JS (2023)",
+            "caption": {
+              "title": "Nens",
+              "technos": "JS",
+              "year": "2023"
+            },
             "detail": "Node/Express Framework with MySQL",
             "image": {
               "url": "img/portfolio/node.webp",
@@ -116,7 +120,11 @@
             "url": "https://github.com/philippebeck/nens"
           },
           {
-            "caption": "Vesan: Vue & JS (2023)",
+            "caption": {
+              "title": "Vesan",
+              "technos": "Vue & JS",
+              "year": "2023"
+            },
             "detail": "Vue Framework with Vuex",
             "image": {
               "url": "img/portfolio/vue.webp",
@@ -125,7 +133,11 @@
             "url": "https://github.com/philippebeck/vesan"
           },
           {
-            "caption": "Servidio: JS (2023)",
+            "caption": {
+              "title": "Servidio",
+              "technos": "JS",
+              "year": "2023"
+            },
             "detail": "JavaScript Frontend Services",
             "image": {
               "url": "img/portfolio/js.webp",
@@ -134,7 +146,11 @@
             "url": "https://github.com/philippebeck/servidio"
           },
           {
-            "caption": "Vue-Elt: Vue & JS (2022)",
+            "caption": {
+              "title": "Vue-Elt",
+              "technos": "Vue & JS",
+              "year": "2022"
+            },
             "detail": "Vue Single File Component Library",
             "image": {
               "url": "img/portfolio/vue.webp",
@@ -143,7 +159,11 @@
             "url": "https://github.com/philippebeck/vue-elt"
           },
           {
-            "caption": "Nemjs: JS (2022)",
+            "caption": {
+              "title": "Nemjs",
+              "technos": "JS",
+              "year": "2022"
+            },
             "detail": "JavaScript Backend Services",
             "image": {
               "url": "img/portfolio/node.webp",
@@ -152,7 +172,11 @@
             "url": "https://github.com/philippebeck/nemjs"
           },
           {
-            "caption": "Animadio: SCSS & JS (2019)",
+            "caption": {
+              "title": "Animadio",
+              "technos": "Sass & JS",
+              "year": "2019"
+            },
             "detail": "CSS Library made with Sass",
             "image": {
               "url": "img/portfolio/sass.webp",
@@ -161,7 +185,11 @@
             "url": "https://github.com/philippebeck/animadio"
           },
           {
-            "caption": "Pam: PHP (2018)",
+            "caption": {
+              "title": "Pam",
+              "technos": "PHP",
+              "year": "2018"
+            },
             "detail": "PHP Adaptive Microframework",
             "image": {
               "url": "img/portfolio/php.webp",
@@ -170,7 +198,11 @@
             "url": "https://github.com/philippebeck/pam"
           },
           {
-            "caption": "Sam.scss: SCSS (2018)",
+            "caption": {
+              "title": "Sam.scss",
+              "technos": "Sass",
+              "year": "2018"
+            },
             "detail": "Scss Animated Microframework ",
             "image": {
               "url": "img/portfolio/sass.webp",
@@ -192,7 +224,11 @@
         },
         "gallery": [
           {
-            "caption": "Portfolio: SCSS, JSX & HTML (2024)",
+            "caption": {
+              "title": "Portfolio",
+              "technos": "Sass, React & HTML",
+              "year": "2024"
+            },
             "detail": "My own Website",
             "image": {
               "url": "img/portfolio/portfolio.webp",
@@ -201,7 +237,11 @@
             "url": "https://github.com/philippebeck/philippebeck.github.io"
           },
           {
-            "caption": "Kasa: JSX, CSS & HTML (2024)",
+            "caption": {
+              "title": "Kasa",
+              "technos": "React, CSS & HTML",
+              "year": "2024"
+            },
             "detail": "Website of a rental agency",
             "image": {
               "url": "img/portfolio/kasa.webp",
@@ -210,7 +250,11 @@
             "url": "https://github.com/philippebeck/kasa"
           },
           {
-            "caption": "Links2Code: Vue, JS & Shell (2022)",
+            "caption": {
+              "title": "Links2Code",
+              "technos": "Vue, JS & Shell",
+              "year": "2022"
+            },
             "detail": "Links for Coding",
             "image": {
               "url": "img/portfolio/links2code.webp",
@@ -219,7 +263,11 @@
             "url": "https://github.com/philippebeck/links2code"
           },
           {
-            "caption": "Asperger: Twig & PHP (2020)",
+            "caption": {
+              "title": "Asperger",
+              "technos": "Twig & PHP",
+              "year": "2020"
+            },
             "detail": "Asperger's syndrome website offering diagnostic tests",
             "image": {
               "url": "img/portfolio/asperger.webp",
@@ -228,7 +276,11 @@
             "url": "https://github.com/philippebeck/asperger"
           },
           {
-            "caption": "Astronomy: Twig & PHP (2020)",
+            "caption": {
+              "title": "Astronomy",
+              "technos": "Twig & PHP",
+              "year": "2020"
+            },
             "detail": "Astronomy website using NASA & CDS APIs",
             "image": {
               "url": "img/portfolio/astronomy.webp",
@@ -237,7 +289,11 @@
             "url": "https://github.com/philippebeck/astronomy"
           },
           {
-            "caption": "DevsAgency: Twig & PHP (2020)",
+            "caption": {
+              "title": "DevsAgency",
+              "technos": "Twig & PHP",
+              "year": "2020"
+            },
             "detail": "Website of a digital agency offering development services",
             "image": {
               "url": "img/portfolio/devsagency.webp",
@@ -246,7 +302,11 @@
             "url": "https://github.com/philippebeck/devsagency"
           },
           {
-            "caption": "Pam Doc: Twig & PHP (2020)",
+            "caption": {
+              "title": "Pam Doc",
+              "technos": "Twig & PHP",
+              "year": "2020"
+            },
             "detail": "Website of the Pam documentation",
             "image": {
               "url": "img/portfolio/pam.webp",
@@ -255,7 +315,11 @@
             "url": "https://github.com/philippebeck/pam.net"
           },
           {
-            "caption": "Tools2Code: Twig, PHP, CSS & JS (2020)",
+            "caption": {
+              "title": "Tools2Code",
+              "technos": "Twig, PHP, CSS & JS",
+              "year": "2020"
+            },
             "detail": "Website of developer resources",
             "image": {
               "url": "img/portfolio/tools2code.webp",
@@ -264,7 +328,11 @@
             "url": "https://github.com/philippebeck/tools2code"
           },
           {
-            "caption": "Animadio Doc: Twig, PHP, JS & CSS (2019)",
+            "caption": {
+              "title": "Animadio Doc",
+              "technos": "Twig, PHP, JS & CSS",
+              "year": "2019"
+            },
             "detail": "Website of the Animadio documentation",
             "image": {
               "url": "img/portfolio/animadio.webp",
@@ -273,7 +341,11 @@
             "url": "https://github.com/philippebeck/animadio.org"
           },
           {
-            "caption": "WebAgency: CSS, HTML, SCSS & JS (2019)",
+            "caption": {
+              "title": "WebAgency",
+              "technos": "CSS, HTML, Sass & JS",
+              "year": "2019"
+            },
             "detail": "Junior Web Developer Project 1",
             "image": {
               "url": "img/portfolio/webagency.webp",
