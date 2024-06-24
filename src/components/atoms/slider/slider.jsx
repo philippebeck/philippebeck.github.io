@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react";
-
-import Icon from "../../atoms/icon/icon";
-
 import "./slider.scss";
 
 /**
@@ -82,27 +79,26 @@ const Slider = ({ array, timer=5000 }) => {
 
       {LENGTH > 1 && (
         <nav>
+          <i
+            class="fa-solid fa-chevron-left fa-2x"
+            onClick={goPrevious}
+            onKeyDown={goPrevious}
+            tabIndex="0"
+          ></i>
 
-          <Icon
-            name="chevron-left"
-            cat="solid"
-            isHidden="false"
-            event={goPrevious}
-          />
+          <i
+            class="fa-solid fa-chevron-right fa-2x"
+            onClick={goNext}
+            onKeyDown={goNext}
+            tabIndex="0"
+          ></i>
 
-          <Icon
-            name="chevron-right"
-            cat="solid"
-            isHidden="false"
-            event={goNext}
-          />
-
-          <Icon
-            name={isAuto ? 'pause' : 'play'}
-            cat="solid"
-            isHidden="false"
-            event={toggleAuto}
-          />
+          <i
+            class={`fa-solid ${isAuto ? 'fa-pause' : 'fa-play'} fa-2x`}
+            onClick={toggleAuto}
+            onKeyDown={toggleAuto}
+            tabIndex="0"
+          ></i>
         </nav>
       )}
 
