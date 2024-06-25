@@ -4,6 +4,23 @@
 
 $gap: 5px;
 
+$ratios: (
+  "tn": 2,
+  "xs": 3,
+  "sm": 4,
+  "md": 5,
+  "lg": 6,
+  "xl": 7,
+  "wd": 8
+  ) !default;
+
+//! ********** MIXIN **********
+
+@mixin list($ratio) {
+  gap: calc($gap * $ratio
+  );
+}
+
 //! ********** MAIN **********
 
 .list {
@@ -16,39 +33,16 @@ $gap: 5px;
   padding: 0;
   list-style: none;
 
-  //? ********** XS **********
+  //! ********** RESPONSIVE **********
 
-  @media (min-width: $xs) {
-    gap: calc($gap * 2);
-  }
+  @each $b-key, $breakpoint in $breakpoints {
+    @media (min-width: $breakpoint) {
 
-  //? ********** SM **********
-
-  @media (min-width: $sm) {
-    gap: calc($gap * 3);
-  }
-
-  //? ********** MD **********
-
-  @media (min-width: $md) {
-    gap: calc($gap * 4);
-  }
-
-  //? ********** LG **********
-
-  @media (min-width: $lg) {
-    gap: calc($gap * 5);
-  }
-
-  //? ********** XL **********
-
-  @media (min-width: $xl) {
-    gap: calc($gap * 6);
-  }
-
-  //? ********** WD **********
-
-  @media (min-width: $wd) {
-    gap: calc($gap * 7);
+      @each $key, $ratio in $ratios {
+        @if $key == $b-key {
+          @include list($ratio);
+        }
+      }
+    }
   }
 }
