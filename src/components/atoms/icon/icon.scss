@@ -1,119 +1,54 @@
-//! ********** PROJECTS **********
+//! ********** VARIABLES **********
 
-[open] .fa-cubes,
-*:hover > * > .fa-cubes,
-*:focus > * > * > .fa-cubes {
-  color: #8E44AD;
+$projects: (
+  "cubes": #8E44AD,
+  "sitemap": #3498DB,
+  "html5": #E44D26,
+  "css3": #1572B6,
+  "sass": #CD6799,
+  "square-js": #F0DB4F,
+  "react": #61DBFB,
+  "vuejs": #42B883,
+  "node-js": #3C873A,
+  "php": #777BB4,
+  "python": #3776AB,
+  "database": #00758F,
+  "square-git": #F1502F,
+  "dev": #000
+) !default;
+
+$networks: (
+  "codepen": #000,
+  "github": #000,
+  "linkedin-in": #0077B5,
+  "medium": #00AB6C,
+  "npm": #CB3837,
+  "x-twitter": #1DA1F2
+) !default;
+
+//! ********** MIXINS **********
+
+@mixin project($icon, $color) {
+  [open] .fa-#{$icon},
+  *:hover > * > .fa-#{$icon},
+  *:focus > * > * > .fa-#{$icon} {
+    color: $color;
+  }
 }
 
-[open] .fa-sitemap,
-*:hover > * > .fa-sitemap,
-*:focus > * > * > .fa-sitemap {
-  color: #3498DB;
+@mixin network($icon, $color) {
+  *:hover > .fa-#{$icon},
+  *:focus > .fa-#{$icon} {
+    color: $color;
+  }
 }
 
-//! ********** TECHNOS **********
+//! ********** MAIN **********
 
-[open] .fa-html5,
-*:hover > * > .fa-html5,
-*:focus > * > * > .fa-html5 {
-  color: #E44D26;
+@each $icon, $color in $projects {
+  @include project($icon, $color);
 }
 
-[open] .fa-css3,
-*:hover > * > .fa-css3,
-*:focus > * > * > .fa-css3 {
-  color: #1572B6;
-}
-
-[open] .fa-sass,
-*:hover > * > .fa-sass,
-*:focus > * > * > .fa-sass {
-  color: #CD6799;
-}
-
-[open] .fa-square-js,
-*:hover > * > .fa-square-js,
-*:focus > * > * > .fa-square-js {
-  color: #F0DB4F;
-}
-
-[open] .fa-vuejs,
-*:hover > * > .fa-vuejs,
-*:focus > * > * > .fa-vuejs {
-  color: #42B883;
-}
-
-[open] .fa-react,
-*:hover > * > .fa-react,
-*:focus > * > * > .fa-react {
-  color: #61DAFB;
-}
-
-[open] .fa-node-js,
-*:hover > * > .fa-node-js,
-*:focus > * > * > .fa-node-js {
-  color: #68A063;
-}
-
-[open] .fa-php,
-*:hover > * > .fa-php,
-*:focus > * > * > .fa-php {
-  color: #777BB4;
-}
-
-[open] .fa-python,
-*:hover > * > .fa-python,
-*:focus > * > * > .fa-python {
-  color: #3776AB;
-}
-
-[open] .fa-database,
-*:hover > * > .fa-database,
-*:focus > * > * > .fa-database {
-  color: #00758F;
-}
-
-[open] .fa-square-git,
-*:hover > * > .fa-square-git,
-*:focus > * > * > .fa-square-git {
-  color: #F05032;
-}
-
-[open] .fa-dev,
-*:hover > * > .fa-dev,
-*:focus > * > * > .fa-dev {
-  color: #000;
-}
-
-//! ********** SOCIAL **********
-
-*:hover > .fa-codepen,
-*:focus > .fa-codepen {
-  color: #000;
-}
-
-*:hover > .fa-github,
-*:focus > .fa-github {
-  color: #010409;
-}
-
-*:hover > .fa-linkedin-in,
-*:focus > .fa-linkedin-in {
-  color: #0077B5;
-}
-
-*:hover > .fa-medium,
-*:focus > .fa-medium {
-  color: #00AB6C;
-}
-
-*:hover > .fa-npm,
-*:focus > .fa-npm {
-  color: #EA2039;
-}
-
-*:hover > .fa-x-twitter,
-*:focus > .fa-x-twitter {
-  color: #1DA1F2;
+@each $icon, $color in $networks {
+  @include network($icon, $color);
 }
