@@ -1,14 +1,15 @@
 //! ********** BREAKPOINTS **********
 
-$xs: 22.5rem;    //  360px => mobile portrait
-$sm: 48rem;      //  768px => mobile landscape & tablet portrait
-$md: 64rem;      // 1024px => tablet landscape
-$lg: 85.375rem;  // 1366px => small laptop
-$xl: 96rem;      // 1536px => medium laptop & small desktop
-$wd: 120rem;     // 1920px => large laptop & desktop
+$tn: 22.5rem;   //  360px => mobile portrait
+$xs: 36rem;     //  576px => small mobile landscape
+$sm: 48rem;     //  768px => large mobile landscape & tablet portrait
+$md: 64rem;     // 1024px => tablet landscape
+$lg: 85.375rem; // 1366px => small laptop
+$xl: 96rem;     // 1536px => medium laptop & small desktop
+$wd: 120rem;    // 1920px => large laptop & desktop
 
 $breakpoints: (
-  "tn": 0,
+  "tn": $tn,
   "xs": $xs,
   "sm": $sm,
   "md": $md,
