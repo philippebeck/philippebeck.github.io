@@ -63,7 +63,7 @@ $sizes: (
       padding: 1px;
     }
 
-    //! ********** BREAKPOINTS **********
+    //! ********** RESPONSIVE **********
 
     @each $b-key, $breakpoint in $breakpoints {
       @media (min-width: $breakpoint) {
