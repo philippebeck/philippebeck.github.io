@@ -1,14 +1,87 @@
 @import "../../../assets/app.scss";
 
+//! ********** VARIABLES **********
+
+$top: 40px;
+$left: 10px; 
 $bottom: -5px;
-$width: 20px;
-$height: 32px;
 $font-size: 1.5rem;
+
+$top-sizes: (
+  "tn": 48px,
+  "xs": 52px,
+  "sm": 56px,
+  "md": 62px,
+  "lg": 74px,
+  "xl": 80px,
+  "wd": 90px
+) !default;
+
+$left-sizes: (
+  "tn": 14px,
+  "xs": 16px,
+  "sm": 18px,
+  "md": 22px,
+  "lg": 26px,
+  "xl": 30px,
+  "wd": 35px
+) !default;
+
+$bottom-ratios: (
+  "tn": 1,
+  "xs": 1.5,
+  "sm": 2,
+  "md": 4,
+  "lg": 6,
+  "xl": 8,
+  "wd": 10
+) !default;
+
+$font-ratios: (
+  "tn": 1.5,
+  "xs": 2,
+  "sm": 2.5,
+  "md": 3,
+  "lg": 3.5,
+  "xl": 4,
+  "wd": 4.5
+) !default;
+
+//! ********** MIXINS **********
+
+@mixin top($size) {
+  [class*="left"],
+  [class*="right"] {
+    top: calc(50% - $size);
+  }
+}
+
+@mixin left($size) {
+  [class*="play"],
+  [class*="pause"] {
+    left: calc(50% - $size);
+  }
+}
+
+@mixin bottom($ratio) {
+  [class*="play"],
+  [class*="pause"] {
+    bottom: calc($bottom * $ratio);
+  }
+}
+
+@mixin font($ratio) {
+  i {
+    font-size: calc($font-size * $ratio);
+  }
+}
+
+//! ********** MAIN **********
 
 .slider {
   position: relative;
   margin: 0;
-  padding: 0 $width $height;
+  padding: 0 20px 32px;
 
   & + * {
     display: flex;
@@ -20,14 +93,8 @@ $font-size: 1.5rem;
   nav {
     i {
       position: absolute;
-      font-size: $font-size;
       color: $white;
       cursor: pointer;
-    }
-
-    [class*="left"],
-    [class*="right"]{
-      top: calc(50% - 40px);
     }
 
     [class*="left"] {
@@ -38,123 +105,39 @@ $font-size: 1.5rem;
       right: 0;
     }
 
-    [class*="play"],
-    [class*="pause"] {
-      left: calc(50% - 10px);
-      bottom: 0;
-    }
+    @include top($top);
+    @include left($left);
+    @include bottom(0);
+    @include font(1);
 
-    //? ********** XS **********
+    //! ********** RESPONSIVE **********
 
-    @media (min-width: $xs) {
-      i {
-        font-size: calc($font-size * 1.5);
-      }
+    @each $b-key, $breakpoint in $breakpoints {
+      @media (min-width: $breakpoint) {
+  
+        @each $key, $size in $top-sizes {
+          @if $key == $b-key {
+            @include top($size);
+          }
+        }
 
-      [class*="left"],
-      [class*="right"] {
-        top: calc(50% - 48px);
-      }
+        @each $key, $size in $left-sizes {
+          @if $key == $b-key {
+            @include left($size);
+          }
+        }
 
-      [class*="play"],
-      [class*="pause"] {
-        left: calc(50% - 14px);
-        bottom: $bottom;
-      }
-    }
+        @each $key, $ratio in $bottom-ratios {
+          @if $key == $b-key {
+            @include bottom($ratio);
+          }
+        }
 
-    //? ********** SM **********
-
-    @media (min-width: $sm) {
-      i {
-        font-size: calc($font-size * 2);
-      }
-
-      [class*="left"],
-      [class*="right"] {
-        top: calc(50% - 56px);
-      }
-
-      [class*="play"],
-      [class*="pause"] {
-        left: calc(50% - 18px);
-        bottom: calc($bottom * 2);
-      }
-    }
-
-    //? ********** MD **********
-
-    @media (min-width: $md) {
-      i {
-        font-size: calc($font-size * 2.5);
-      }
-
-      [class*="left"],
-      [class*="right"] {
-        top: calc(50% - 62px);
-      }
-
-      [class*="play"],
-      [class*="pause"] {
-        left: calc(50% - 22px);
-        bottom: calc($bottom * 4);
-      }
-    }
-
-    //? ********** LG **********
-
-    @media (min-width: $lg) {
-      i {
-        font-size: calc($font-size * 3);
-      }
-
-      [class*="left"],
-      [class*="right"] {
-        top: calc(50% - 74px);
-      }
-
-      [class*="play"],
-      [class*="pause"] {
-        left: calc(50% - 26px);
-        bottom: calc($bottom * 6);
-      }
-    }
-
-    //? ********** XL **********
-
-    @media (min-width: $xl) {
-      i {
-        font-size: calc($font-size * 3.5);
-      }
-
-      [class*="left"],
-      [class*="right"] {
-        top: calc(50% - 80px);
-      }
-
-      [class*="play"],
-      [class*="pause"] {
-        left: calc(50% - 30px);
-        bottom: calc($bottom * 8);
-      }
-    }
-
-    //? ********** WD **********
-
-    @media (min-width: $wd) {
-      i {
-        font-size: calc($font-size * 4);
-      }
-
-      [class*="left"],
-      [class*="right"] {
-        top: calc(50% - 90px);
-      }
-
-      [class*="play"],
-      [class*="pause"] {
-        left: calc(50% - 35px);
-        bottom: calc($bottom * 10);
+        @each $key, $ratio in $font-ratios {
+          @if $key == $b-key {
+            @include font($ratio);
+          }
+        }
       }
     }
   }
