@@ -5,6 +5,36 @@
 $radius: 5px;
 $width: 150px;
 
+$ratios: (
+  "tn": 1.5,
+  "xs": 2,
+  "sm": 2.5,
+  "md": 3,
+  "lg": 3.5,
+  "xl": 4,
+  "wd": 4.5
+  ) !default;
+
+$sizes: (
+  "tn": 10px,
+  "xs": 20px,
+  "sm": 30px,
+  "md": 40px,
+  "lg": 50px,
+  "xl": 60px,
+  "wd": 70px
+  ) !default;
+
+//! ********** MIXINS **********
+
+@mixin radius($ratio) {
+  border-radius: calc($radius * $ratio);
+}
+
+@mixin width($size) {
+  width: calc($width + $size);
+}
+
 //! ********** MAIN **********
 
 .collapse {
@@ -33,43 +63,23 @@ $width: 150px;
       padding: 1px;
     }
 
-    //? ********** XS **********
+    //! ********** BREAKPOINTS **********
 
-    @media (min-width: $xs) {
-      width: calc($width + 10px);
-    }
+    @each $b-key, $breakpoint in $breakpoints {
+      @media (min-width: $breakpoint) {
 
-    //? ********** SM **********
+        @each $key, $ratio in $ratios {
+          @if $key == $b-key {
+            @include radius($ratio);
+          }
+        }
 
-    @media (min-width: $sm) {
-      border-radius: calc($radius * 2);
-      width: calc($width + 30px);
-    }
-
-    //? ********** MD **********
-
-    @media (min-width: $md) {
-      width: calc($width + 50px);
-    }
-
-    //? ********** LG **********
-
-    @media (min-width: $lg) {
-      border-radius: calc($radius * 3);
-      width: calc($width + 70px);
-    }
-
-    //? ********** XL **********
-
-    @media (min-width: $xl) {
-      width: calc($width + 80px);
-    }
-
-    //? ********** WD **********
-
-    @media (min-width: $wd) {
-      border-radius: calc($radius * 4);
-      width: calc($width + 100px);
+        @each $key, $size in $sizes {
+          @if $key == $b-key {
+            @include width($size);
+          }
+        }
+      }
     }
   }
 }
