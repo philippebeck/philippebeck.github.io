@@ -1,6 +1,7 @@
 @import "../../../assets/app.scss";
 
 [id="portfolio"] {
+
   &:hover > *:first-child i,
   &:focus > *:first-child i {
     animation: turn-x 2s linear infinite reverse;
@@ -27,11 +28,19 @@
       animation: turn-xy 2s linear infinite reverse;
     }
 
+    //? ********** TN **********
+
+    @media (min-width: $tn) {
+      figure > * > li {
+        width: calc((100% - 10px) / 2);
+      }
+    }
+
     //? ********** XS **********
 
     @media (min-width: $xs) {
       figure > * > li {
-        width: calc((100% - 10px) / 2);
+        width: calc((100% - 15px) / 2);
       }
     }
 
@@ -39,7 +48,7 @@
 
     @media (min-width: $sm) {
       figure > * > li {
-        width: calc((100% - 15px) / 2);
+        width: calc((100% - 40px) / 3);
       }
     }
 
@@ -47,7 +56,7 @@
 
     @media (min-width: $md) {
       figure > * > li {
-        width: calc((100% - 40px) / 3);
+        width: calc((100% - 50px) / 3);
       }
     }
 
@@ -55,7 +64,7 @@
 
     @media (min-width: $lg) {
       figure > * > li {
-        width: calc((100% - 50px) / 3);
+        width: calc((100% - 90px) / 4);
       }
     }
 
@@ -63,7 +72,7 @@
 
     @media (min-width: $xl) {
       figure > * > li {
-        width: calc((100% - 90px) / 4);
+        width: calc((100% - 105px) / 4);
       }
     }
 
@@ -71,7 +80,7 @@
 
     @media (min-width: $wd) {
       figure > * > li {
-        width: calc((100% - 175px) / 5);
+        width: calc((100% - 200px) / 5);
       }
     }
   }
