@@ -112,29 +112,29 @@ $font-ratios: (
 
     //! ********** RESPONSIVE **********
 
-    @each $b-key, $breakpoint in $breakpoints {
+    @each $break-key, $breakpoint in $breakpoints {
       @media (min-width: $breakpoint) {
   
         @each $key, $size in $top-sizes {
-          @if $key == $b-key {
+          @if $key == $break-key {
             @include top($size);
           }
         }
 
         @each $key, $size in $left-sizes {
-          @if $key == $b-key {
+          @if $key == $break-key {
             @include left($size);
           }
         }
 
         @each $key, $ratio in $bottom-ratios {
-          @if $key == $b-key {
+          @if $key == $break-key {
             @include bottom($ratio);
           }
         }
 
         @each $key, $ratio in $font-ratios {
-          @if $key == $b-key {
+          @if $key == $break-key {
             @include font($ratio);
           }
         }

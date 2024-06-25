@@ -35,11 +35,11 @@ $ratios: (
 
   //! ********** RESPONSIVE **********
 
-  @each $b-key, $breakpoint in $breakpoints {
+  @each $break-key, $breakpoint in $breakpoints {
     @media (min-width: $breakpoint) {
 
       @each $key, $ratio in $ratios {
-        @if $key == $b-key {
+        @if $key == $break-key {
           @include list($ratio);
         }
       }
