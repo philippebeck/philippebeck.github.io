@@ -5,6 +5,42 @@
 $gap: 5px;
 $padding: 5px;
 
+$gap-ratios: (
+  "tn": 1.5,
+  "xs": 2,
+  "sm": 2.5,
+  "md": 3,
+  "lg": 3.5,
+  "xl": 4,
+  "wd": 4.5
+) !default;
+
+$padding-ratios: (
+  "tn": 1.5,
+  "xs": 2,
+  "sm": 2.5,
+  "md": 3,
+  "lg": 3.5,
+  "xl": 4,
+  "wd": 4.5
+) !default;
+
+
+//! ********** MIXINS **********
+
+@mixin gap($ratio) {
+  .link,
+  .btn {
+    gap: calc($gap * $ratio);
+  }
+}
+
+@mixin padding($ratio) {
+  .btn {
+    padding: calc($padding * $ratio / 2) calc($padding * $ratio);
+  }
+}
+
 //! ********** MAIN **********
 
 .link,
@@ -37,41 +73,21 @@ $padding: 5px;
   }
 }
 
-//? ********** SM **********
+//! ********** RESPONSIVE **********
 
-@media (min-width: $sm) {
-  .link,
-  .btn {
-    gap: calc($gap * 2);
-  }
+@each $break-key, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
 
-  .btn {
-    padding: $padding calc($padding * 2);
-  }
-}
+    @each $key, $ratio in $gap-ratios {
+      @if $key == $break-key {
+        @include gap($ratio);
+      }
+    }
 
-//? ********** LG **********
-
-@media (min-width: $lg) {
-  .link,
-  .btn {
-    gap: calc($gap * 3);
-  }
-
-  .btn {
-    padding: calc($padding * 1.5) calc($padding * 3);
-  }
-}
-
-//? ********** WD **********
-
-@media (min-width: $wd) {
-  .link,
-  .btn {
-    gap: calc($gap * 4);
-  }
-
-  .btn {
-    padding: calc($padding * 2) calc($padding * 4);
+    @each $key, $ratio in $padding-ratios {
+      @if $key == $break-key {
+        @include padding($ratio);
+      }
+    }
   }
 }
