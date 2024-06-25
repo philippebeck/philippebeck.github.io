@@ -2,18 +2,27 @@
   "@context": "https://schema.org",
   "@type": "OnlineBusiness",
   "name": "Philippe Beck",
-  "givenName" : "Philippe",
-  "familyName" : "Beck",
   "description": "Fullstack JS/PHP Developer & IT Development Trainer - HTML, CSS, Sass, JS, TS, React, Vue, Node, PHP, Python, SQL, MongoDB, Git - Remote Work Worldwide",
   "url": "https://philippebeck.github.io",
   "image": "https://philippebeck.github.io/img/philippebeck.webp",
+
+  "knowsAbout": "HTML, CSS, Sass, JavaScript, TypeScript, React, Vue, Node, PHP, Python, SQL, MongoDB & Git",
+  "knowsLanguage": "French, English & Japanese",
   "taxId": "837 516 855",
-  "telephone": "+262 693 531 723",
   "email" : "contact@philippebeck.net",
+  "telephone": "+262 693 531 723",
+
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Le Tampon",
-    "addressRegion": "La Réunion",
-    "postalCode": "97430"
+    "addressLocality": "Aix-en-Provence",
+    "addressRegion": "Provence-Aples-Côte d'Azur",
+    "postalCode": "13100"
+  },
+
+  "founder": {
+    "@type": "Person",
+    "familyName": "Beck",
+    "givenName": "Philippe",
+    "jobTitle": "Fullstack JS/PHP Developer & IT Development Trainer"
   }
 }
