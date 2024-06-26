@@ -1,33 +1,7 @@
 //! ********** FONTS **********
 
-@font-face {
-  font-family: "Geologica";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    local("Geologica-Regular"),
-    url("/fonts/Geologica-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Trocchi";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    local("Trocchi-Regular"),
-    url("/fonts/Trocchi-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Ubuntu Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    local("UbuntuMono-Regular"),
-    url("/fonts/UbuntuMono-Regular.woff2") format("woff2");
+@each $font-family in $font-families {
+  @include font-face($font-family);
 }
 
 //! ********** KEYFRAMES **********

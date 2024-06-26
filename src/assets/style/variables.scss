@@ -20,6 +20,7 @@ $breakpoints: (
 
 //! ********** FONTS **********
 
+$font-families: "Geo", "Trocchi", "Ubuntu Mono";
 $sans-serif: Geo, Helvetica, sans-serif;
 $serif: Trocchi, Times, serif;
 $monospace: "Ubuntu Mono", Courier, monospace;
@@ -51,7 +52,7 @@ $transforms: (
   "turn-3d":  rotate3d(1, 1, 1, 360deg)
 ) !default;
 
-//! ********** GLOBAL **********
+//! ********** APP **********
 
 $border: 1px;
 $padding: 5px;
