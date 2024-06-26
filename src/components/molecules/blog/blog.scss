@@ -1,14 +1,44 @@
 @import "../../../assets/app.scss";
 
+//! ********** VARIABLES **********
+
+$width-sizes: (
+  "tn": 10px,
+  "xs": 15px,
+  "sm": 20px,
+  "md": 25px,
+  "lg": 30px,
+  "xl": 35px,
+  "wd": 40px
+) !default;
+
+$width-ratios: (
+  "tn": 2,
+  "xs": 2,
+  "sm": 3,
+  "md": 3,
+  "lg": 4,
+  "xl": 4,
+  "wd": 5
+) !default;
+
+//! ********** MIXIN **********
+
+@mixin blog-width($size, $ratio) {
+  width: calc((100% - ($ratio - 1) * $size) / $ratio);
+}
+
+//! ********** MAIN **********
+
 [id="blog"] {
 
-  &:hover>*:first-child i,
-  &:focus>*:first-child i {
+  &:hover > *:first-child i,
+  &:focus > *:first-child i {
     animation: turn-y 2s linear infinite reverse;
   }
 
   .collapse {
-    &>figure {
+    & > figure {
       animation: slide-top 500ms ease-in-out;
     }
 
@@ -18,59 +48,23 @@
       animation: turn-xz 2s linear infinite reverse;
     }
 
-    //? ********** TN **********
+    //! ********** RESPONSIVE **********
 
-    @media (min-width: $tn) {
-      li {
-        width: calc((100% - 10px) / 2);
-      }
-    }
+    li {
+      @each $breakpoint-key, $breakpoint-value in $breakpoints {
+        @media (min-width: $breakpoint-value) {
 
-    //? ********** XS **********
-
-    @media (min-width: $xs) {
-      li {
-        width: calc((100% - 15px) / 2);
-      }
-    }
-
-    //? ********** SM **********
-
-    @media (min-width: $sm) {
-      li {
-        width: calc((100% - 40px) / 3);
-      }
-    }
-
-    //? ********** MD **********
-
-    @media (min-width: $md) {
-      li {
-        width: calc((100% - 50px) / 3);
-      }
-    }
-
-    //? ********** LG **********
-
-    @media (min-width: $lg) {
-      li {
-        width: calc((100% - 90px) / 4);
-      }
-    }
-
-    //? ********** XL **********
-
-    @media (min-width: $xl) {
-      li {
-        width: calc((100% - 105px) / 4);
-      }
-    }
-
-    //? ********** WD **********
-
-    @media (min-width: $wd) {
-      li {
-        width: calc((100% - 200px) / 5);
+          @each $size-key, $size-value in $width-sizes {
+            @if $size-key == $breakpoint-key {
+              
+              @each $ratio-key, $ratio-value in $width-ratios {
+                @if $ratio-key == $breakpoint-key {
+                  @include blog-width($size-value, $ratio-value);
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

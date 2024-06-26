@@ -1,5 +1,34 @@
 @import "../../../assets/app.scss";
 
+//! ********** VARIABLES **********
+
+$width-sizes: (
+  "tn": 10px,
+  "xs": 15px,
+  "sm": 20px,
+  "md": 25px,
+  "lg": 30px,
+  "xl": 35px,
+  "wd": 40px) !default;
+
+$width-ratios: (
+  "tn": 2,
+  "xs": 2,
+  "sm": 3,
+  "md": 3,
+  "lg": 4,
+  "xl": 4,
+  "wd": 5) !default;
+
+//! ********** MIXIN **********
+
+@mixin portfolio-width($size, $ratio) {
+  width: calc((100% - ($ratio - 1) * $size) / $ratio
+  );
+}
+
+//! ********** MAIN **********
+
 [id="portfolio"] {
 
   &:hover > *:first-child i,
@@ -28,59 +57,21 @@
       animation: turn-xy 2s linear infinite reverse;
     }
 
-    //? ********** TN **********
+    figure > * > li {
+      @each $breakpoint-key, $breakpoint-value in $breakpoints {
+        @media (min-width: $breakpoint-value) {
 
-    @media (min-width: $tn) {
-      figure > * > li {
-        width: calc((100% - 10px) / 2);
-      }
-    }
-
-    //? ********** XS **********
-
-    @media (min-width: $xs) {
-      figure > * > li {
-        width: calc((100% - 15px) / 2);
-      }
-    }
-
-    //? ********** SM **********
-
-    @media (min-width: $sm) {
-      figure > * > li {
-        width: calc((100% - 40px) / 3);
-      }
-    }
-
-    //? ********** MD **********
-
-    @media (min-width: $md) {
-      figure > * > li {
-        width: calc((100% - 50px) / 3);
-      }
-    }
-
-    //? ********** LG **********
-
-    @media (min-width: $lg) {
-      figure > * > li {
-        width: calc((100% - 90px) / 4);
-      }
-    }
-
-    //? ********** XL **********
-
-    @media (min-width: $xl) {
-      figure > * > li {
-        width: calc((100% - 105px) / 4);
-      }
-    }
-
-    //? ********** WD **********
-
-    @media (min-width: $wd) {
-      figure > * > li {
-        width: calc((100% - 200px) / 5);
+          @each $size-key, $size-value in $width-sizes {
+            @if $size-key == $breakpoint-key {
+              
+              @each $ratio-key, $ratio-value in $width-ratios {
+                @if $ratio-key == $breakpoint-key {
+                  @include portfolio-width($size-value, $ratio-value);
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
