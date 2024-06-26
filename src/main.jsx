@@ -10,7 +10,7 @@ import Navbar from './components/molecules/navbar/navbar'
 import Portfolio from './components/molecules/portfolio/portfolio'
 import Stats from './components/molecules/stats/stats'
 
-import './main.scss'
+import './assets/style/main.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
