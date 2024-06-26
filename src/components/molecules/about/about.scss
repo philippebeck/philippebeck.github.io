@@ -2,9 +2,53 @@
 
 //! ********** VARIABLES **********
 
-$gap: 5px;
-$padding: 5px;
-$height: 265px;
+$gap-size: 5px;
+$padding-size: 5px;
+$height-size: 265px;
+
+$gap-ratios: (
+  "tn": 2,
+  "xs": 3,
+  "sm": 4,
+  "md": 5,
+  "lg": 6,
+  "xl": 7,
+  "wd": 8
+) !default;
+
+$padding-ratios: (
+  "tn": 2,
+  "xs": 3,
+  "sm": 4,
+  "md": 5,
+  "lg": 6,
+  "xl": 7,
+  "wd": 8
+) !default;
+
+$height-sizes: (
+  "tn": 65px,
+  "xs": 105px,
+  "sm": 145px,
+  "md": 230px,
+  "lg": 290px,
+  "xl": 350px,
+  "wd": 430px
+) !default;
+
+//! ********** MIXINS **********
+
+@mixin about-gap($ratio) {
+  gap: calc($gap-size * $ratio);
+}
+
+@mixin about-padding($ratio) {
+  padding: calc($padding-size * $ratio);
+}
+
+@mixin about-height($size) {
+  height: calc($height-size + $size);
+}
 
 //! ********** MAIN **********
 
@@ -23,13 +67,13 @@ $height: 265px;
   section {
     display: flex;
     flex-flow: column;
-    gap: $gap;
+    gap: $gap-size;
     box-sizing: border-box;
     margin: auto;
     border-radius: 20px;
-    padding: $padding;
+    padding: $padding-size;
     width: fit-content;
-    height: $height;
+    height: $height-size;
     background-color: $silver;
     color: $black;
 
@@ -44,52 +88,29 @@ $height: 265px;
       width: fit-content;
     }
 
-    //? ********** XS **********
+    //! ********** RESPONSIVE **********
 
-    @media (min-width: $xs) {
-      gap: calc($gap * 2);
-      padding: calc($padding * 2);
-      height: calc($height + 65px);
-    }
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @media (min-width: $breakpoint-value) {
 
-    //? ********** SM **********
+        @each $gap-key, $gap-value in $gap-ratios {
+          @if $gap-key == $breakpoint-key {
+            @include about-gap($gap-value);
+          }
+        }
 
-    @media (min-width: $sm) {
-      gap: calc($gap * 3);
-      padding: calc($padding * 3);
-      height: calc($height + 145px);
-    }
+        @each $padding-key, $padding-value in $padding-ratios {
+          @if $padding-key == $breakpoint-key {
+            @include about-padding($padding-value);
+          }
+        }
 
-    //? ********** MD **********
-
-    @media (min-width: $md) {
-      gap: calc($gap * 4);
-      padding: calc($padding * 4);
-      height: calc($height + 230px);
-    }
-
-    //? ********** LG **********
-
-    @media (min-width: $lg) {
-      gap: calc($gap * 5);
-      padding: calc($padding * 5);
-      height: calc($height + 290px);
-    }
-
-    //? ********** XL **********
-
-    @media (min-width: $xl) {
-      gap: calc($gap * 6);
-      padding: calc($padding * 6);
-      height: calc($height + 350px);
-    }
-
-    //? ********** WD **********
-
-    @media (min-width: $wd) {
-      gap: calc($gap * 7);
-      padding: calc($padding * 7);
-      height: calc($height + 430px);
+        @each $height-key, $height-value in $height-sizes {
+          @if $height-key == $breakpoint-key {
+            @include about-height($height-value);
+          }
+        }
+      }
     }
   }
 }
