@@ -2,10 +2,46 @@
 
 //! ********** VARIABLES **********
 
-$font-size: 0.7rem;
 $padding-x: 10px;
 $padding-y: 2px;
-$height: 30px;
+$font: 0.7rem;
+
+$padding-sizes: (
+  "tn": 1px,
+  "xs": 2px,
+  "sm": 3px,
+  "md": 4px,
+  "lg": 5px,
+  "xl": 6px,
+  "wd": 7px
+) !default;
+
+$padding-ratios: (
+  "tn": 2,
+  "xs": 3,
+  "sm": 4,
+  "md": 0,
+  "lg": 0,
+  "xl": 0,
+  "wd": 0
+) !default;
+
+$font-sizes: (
+  "tn": 0.1rem,
+  "xs": 0.2rem,
+  "sm": 0.3rem,
+  "md": 0.4rem,
+  "lg": 0.5rem,
+  "xl": 0.6rem,
+  "wd": 0.7rem
+) !default;
+
+//! ********** MIXIN **********
+
+@mixin navbar($padding-size, $padding-ratio, $font-size) {
+  padding: calc($padding-y + $padding-size) calc($padding-x * $padding-ratio);
+  font-size: calc($font + $font-size);
+}
 
 //! ********** MAIN **********
 
@@ -19,7 +55,7 @@ $height: 30px;
   box-sizing: border-box;
   padding: $padding-y $padding-x;
   width: 100%;
-  font-size: $font-size;
+  font-size: $font;
   background-color: $primary;
   color: $black;
 
@@ -42,19 +78,22 @@ $height: 30px;
     display: none;
   }
 
-  //? ********** XS **********
+  //! ********** RESPONSIVE **********
 
-  @media (min-width: $xs) {
-    padding: calc($padding-y + 1px) calc($padding-x * 2);
-    font-size: calc($font-size + 0.1rem);
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @media (min-width: $breakpoint-value) {
+
+      @include navbar(
+        map-get($padding-sizes, $breakpoint-key),
+        map-get($padding-ratios, $breakpoint-key),
+        map-get($font-sizes, $breakpoint-key)
+      );
+    }
   }
 
   //? ********** SM **********
 
   @media (min-width: $sm) {
-    padding: calc($padding-y + 2px) calc($padding-x * 3);
-    font-size: calc($font-size + 0.2rem);
-
     b {
       display: block;
       text-transform: uppercase;
@@ -65,32 +104,13 @@ $height: 30px;
 
   @media (min-width: $md) {
     place-content: space-around;
-    padding: calc($padding-y + 3px) 0;
-    font-size: calc($font-size + 0.3rem);
   }
 
   //? ********** LG **********
 
   @media (min-width: $lg) {
-    padding: calc($padding-y + 4px) 0;
-    font-size: calc($font-size + 0.4rem);
-
     b {
       text-transform: capitalize;
     }
-  }
-
-  //? ********** XL **********
-
-  @media (min-width: $xl) {
-    padding: calc($padding-y + 5px) 0;
-    font-size: calc($font-size + 0.5rem);
-  }
-
-  //? ********** WD **********
-
-  @media (min-width: $wd) {
-    padding: calc($padding-y + 6px) 0;
-    font-size: calc($font-size + 0.6rem);
   }
 }

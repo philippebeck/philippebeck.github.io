@@ -1,5 +1,27 @@
 @import "../../../assets/app.scss";
 
+//! ********** VARIABLES **********
+
+$height: 105px;
+
+$height-sizes: (
+  "tn": 10px,
+  "xs": 85px,
+  "sm": 155px,
+  "md": 235px,
+  "lg": 260px,
+  "xl": 285px,
+  "wd": 300px
+) !default;
+
+//! ********** MIXIN **********
+
+@mixin stats($size) {
+  height: calc($height + $size);
+}
+
+//! ********** MAIN **********
+
 [id="stats"] {
 
   &:hover > *:first-child i,
@@ -8,36 +30,14 @@
   }
 
   img {
-    height: 105px;
-  }
+    height: $height;
 
-  @media (min-width: $xs) {
-    img {
-      height: 115px;
-    }
-  }
+    //! ********** RESPONSIVE **********
 
-  @media (min-width: $sm) {
-    img {
-      height: 260px;
-    }
-  }
-
-  @media (min-width: $md) {
-    img {
-      height: 340px;
-    }
-  }
-
-  @media (min-width: $lg) {
-    ul {
-    flex-flow: wrap;
-    }
-  }
-
-  @media (min-width: $xl) {
-    img {
-      height: 390px;
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @media (min-width: $breakpoint-value) {
+        @include stats(map-get($height-sizes, $breakpoint-key));
+      }
     }
   }
 }
