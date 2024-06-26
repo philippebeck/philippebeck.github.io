@@ -22,6 +22,11 @@
 
 //! ********** APP **********
 
-@mixin font($font-ratio) {
+@mixin body($font-ratio) {
   font-size: calc($font * $font-ratio);
+}
+
+@mixin molecules($border-ratio, $padding-ratio) {
+  border-width: calc($border * $border-ratio);
+  padding: calc($padding * $padding-ratio * 2) calc($padding * $padding-ratio);
 }

@@ -20,11 +20,11 @@ $breakpoints: (
 
 //! ********** FONTS **********
 
-$font-families: Geo, Trocchi, "Ubuntu Mono";
+$font-families: Geologica, Trocchi, UbuntuMono;
 
-$sans-serif: Geo, Helvetica, sans-serif;
+$sans-serif: Geologica, Helvetica, sans-serif;
 $serif: Trocchi, Times, serif;
-$monospace: "Ubuntu Mono", Courier, monospace;
+$monospace: UbuntuMono, Courier, monospace;
 
 //! ********** COLORS **********
 
@@ -58,6 +58,26 @@ $transforms: (
 $border: 1px;
 $padding: 5px;
 $font: 1rem;
+
+$border-ratios: (
+  "tn": 1.5,
+  "xs": 2,
+  "sm": 2.5,
+  "md": 3,
+  "lg": 3.5,
+  "xl": 4,
+  "wd": 4.5
+) !default;
+
+$padding-ratios: (
+  "tn": 2,
+  "xs": 3,
+  "sm": 4,
+  "md": 5,
+  "lg": 6,
+  "xl": 7,
+  "wd": 8
+) !default;
 
 $font-ratios: (
   "tn": 1.1,

@@ -1,5 +1,7 @@
 @import "./main.scss";
 
+//! ********** MAIN **********
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,59 +14,31 @@ body {
   background-color: $black;
   color: $white;
 
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
-    @media (min-width: $breakpoint-value) {
-      @include font(map-get($font-ratios, $breakpoint-key));
+  [id=intro],
+  [id=portfolio],
+  [id=stats],
+  [id=blog],
+  [id=links],
+  [id=about] {
+    border-top: solid $border $silver;
+    padding: calc($padding * 2) $padding;
+
+    //! ********** RESPONSIVE **********
+
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @media (min-width: $breakpoint-value) {
+
+        @include molecules(
+          map-get($border-ratios, $breakpoint-key),
+          map-get($padding-ratios, $breakpoint-key)
+        );
+      }
     }
   }
-}
 
-[id="intro"],
-[id="portfolio"],
-[id="stats"],
-[id="blog"],
-[id="links"],
-[id="about"] {
-  border-top: solid $border $silver;
-  padding: calc($padding * 4) $padding;
-
-  //? ********** XS **********
-
-  @media (min-width: $xs) {
-    padding: calc($padding * 6) calc($padding * 2);
-  }
-
-  //? ********** SM **********
-
-  @media (min-width: $sm) {
-    border-width: calc($border * 2);
-    padding: calc($padding * 8) calc($padding * 4);
-  }
-
-  //? ********** MD **********
-
-  @media (min-width: $md) {
-    padding: calc($padding * 10) calc($padding * 8);
-  }
-
-  //? ********** LG **********
-
-  @media (min-width: $lg) {
-    border-width: calc($border * 3);
-    padding: calc($padding * 14) calc($padding * 12);
-  }
-
-  //? ********** XL **********
-
-  @media (min-width: $xl) {
-    border-width: calc($border * 4);
-    padding: calc($padding * 16);
-  }
-
-  //? ********** WD **********
-
-  @media (min-width: $wd) {
-    border-width: calc($border * 5);
-    padding: calc($padding * 20);
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @media (min-width: $breakpoint-value) {
+      @include body(map-get($font-ratios, $breakpoint-key));
+    }
   }
 }
