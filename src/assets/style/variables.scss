@@ -1,0 +1,68 @@
+//! ********** BREAKPOINTS **********
+
+$tn: 22.5rem;   //  360px => mobile portrait
+$xs: 36rem;     //  576px => small mobile landscape
+$sm: 48rem;     //  768px => large mobile landscape & tablet portrait
+$md: 64rem;     // 1024px => tablet landscape
+$lg: 85.375rem; // 1366px => small laptop
+$xl: 96rem;     // 1536px => medium laptop & small desktop
+$wd: 120rem;    // 1920px => large laptop & desktop
+
+$breakpoints: (
+  "tn": $tn,
+  "xs": $xs,
+  "sm": $sm,
+  "md": $md,
+  "lg": $lg,
+  "xl": $xl,
+  "wd": $wd
+) !default;
+
+//! ********** FONTS **********
+
+$sans-serif: Geo, Helvetica, sans-serif;
+$serif: Trocchi, Times, serif;
+$monospace: "Ubuntu Mono", Courier, monospace;
+
+//! ********** COLORS **********
+
+$primary:   hsl(270, 100%, 80%);
+$secondary: hsl(120, 100%, 80%);
+$white:     hsl(  0,   0%, 95%);
+$silver:    hsl(  0,   0%, 80%);
+$gray:      hsl(  0,   0%, 20%);
+$black:     hsl(  0,   0%,  5%);
+
+//! ********** TRANSFORM **********
+
+$transforms: (
+  "grow-min": scale(0.7, 0.7),
+  "grow-max": scale(0, 0),
+
+  "slide-top":    translateY(100%),
+  "slide-right":  translateX(-100%),
+
+  "turn-x":   rotateX(360deg),
+  "turn-y":   rotateY(360deg),
+  "turn-z":   rotateZ(360deg),
+  "turn-xy":  rotate3d(1, 1, 0, 360deg),
+  "turn-xz":  rotate3d(1, 0, 1, 360deg),
+  "turn-yz":  rotate3d(0, 1, 1, 360deg),
+  "turn-3d":  rotate3d(1, 1, 1, 360deg)
+) !default;
+
+//! ********** GLOBAL **********
+
+$border: 1px;
+$padding: 5px;
+$font: 1rem;
+
+$font-ratios: (
+  "tn": 1.1,
+  "xs": 1.2,
+  "sm": 1.3,
+  "md": 1.5,
+  "lg": 1.7,
+  "xl": 1.8,
+  "wd": 2
+) !default;
