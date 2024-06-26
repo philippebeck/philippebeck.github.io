@@ -2,18 +2,18 @@
 
 //! ********** VARIABLES **********
 
-$gap: 5px;
+$gap: 10px;
 $padding: 5px;
-$height: 265px;
+$height: 260px;
 
 $gap-ratios: (
-  "tn": 2,
-  "xs": 3,
-  "sm": 4,
-  "md": 5,
-  "lg": 6,
-  "xl": 7,
-  "wd": 8
+  "tn": 1.5,
+  "xs": 2,
+  "sm": 2.5,
+  "md": 3,
+  "lg": 3.5,
+  "xl": 4,
+  "wd": 4.5
 ) !default;
 
 $padding-ratios: (
@@ -27,13 +27,13 @@ $padding-ratios: (
 ) !default;
 
 $height-sizes: (
-  "tn": 65px,
-  "xs": 105px,
-  "sm": 145px,
-  "md": 230px,
-  "lg": 290px,
-  "xl": 350px,
-  "wd": 430px
+  "tn": 50px,
+  "xs": 100px,
+  "sm": 150px,
+  "md": 215px,
+  "lg": 285px,
+  "xl": 335px,
+  "wd": 400px
 ) !default;
 
 //! ********** MIXIN **********

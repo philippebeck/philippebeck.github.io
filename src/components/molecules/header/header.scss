@@ -4,31 +4,33 @@
 
 $gap: 5px;
 $padding: 5px;
-$width: 90%;
-$height: 200px;
+$width: 85%;
+$height: 185px;
 
 $gap-ratios: (
   "tn": 2,
-  "xs": 2.5,
-  "sm": 3,
-  "md": 4,
-  "lg": 5,
-  "xl": 6,
-  "wd": 7
+  "xs": 3,
+  "sm": 4,
+  "md": 5,
+  "lg": 6,
+  "xl": 7,
+  "wd": 8
 ) !default;
 
 $padding-ratios: (
   "tn": 2,
-  "xs": 2.5,
-  "sm": 3,
-  "md": 4,
-  "lg": 5,
-  "xl": 6,
-  "wd": 7
+  "xs": 3,
+  "sm": 4,
+  "md": 5,
+  "lg": 6,
+  "xl": 7,
+  "wd": 8
 ) !default;
 
 $width-sizes: (
-  "sm": 0,
+  "tn": 5%,
+  "xs": 30%,
+  "sm": 0%,
   "md": 10%,
   "lg": 20%,
   "xl": 25%,
@@ -36,11 +38,13 @@ $width-sizes: (
 ) !default;
 
 $height-sizes: (
-  "sm": 0,
-  "md": 40px,
-  "lg": 70px,
-  "xl": 100px,
-  "wd": 140px
+  "tn": 65px,
+  "xs": 110px,
+  "sm": 0px,
+  "md": 30px,
+  "lg": 65px,
+  "xl": 90px,
+  "wd": 125px
 ) !default;
 
 //! ********** MIXIN **********
@@ -57,7 +61,7 @@ $height-sizes: (
 
 //! ********** MAIN **********
 
-[id="intro"] {
+[id=intro] {
   display: flex;
   flex-flow: column;
   gap: $gap;
@@ -70,6 +74,7 @@ $height-sizes: (
 
   ul {
     flex-flow: column wrap;
+    place-items: baseline;
     box-sizing: border-box;
     overflow: scroll;
     margin: auto;
@@ -85,93 +90,12 @@ $height-sizes: (
 
   @each $breakpoint-key, $breakpoint-value in $breakpoints {
     @media (min-width: $breakpoint-value) {
-      /*@include header(
+      @include header(
         map-get($gap-ratios, $breakpoint-key),
         map-get($padding-ratios, $breakpoint-key),
         map-get($width-sizes, $breakpoint-key),
         map-get($height-sizes, $breakpoint-key)
-      );*/
-    }
-  }
-
-  //? ********** TN **********
-
-  @media (min-width: $tn) {
-    gap: calc($gap * 2);
-
-    ul {
-      padding: calc($padding * 2);
-    }
-  }
-
-  //? ********** XS **********
-
-  @media (min-width: $xs) {
-    gap: calc($gap * 2.5);
-
-    ul {
-      padding: calc($padding * 2.5);
-    }
-  }
-
-  //? ********** SM **********
-
-  @media (min-width: $sm) {
-    gap: calc($gap * 3);
-
-    ul {
-      place-items: baseline;
-      padding: calc($padding * 3);
-      width: $width;
-      height: $height;
-    }
-  }
-
-  //? ********** MD **********
-
-  @media (min-width: $md) {
-    gap: calc($gap * 4);
-
-    ul {
-      padding: calc($padding * 4);
-      width: calc($width - 10%);
-      height: calc($height + 40px);
-    }
-  }
-
-  //? ********** LG **********
-
-  @media (min-width: $lg) {
-    gap: calc($gap * 5);
-
-    ul {
-      padding: calc($padding * 5);
-      width: calc($width - 20%);
-      height: calc($height + 70px);
-    }
-  }
-
-  //? ********** XL **********
-
-  @media (min-width: $xl) {
-    gap: calc($gap * 6);
-
-    ul {
-      padding: calc($padding * 6);
-      width: calc($width - 25%);
-      height: calc($height + 100px);
-    }
-  }
-
-  //? ********** WD **********
-
-  @media (min-width: $wd) {
-    gap: calc($gap * 7);
-
-    ul {
-      padding: calc($padding * 7);
-      width: calc($width - 30%);
-      height: calc($height + 140px);
+      );
     }
   }
 }
