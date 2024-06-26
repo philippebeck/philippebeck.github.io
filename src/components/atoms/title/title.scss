@@ -2,8 +2,8 @@
 
 //! ********** VARIABLES **********
 
-$gap: 5px;
-$margin: 20px;
+$gap-size: 5px;
+$margin-size: 20px;
 $title-size: 1.2rem;
 $subtitle-ratio: 0.6;
 
@@ -45,18 +45,18 @@ $title-ratios: (
 
 //! ********** MIXIN **********
 
-@mixin gap($ratio) {
-  gap: calc($gap * $ratio);
+@mixin title-gap($ratio) {
+  gap: calc($gap-size * $ratio);
 }
 
-@mixin margin($ratio) {
-  margin: 0 0 calc($margin * $ratio);
+@mixin title-margin($ratio) {
+  margin: 0 0 calc($margin-size * $ratio);
 }
 
-@mixin font($title-lvl, $title-ratio, $screen-ratio: 1) {
+@mixin title-font($level, $title-ratio, $screen-ratio: 1) {
   $font-size: calc($title-size * $title-ratio * $screen-ratio);
 
-  #{$title-lvl} {
+  #{$level} {
     font-size: $font-size;
 
     & + p {
@@ -70,8 +70,8 @@ $title-ratios: (
 .title {
   display: flex;
   flex-flow: column;
-  gap: $gap;
-  margin: 0 0 $margin;
+  gap: $gap-size;
+  margin: 0 0 $margin-size;
   font-family: $serif;
 
   h1,
@@ -89,32 +89,32 @@ $title-ratios: (
     }
   }
 
-  @each $title-key, $title-ratio in $title-ratios {
-    @include font($title-key, $title-ratio);
+  @each $title-key, $title-value in $title-ratios {
+    @include title-font($title-key, $title-value);
   }
 
   //! ********** BREAKPOINTS **********
 
-  @each $break-key, $breakpoint in $breakpoints {
-    @media (min-width: $breakpoint) {
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @media (min-width: $breakpoint-value) {
 
-      @each $key, $ratio in $gap-ratios {
-        @if $key == $break-key {
-          @include gap($ratio);
+      @each $gap-key, $gap-value in $gap-ratios {
+        @if $gap-key == $breakpoint-key {
+          @include title-gap($gap-value);
         }
       }
 
-      @each $key, $ratio in $margin-ratios {
-        @if $key == $break-key {
-          @include margin($ratio);
+      @each $margin-key, $margin-value in $margin-ratios {
+        @if $margin-key == $breakpoint-key {
+          @include title-margin($margin-value);
         }
       }
 
-      @each $screen-key, $screen-ratio in $screen-ratios {
-        @if $break-key ==$screen-key {
+      @each $screen-key, $screen-value in $screen-ratios {
+        @if $screen-key == $breakpoint-key {
 
-          @each $title-key, $title-ratio in $title-ratios {
-            @include font($title-key, $title-ratio, $screen-ratio);
+          @each $title-key, $title-value in $title-ratios {
+            @include title-font($title-key, $title-value, $screen-value);
           }
         }
       }

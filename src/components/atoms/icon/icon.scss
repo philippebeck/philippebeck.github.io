@@ -1,6 +1,6 @@
 //! ********** VARIABLES **********
 
-$projects: (
+$code-colors: (
   "cubes":      #8E44AD,
   "sitemap":    #3498DB,
   "html5":      #E44D26,
@@ -17,7 +17,7 @@ $projects: (
   "dev":        #000
 ) !default;
 
-$networks: (
+$social-colors: (
   "codepen":      #000,
   "github":       #000,
   "linkedin-in":  #0077B5,
@@ -45,10 +45,10 @@ $networks: (
 
 //! ********** MAIN **********
 
-@each $icon, $color in $projects {
-  @include project($icon, $color);
+@each $code-key, $code-value in $code-colors {
+  @include project($code-key, $code-value);
 }
 
-@each $icon, $color in $networks {
-  @include network($icon, $color);
+@each $social-key, $social-value in $social-colors {
+  @include network($social-key, $social-value);
 }

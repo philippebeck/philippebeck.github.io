@@ -2,10 +2,10 @@
 
 //! ********** VARIABLES **********
 
-$radius: 5px;
-$width: 150px;
+$radius-size: 5px;
+$width-size: 150px;
 
-$ratios: (
+$radius-ratios: (
   "tn": 1.5,
   "xs": 2,
   "sm": 2.5,
@@ -15,7 +15,7 @@ $ratios: (
   "wd": 4.5
   ) !default;
 
-$sizes: (
+$width-sizes: (
   "tn": 10px,
   "xs": 20px,
   "sm": 30px,
@@ -27,12 +27,12 @@ $sizes: (
 
 //! ********** MIXINS **********
 
-@mixin radius($ratio) {
-  border-radius: calc($radius * $ratio);
+@mixin collapse-radius($ratio) {
+  border-radius: calc($radius-size * $ratio);
 }
 
-@mixin width($size) {
-  width: calc($width + $size);
+@mixin collapse-width($size) {
+  width: calc($width-size + $size);
 }
 
 //! ********** MAIN **********
@@ -51,8 +51,8 @@ $sizes: (
 
   summary {
     margin: auto;
-    border-radius: $radius;
-    width: $width;
+    border-radius: $radius-size;
+    width: $width-size;
     list-style: none;
     background-color: $secondary;
     color: $black;
@@ -65,18 +65,18 @@ $sizes: (
 
     //! ********** RESPONSIVE **********
 
-    @each $break-key, $breakpoint in $breakpoints {
-      @media (min-width: $breakpoint) {
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @media (min-width: $breakpoint-value) {
 
-        @each $key, $ratio in $ratios {
-          @if $key == $break-key {
-            @include radius($ratio);
+        @each $radius-key, $radius-value in $radius-ratios {
+          @if $radius-key == $breakpoint-key {
+            @include collapse-radius($radius-value);
           }
         }
 
-        @each $key, $size in $sizes {
-          @if $key == $break-key {
-            @include width($size);
+        @each $width-key, $width-value in $width-sizes {
+          @if $width-key == $breakpoint-key {
+            @include collapse-width($width-value);
           }
         }
       }

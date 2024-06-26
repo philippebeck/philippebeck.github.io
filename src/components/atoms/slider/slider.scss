@@ -2,9 +2,9 @@
 
 //! ********** VARIABLES **********
 
-$top: 40px;
-$left: 10px; 
-$bottom: -5px;
+$top-size: 40px;
+$left-size: 10px; 
+$bottom-size: -5px;
 $font-size: 1.5rem;
 
 $top-sizes: (
@@ -49,28 +49,28 @@ $font-ratios: (
 
 //! ********** MIXINS **********
 
-@mixin top($size) {
+@mixin slider-top($size) {
   [class*="left"],
   [class*="right"] {
     top: calc(50% - $size);
   }
 }
 
-@mixin left($size) {
+@mixin slider-left($size) {
   [class*="play"],
   [class*="pause"] {
     left: calc(50% - $size);
   }
 }
 
-@mixin bottom($ratio) {
+@mixin slider-bottom($ratio) {
   [class*="play"],
   [class*="pause"] {
-    bottom: calc($bottom * $ratio);
+    bottom: calc($bottom-size * $ratio);
   }
 }
 
-@mixin font($ratio) {
+@mixin slider-font($ratio) {
   i {
     font-size: calc($font-size * $ratio);
   }
@@ -105,37 +105,37 @@ $font-ratios: (
       right: 0;
     }
 
-    @include top($top);
-    @include left($left);
-    @include bottom(0);
-    @include font(1);
+    @include slider-top($top-size);
+    @include slider-left($left-size);
+    @include slider-bottom(0);
+    @include slider-font(1);
 
     //! ********** RESPONSIVE **********
 
-    @each $break-key, $breakpoint in $breakpoints {
-      @media (min-width: $breakpoint) {
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @media (min-width: $breakpoint-value) {
   
-        @each $key, $size in $top-sizes {
-          @if $key == $break-key {
-            @include top($size);
+        @each $top-key, $top-value in $top-sizes {
+          @if $top-key == $breakpoint-key {
+            @include slider-top($top-value);
           }
         }
 
-        @each $key, $size in $left-sizes {
-          @if $key == $break-key {
-            @include left($size);
+        @each $left-key, $left-value in $left-sizes {
+          @if $left-key == $breakpoint-key {
+            @include slider-left($left-value);
           }
         }
 
-        @each $key, $ratio in $bottom-ratios {
-          @if $key == $break-key {
-            @include bottom($ratio);
+        @each $bottom-key, $bottom-value in $bottom-ratios {
+          @if $bottom-key == $breakpoint-key {
+            @include slider-bottom($bottom-value);
           }
         }
 
-        @each $key, $ratio in $font-ratios {
-          @if $key == $break-key {
-            @include font($ratio);
+        @each $font-key, $font-value in $font-ratios {
+          @if $font-key == $breakpoint-key {
+            @include slider-font($font-value);
           }
         }
       }

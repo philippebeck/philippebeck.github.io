@@ -2,7 +2,7 @@
 
 //! ********** VARIABLES **********
 
-$radius: 10px;
+$radius-size: 10px;
 
 //! ********** MAIN **********
 
@@ -10,7 +10,7 @@ $radius: 10px;
   box-sizing: border-box;
   margin: 0;
   border: solid 2px $white;
-  border-radius: $radius;
+  border-radius: $radius-size;
   width: 100%;
   background-color: $white;
 
@@ -21,7 +21,7 @@ $radius: 10px;
   }
 
   & > *:first-child {
-    border-radius: $radius $radius 0 0;
+    border-radius: $radius-size $radius-size 0 0;
   }
 
   figcaption {
@@ -30,7 +30,7 @@ $radius: 10px;
     place-items: center;
     box-sizing: border-box;
     margin-top: -5px;
-    border-radius: 0 0 $radius $radius;
+    border-radius: 0 0 $radius-size $radius-size;
     padding: 5px 10px;
     height: 100px;
     background-color: $gray;
