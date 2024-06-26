@@ -2,10 +2,10 @@
 
 //! ********** VARIABLES **********
 
-$gap-size: 5px;
-$margin-size: 20px;
-$title-size: 1.2rem;
-$subtitle-ratio: 0.6;
+$gap: 5px;
+$margin: 20px;
+$title: 1.2rem;
+$subtitle: 0.6;
 
 $gap-ratios: (
   "tn": 1.1,
@@ -46,21 +46,21 @@ $title-ratios: (
 //! ********** MIXIN **********
 
 @mixin title-gap($ratio) {
-  gap: calc($gap-size * $ratio);
+  gap: calc($gap * $ratio);
 }
 
 @mixin title-margin($ratio) {
-  margin: 0 0 calc($margin-size * $ratio);
+  margin: 0 0 calc($margin * $ratio);
 }
 
 @mixin title-font($level, $title-ratio, $screen-ratio: 1) {
-  $font-size: calc($title-size * $title-ratio * $screen-ratio);
+  $font-size: calc($title * $title-ratio * $screen-ratio);
 
   #{$level} {
     font-size: $font-size;
 
     & + p {
-      font-size: calc($font-size * $subtitle-ratio);
+      font-size: calc($font-size * $subtitle);
     }
   }
 }
@@ -70,8 +70,8 @@ $title-ratios: (
 .title {
   display: flex;
   flex-flow: column;
-  gap: $gap-size;
-  margin: 0 0 $margin-size;
+  gap: $gap;
+  margin: 0 0 $margin;
   font-family: $serif;
 
   h1,
