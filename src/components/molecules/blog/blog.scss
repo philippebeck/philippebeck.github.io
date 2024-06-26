@@ -24,7 +24,7 @@ $width-ratios: (
 
 //! ********** MIXIN **********
 
-@mixin blog-width($size, $ratio) {
+@mixin blog($size, $ratio) {
   width: calc((100% - ($ratio - 1) * $size) / $ratio);
 }
 
@@ -54,16 +54,10 @@ $width-ratios: (
       @each $breakpoint-key, $breakpoint-value in $breakpoints {
         @media (min-width: $breakpoint-value) {
 
-          @each $size-key, $size-value in $width-sizes {
-            @if $size-key == $breakpoint-key {
-              
-              @each $ratio-key, $ratio-value in $width-ratios {
-                @if $ratio-key == $breakpoint-key {
-                  @include blog-width($size-value, $ratio-value);
-                }
-              }
-            }
-          }
+          @include blog(
+            map-get($width-sizes, $breakpoint-key),
+            map-get($width-ratios, $breakpoint-key)
+          );
         }
       }
     }

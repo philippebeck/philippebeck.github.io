@@ -9,7 +9,8 @@ $width-sizes: (
   "md": 25px,
   "lg": 30px,
   "xl": 35px,
-  "wd": 40px) !default;
+  "wd": 40px
+  ) !default;
 
 $width-ratios: (
   "tn": 2,
@@ -18,13 +19,13 @@ $width-ratios: (
   "md": 3,
   "lg": 4,
   "xl": 4,
-  "wd": 5) !default;
+  "wd": 5
+  ) !default;
 
 //! ********** MIXIN **********
 
-@mixin portfolio-width($size, $ratio) {
-  width: calc((100% - ($ratio - 1) * $size) / $ratio
-  );
+@mixin portfolio($size, $ratio) {
+  width: calc((100% - ($ratio - 1) * $size) / $ratio);
 }
 
 //! ********** MAIN **********
@@ -61,16 +62,10 @@ $width-ratios: (
       @each $breakpoint-key, $breakpoint-value in $breakpoints {
         @media (min-width: $breakpoint-value) {
 
-          @each $size-key, $size-value in $width-sizes {
-            @if $size-key == $breakpoint-key {
-              
-              @each $ratio-key, $ratio-value in $width-ratios {
-                @if $ratio-key == $breakpoint-key {
-                  @include portfolio-width($size-value, $ratio-value);
-                }
-              }
-            }
-          }
+          @include portfolio(
+            map-get($width-sizes, $breakpoint-key),
+            map-get($width-ratios, $breakpoint-key)
+          );
         }
       }
     }
