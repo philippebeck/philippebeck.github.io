@@ -2,9 +2,36 @@
 
 //! ********** VARIABLES **********
 
-$width: 30px;
-$height: 30px;
-$font-size: 1.2rem;
+$size: 30px;
+$font: 1.2rem;
+
+$block-sizes: (
+  "tn": 5px,
+  "xs": 10px,
+  "sm": 15px,
+  "md": 20px,
+  "lg": 25px,
+  "xl": 30px,
+  "wd": 35px
+) !default;
+
+$font-ratios: (
+  "tn": 1.2,
+  "xs": 1.4,
+  "sm": 1.6,
+  "md": 1.8,
+  "lg": 2,
+  "xl": 2.2,
+  "wd": 2.4
+) !default;
+
+//! ********** MIXIN **********
+
+@mixin footer($block-size, $font-ratio) {
+  width: calc($size + $block-size);
+  height: calc($size + $block-size);
+  font-size: calc($font * $font-ratio);
+}
 
 //! ********** MAIN **********
 
@@ -22,9 +49,9 @@ footer {
     place-items: center;
     border: solid 2px $silver;
     border-radius: 50%;
-    width: $width;
-    height: $height;
-    font-size: $font-size;
+    width: $size;
+    height: $size;
+    font-size: $font;
     background-color: $white;
   }
 
@@ -38,63 +65,18 @@ footer {
     color: $gray;
   }
 
-  //? ********** XS **********
+  li {
 
-  @media (min-width: $xs) {
-    li {
-      width: calc($width + 5px);
-      height: calc($height + 5px);
-      font-size: calc($font-size * 1.2);
-    }
-  }
+    //! ********** RESPONSIVE **********
 
-  //? ********** SM **********
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @media (min-width: $breakpoint-value) {
 
-  @media (min-width: $sm) {
-    li {
-      width: calc($width + 10px);
-      height: calc($height + 10px);
-      font-size: calc($font-size * 1.4);
-    }
-  }
-
-  //? ********** MD **********
-
-  @media (min-width: $md) {
-    li {
-      width: calc($width + 15px);
-      height: calc($height + 15px);
-      font-size: calc($font-size * 1.6);
-    }
-  }
-
-  //? ********** LG **********
-
-  @media (min-width: $lg) {
-    li {
-      width: calc($width + 20px);
-      height: calc($height + 20px);
-      font-size: calc($font-size * 1.8);
-    }
-  }
-
-  //? ********** XL **********
-
-  @media (min-width: $xl) {
-    li {
-      width: calc($width + 25px);
-      height: calc($height + 25px);
-      font-size: calc($font-size * 2);
-    }
-  }
-
-  //? ********** WD **********
-
-  @media (min-width: $wd) {
-    li {
-      width: calc($width + 30px);
-      height: calc($height + 30px);
-      font-size: calc($font-size * 2.2);
+        @include footer(
+          map-get($block-sizes, $breakpoint-key),
+          map-get($font-ratios, $breakpoint-key)
+        );
+      }
     }
   }
 }
