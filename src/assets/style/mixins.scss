@@ -1,0 +1,11 @@
+@mixin keyframes($key, $value) {
+  @keyframes #{$key} {
+    from {
+      transform: #{$value};
+    }
+  }
+}
+
+@mixin font($font-ratio) {
+  font-size: calc($font * $font-ratio);
+}
