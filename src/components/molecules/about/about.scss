@@ -2,9 +2,9 @@
 
 //! ********** VARIABLES **********
 
-$gap-size: 5px;
-$padding-size: 5px;
-$height-size: 265px;
+$gap: 5px;
+$padding: 5px;
+$height: 265px;
 
 $gap-ratios: (
   "tn": 2,
@@ -36,18 +36,12 @@ $height-sizes: (
   "wd": 430px
 ) !default;
 
-//! ********** MIXINS **********
+//! ********** MIXIN **********
 
-@mixin about-gap($ratio) {
-  gap: calc($gap-size * $ratio);
-}
-
-@mixin about-padding($ratio) {
-  padding: calc($padding-size * $ratio);
-}
-
-@mixin about-height($size) {
-  height: calc($height-size + $size);
+@mixin about($gap-ratio, $padding-ratio, $height-size) {
+  gap: calc($gap * $gap-ratio);
+  padding: calc($padding * $padding-ratio);
+  height: calc($height + $height-size);
 }
 
 //! ********** MAIN **********
@@ -67,13 +61,13 @@ $height-sizes: (
   section {
     display: flex;
     flex-flow: column;
-    gap: $gap-size;
+    gap: $gap;
     box-sizing: border-box;
     margin: auto;
     border-radius: 20px;
-    padding: $padding-size;
+    padding: $padding;
     width: fit-content;
-    height: $height-size;
+    height: $height;
     background-color: $silver;
     color: $black;
 
@@ -93,23 +87,11 @@ $height-sizes: (
     @each $breakpoint-key, $breakpoint-value in $breakpoints {
       @media (min-width: $breakpoint-value) {
 
-        @each $gap-key, $gap-value in $gap-ratios {
-          @if $gap-key == $breakpoint-key {
-            @include about-gap($gap-value);
-          }
-        }
-
-        @each $padding-key, $padding-value in $padding-ratios {
-          @if $padding-key == $breakpoint-key {
-            @include about-padding($padding-value);
-          }
-        }
-
-        @each $height-key, $height-value in $height-sizes {
-          @if $height-key == $breakpoint-key {
-            @include about-height($height-value);
-          }
-        }
+        @include about(
+          map-get($gap-ratios, $breakpoint-key),
+          map-get($padding-ratios, $breakpoint-key),
+          map-get($height-sizes, $breakpoint-key)
+        );
       }
     }
   }
