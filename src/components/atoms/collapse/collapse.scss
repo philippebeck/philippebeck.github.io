@@ -2,8 +2,8 @@
 
 //! ********** VARIABLES **********
 
-$radius-size: 5px;
-$width-size: 150px;
+$radius: 5px;
+$width: 150px;
 
 $radius-ratios: (
   "tn": 1.5,
@@ -25,14 +25,11 @@ $width-sizes: (
   "wd": 70px
   ) !default;
 
-//! ********** MIXINS **********
+//! ********** MIXIN **********
 
-@mixin collapse-radius($ratio) {
-  border-radius: calc($radius-size * $ratio);
-}
-
-@mixin collapse-width($size) {
-  width: calc($width-size + $size);
+@mixin collapse($ratio, $size) {
+  border-radius: calc($radius * $ratio);
+  width: calc($width + $size);
 }
 
 //! ********** MAIN **********
@@ -51,8 +48,8 @@ $width-sizes: (
 
   summary {
     margin: auto;
-    border-radius: $radius-size;
-    width: $width-size;
+    border-radius: $radius;
+    width: $width;
     list-style: none;
     background-color: $secondary;
     color: $black;
@@ -68,17 +65,10 @@ $width-sizes: (
     @each $breakpoint-key, $breakpoint-value in $breakpoints {
       @media (min-width: $breakpoint-value) {
 
-        @each $radius-key, $radius-value in $radius-ratios {
-          @if $radius-key == $breakpoint-key {
-            @include collapse-radius($radius-value);
-          }
-        }
-
-        @each $width-key, $width-value in $width-sizes {
-          @if $width-key == $breakpoint-key {
-            @include collapse-width($width-value);
-          }
-        }
+        @include collapse(
+          map-get($radius-ratios, $breakpoint-key),
+          map-get($width-sizes, $breakpoint-key)
+        );
       }
     }
   }

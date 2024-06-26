@@ -2,11 +2,6 @@
 
 //! ********** VARIABLES **********
 
-$top-size: 40px;
-$left-size: 10px; 
-$bottom-size: -5px;
-$font-size: 1.5rem;
-
 $top-sizes: (
   "tn": 48px,
   "xs": 52px,
@@ -47,32 +42,22 @@ $font-ratios: (
   "wd": 4.5
 ) !default;
 
-//! ********** MIXINS **********
+//! ********** MIXIN **********
 
-@mixin slider-top($size) {
+@mixin slider($top-size, $left-size, $bottom-ratio, $font-ratio) {
   [class*="left"],
   [class*="right"] {
-    top: calc(50% - $size);
+    top: calc(50% - $top-size);
   }
-}
 
-@mixin slider-left($size) {
   [class*="play"],
   [class*="pause"] {
-    left: calc(50% - $size);
+    left: calc(50% - $left-size);
+    bottom: calc(-5px * $bottom-ratio);
   }
-}
 
-@mixin slider-bottom($ratio) {
-  [class*="play"],
-  [class*="pause"] {
-    bottom: calc($bottom-size * $ratio);
-  }
-}
-
-@mixin slider-font($ratio) {
   i {
-    font-size: calc($font-size * $ratio);
+    font-size: calc(1.5rem * $font-ratio);
   }
 }
 
@@ -105,39 +90,19 @@ $font-ratios: (
       right: 0;
     }
 
-    @include slider-top($top-size);
-    @include slider-left($left-size);
-    @include slider-bottom(0);
-    @include slider-font(1);
+    @include slider(40px, 10px, 0, 1);
 
     //! ********** RESPONSIVE **********
 
     @each $breakpoint-key, $breakpoint-value in $breakpoints {
       @media (min-width: $breakpoint-value) {
-  
-        @each $top-key, $top-value in $top-sizes {
-          @if $top-key == $breakpoint-key {
-            @include slider-top($top-value);
-          }
-        }
 
-        @each $left-key, $left-value in $left-sizes {
-          @if $left-key == $breakpoint-key {
-            @include slider-left($left-value);
-          }
-        }
-
-        @each $bottom-key, $bottom-value in $bottom-ratios {
-          @if $bottom-key == $breakpoint-key {
-            @include slider-bottom($bottom-value);
-          }
-        }
-
-        @each $font-key, $font-value in $font-ratios {
-          @if $font-key == $breakpoint-key {
-            @include slider-font($font-value);
-          }
-        }
+        @include slider(
+          map-get($top-sizes, $breakpoint-key),
+          map-get($left-sizes, $breakpoint-key),
+          map-get($bottom-ratios, $breakpoint-key),
+          map-get($font-ratios, $breakpoint-key)
+        );
       }
     }
   }

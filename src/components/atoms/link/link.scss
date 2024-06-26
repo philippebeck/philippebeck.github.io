@@ -2,8 +2,8 @@
 
 //! ********** VARIABLES **********
 
-$gap-size: 5px;
-$padding-size: 5px;
+$gap: 5px;
+$padding: 5px;
 
 $gap-ratios: (
   "tn": 1.5,
@@ -25,19 +25,16 @@ $padding-ratios: (
   "wd": 4.5
 ) !default;
 
+//! ********** MIXIN **********
 
-//! ********** MIXINS **********
-
-@mixin link-gap($ratio) {
+@mixin link($gap-ratio, $padding-ratio) {
   .link,
   .btn {
-    gap: calc($gap-size * $ratio);
+    gap: calc($gap * $gap-ratio);
   }
-}
 
-@mixin link-padding($ratio) {
   .btn {
-    padding: calc($padding-size * $ratio / 2) calc($padding-size * $ratio);
+    padding: calc($padding * $padding-ratio / 2) calc($padding * $padding-ratio);
   }
 }
 
@@ -48,7 +45,7 @@ $padding-ratios: (
   display: flex;
   place-content: center;
   place-items: center;
-  gap: $gap-size;
+  gap: $gap;
   width: 100%;
   height: 100%;
   font-family: $monospace;
@@ -60,7 +57,7 @@ $padding-ratios: (
   box-sizing: border-box;
   border: solid 2px $primary;
   border-radius: 10px;
-  padding: calc($padding-size / 2) $padding-size;
+  padding: calc($padding / 2) $padding;
   background-color: $gray;
 
   &:hover,
@@ -78,16 +75,9 @@ $padding-ratios: (
 @each $breakpoint-key, $breakpoint-value in $breakpoints {
   @media (min-width: $breakpoint-value) {
 
-    @each $gap-key, $gap-value in $gap-ratios {
-      @if $gap-key == $breakpoint-key {
-        @include link-gap($gap-value);
-      }
-    }
-
-    @each $padding-key, $padding-value in $padding-ratios {
-      @if $padding-key == $breakpoint-key {
-        @include link-padding($padding-value);
-      }
-    }
+    @include link(
+      map-get($gap-ratios, $breakpoint-key),
+      map-get($padding-ratios, $breakpoint-key)
+    );
   }
 }
