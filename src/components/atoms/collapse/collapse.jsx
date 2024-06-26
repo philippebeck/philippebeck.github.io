@@ -24,13 +24,8 @@ const Collapse = ({ title, content }) => {
 
   return (
     <details className="collapse">
-      <summary>
-        {title}
-      </summary>
-
-      <figure>
-        {content}
-      </figure>
+      <summary>{title}</summary>
+      <figure>{content}</figure>
     </details>
   )
 }

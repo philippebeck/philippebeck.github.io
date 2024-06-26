@@ -27,11 +27,11 @@ import './icon.scss'
  * @return {JSX.Element}
  *  The rendered Icon Atom.
  */
-const Icon = ({ name, cat = "brands", option = "2x", isHidden = true}) => {
+const Icon = ({ name, cat = "brands", option = "2x", isHidden = true }) => {
 
   return (
     <i
-      className={ `fa-${cat} fa-${name} fa-${option} fa-fw` }
+      className={`fa-${cat} fa-${name} fa-${option} fa-fw`}
       aria-hidden={isHidden}
     ></i>
   )

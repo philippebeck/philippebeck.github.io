@@ -21,19 +21,18 @@ import "./slider.scss";
  * @return {JSX.Element}
  *  The rendered Slider Molecule.
  */
-const Slider = ({ array, timer=5000 }) => {
+const Slider = ({ array, timer = 5000 }) => {
+  const LENGTH = array.length;
 
-  const LENGTH        = array.length;
   const [i, setIndex] = useState(0);
-
-  const goNext     = () => setIndex((i) => (i + 1) % LENGTH);
+  const goNext = () => setIndex((i) => (i + 1) % LENGTH);
   const goPrevious = () => setIndex((i) => (i - 1 + LENGTH) % LENGTH);
-  const toggleAuto = () => setAuto((state) => !state);
 
   //! ********** AUTOPLAY **********
 
-  let [isAuto, setAuto]              = useState(true);
+  let [isAuto, setAuto] = useState(true);
   if (timer === 0) [isAuto, setAuto] = useState(false);
+  const toggleAuto = () => setAuto((state) => !state);
 
   useEffect(() => {
     let interval;

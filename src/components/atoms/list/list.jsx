@@ -19,12 +19,7 @@ const List = ({ array }) => {
 
   return (
     <ul className="list">
-      {array.map((item, index) =>
-
-        <li key={index}>
-          {item}
-        </li>
-      )}
+      {array.map((item, index) => <li key={index}>{item}</li>)}
     </ul>
   )
 }

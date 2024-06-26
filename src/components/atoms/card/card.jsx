@@ -22,9 +22,7 @@ const Card = ({ content, caption = "" }) => {
   return (
     <figure className="card">
       {content}
-      {
-        caption && <figcaption>{caption}</figcaption>
-      }
+      {caption && <figcaption>{caption}</figcaption>}
     </figure>
   )
 }

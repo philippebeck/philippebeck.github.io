@@ -34,17 +34,13 @@ const Title = ({ heading, prefix = "", subtitle = "" }) => {
 
   return (
     <hgroup className="title">
-      {
-        prefix && <p>{prefix}</p>
-      }
+      {prefix && <p>{prefix}</p>}
       {
         heading.level === "1" ? <h1>{heading.text}</h1> :
-          heading.level === "2" ? <h2>{heading.text}</h2> :
-            <h3>{heading.text}</h3>
+        heading.level === "2" ? <h2>{heading.text}</h2> :
+        <h3>{heading.text}</h3>
       }
-      {
-        subtitle && <p>{subtitle}</p>
-      }
+      {subtitle && <p>{subtitle}</p>}
     </hgroup>
   )
 }
