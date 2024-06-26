@@ -43,14 +43,11 @@ $title-ratios: (
   "h3": 1.2)
   !default;
 
-//! ********** MIXIN **********
+//! ********** MIXINS **********
 
-@mixin title-gap($ratio) {
-  gap: calc($gap * $ratio);
-}
-
-@mixin title-margin($ratio) {
-  margin: 0 0 calc($margin * $ratio);
+@mixin title-size($gap-ratio, $margin-ratio) {
+  gap: calc($gap * $gap-ratio);
+  margin: 0 0 calc($margin * $margin-ratio);
 }
 
 @mixin title-font($level, $title-ratio, $screen-ratio: 1) {
@@ -93,22 +90,15 @@ $title-ratios: (
     @include title-font($title-key, $title-value);
   }
 
-  //! ********** BREAKPOINTS **********
+  //! ********** RESPONSIVE **********
 
   @each $breakpoint-key, $breakpoint-value in $breakpoints {
     @media (min-width: $breakpoint-value) {
 
-      @each $gap-key, $gap-value in $gap-ratios {
-        @if $gap-key == $breakpoint-key {
-          @include title-gap($gap-value);
-        }
-      }
-
-      @each $margin-key, $margin-value in $margin-ratios {
-        @if $margin-key == $breakpoint-key {
-          @include title-margin($margin-value);
-        }
-      }
+      @include title-size(
+        map-get($gap-ratios, $breakpoint-key),
+        map-get($margin-ratios, $breakpoint-key)
+      );
 
       @each $screen-key, $screen-value in $screen-ratios {
         @if $screen-key == $breakpoint-key {
