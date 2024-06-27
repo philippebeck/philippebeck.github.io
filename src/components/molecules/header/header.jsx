@@ -18,7 +18,7 @@ const Header = () => {
   const { title, data } = header;
 
   return (
-    <header id="intro">
+    <header id="header">
 
       <Title
         heading={title.heading}

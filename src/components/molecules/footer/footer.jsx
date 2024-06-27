@@ -17,7 +17,7 @@ import './footer.scss'
 const Footer = () => {
 
   return (
-    <footer>
+    <footer className="footer">
 
       <List
         array={footer.map((item) =>
