@@ -26,6 +26,7 @@ const Portfolio = () => {
 
       <Title
         heading={title.heading}
+        level={title.level}
         subtitle={title.subtitle}
         prefix={
 
@@ -44,6 +45,7 @@ const Portfolio = () => {
 
               <Title
                 heading={project.title.heading}
+                level={project.title.level}
                 prefix={
 
                   <Icon
@@ -66,7 +68,10 @@ const Portfolio = () => {
                       <Card
                         caption={
                           <>
-                            <h4>{item.caption.title}</h4>
+
+                            <Title
+                              heading={item.caption.title}
+                            />
 
                             <List
                               array={item.caption.technos.map((techno) =>

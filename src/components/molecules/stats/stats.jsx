@@ -23,6 +23,7 @@ const Stats = () => {
 
       <Title
         heading={title.heading}
+        level={title.level}
         subtitle={title.subtitle}
         prefix={
 

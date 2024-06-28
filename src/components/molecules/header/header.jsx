@@ -22,6 +22,7 @@ const Header = () => {
 
       <Title
         heading={title.heading}
+        level={title.level}
         subtitle={<strong>{title.subtitle}</strong>}
         prefix={
 

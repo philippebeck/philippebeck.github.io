@@ -4,20 +4,18 @@ import "./title.scss"
  * ? TITLE ATOM
  * * Renders the Title Atom
  * * with the specified heading,
- * * an optional prefix &
+ * * level, an optional prefix &
  * * an optional subtitle.
  *
  * @param {Object} props
  *  The Properties for the Title Atom.
  *
- * @param {Object} props.heading
- *  The Heading object of the Title.
+ * @param {string} props.heading
+ *  The text of the Title.
  *
- * @param {string} props.heading.level
+ * @param {number} [props.level=4]
  *  The Level of the Title.
- *
- * @param {string} props.heading.text
- *  The Text of the Title.
+ *  Defaults to 4.
  *
  * @param {any} [props.prefix=""]
  *  The optional Prefix of the Title.
@@ -30,15 +28,17 @@ import "./title.scss"
  * @return {JSX.Element}
  *  The rendered Title Atom.
  */
-const Title = ({ heading, prefix = "", subtitle = "" }) => {
+const Title = ({ heading, level = 4, prefix = "", subtitle = "" }) => {
+  level = parseInt(level);
 
   return (
     <hgroup className="title">
       {prefix && <p>{prefix}</p>}
       {
-        heading.level === "1" ? <h1>{heading.text}</h1> :
-        heading.level === "2" ? <h2>{heading.text}</h2> :
-        <h3>{heading.text}</h3>
+        level === 1 ? <h1>{heading}</h1> :
+        level === 2 ? <h2>{heading}</h2> :
+        level === 3 ? <h3>{heading}</h3> :
+        <h4>{heading}</h4>
       }
       {subtitle && <p>{subtitle}</p>}
     </hgroup>

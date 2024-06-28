@@ -24,6 +24,7 @@ const Links = () => {
 
       <Title
         heading={title.heading}
+        level={title.level}
         subtitle={title.subtitle}
         prefix={
 

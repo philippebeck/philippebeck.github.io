@@ -26,6 +26,7 @@ const Blog = () => {
 
       <Title
         heading={title.heading}
+        level={title.level}
         subtitle={title.subtitle}
         prefix={
 
@@ -44,6 +45,7 @@ const Blog = () => {
 
               <Title
                 heading={article.title.heading}
+                level={article.title.level}
                 prefix={
 
                   <Icon
@@ -64,7 +66,12 @@ const Blog = () => {
                     content={
 
                       <Card
-                        caption={<h4>{item.caption}</h4>}
+                        caption={
+
+                          <Title
+                            heading={item.caption.title}
+                          />
+                        }
                         content={
 
                           <Image
