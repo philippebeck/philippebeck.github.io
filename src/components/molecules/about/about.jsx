@@ -40,6 +40,7 @@ const About = () => {
 
             <Title
               heading={item.title.heading}
+              level={item.title.level}
               prefix={
 
                 <Icon
