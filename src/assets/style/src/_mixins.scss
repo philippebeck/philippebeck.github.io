@@ -28,5 +28,5 @@
 
 @mixin molecules($border-ratio, $padding-ratio) {
   border-width: calc($border * $border-ratio);
-  padding: calc($padding * $padding-ratio * 2) calc($padding * $padding-ratio);
+  padding: calc($padding * $padding-ratio * 4) calc($padding * $padding-ratio);
 }
