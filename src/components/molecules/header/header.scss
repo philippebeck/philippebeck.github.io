@@ -65,7 +65,6 @@ $height-sizes: (
   display: flex;
   flex-flow: column;
   gap: $gap;
-  margin-top: 20px;
 
   &:hover > *:first-child i,
   &:focus > *:first-child i {
