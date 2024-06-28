@@ -1,7 +1,7 @@
 {
   "nav": {
     "logo": {
-      "url": "#intro",
+      "url": "#header",
       "text": "Logo",
       "icon": {
         "cat": "solid",
@@ -61,10 +61,8 @@
   },
   "header": {
     "title": {
-      "heading": {
-        "text": "Philippe Beck",
-        "level": "1"
-      },
+      "heading": "Philippe Beck",
+      "level": 1,
       "icon": {
         "name": "user-ninja",
         "cat": "solid"
@@ -84,10 +82,8 @@
   },
   "portfolio": {
     "title": {
-      "heading": {
-        "text": "Portfolio",
-        "level": "2"
-      },
+      "heading": "Portfolio",
+      "level": 2,
       "icon": {
         "name": "code",
         "cat": "solid"
@@ -97,9 +93,8 @@
     "data": [
       {
         "title": {
-          "heading": {
-            "text": "Packages"
-          },
+          "heading": "Packages",
+          "level": 3,
           "icon": {
             "name": "cubes",
             "cat": "solid"
@@ -227,9 +222,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Websites"
-          },
+          "heading": "Websites",
+          "level": 3,
           "icon": {
             "name": "sitemap",
             "cat": "solid"
@@ -402,10 +396,8 @@
   },
   "stats": {
     "title": {
-      "heading": {
-        "text": "Stats",
-        "level": "2"
-      },
+      "heading": "Stats",
+      "level": 2,
       "icon": {
         "name": "chart-pie",
         "cat": "solid"
@@ -429,10 +421,8 @@
   },
   "blog": {
     "title": {
-      "heading": {
-        "text": "Blog",
-        "level": "2"
-      },
+      "heading": "Blog",
+      "level": 2,
       "icon": {
         "name": "blog",
         "cat": "solid"
@@ -442,16 +432,17 @@
     "data": [
       {
         "title": {
-          "heading": {
-            "text": "HTML"
-          },
+          "heading": "HTML",
+          "level": 3,
           "icon": {
             "name": "html5"
           }
         },
         "gallery": [
           {
-            "caption": "A Dive into ARIA Attributes of HTML5",
+            "caption": {
+              "title": "A Dive into ARIA Attributes of HTML5"
+            },
             "detail": "Exploring Usage, Best Practices & Impact of ARIA Attributes for Improved Web Application Accessibility",
             "image": {
               "url": "img/blog/html5-aria.webp",
@@ -460,7 +451,9 @@
             "url": "https://medium.com/@philippebeck/html5-aria-df25efdf6f2b"
           },
           {
-            "caption": "Avoiding the pitfalls of HTML5",
+            "caption": {
+              "title": "Avoiding the pitfalls of HTML5"
+            },
             "detail": "Common bad practices including div soup, incorrect titles, excessive line breaks, table layout, HTML design & outdated attributes",
             "image": {
               "url": "img/blog/html5-bad-practices.webp",
@@ -469,7 +462,9 @@
             "url": "https://medium.com/@philippebeck/html5-bad-practices-56f2028f698c"
           },
           {
-            "caption": "Discover the Power of HTML5",
+            "caption": {
+              "title": "Discover the Power of HTML5"
+            },
             "detail": "Uncover the Essence of HTML5 through Tags & Attributes",
             "image": {
               "url": "img/blog/html5-tags-attributes.webp",
@@ -478,7 +473,9 @@
             "url": "https://medium.com/@philippebeck/html5-tags-attributes-292d6553398c"
           },
           {
-            "caption": "Essential Tips for Mastering HTML5",
+            "caption": {
+              "title": "Essential Tips for Mastering HTML5"
+            },
             "detail": "A comprehensive guide that covers best practices for indentation, syntax, semantics, attributes, controls & validation for effective HTML5 coding",
             "image": {
               "url": "img/blog/html5-best-practices.webp",
@@ -487,7 +484,9 @@
             "url": "https://medium.com/@philippebeck/html5-best-practices-09c08cf46c21"
           },
           {
-            "caption": "Inclusive Web Experiences with HTML5",
+            "caption": {
+              "title": "Inclusive Web Experiences with HTML5"
+            },
             "detail": "Create accessible web content with semantic HTML, form fields, multimedia support, graphics capabilities, geolocation & local storage",
             "image": {
               "url": "img/blog/html5-accessibility.webp",
@@ -496,7 +495,9 @@
             "url": "https://medium.com/@philippebeck/html5-accessibility-3705d520045d"
           },
           {
-            "caption": "Maximize performance in HTML5",
+            "caption": {
+              "title": "Maximize performance in HTML5"
+            },
             "detail": "Optimize loading, rendering & resource management to deliver an exceptional user experience",
             "image": {
               "url": "img/blog/html5-performance.webp",
@@ -505,7 +506,9 @@
             "url": "https://medium.com/@philippebeck/html5-performance-5f65346ccf2f"
           },
           {
-            "caption": "Maximize your Visibility with HTML5",
+            "caption": {
+              "title": "Maximize your Visibility with HTML5"
+            },
             "detail": "Find out how to use HTML5 to improve your SEO, title & description, image optimization, internal links, page loading & mobile compatibility",
             "image": {
               "url": "img/blog/html5-seo.webp",
@@ -514,7 +517,9 @@
             "url": "https://medium.com/@philippebeck/html5-seo-c246b5de3cdf"
           },
           {
-            "caption": "Structured Data in HTML5",
+            "caption": {
+              "title": "Structured Data in HTML5"
+            },
             "detail": "Explore how to enhance your SEO by marking up structured data, generating rich snippets & improving accessibility for all users",
             "image": {
               "url": "img/blog/html5-structured-data.webp",
@@ -526,16 +531,17 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "CSS"
-          },
+          "heading": "CSS",
+          "level": 3,
           "icon": {
             "name": "css3"
           }
         },
         "gallery": [
           {
-            "caption": "Avoiding Common Pitfalls in CSS3",
+            "caption": {
+              "title": "Avoiding Common Pitfalls in CSS3"
+            },
             "detail": "A Guide to Writing Maintainable Styles, learn how to steer clear of bad practices & maintain clean, efficient CSS code",
             "image": {
               "url": "img/blog/css3-bad-practices.webp",
@@ -544,7 +550,9 @@
             "url": "https://medium.com/@philippebeck/css3-bad-practices-0c8453786c84"
           },
           {
-            "caption": "CSS3 Selectors & Properties",
+            "caption": {
+              "title": "CSS3 Selectors & Properties"
+            },
             "detail": "Unleash the Power of Precise Styling with CSS3",
             "image": {
               "url": "img/blog/css3-selectors-properties.webp",
@@ -553,7 +561,9 @@
             "url": "https://medium.com/@philippebeck/css3-selectors-properties-23f2c8a82fa3"
           },
           {
-            "caption": "CSS3 Transitions & Animations",
+            "caption": {
+              "title": "CSS3 Transitions & Animations"
+            },
             "detail": "Mastering the Art of Dynamic Web Design with Transitions & Animations",
             "image": {
               "url": "img/blog/css3-transitions-animations.webp",
@@ -562,7 +572,9 @@
             "url": "https://medium.com/@philippebeck/css3-transitions-animations-5b3a08756b22"
           },
           {
-            "caption": "Discovering CSS3 Layout",
+            "caption": {
+              "title": "Discovering CSS3 Layout"
+            },
             "detail": "Learn to create flexible & responsive web layouts using the latest CSS3 techniques",
             "image": {
               "url": "img/blog/css3-layout.webp",
@@ -571,7 +583,9 @@
             "url": "https://medium.com/@philippebeck/css3-layout-826f4acaa50d"
           },
           {
-            "caption": "Embracing Mobile First",
+            "caption": {
+              "title": "Embracing Mobile First"
+            },
             "detail": "Revolutionizing Responsive Web Design with CSS3",
             "image": {
               "url": "img/blog/css3-mobile-first.webp",
@@ -580,7 +594,9 @@
             "url": "https://medium.com/@philippebeck/css3-mobile-first-79ef48249a7c"
           },
           {
-            "caption": "Enhancing Web Design with CSS3 Functions",
+            "caption": {
+              "title": "Enhancing Web Design with CSS3 Functions"
+            },
             "detail": "Leveraging the Power of Dynamic Styling for Modern Web Development",
             "image": {
               "url": "img/blog/css3-functions.webp",
@@ -589,7 +605,9 @@
             "url": "https://medium.com/@philippebeck/css3-functions-339dba7bb123"
           },
           {
-            "caption": "Essential CSS3 Best Practices",
+            "caption": {
+              "title": "Essential CSS3 Best Practices"
+            },
             "detail": "Elevate Your CSS Development with Performance, Maintainability & Cross-Browser Compatibility",
             "image": {
               "url": "img/blog/css3-best-practices.webp",
@@ -598,7 +616,9 @@
             "url": "https://medium.com/@philippebeck/css3-best-practices-4b9a7f13b17e"
           },
           {
-            "caption": "Flexbox: A Guide to Modern Layouts",
+            "caption": {
+              "title": "Flexbox: A Guide to Modern Layouts"
+            },
             "detail": "Empowering Dynamic & Adaptive CSS Layouts",
             "image": {
               "url": "img/blog/css3-mastering-flexbox.webp",
@@ -610,16 +630,17 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "JavaScript"
-          },
+          "heading": "JavaScript",
+          "level": 3,
           "icon": {
             "name": "square-js"
           }
         },
         "gallery": [
           {
-            "caption": "Avoiding JavaScript Pitfalls",
+            "caption": {
+              "title": "Avoiding JavaScript Pitfalls"
+            },
             "detail": "Discover common mistakes to avoid for better JavaScript code",
             "image": {
               "url": "img/blog/avoiding-javascript-pitfalls.webp",
@@ -628,7 +649,9 @@
             "url": "https://medium.com/@philippebeck/avoiding-javascript-pitfalls-8413e0e3f92e"
           },
           {
-            "caption": "Best Practices in JavaScript",
+            "caption": {
+              "title": "Best Practices in JavaScript"
+            },
             "detail": "Enhance Your JavaScript Code Quality with These Essential Tips",
             "image": {
               "url": "img/blog/best-practices-in-javascript.webp",
@@ -637,7 +660,9 @@
             "url": "https://medium.com/@philippebeck/best-practices-in-javascript-d4af4202a41e"
           },
           {
-            "caption": "Error Handling in JavaScript",
+            "caption": {
+              "title": "Error Handling in JavaScript"
+            },
             "detail": "Best Practices & Strategies: mastering error handling to improve code reliability & user experience",
             "image": {
               "url": "img/blog/error-handling-in-javascript.webp",
@@ -646,7 +671,9 @@
             "url": "https://medium.com/@philippebeck/error-handling-in-javascript-05af95d174bf"
           },
           {
-            "caption": "Manipulate the DOM with JavaScript",
+            "caption": {
+              "title": "Manipulate the DOM with JavaScript"
+            },
             "detail": "An Efficient Guide to Unlock the Power of Dynamic Web Content with JavaScript DOM Manipulation",
             "image": {
               "url": "img/blog/manipulate-the-dom-with-javascript.webp",
@@ -655,7 +682,9 @@
             "url": "https://medium.com/@philippebeck/manipulate-the-dom-with-javascript-efd69cf733de"
           },
           {
-            "caption": "Mastering Arrays in JavaScript",
+            "caption": {
+              "title": "Mastering Arrays in JavaScript"
+            },
             "detail": "Explore essential functions & best practices for efficiently manipulating arrays, including map, filter, reduce & much more",
             "image": {
               "url": "img/blog/mastering-arrays-in-javascript.webp",
@@ -664,7 +693,9 @@
             "url": "https://medium.com/@philippebeck/mastering-arrays-in-javascript-3110c906d6fb"
           },
           {
-            "caption": "Mastering JavaScript : Basic Concepts",
+            "caption": {
+              "title": "Mastering JavaScript : Basic Concepts"
+            },
             "detail": "A Comprehensive Guide to JavaScript Variables, Conditions & Loops",
             "image": {
               "url": "img/blog/mastering-javascript-basic-concepts.webp",
@@ -673,7 +704,9 @@
             "url": "https://medium.com/@philippebeck/mastering-javascript-basic-concepts-d2898687be99"
           },
           {
-            "caption": "Mastering JavaScript Functions",
+            "caption": {
+              "title": "Mastering JavaScript Functions"
+            },
             "detail": "A Comprehensive Guide to discover the Fundamentals & Advanced Tips for Using JavaScript Functions Effectively",
             "image": {
               "url": "img/blog/mastering-javascript-functions.webp",
@@ -682,7 +715,9 @@
             "url": "https://medium.com/@philippebeck/mastering-javascript-functions-d6ab05129b8f"
           },
           {
-            "caption": "Unveiling the Secrets of the String Object",
+            "caption": {
+              "title": "Unveiling the Secrets of the String Object"
+            },
             "detail": "Explore the Powerful String Manipulation Features of JavaScript",
             "image": {
               "url": "img/blog/unveiling-the-secrets-of-the-string-object.webp",
@@ -694,16 +729,17 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "PHP"
-          },
+          "heading": "PHP",
+          "level": 3,
           "icon": {
             "name": "php"
           }
         },
         "gallery": [
           {
-            "caption": "Demystifying PHP Superglobals",
+            "caption": {
+              "title": "Demystifying PHP Superglobals"
+            },
             "detail": "A Comprehensive Guide : Unraveling the Power & Pitfalls of PHP Superglobals",
             "image": {
               "url": "img/blog/demystifying-php-superglobals.webp",
@@ -712,7 +748,9 @@
             "url": "https://medium.com/@philippebeck/demystifying-php-superglobals-7b24c3cc450f"
           },
           {
-            "caption": "Discovering PHP Basics",
+            "caption": {
+              "title": "Discovering PHP Basics"
+            },
             "detail": "A comprehensive guide to getting started with PHP & understanding essential concepts",
             "image": {
               "url": "img/blog/discovering-php-basics.webp",
@@ -721,7 +759,9 @@
             "url": "https://medium.com/@philippebeck/discovering-php-basics-4601e74c488e"
           },
           {
-            "caption": "Discover PHP Date/Time Functions",
+            "caption": {
+              "title": "Discover PHP Date/Time Functions"
+            },
             "detail": "Learn How to Manipulate Dates & Times in PHP Like a Pro",
             "image": {
               "url": "img/blog/discover-php-date-time-functions.webp",
@@ -730,7 +770,9 @@
             "url": "https://medium.com/@philippebeck/discover-php-date-time-functions-781876b43b95"
           },
           {
-            "caption": "Exploring Number Manipulation in PHP",
+            "caption": {
+              "title": "Exploring Number Manipulation in PHP"
+            },
             "detail": "A comprehensive guide to working with numbers in PHP, from basic operations to advanced techniques",
             "image": {
               "url": "img/blog/exploring-number-manipulation-in-php.webp",
@@ -739,7 +781,9 @@
             "url": "https://medium.com/@philippebeck/exploring-number-manipulation-in-php-e51c85b44630"
           },
           {
-            "caption": "Main Best Practices in PHP",
+            "caption": {
+              "title": "Main Best Practices in PHP"
+            },
             "detail": "Explore essential PHP best practices for clean, efficient & maintainable code",
             "image": {
               "url": "img/blog/main-best-practices-in-php.webp",
@@ -748,7 +792,9 @@
             "url": "https://medium.com/@philippebeck/main-best-practices-in-php-ceff378df8f1"
           },
           {
-            "caption": "Mastering PHP Array Functions",
+            "caption": {
+              "title": "Mastering PHP Array Functions"
+            },
             "detail": "Discover Essential Functions for Manipulating & Managing Arrays in PHP, Including Sorting, Filtering & Transformation Functions",
             "image": {
               "url": "img/blog/mastering-php-array-functions.webp",
@@ -757,7 +803,9 @@
             "url": "https://medium.com/@philippebeck/mastering-php-array-functions-0038dd2a076d"
           },
           {
-            "caption": "Mastering String Functions in PHP",
+            "caption": {
+              "title": "Mastering String Functions in PHP"
+            },
             "detail": "Discover PHP’s native string manipulation functions & learn how to use them effectively",
             "image": {
               "url": "img/blog/mastering-string-functions-in-php.webp",
@@ -766,7 +814,9 @@
             "url": "https://medium.com/@philippebeck/mastering-string-functions-in-php-997775b1e8da"
           },
           {
-            "caption": "OOP & MVC in PHP",
+            "caption": {
+              "title": "OOP & MVC in PHP"
+            },
             "detail": "Understanding Object-Oriented Programming & Model-View-Controller Architecture in PHP : A Comprehensive Guide",
             "image": {
               "url": "img/blog/oop-mvc-in-php.webp",
@@ -780,10 +830,8 @@
   },
   "about": {
     "title": {
-      "heading": {
-        "text": "About",
-        "level": "2"
-      },
+      "heading": "About",
+      "level": 2,
       "icon": {
         "name": "address-card",
         "cat": "regular"
@@ -793,9 +841,8 @@
     "data": [
       {
         "title": {
-          "heading": {
-            "text": "Languages"
-          },
+          "heading": "Languages",
+          "level": 3,
           "icon": {
             "name": "language",
             "cat": "solid"
@@ -810,9 +857,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Hobbies"
-          },
+          "heading": "Hobbies",
+          "level": 3,
           "icon": {
             "name": "atom",
             "cat": "solid"
@@ -828,9 +874,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Sports"
-          },
+          "heading":  "Sports",
+          "level": 3,
           "icon": {
             "name": "person-biking",
             "cat": "solid"
@@ -848,9 +893,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Fun"
-          },
+          "heading": "Fun",
+          "level": 3,
           "icon": {
             "name": "chess",
             "cat": "solid"
@@ -869,10 +913,8 @@
   },
   "links": {
     "title": {
-      "heading": {
-        "text": "Links",
-        "level": "2"
-      },
+      "heading": "Links",
+      "level": 2,
       "icon": {
         "name": "link",
         "cat": "solid"
@@ -882,9 +924,8 @@
     "data": [
       {
         "title": {
-          "heading": {
-            "text": "HTML"
-          },
+          "heading": "HTML",
+          "level": 3,
           "icon": {
             "name": "html5"
           }
@@ -986,9 +1027,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "CSS"
-          },
+          "heading": "CSS",
+          "level": 3,
           "icon": {
             "name": "css3"
           }
@@ -1126,9 +1166,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "JavaScript"
-          },
+          "heading": "JavaScript",
+          "level": 3,
           "icon": {
             "name": "square-js"
           }
@@ -1298,9 +1337,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Vue"
-          },
+          "heading": "Vue",
+          "level": 3,
           "icon": {
             "name": "vuejs"
           }
@@ -1458,9 +1496,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Node"
-          },
+          "heading": "Node",
+          "level": 3,
           "icon": {
             "name": "node-js"
           }
@@ -1506,9 +1543,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "PHP"
-          },
+          "heading": "PHP",
+          "level": 3,
           "icon": {
             "name": "php"
           }
@@ -1602,9 +1638,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Python"
-          },
+          "heading": "Python",
+          "level": 3,
           "icon": {
             "name": "python"
           }
@@ -1750,9 +1785,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "DataBase"
-          },
+          "heading": "DataBase",
+          "level": 3,
           "icon": {
             "name": "database",
             "cat": "solid"
@@ -1807,9 +1841,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Git"
-          },
+          "heading": "Git",
+          "level": 3,
           "icon": {
             "name": "square-git"
           }
@@ -1871,9 +1904,8 @@
       },
       {
         "title": {
-          "heading": {
-            "text": "Others"
-          },
+          "heading": "Others",
+          "level": 3,
           "icon": {
             "name": "dev"
           }
