@@ -32,8 +32,12 @@ $radius: 10px;
     margin-top: -5px;
     border-radius: 0 0 $radius $radius;
     padding: 5px 10px;
-    height: 100px;
+    height: 120px;
     background-color: $gray;
+
+    & > * {
+      margin: 0;
+    }
   }
 
   &:hover figcaption,
