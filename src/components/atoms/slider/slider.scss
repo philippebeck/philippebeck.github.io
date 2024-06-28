@@ -3,33 +3,33 @@
 //! ********** VARIABLES **********
 
 $top-sizes: (
-  "tn": 48px,
-  "xs": 52px,
+  "tn": 43px,
+  "xs": 50px,
   "sm": 56px,
-  "md": 62px,
-  "lg": 74px,
-  "xl": 80px,
-  "wd": 90px
+  "md": 63px,
+  "lg": 70px,
+  "xl": 77px,
+  "wd": 84px
 ) !default;
 
 $left-sizes: (
-  "tn": 14px,
-  "xs": 16px,
-  "sm": 18px,
+  "tn": 11px,
+  "xs": 15px,
+  "sm": 19px,
   "md": 22px,
   "lg": 26px,
   "xl": 30px,
-  "wd": 35px
+  "wd": 34px
 ) !default;
 
 $bottom-ratios: (
-  "tn": 1,
-  "xs": 1.5,
-  "sm": 2,
-  "md": 4,
-  "lg": 6,
-  "xl": 8,
-  "wd": 10
+  "tn": 2px,
+  "xs": 13px,
+  "sm": 25px,
+  "md": 37px,
+  "lg": 48px,
+  "xl": 61px,
+  "wd": 74px
 ) !default;
 
 $font-ratios: (
@@ -53,7 +53,7 @@ $font-ratios: (
   [class*="play"],
   [class*="pause"] {
     left: calc(50% - $left-size);
-    bottom: calc(-5px * $bottom-ratio);
+    bottom: calc(0px - $bottom-ratio);
   }
 
   i {
@@ -80,6 +80,11 @@ $font-ratios: (
       position: absolute;
       color: $white;
       cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
     }
 
     [class*="left"] {
@@ -90,7 +95,7 @@ $font-ratios: (
       right: 0;
     }
 
-    @include slider(40px, 10px, 0, 1);
+    @include slider(36px, 8px, 0px, 1);
 
     //! ********** RESPONSIVE **********
 
