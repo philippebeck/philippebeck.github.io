@@ -43,6 +43,7 @@ const Links = () => {
 
               <Title
                 heading={link.title.heading}
+                level={link.title.level}
                 prefix={
 
                   <Icon
