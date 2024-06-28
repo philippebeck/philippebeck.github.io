@@ -48,13 +48,11 @@ $height-sizes: (
 
 [id=about] {
 
-  &:hover > *:first-child i,
-  &:focus > *:first-child i {
+  &:hover > .title i {
     animation: turn-x 2s linear infinite reverse;
   }
 
-  & > *:last-child:hover > *:first-child i,
-  & > *:last-child:focus > *:first-child i {
+  & .slider:hover > section i {
     animation: turn-3d 2s linear infinite reverse;
   }
 

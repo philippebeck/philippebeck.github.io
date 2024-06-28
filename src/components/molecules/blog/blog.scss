@@ -32,8 +32,7 @@ $width-ratios: (
 
 [id=blog] {
 
-  &:hover > *:first-child i,
-  &:focus > *:first-child i {
+  &:hover > .title i {
     animation: turn-y 2s linear infinite reverse;
   }
 
@@ -43,7 +42,7 @@ $width-ratios: (
     }
 
     &:hover i,
-    &:focus i,
+    & summary:focus i,
     &[open] i {
       animation: turn-xz 2s linear infinite reverse;
     }

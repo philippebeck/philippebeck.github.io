@@ -24,8 +24,7 @@ $height-sizes: (
 
 [id=stats] {
 
-  &:hover > *:first-child i,
-  &:focus > *:first-child i {
+  &:hover > .title i {
     animation: turn-z 2s linear infinite reverse;
   }
 

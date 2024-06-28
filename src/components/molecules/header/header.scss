@@ -66,8 +66,7 @@ $height-sizes: (
   flex-flow: column;
   gap: $gap;
 
-  &:hover > *:first-child i,
-  &:focus > *:first-child i {
+  &:hover > .title i {
     animation: turn-y 2s linear infinite reverse;
   }
 

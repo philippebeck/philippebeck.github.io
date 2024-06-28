@@ -5,8 +5,7 @@
 [id=links] {
   margin-bottom: 50px;
 
-  &:hover > *:first-child i,
-  &:focus > *:first-child i {
+  &:hover > .title i {
     animation: turn-z 2s linear infinite reverse;
   }
 
@@ -16,7 +15,7 @@
     }
 
     &:hover i,
-    &:focus i {
+    & summary:focus i {
       animation: turn-yz 2s linear infinite reverse;
     }
   }

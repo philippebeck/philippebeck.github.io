@@ -32,8 +32,7 @@ $width-ratios: (
 
 [id=portfolio] {
 
-  &:hover > *:first-child i,
-  &:focus > *:first-child i {
+  &:hover > .title i {
     animation: turn-x 2s linear infinite reverse;
   }
 
@@ -53,7 +52,7 @@ $width-ratios: (
     }
 
     &:hover summary i,
-    &:focus summary i,
+    summary:focus i,
     &[open] summary i {
       animation: turn-xy 2s linear infinite reverse;
     }
