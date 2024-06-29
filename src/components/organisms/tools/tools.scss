@@ -1,0 +1,22 @@
+@import '../../../assets/style/main.scss';
+
+//! ********** MAIN **********
+
+[id=tools] {
+  margin-bottom: 50px;
+
+  &:hover > .title i {
+    animation: turn-z 2s linear infinite reverse;
+  }
+
+  .collapse {
+    & > figure {
+      animation: grow-min 500ms ease-in-out;
+    }
+
+    &:hover i,
+    & summary:focus i {
+      animation: turn-yz 2s linear infinite reverse;
+    }
+  }
+}
