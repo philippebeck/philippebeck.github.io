@@ -12,7 +12,7 @@ import './card.scss'
  *  The main Content of the Card.
  *
  * @param {HTMLElement|string} [props.caption=""]
- *  The optional Caption of the Card.
+ *  The optional Caption of the Card - Default is an empty string.
  *
  * @return {JSX.Element}
  *  The rendered Card Atom.
