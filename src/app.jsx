@@ -1,16 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-import About from './components/molecules/about/about'
-import Blog from './components/molecules/blog/blog'
-import Footer from './components/molecules/footer/footer'
-import Header from './components/molecules/header/header'
-import Links from './components/molecules/links/links'
-import Navbar from './components/molecules/navbar/navbar'
-import Portfolio from './components/molecules/portfolio/portfolio'
-import Stats from './components/molecules/stats/stats'
-
 import './assets/style/app.scss'
+
+import Navbar from './components/organisms/navbar/navbar'
+import Header from './components/organisms/header/header'
+import Portfolio from './components/organisms/portfolio/portfolio'
+import Stats from './components/organisms/stats/stats'
+import Blog from './components/organisms/blog/blog'
+import About from './components/organisms/about/about'
+import Tools from './components/organisms/tools/tools'
+import Footer from './components/organisms/footer/footer'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Stats />
     <Blog />
     <About />
-    <Links />
+    <Tools />
 
     <Footer />
   </React.StrictMode>
