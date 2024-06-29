@@ -1,9 +1,8 @@
 import { stats } from '../../../assets/data.json'
 
-import Icon from '../../atoms/icon/icon'
+import Heading from '../../molecules/heading/heading'
 import Image from '../../atoms/image/image'
 import Slider from '../../atoms/slider/slider'
-import Title from '../../atoms/title/title'
 
 import './stats.scss'
 
@@ -20,24 +19,10 @@ const Stats = () => {
 
   return (
     <article id="stats">
-
-      <Title
-        heading={title.heading}
-        level={title.level}
-        subtitle={title.subtitle}
-        prefix={
-
-          <Icon
-            name={title.icon.name}
-            cat={title.icon.cat}
-            option={title.icon.option}
-          />
-        }
-      />
+      <Heading title={title} />
 
       <Slider
         array={data.map((item, index) =>
-
           <Image
             key={index}
             url={item.url}
