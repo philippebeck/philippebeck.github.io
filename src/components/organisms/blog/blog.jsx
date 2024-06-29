@@ -2,7 +2,7 @@ import { blog } from '../../../assets/data.json'
 
 import Card from '../../atoms/card/card'
 import Collapse from '../../atoms/collapse/collapse'
-import Icon from '../../atoms/icon/icon'
+import Heading from '../../molecules/heading/heading'
 import Image from '../../atoms/image/image'
 import Link from '../../atoms/link/link'
 import List from '../../atoms/list/list'
@@ -23,58 +23,26 @@ const Blog = () => {
 
   return (
     <article id="blog">
-
-      <Title
-        heading={title.heading}
-        level={title.level}
-        subtitle={title.subtitle}
-        prefix={
-
-          <Icon
-            name={title.icon.name}
-            cat={title.icon.cat}
-            option={title.icon.option}
-          />
-        }
-      />
+      <Heading title={title} />
 
       <List
         array={data.map((article) =>
-
           <Collapse
             title={
-
-              <Title
-                heading={article.title.heading}
-                level={article.title.level}
-                prefix={
-
-                  <Icon
-                    name={article.title.icon.name}
-                    cat={article.title.icon.cat}
-                  />
-                }
-              />
+              <Heading title={article.title} />
             }
             content={
-
               <List
                 array={article.gallery.map((item) =>
-
                   <Link
                     url={item.url}
                     title={item.detail}
                     content={
-
                       <Card
                         caption={
-
-                          <Title
-                            heading={item.caption.title}
-                          />
+                          <Title heading={item.caption.title} />
                         }
                         content={
-
                           <Image
                             url={item.image.url}
                             alt={item.image.alt}
