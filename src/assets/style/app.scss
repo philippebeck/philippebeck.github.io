@@ -61,6 +61,12 @@ body {
   background-color: $black;
   color: $white;
 
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @media (min-width: $breakpoint-value) {
+      @include body(map-get($font-ratios, $breakpoint-key));
+    }
+  }
+
   [id=header],
   [id=portfolio],
   [id=stats],
@@ -70,8 +76,6 @@ body {
     border-top: solid $border $silver;
     padding: calc($padding * 6) $padding;
 
-    //! ********** RESPONSIVE **********
-
     @each $breakpoint-key, $breakpoint-value in $breakpoints {
       @media (min-width: $breakpoint-value) {
 
@@ -80,12 +84,6 @@ body {
           map-get($padding-ratios, $breakpoint-key)
         );
       }
-    }
-  }
-
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
-    @media (min-width: $breakpoint-value) {
-      @include body(map-get($font-ratios, $breakpoint-key));
     }
   }
 }
