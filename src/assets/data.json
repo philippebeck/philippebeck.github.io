@@ -65,7 +65,8 @@
       "level": 1,
       "icon": {
         "name": "user-ninja",
-        "cat": "solid"
+        "cat": "solid",
+        "option": "5x"
       },
       "subtitle": "Senior Fullstack IT Developer & IT Development Trainer"
     },
@@ -86,7 +87,8 @@
       "level": 2,
       "icon": {
         "name": "code",
-        "cat": "solid"
+        "cat": "solid",
+        "option": "3x"
       },
       "subtitle": "All my projects are hosted on GitHub & some packages are published on NPM or Packagist"
     },
@@ -400,7 +402,8 @@
       "level": 2,
       "icon": {
         "name": "chart-pie",
-        "cat": "solid"
+        "cat": "solid",
+        "option": "3x"
       },
       "subtitle": "Here are some stats about my IT development skills"
     },
@@ -425,7 +428,8 @@
       "level": 2,
       "icon": {
         "name": "blog",
-        "cat": "solid"
+        "cat": "solid",
+        "option": "3x"
       },
       "subtitle": "My articles about IT development are hosted on Medium"
     },
@@ -834,7 +838,8 @@
       "level": 2,
       "icon": {
         "name": "address-card",
-        "cat": "regular"
+        "cat": "regular",
+        "option": "3x"
       },
       "subtitle": "You can find additional information about me here..."
     },
@@ -917,7 +922,8 @@
       "level": 2,
       "icon": {
         "name": "link",
-        "cat": "solid"
+        "cat": "solid",
+        "option": "3x"
       },
       "subtitle": "Here are useful links for IT development, particularly for the Web"
     },

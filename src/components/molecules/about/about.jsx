@@ -30,6 +30,7 @@ const About = () => {
           <Icon
             name={title.icon.name}
             cat={title.icon.cat}
+            option={title.icon.option}
           />
         }
       />
