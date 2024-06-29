@@ -32,7 +32,8 @@ const Footer = () => {
                 name={item.icon}
                 option="1x"
                 isHidden="false"
-              />}
+              />
+            }
           />
         )}
       />
