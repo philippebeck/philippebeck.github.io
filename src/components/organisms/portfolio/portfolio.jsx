@@ -2,6 +2,7 @@ import { portfolio } from '../../../assets/data.json'
 
 import Card from '../../atoms/card/card'
 import Collapse from '../../atoms/collapse/collapse'
+import Heading from '../../molecules/heading/heading'
 import Icon from '../../atoms/icon/icon'
 import Image from '../../atoms/image/image'
 import Link from '../../atoms/link/link'
@@ -23,60 +24,27 @@ const Portfolio = () => {
 
   return (
     <article id="portfolio">
-
-      <Title
-        heading={title.heading}
-        level={title.level}
-        subtitle={title.subtitle}
-        prefix={
-
-          <Icon
-            name={title.icon.name}
-            cat={title.icon.cat}
-            option={title.icon.option}
-          />
-        }
-      />
+      <Heading title={title} />
 
       <List
         array={data.map((project) =>
-
           <Collapse
             title={
-
-              <Title
-                heading={project.title.heading}
-                level={project.title.level}
-                prefix={
-
-                  <Icon
-                    name={project.title.icon.name}
-                    cat={project.title.icon.cat}
-                  />
-                }
-              />
+              <Heading title={project.title} />
             }
             content={
-
               <List
                 array={project.gallery.map((item) =>
-
                   <Link
                     url={item.url}
                     title={item.detail}
                     content={
-
                       <Card
                         caption={
                           <>
-
-                            <Title
-                              heading={item.caption.title}
-                            />
-
+                            <Title heading={item.caption.title} />
                             <List
                               array={item.caption.technos.map((techno) =>
-
                                 <Icon
                                   name={techno}
                                   option="lg"
@@ -87,7 +55,6 @@ const Portfolio = () => {
                           </>
                         }
                         content={
-
                           <Image
                             url={item.image.url}
                             alt={item.image.alt}
