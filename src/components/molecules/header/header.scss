@@ -4,8 +4,6 @@
 
 $gap: 5px;
 $padding: 5px;
-$width: 85%;
-$height: 185px;
 
 $gap-ratios: (
   "tn": 2,
@@ -28,23 +26,23 @@ $padding-ratios: (
 ) !default;
 
 $width-sizes: (
-  "tn": 5%,
-  "xs": 30%,
-  "sm": 0%,
-  "md": 10%,
-  "lg": 20%,
-  "xl": 25%,
-  "wd": 30%
+  "tn": 15%,
+  "xs": 40%,
+  "sm": 10%,
+  "md": 25%,
+  "lg": 40%,
+  "xl": 45%,
+  "wd": 50%
 ) !default;
 
 $height-sizes: (
-  "tn": 65px,
-  "xs": 110px,
-  "sm": 0px,
-  "md": 30px,
-  "lg": 65px,
-  "xl": 90px,
-  "wd": 125px
+  "tn": 45px,
+  "xs": 90px,
+  "sm": -15px,
+  "md": 10px,
+  "lg": 40px,
+  "xl": 65px,
+  "wd": 90px
 ) !default;
 
 //! ********** MIXIN **********
@@ -54,8 +52,8 @@ $height-sizes: (
 
   ul {
     padding: calc($padding * $padding-ratio);
-    width: calc($width - $width-size);
-    height: calc($height + $height-size);
+    width: calc(100% - $width-size);
+    height: calc(210px + $height-size);
   }
 }
 
@@ -79,6 +77,7 @@ $height-sizes: (
     border-radius: 20px;
     padding: $padding;
     width: fit-content;
+    height: auto;
     background-color: $silver;
     color: $black;
     animation: grow-max 1s;
