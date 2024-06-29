@@ -2,7 +2,7 @@
   "nav": {
     "logo": {
       "url": "#header",
-      "text": "Logo",
+      "label": "Home",
       "icon": {
         "cat": "solid",
         "name": "user-ninja"
@@ -11,6 +11,7 @@
     "links": [
       {
         "url": "#portfolio",
+        "label": "Portfolio",
         "text": "Portfolio",
         "icon": {
           "cat": "solid",
@@ -19,6 +20,7 @@
       },
       {
         "url": "#stats",
+        "label": "Stats",
         "text": "Stats",
         "icon": {
           "cat": "solid",
@@ -28,6 +30,7 @@
       {
         "url": "#blog",
         "text": "Blog",
+        "label": "Blog",
         "icon": {
           "cat": "solid",
           "name": "blog"
@@ -35,6 +38,7 @@
       },
       {
         "url": "#about",
+        "label": "About",
         "text": "About",
         "icon": {
           "cat": "regular",
@@ -42,17 +46,18 @@
         }
       },
       {
-        "url": "#links",
-        "text": "Links",
+        "url": "#tools",
+        "label": "Tools",
+        "text": "Tools",
         "icon": {
           "cat": "solid",
-          "name": "link"
+          "name": "screwdriver-wrench"
         }
       }
     ],
     "contact": {
       "url": "mailto:contact@philippebeck.net",
-      "text": "Contact",
+      "label": "Contact",
       "icon": {
         "cat": "regular",
         "name": "paper-plane"
@@ -916,12 +921,12 @@
       }
     ]
   },
-  "links": {
+  "tools": {
     "title": {
-      "heading": "Links",
+      "heading": "Tools",
       "level": 2,
       "icon": {
-        "name": "link",
+        "name": "screwdriver-wrench",
         "cat": "solid",
         "option": "3x"
       },
@@ -2087,34 +2092,52 @@
   },
   "footer": [
     {
-      "name": "X",
+      "label": "X",
       "url": "https://twitter.com/ph_beck",
-      "icon": "x-twitter"
+      "icon": {
+        "name": "x-twitter",
+        "option": "1x"
+      }
     },
     {
-      "name": "LinkedIn",
+      "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/philippebeck",
-      "icon": "linkedin-in"
+      "icon": {
+        "name": "linkedin-in",
+        "option": "1x"
+      }
     },
     {
-      "name": "Medium",
+      "label": "Medium",
       "url": "https://medium.com/@philippebeck",
-      "icon": "medium"
+      "icon": {
+        "name": "medium",
+        "option": "1x"
+      }
     },
     {
-      "name": "NPM",
+      "label": "NPM",
       "url": "https://www.npmjs.com/~philippebeck",
-      "icon": "npm"
+      "icon": {
+        "name": "npm",
+        "option": "1x"
+      }
     },
     {
-      "name": "GitHub",
+      "label": "GitHub",
       "url": "https://github.com/philippebeck",
-      "icon": "github"
+      "icon": {
+        "name": "github",
+        "option": "1x"
+      }
     },
     {
-      "name": "CodePen",
+      "label": "CodePen",
       "url": "https://codepen.io/philippebeck",
-      "icon": "codepen"
+      "icon": {
+        "name": "codepen",
+        "option": "1x"
+      }
     }
   ]
 }
