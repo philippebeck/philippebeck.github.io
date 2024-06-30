@@ -8,7 +8,6 @@ import Title from '../../atoms/title/title'
 import './links.scss'
 
 const Links = ({ array }) => {
-  console.log(array);
 
   return (
     <List
