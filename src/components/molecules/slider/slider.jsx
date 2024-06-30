@@ -18,8 +18,7 @@ import "./slider.scss";
  *  The Array of items to be displayed in the Slider
  *
  * @param {number} [props.timer=5000]
- *  The Timer of the Slider
- *  Defaults to 5000
+ *  The Timer of the Slider - Defaults to 5000
  *
  * @return {JSX.Element}
  *  The rendered Slider Molecule.
