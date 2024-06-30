@@ -30,16 +30,13 @@ import "./title.scss"
  */
 const Title = ({ heading, level = 4, prefix = "", subtitle = "" }) => {
   level = parseInt(level);
+  if (level < 1 || level > 3) level = 4;
+  const HeadingLevel = `h${level}`;
 
   return (
     <hgroup className="title">
       {prefix && <p>{prefix}</p>}
-      {
-        level === 1 ? <h1>{heading}</h1> :
-        level === 2 ? <h2>{heading}</h2> :
-        level === 3 ? <h3>{heading}</h3> :
-        <h4>{heading}</h4>
-      }
+      <HeadingLevel>{heading}</HeadingLevel>
       {subtitle && <p>{subtitle}</p>}
     </hgroup>
   )
