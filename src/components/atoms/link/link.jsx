@@ -31,7 +31,7 @@ import './link.scss'
  *  The rendered Link Atom.
  */
 const Link = ({ content, url, design = "link", label = "", title = "" }) => {
-  const isExternalLink = url.startsWith('https');
+  const isExternal = url.startsWith('https');
 
   return (
     <a
@@ -39,8 +39,8 @@ const Link = ({ content, url, design = "link", label = "", title = "" }) => {
       href={url}
       {...(label ? { 'aria-label': label } : {})}
       {...(title ? { 'title': title } : {})}
-      {...(isExternalLink ? { 'rel': 'noopener noreferrer' } : {})}
-      {...(isExternalLink ? { 'target': '_blank' } : {})}
+      {...(isExternal ? { 'rel': 'noopener noreferrer' } : {})}
+      {...(isExternal ? { 'target': '_blank' } : {})}
     >
       {content}
     </a>
