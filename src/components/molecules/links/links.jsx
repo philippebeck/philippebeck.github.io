@@ -7,6 +7,35 @@ import Title from '../../atoms/title/title'
 
 import './links.scss'
 
+/**
+ * ? LINKS MOLECULE
+ * * Renders the Links Molecule
+ * * that displays a list of links
+ * * based on the provided array data.
+ *
+ * @param {Object} props
+ *  The Properties for the Links Molecule.
+ *
+ * @param {Array} props.array
+ *  The array of data containing information for each link item.
+ * 
+ * @param {string} props.array.name
+ *  The name of the link item.
+ * @param {string} props.array.url
+ *  The URL of the link item.
+ *@param {string} props.array.detail
+ *  The detail text of the link item.
+ * @param {string} props.array.caption
+ *  The caption object of the link item.
+ * 
+ * @param {string} props.array.caption.title
+ *  The title of the caption of the link item.
+ * @param {Array} props.array.caption.technos
+ *  The array of technos of the caption of the link item.
+ *
+ * @return {JSX.Element}
+ *  JSX element representing the list of links
+ */
 const Links = ({ array }) => {
 
   return (
