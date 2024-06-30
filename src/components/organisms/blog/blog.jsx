@@ -1,12 +1,9 @@
 import { blog } from '../../../assets/data.json'
 
-import Card from '../../atoms/card/card'
 import Collapse from '../../atoms/collapse/collapse'
 import Heading from '../../molecules/heading/heading'
-import Image from '../../atoms/image/image'
-import Link from '../../atoms/link/link'
+import Links from '../../molecules/links/links'
 import List from '../../atoms/list/list'
-import Title from '../../atoms/title/title'
 
 import './blog.scss'
 
@@ -28,32 +25,8 @@ const Blog = () => {
       <List
         array={data.map((article) =>
           <Collapse
-            title={
-              <Heading title={article.title} />
-            }
-            content={
-              <List
-                array={article.gallery.map((item) =>
-                  <Link
-                    url={item.url}
-                    title={item.detail}
-                    content={
-                      <Card
-                        caption={
-                          <Title heading={item.caption.title} />
-                        }
-                        content={
-                          <Image
-                            url={item.image.url}
-                            alt={item.image.alt}
-                          />
-                        }
-                      />
-                    }
-                  />
-                )}
-              />
-            }
+            title={<Heading title={article.title} />}
+            content={<Links array={article.gallery} />}
           />
         )}
       />
