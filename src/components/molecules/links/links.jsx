@@ -18,90 +18,67 @@ import './links.scss'
  *
  * @param {Array} props.array
  *  The array of data containing information for each link item.
- * 
- * @param {string} props.array.name
- *  The name of the link item.
  * @param {string} props.array.url
- *  The URL of the link item.
- *@param {string} props.array.detail
- *  The detail text of the link item.
- * @param {string} props.array.caption
- *  The caption object of the link item.
- * 
+ *  The URL of the link.
+ * @param {string} props.array.name
+ *  The name of the link.
+ * @param {string} props.array.detail
+ *  The detail of the link.
+ *
+ * @param {Object} props.array.caption
+ *  The caption of the link.
  * @param {string} props.array.caption.title
- *  The title of the caption of the link item.
+ *  The title of the caption.
  * @param {Array} props.array.caption.technos
- *  The array of technos of the caption of the link item.
+ *  The technologies used in the caption.
+ * 
+ * @param {Object} props.array.image
+ *  The image of the link.
+ * @param {string} props.array.image.url
+ *  The URL of the image.
+ * @param {string} props.array.image.alt
+ *  The alternative text of the image.
  *
  * @return {JSX.Element}
  *  JSX element representing the list of links
  */
 const Links = ({ array }) => {
 
-  return (
-    <List
-      array={array.map((item) =>
-      (
-        item.name
-          ?
-          <Link
-            url={item.url}
-            content={item.name}
-            design="btn"
-          />
-          :
-          item.caption.technos
-            ?
-            <Link
-              url={item.url}
-              title={item.detail}
-              content={
+  const renderLink = (item, index) => {
 
-                <Card
-                  caption={
-                    <>
-                      <Title heading={item.caption.title} />
-                      <List
-                        array={item.caption.technos.map((techno) =>
-                          <Icon
-                            name={techno}
-                            option="lg"
-                            isHidden="false"
-                          />
-                        )}
-                      />
-                    </>
-                  }
-                  content={
-                    <Image
-                      url={item.image.url}
-                      alt={item.image.alt}
-                    />
-                  }
-                />
-              }
-            />
-            :
-            <Link
-              url={item.url}
-              title={item.detail}
-              content={
-
-                <Card
-                  caption={<Title heading={item.caption.title} />}
-                  content={
-                    <Image
-                      url={item.image.url}
-                      alt={item.image.alt}
-                    />
-                  }
-                />
-              }
-            />
+    const linkProps = {
+      url: item.url,
+      title: item.detail || null,
+      content: (
+        <Card
+          caption={item.caption && <Title heading={item.caption.title} />}
+          content={item.image && <Image url={item.image.url} alt={item.image.alt} />}
+        />
       )
-      )}
-    />
-  )
-}
+    };
+
+    if (item.name) {
+      linkProps.content = item.name;
+      linkProps.design = 'btn';
+
+    } else if (item.caption && item.caption.technos) {
+      linkProps.content = (
+        <Card
+          caption={
+            <>
+              <Title heading={item.caption.title} />
+              <List array={item.caption.technos.map((techno) => <Icon name={techno} option="lg" isHidden="false" />)} />
+            </>
+          }
+          content={<Image url={item.image.url} alt={item.image.alt} />}
+        />
+      );
+    }
+
+    return <Link key={index} {...linkProps} />;
+  };
+
+  return <List array={array.map(renderLink)} />;
+};
 
 export default Links
