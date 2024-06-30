@@ -100,135 +100,6 @@
     "data": [
       {
         "title": {
-          "heading": "Packages",
-          "level": 3,
-          "icon": {
-            "name": "cubes",
-            "cat": "solid"
-          }
-        },
-        "gallery": [
-          {
-            "caption": {
-              "title": "Nens",
-              "technos": [
-                "node-js"
-              ]
-            },
-            "detail": "Node/Express Framework with MySQL",
-            "image": {
-              "url": "img/portfolio/node.webp",
-              "alt": "Node Logo"
-            },
-            "url": "https://github.com/philippebeck/nens"
-          },
-          {
-            "caption": {
-              "title": "Vesan",
-              "technos": [
-                "html5",
-                "square-js",
-                "vuejs"
-              ]
-            },
-            "detail": "Vue Framework with Vuex",
-            "image": {
-              "url": "img/portfolio/vue.webp",
-              "alt": "Vue Logo"
-            },
-            "url": "https://github.com/philippebeck/vesan"
-          },
-          {
-            "caption": {
-              "title": "Servidio",
-              "technos": [
-                "square-js"
-              ]
-            },
-            "detail": "JavaScript Frontend Services",
-            "image": {
-              "url": "img/portfolio/js.webp",
-              "alt": "JavaScript Logo"
-            },
-            "url": "https://github.com/philippebeck/servidio"
-          },
-          {
-            "caption": {
-              "title": "Vue-Elt",
-              "technos": [
-                "html5",
-                "square-js",
-                "vuejs"
-              ]
-            },
-            "detail": "Vue Single File Component Library",
-            "image": {
-              "url": "img/portfolio/vue.webp",
-              "alt": "Vue Logo"
-            },
-            "url": "https://github.com/philippebeck/vue-elt"
-          },
-          {
-            "caption": {
-              "title": "Nemjs",
-              "technos": [
-                "node-js"
-              ]
-            },
-            "detail": "JavaScript Backend Services",
-            "image": {
-              "url": "img/portfolio/node.webp",
-              "alt": "Node Logo"
-            },
-            "url": "https://github.com/philippebeck/nemjs"
-          },
-          {
-            "caption": {
-              "title": "Animadio",
-              "technos": [
-                "sass",
-                "square-js"
-              ]
-            },
-            "detail": "CSS Library made with Sass",
-            "image": {
-              "url": "img/portfolio/sass.webp",
-              "alt": "Sass Logo"
-            },
-            "url": "https://github.com/philippebeck/animadio"
-          },
-          {
-            "caption": {
-              "title": "Pam",
-              "technos": [
-                "php"
-              ]
-            },
-            "detail": "PHP Adaptive Microframework",
-            "image": {
-              "url": "img/portfolio/php.webp",
-              "alt": "PHP Logo"
-            },
-            "url": "https://github.com/philippebeck/pam"
-          },
-          {
-            "caption": {
-              "title": "Sam.scss",
-              "technos": [
-                "sass"
-              ]
-            },
-            "detail": "Scss Animated Microframework ",
-            "image": {
-              "url": "img/portfolio/sass.webp",
-              "alt": "Sass Logo"
-            },
-            "url": "https://github.com/philippebeck/sam.scss"
-          }
-        ]
-      },
-      {
-        "title": {
           "heading": "Websites",
           "level": 3,
           "icon": {
@@ -396,6 +267,135 @@
               "alt": "Homepage of the WebAgency Website"
             },
             "url": "https://github.com/philippebeck/webagency"
+          }
+        ]
+      },
+      {
+        "title": {
+          "heading": "Packages",
+          "level": 3,
+          "icon": {
+            "name": "cubes",
+            "cat": "solid"
+          }
+        },
+        "gallery": [
+          {
+            "caption": {
+              "title": "Nens",
+              "technos": [
+                "node-js"
+              ]
+            },
+            "detail": "Node/Express Framework with MySQL",
+            "image": {
+              "url": "img/portfolio/node.webp",
+              "alt": "Node Logo"
+            },
+            "url": "https://github.com/philippebeck/nens"
+          },
+          {
+            "caption": {
+              "title": "Vesan",
+              "technos": [
+                "html5",
+                "square-js",
+                "vuejs"
+              ]
+            },
+            "detail": "Vue Framework with Vuex",
+            "image": {
+              "url": "img/portfolio/vue.webp",
+              "alt": "Vue Logo"
+            },
+            "url": "https://github.com/philippebeck/vesan"
+          },
+          {
+            "caption": {
+              "title": "Servidio",
+              "technos": [
+                "square-js"
+              ]
+            },
+            "detail": "JavaScript Frontend Services",
+            "image": {
+              "url": "img/portfolio/js.webp",
+              "alt": "JavaScript Logo"
+            },
+            "url": "https://github.com/philippebeck/servidio"
+          },
+          {
+            "caption": {
+              "title": "Vue-Elt",
+              "technos": [
+                "html5",
+                "square-js",
+                "vuejs"
+              ]
+            },
+            "detail": "Vue Single File Component Library",
+            "image": {
+              "url": "img/portfolio/vue.webp",
+              "alt": "Vue Logo"
+            },
+            "url": "https://github.com/philippebeck/vue-elt"
+          },
+          {
+            "caption": {
+              "title": "Nemjs",
+              "technos": [
+                "node-js"
+              ]
+            },
+            "detail": "JavaScript Backend Services",
+            "image": {
+              "url": "img/portfolio/node.webp",
+              "alt": "Node Logo"
+            },
+            "url": "https://github.com/philippebeck/nemjs"
+          },
+          {
+            "caption": {
+              "title": "Animadio",
+              "technos": [
+                "sass",
+                "square-js"
+              ]
+            },
+            "detail": "CSS Library made with Sass",
+            "image": {
+              "url": "img/portfolio/sass.webp",
+              "alt": "Sass Logo"
+            },
+            "url": "https://github.com/philippebeck/animadio"
+          },
+          {
+            "caption": {
+              "title": "Pam",
+              "technos": [
+                "php"
+              ]
+            },
+            "detail": "PHP Adaptive Microframework",
+            "image": {
+              "url": "img/portfolio/php.webp",
+              "alt": "PHP Logo"
+            },
+            "url": "https://github.com/philippebeck/pam"
+          },
+          {
+            "caption": {
+              "title": "Sam.scss",
+              "technos": [
+                "sass"
+              ]
+            },
+            "detail": "Scss Animated Microframework ",
+            "image": {
+              "url": "img/portfolio/sass.webp",
+              "alt": "Sass Logo"
+            },
+            "url": "https://github.com/philippebeck/sam.scss"
           }
         ]
       }
