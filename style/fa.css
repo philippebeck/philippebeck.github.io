@@ -662,8 +662,8 @@
   content: "\f781";
 }
 
-.fa-link::before {
-  content: "\f0c1";
+.fa-screwdriver-wrench::before {
+  content: "\f7d9";
 }
 
 .fa-address-card::before {
