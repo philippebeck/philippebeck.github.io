@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+
+import Icon from "../../atoms/icon/icon";
+
 import "./slider.scss";
 
 /**
@@ -60,7 +63,7 @@ const Slider = ({ array, timer = 5000 }) => {
       default:
         break;
     }
-  };
+  }
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
@@ -73,31 +76,35 @@ const Slider = ({ array, timer = 5000 }) => {
   //! ********** RENDER **********
 
   return (
-    <figure className="slider">
+    <figure
+      className="slider"
+      role="region"
+      aria-label="slider"
+    >
       {array[i]}
 
       {LENGTH > 1 && (
         <nav>
-          <i
-            className="fa-solid fa-chevron-left fa-2x"
-            onClick={goPrevious}
-            onKeyDown={goPrevious}
-            tabIndex="0"
-          ></i>
+          <Icon
+            name="chevron-left"
+            cat="solid"
+            isHidden="false"
+            event={goPrevious}
+          />
 
-          <i
-            className="fa-solid fa-chevron-right fa-2x"
-            onClick={goNext}
-            onKeyDown={goNext}
-            tabIndex="0"
-          ></i>
+          <Icon
+            name="chevron-right"
+            cat="solid"
+            isHidden="false"
+            event={goNext}
+          />
 
-          <i
-            className={`fa-solid ${isAuto ? 'fa-pause' : 'fa-play'} fa-2x`}
-            onClick={toggleAuto}
-            onKeyDown={toggleAuto}
-            tabIndex="0"
-          ></i>
+          <Icon
+            name={isAuto ? 'pause' : 'play'}
+            cat="solid"
+            isHidden="false"
+            event={toggleAuto}
+          />
         </nav>
       )}
 

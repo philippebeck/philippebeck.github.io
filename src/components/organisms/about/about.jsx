@@ -2,7 +2,7 @@ import { about } from '../../../assets/data.json'
 
 import Heading from '../../molecules/heading/heading'
 import List from '../../atoms/list/list'
-import Slider from '../../atoms/slider/slider'
+import Slider from '../../molecules/slider/slider'
 
 import './about.scss'
 

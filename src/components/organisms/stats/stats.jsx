@@ -2,7 +2,7 @@ import { stats } from '../../../assets/data.json'
 
 import Heading from '../../molecules/heading/heading'
 import Image from '../../atoms/image/image'
-import Slider from '../../atoms/slider/slider'
+import Slider from '../../molecules/slider/slider'
 
 import './stats.scss'
 
