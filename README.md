@@ -29,3 +29,33 @@ My own Website, a SPA (Single Page Application) made with React + Sass, using th
 
 -  dev mode: `npm start`  
 -  prod mode: `npm run build`  
+
+## Atomic Design
+
+### Atomic Components
+
+-  Card
+-  Collapse
+-  Icon
+-  Image
+-  Link
+-  List
+-  Title
+
+### Molecular Components
+
+-  Button
+-  Heading
+-  Links
+-  Slider
+
+### Organic Components
+
+-  About
+-  Blog
+-  Footer
+-  Header
+-  Navbar
+-  Portfolio
+-  Stats
+-  Tools
