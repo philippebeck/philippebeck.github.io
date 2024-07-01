@@ -1,33 +1,5 @@
 @import '../../../assets/style/main.scss';
 
-//! ********** VARIABLES **********
-
-$width-sizes: (
-  "tn": 10px,
-  "xs": 15px,
-  "sm": 20px,
-  "md": 25px,
-  "lg": 30px,
-  "xl": 35px,
-  "wd": 40px
-) !default;
-
-$width-ratios: (
-  "tn": 1,
-  "xs": 2,
-  "sm": 2,
-  "md": 3,
-  "lg": 3,
-  "xl": 4,
-  "wd": 4
-) !default;
-
-//! ********** MIXIN **********
-
-@mixin blog($size, $ratio) {
-  width: calc((100% - ($ratio - 1) * $size) / $ratio);
-}
-
 //! ********** MAIN **********
 
 [id=blog] {
@@ -45,20 +17,6 @@ $width-ratios: (
     & summary:focus i,
     &[open] i {
       animation: turn-xz 2s linear infinite reverse;
-    }
-
-    //! ********** RESPONSIVE **********
-
-    li {
-      @each $breakpoint-key, $breakpoint-value in $breakpoints {
-        @media (min-width: $breakpoint-value) {
-
-          @include blog(
-            map-get($width-sizes, $breakpoint-key),
-            map-get($width-ratios, $breakpoint-key)
-          );
-        }
-      }
     }
   }
 }

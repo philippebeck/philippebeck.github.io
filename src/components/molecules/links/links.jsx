@@ -67,7 +67,11 @@ const Links = ({ array }) => {
           caption={
             <>
               <Title heading={item.caption.title} />
-              <List array={item.caption.technos.map((techno) => <Icon name={techno} option="lg" isHidden="false" />)} />
+              <List
+                array={item.caption.technos.map((techno) => 
+                  <Icon name={techno} option="lg" isHidden="false" />
+                )}
+              />
             </>
           }
           content={<Image url={item.image.url} alt={item.image.alt} />}

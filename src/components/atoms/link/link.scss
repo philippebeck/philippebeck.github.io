@@ -59,6 +59,7 @@ $padding-ratios: (
   border-radius: 10px;
   padding: calc($padding / 2) $padding;
   background-color: $gray;
+  color: $white;
 
   &:hover,
   &:focus {
