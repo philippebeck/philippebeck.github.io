@@ -39,6 +39,7 @@ const Button = ({ link }) => {
     <Link
       url={url}
       label={label}
+      design="link button"
       content={
 
         <>

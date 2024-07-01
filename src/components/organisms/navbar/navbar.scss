@@ -63,21 +63,6 @@ $font-sizes: (
     flex-flow: nowrap;
   }
 
-  a {
-    width: fit-content;
-
-    &:hover,
-    &:focus {
-      color: $gray;
-      transform: scale(0.9);
-      transition: all 500ms;
-    }
-  }
-
-  b {
-    display: none;
-  }
-
   //! ********** RESPONSIVE **********
 
   @each $breakpoint-key, $breakpoint-value in $breakpoints {
@@ -91,26 +76,9 @@ $font-sizes: (
     }
   }
 
-  //? ********** SM **********
-
-  @media (min-width: $sm) {
-    b {
-      display: block;
-      text-transform: uppercase;
-    }
-  }
-
   //? ********** MD **********
 
   @media (min-width: $md) {
     place-content: space-around;
-  }
-
-  //? ********** LG **********
-
-  @media (min-width: $lg) {
-    b {
-      text-transform: capitalize;
-    }
   }
 }

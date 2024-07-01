@@ -53,21 +53,8 @@ $font-ratios: (
     height: $size;
     font-size: $font;
     background-color: $white;
-  }
 
-  a:hover,
-  a:focus {
-    transform: scale(1.1);
-    transition: transform 500ms;
-  }
-
-  i {
-    color: $gray;
-  }
-
-  li {
-
-    //! ********** RESPONSIVE **********
+//! ********** RESPONSIVE **********
 
     @each $breakpoint-key, $breakpoint-value in $breakpoints {
       @media (min-width: $breakpoint-value) {

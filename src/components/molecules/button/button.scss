@@ -1,0 +1,61 @@
+@import '../../../assets/style/main.scss';
+
+//! ********** VARIABLES **********
+
+$buttons: (
+  "codepen":      #000,
+  "github":       #000,
+  "linkedin-in":  #0077B5,
+  "medium":       #00AB6C,
+  "npm":          #CB3837,
+  "x-twitter":    #1DA1F2
+) !default;
+
+//! ********** MIXIN **********
+
+@mixin button($icon, $color) {
+  .fa-#{$icon}:hover,
+  .fa-#{$icon}:focus {
+    color: $color;
+  }
+}
+
+//! ********** MAIN **********
+
+.button {
+  width: fit-content;
+
+  &:hover,
+  &:focus {
+    color: $gray;
+    transform: scale(0.9);
+    transition: all 500ms;
+  }
+
+  b {
+    display: none;
+  }
+
+  @each $social-key, $social-value in $buttons {
+    @include button($social-key, $social-value);
+  }
+
+  //! ********** RESPONSIVE **********
+
+  //? ********** SM **********
+
+  @media (min-width: $sm) {
+    b {
+      display: block;
+      text-transform: uppercase;
+    }
+  }
+
+  //? ********** LG **********
+
+  @media (min-width: $lg) {
+    b {
+      text-transform: capitalize;
+    }
+  }
+}
