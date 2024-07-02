@@ -1,0 +1,34 @@
+//! ********** VARIABLES **********
+
+$headings: (
+  "cubes":      #8E44AD,
+  "sitemap":    #3498DB,
+  "html5":      #E44D26,
+  "css3":       #1572B6,
+  "sass":       #CD6799,
+  "square-js":  #F0DB4F,
+  "react":      #61DBFB,
+  "vuejs":      #42B883,
+  "node-js":    #3C873A,
+  "php":        #777BB4,
+  "python":     #3776AB,
+  "database":   #00758F,
+  "square-git": #F1502F,
+  "dev":        #000
+) !default;
+
+//! ********** MIXIN **********
+
+@mixin heading($icon, $color) {
+  [open] .fa-#{$icon},
+  *:hover > * > .fa-#{$icon},
+  *:focus > * > * > .fa-#{$icon} {
+    color: $color;
+  }
+}
+
+//! ********** MAIN **********
+
+@each $code-key, $code-value in $headings {
+  @include heading($code-key, $code-value);
+}
