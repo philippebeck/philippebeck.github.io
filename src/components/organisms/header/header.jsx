@@ -1,17 +1,13 @@
 import { header } from '../../../assets/data.json'
-
 import Heading from '../../molecules/heading/heading'
 import List from '../../atoms/list/list'
-
 import './header.scss'
 
 /**
  * ? HEADER ORGANISMS
- * * Renders the Header Organisms
- * * that displays the main information
+ * * Renders the Header Organisms that displays the main information
  *
- * @return {JSX.Element}
- *  The rendered Header Organisms.
+ * @return {JSX.Element} - The rendered Header Organisms.
  */
 const Header = () => {
   const { title, data } = header;

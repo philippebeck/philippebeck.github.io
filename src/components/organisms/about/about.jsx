@@ -1,18 +1,14 @@
 import { about } from '../../../assets/data.json'
-
 import Heading from '../../molecules/heading/heading'
 import List from '../../atoms/list/list'
 import Slider from '../../molecules/slider/slider'
-
 import './about.scss'
 
 /**
  * ? ABOUT ORGANISM
- * * Renders the About Organism
- * * that displays a list of information
+ * * Renders the About Organism that displays a list of information
  *
- * @return {JSX.Element}
- *  The rendered About Organism.
+ * @return {JSX.Element} - The rendered About Organism.
  */
 const About = () => {
   const { title, data } = about;
@@ -23,7 +19,6 @@ const About = () => {
 
       <Slider
         array={data.map((item) =>
-
           <section>
             <Heading title={item.title} />
 

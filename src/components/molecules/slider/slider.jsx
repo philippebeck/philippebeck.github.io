@@ -1,27 +1,17 @@
 import { useEffect, useState } from "react";
-
 import Icon from "../../atoms/icon/icon";
-
 import "./slider.scss";
 
 /**
  * ? SLIDER MOLECULE
- * * Renders the Slider Molecule
- * * that displays an Array of items,
- * * & allows the user to navigate through
- * * or to watch them in auto sequence
+ * * Renders the Slider Molecule that displays an Array of items &
+ * * allows the user to navigate through or to watch them in auto sequence
  *
- * @param {Object} props
- *  The Properties for the Slider Molecule.
+ * @param {Object} props - The Properties for the Slider Molecule.
+ * @param {Array} props.array - The Array of items to be displayed in the Slider
+ * @param {number} [props.timer=5000] - The Timer of the Slider
  *
- * @param {Array} props.array
- *  The Array of items to be displayed in the Slider
- *
- * @param {number} [props.timer=5000]
- *  The Timer of the Slider - Defaults to 5000
- *
- * @return {JSX.Element}
- *  The rendered Slider Molecule.
+ * @return {JSX.Element} - The rendered Slider Molecule.
  */
 const Slider = ({ array, timer = 5000 }) => {
   const LENGTH = array.length;

@@ -1,17 +1,13 @@
 import { footer } from '../../../assets/data.json'
-
 import Button from '../../molecules/button/button'
 import List from '../../atoms/list/list'
-
 import './footer.scss'
 
 /**
  * ? FOOTER ORGANISMS
- * * Renders the Footer Organisms
- * * that displays a list of social links
+ * * Renders the Footer Organisms that displays a list of social links
  *
- * @return {JSX.Element}
- *  The rendered Footer Organisms.
+ * @return {JSX.Element} - The rendered Footer Organisms.
  */
 const Footer = () => {
 

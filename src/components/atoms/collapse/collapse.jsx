@@ -1,21 +1,15 @@
 import "./collapse.scss";
 
 /**
- * ? COLLAPSE MOLECULE
- * * Renders the Collapse Molecule that displays the Title &
+ * ? COLLAPSE ATOM
+ * * Renders the Collapse Atom that displays the Title &
  * * that allows the user to expand or collapse the Content
  *
- * @param {Object} props
- *  The Properties for the Collapse Molecule.
+ * @param {Object} props - The Properties for the Collapse Atom.
+ * @param {Object} props.title - The Title of the Collapse.
+ * @param {HTMLElement|string} props.content - The Content of the Collapse.
  *
- * @param {Object} props.title
- *  The Title of the Collapse.
- * 
- * @param {HTMLElement|string} props.content
- *  The Content to be displayed when the Collapse is expanded.
- *
- * @return {JSX.Element}
- *  The rendered Collapse Molecule.
+ * @return {JSX.Element} - The rendered Collapse Atom.
  */
 const Collapse = ({ title, content }) => {
 

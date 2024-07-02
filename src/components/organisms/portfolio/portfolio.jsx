@@ -1,19 +1,15 @@
 import { portfolio } from '../../../assets/data.json'
-
 import Collapse from '../../atoms/collapse/collapse'
 import Heading from '../../molecules/heading/heading'
 import Links from '../../molecules/links/links'
 import List from '../../atoms/list/list'
-
 import './portfolio.scss'
 
 /**
  * ? PORTFOLIO ORGANISM
- * * Renders the Portfolio Organism
- * * that displays a list of projects
+ * * Renders the Portfolio Organism that displays a list of projects
  *
- * @return {JSX.Element}
- *  The rendered Portfolio Organism.
+ * @return {JSX.Element} - The rendered Portfolio Organism.
  */
 const Portfolio = () => {
   const { title, data } = portfolio;

@@ -2,20 +2,13 @@ import './card.scss'
 
 /**
  * ? CARD ATOM
- * * Renders the Card Atom
- * * with a Content & an optional Caption.
+ * * Renders the Card Atom with the Content & a Caption.
  *
- * @param {Object} props
- *  The Properties for the Card Atom.
+ * @param {Object} props - The Properties for the Card Atom.
+ * @param {HTMLElement} props.content - The Content of the Card.
+ * @param {HTMLElement|string} [props.caption=""] - The Caption of the Card
  *
- * @param {HTMLElement} props.content
- *  The main Content of the Card.
- *
- * @param {HTMLElement|string} [props.caption=""]
- *  The optional Caption of the Card - Default is an empty string.
- *
- * @return {JSX.Element}
- *  The rendered Card Atom.
+ * @return {JSX.Element} - The rendered Card Atom.
  */
 const Card = ({ content, caption = "" }) => {
 
