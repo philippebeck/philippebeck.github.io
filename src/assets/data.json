@@ -1,7 +1,7 @@
 {
   "nav": {
     "logo": {
-      "url": "#header",
+      "url": "#home",
       "label": "Home",
       "icon": {
         "cat": "solid",

@@ -13,7 +13,7 @@ const Header = () => {
   const { title, data } = header;
 
   return (
-    <header id="header">
+    <header id="home">
       <Heading title={title} />
 
       <List
