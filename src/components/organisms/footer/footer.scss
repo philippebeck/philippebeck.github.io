@@ -54,6 +54,10 @@ $font-ratios: (
     font-size: $font;
     background-color: $white;
 
+    i {
+      color: $gray;
+    }
+
 //! ********** RESPONSIVE **********
 
     @each $breakpoint-key, $breakpoint-value in $breakpoints {
