@@ -110,6 +110,22 @@
         "gallery": [
           {
             "caption": {
+              "title": "Ohmyfood",
+              "technos": [
+                "html5",
+                "css3",
+                "sass"
+              ]
+            },
+            "detail": "Website of a restauration platform",
+            "image": {
+              "url": "img/portfolio/ohmyfood.webp",
+              "alt": "Homepage of the Ohmyfood Website"
+            },
+            "url": "https://github.com/philippebeck/ohmyfood"
+          },
+          {
+            "caption": {
               "title": "Booki",
               "technos": [
                 "html5",
@@ -129,7 +145,8 @@
               "technos": [
                 "html5",
                 "css3",
-                "sass"
+                "sass",
+                "square-js"
               ]
             },
             "detail": "Junior Web Developer Project 1",
@@ -185,7 +202,9 @@
               "title": "Portfolio",
               "technos": [
                 "html5",
+                "css3",
                 "sass",
+                "square-js",
                 "react"
               ]
             },
@@ -202,6 +221,7 @@
               "technos": [
                 "html5",
                 "css3",
+                "square-js",
                 "react"
               ]
             },
@@ -230,7 +250,6 @@
             "caption": {
               "title": "Vesan",
               "technos": [
-                "html5",
                 "square-js",
                 "vuejs"
               ]
@@ -246,7 +265,6 @@
             "caption": {
               "title": "Vue-Elt",
               "technos": [
-                "html5",
                 "square-js",
                 "vuejs"
               ]
@@ -290,6 +308,7 @@
             "caption": {
               "title": "Nens",
               "technos": [
+                "square-js",
                 "node-js"
               ]
             },
@@ -304,6 +323,7 @@
             "caption": {
               "title": "Nemjs",
               "technos": [
+                "square-js",
                 "node-js"
               ]
             },
