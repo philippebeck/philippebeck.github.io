@@ -6,7 +6,7 @@
     font-display: swap;
     src:
       local("#{$font-family}-Regular"),
-      url("fonts/#{$font-family}-Regular.woff2") format("woff2");
+      url("/fonts/#{$font-family}-Regular.woff2") format("woff2");
   }
 }
 
