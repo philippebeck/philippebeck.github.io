@@ -10,19 +10,14 @@ import './navbar.scss'
  * @return {JSX.Element} - The rendered Navbar Organisms.
  */
 const Navbar = () => {
-  const { logo, links, contact } = nav;
 
   return (
     <nav className="navbar">
-      <Button link={logo} />
-
       <List
-        array={links.map((item) =>
+        array={nav.map((item) =>
           <Button link={item} />
         )}
       />
-
-      <Button link={contact} />
     </nav>
   )
 }
