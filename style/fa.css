@@ -662,16 +662,12 @@
   content: "\f781";
 }
 
-.fa-screwdriver-wrench::before {
-  content: "\f7d9";
-}
-
 .fa-address-card::before {
   content: "\f2bb"; 
 }
 
-.fa-paper-plane::before {
-  content: "\f1d8";
+.fa-screwdriver-wrench::before {
+  content: "\f7d9";
 }
 
 .fa-cubes::before {
@@ -712,6 +708,10 @@
 
 .fa-chess::before {
   content: "\f439";
+}
+
+.fa-paper-plane::before {
+  content: "\f1d8";
 }
 
 .sr-only,
@@ -810,10 +810,6 @@
 
 /*! ********** NETWORKS ********** */
 
-.fa-x-twitter:before {
-  content: "\e61b";
-}
-
 .fa-linkedin-in:before {
   content: "\f0e1";
 }
@@ -822,16 +818,8 @@
   content: "\f23a";
 }
 
-.fa-npm:before {
-  content: "\f3d4";
-}
-
 .fa-github:before {
   content: "\f09b";
-}
-
-.fa-codepen:before {
-  content: "\f1cb";
 }
 
 :root,
