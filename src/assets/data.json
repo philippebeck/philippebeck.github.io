@@ -1,69 +1,60 @@
 {
-  "nav": {
-    "logo": {
+  "nav": [
+    {
       "url": "#home",
       "label": "Home",
+      "text": "Home",
       "icon": {
         "cat": "solid",
         "name": "user-ninja"
       }
     },
-    "links": [
-      {
-        "url": "#portfolio",
-        "label": "Portfolio",
-        "text": "Portfolio",
-        "icon": {
-          "cat": "solid",
-          "name": "code"
-        }
-      },
-      {
-        "url": "#stats",
-        "label": "Stats",
-        "text": "Stats",
-        "icon": {
-          "cat": "solid",
-          "name": "chart-pie"
-        }
-      },
-      {
-        "url": "#blog",
-        "text": "Blog",
-        "label": "Blog",
-        "icon": {
-          "cat": "solid",
-          "name": "blog"
-        }
-      },
-      {
-        "url": "#about",
-        "label": "About",
-        "text": "About",
-        "icon": {
-          "cat": "regular",
-          "name": "address-card"
-        }
-      },
-      {
-        "url": "#tools",
-        "label": "Tools",
-        "text": "Tools",
-        "icon": {
-          "cat": "solid",
-          "name": "screwdriver-wrench"
-        }
+    {
+      "url": "#portfolio",
+      "label": "Portfolio",
+      "text": "Portfolio",
+      "icon": {
+        "cat": "solid",
+        "name": "code"
       }
-    ],
-    "contact": {
-      "url": "mailto:philippebeck.dev@gmail.com",
-      "label": "Contact",
+    },
+    {
+      "url": "#stats",
+      "label": "Stats",
+      "text": "Stats",
+      "icon": {
+        "cat": "solid",
+        "name": "chart-pie"
+      }
+    },
+    {
+      "url": "#blog",
+      "text": "Blog",
+      "label": "Blog",
+      "icon": {
+        "cat": "solid",
+        "name": "blog"
+      }
+    },
+    {
+      "url": "#about",
+      "label": "About",
+      "text": "About",
       "icon": {
         "cat": "regular",
-        "name": "paper-plane"
+        "name": "address-card"
+      }
+    },
+    {
+      "url": "#tools",
+      "label": "Tools",
+      "text": "Tools",
+      "icon": {
+        "cat": "solid",
+        "name": "screwdriver-wrench"
       }
     }
-  },
+  ],
   "header": {
     "title": {
       "heading": "Philippe Beck",
@@ -944,7 +935,7 @@
       },
       {
         "title": {
-          "heading":  "Sports",
+          "heading": "Sports",
           "level": 3,
           "icon": {
             "name": "person-biking",
@@ -2152,18 +2143,11 @@
   },
   "footer": [
     {
-      "label": "X",
-      "url": "https://x.com/ph_beck",
+      "label": "Contact",
+      "url": "mailto:philippebeck.dev@gmail.com",
       "icon": {
-        "name": "x-twitter",
-        "option": "1x"
-      }
-    },
-    {
-      "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/philippebeck",
-      "icon": {
-        "name": "linkedin-in",
+        "cat": "regular",
+        "name": "paper-plane",
         "option": "1x"
       }
     },
@@ -2176,10 +2160,10 @@
       }
     },
     {
-      "label": "NPM",
-      "url": "https://www.npmjs.com/~philippebeck",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/philippebeck",
       "icon": {
-        "name": "npm",
+        "name": "linkedin-in",
         "option": "1x"
       }
     },
@@ -2188,14 +2172,6 @@
       "url": "https://github.com/philippebeck",
       "icon": {
         "name": "github",
-        "option": "1x"
-      }
-    },
-    {
-      "label": "CodePen",
-      "url": "https://codepen.io/philippebeck",
-      "icon": {
-        "name": "codepen",
         "option": "1x"
       }
     }
