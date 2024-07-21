@@ -47,7 +47,7 @@ $font-sizes: (
 
 .navbar {
   display: flex;
-  place-content: space-between;
+  place-content: center;
   place-items: center;
   position: fixed;
   z-index: 1000;
