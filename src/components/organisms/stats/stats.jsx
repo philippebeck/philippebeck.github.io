@@ -1,6 +1,6 @@
+import { Image } from 'reactoms'
 import { stats } from '../../../assets/data.json'
 import Heading from '../../molecules/heading/heading'
-import Image from '../../atoms/image/image'
 import Slider from '../../molecules/slider/slider'
 import './stats.scss'
 

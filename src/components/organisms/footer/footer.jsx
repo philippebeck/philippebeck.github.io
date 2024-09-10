@@ -1,6 +1,6 @@
+import { List } from 'reactoms'
 import { footer } from '../../../assets/data.json'
 import Button from '../../molecules/button/button'
-import List from '../../atoms/list/list'
 import './footer.scss'
 
 /**

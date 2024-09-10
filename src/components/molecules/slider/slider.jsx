@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Icon from "../../atoms/icon/icon";
+import { Icon } from "reactoms";
 import "./slider.scss";
 
 /**

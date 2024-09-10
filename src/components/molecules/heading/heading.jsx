@@ -1,5 +1,4 @@
-import Icon from '../../atoms/icon/icon'
-import Title from '../../atoms/title/title'
+import { Icon, Title } from 'reactoms'
 import './heading.scss'
 
 /**

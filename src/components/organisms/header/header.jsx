@@ -1,6 +1,6 @@
 import { header } from '../../../assets/data.json'
 import Heading from '../../molecules/heading/heading'
-import List from '../../atoms/list/list'
+import { List } from 'reactoms'
 import './header.scss'
 
 /**

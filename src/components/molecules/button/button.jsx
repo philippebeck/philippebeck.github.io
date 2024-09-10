@@ -1,5 +1,4 @@
-import Link from '../../atoms/link/link'
-import Icon from '../../atoms/icon/icon'
+import {Icon, Link } from 'reactoms'
 import './button.scss'
 
 /**

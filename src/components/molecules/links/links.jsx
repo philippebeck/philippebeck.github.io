@@ -1,9 +1,4 @@
-import Card from '../../atoms/card/card'
-import Icon from '../../atoms/icon/icon'
-import Image from '../../atoms/image/image'
-import List from '../../atoms/list/list'
-import Link from '../../atoms/link/link'
-import Title from '../../atoms/title/title'
+import { Card, Icon, Image, List, Link, Title } from 'reactoms'
 import './links.scss'
 
 /**

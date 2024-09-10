@@ -1,8 +1,7 @@
+import { Collapse, List } from 'reactoms'
 import { portfolio } from '../../../assets/data.json'
-import Collapse from '../../atoms/collapse/collapse'
 import Heading from '../../molecules/heading/heading'
 import Links from '../../molecules/links/links'
-import List from '../../atoms/list/list'
 import './portfolio.scss'
 
 /**
