@@ -1,58 +1,70 @@
 {
   "nav": [
     {
-      "url": "#home",
-      "label": "Home",
-      "text": "Home",
+      "link": {
+        "url": "#home",
+        "label": "Home"
+      },
       "ico": {
         "cat": "solid",
         "name": "user-ninja"
-      }
+      },
+      "txt": "Home"
     },
     {
-      "url": "#portfolio",
-      "label": "Portfolio",
-      "text": "Portfolio",
+      "link": {
+        "url": "#portfolio",
+        "label": "Portfolio"
+      },
       "ico": {
         "cat": "solid",
         "name": "code"
-      }
+      },
+      "txt": "Portfolio"
     },
     {
-      "url": "#stats",
-      "label": "Stats",
-      "text": "Stats",
+      "link": {
+        "url": "#stats",
+        "label": "Stats"
+      },
       "ico": {
         "cat": "solid",
         "name": "chart-pie"
-      }
+      },
+      "txt": "Stats"
     },
     {
-      "url": "#blog",
-      "text": "Blog",
-      "label": "Blog",
+      "link": {
+        "url": "#blog",
+        "label": "Blog"
+      },
       "ico": {
         "cat": "solid",
         "name": "blog"
-      }
+      },
+      "txt": "Blog"
     },
     {
-      "url": "#about",
-      "label": "About",
-      "text": "About",
+      "link": {
+        "url": "#about",
+        "label": "About"
+      },
       "ico": {
         "cat": "regular",
         "name": "address-card"
-      }
+      },
+      "txt": "About"
     },
     {
-      "url": "#tools",
-      "label": "Tools",
-      "text": "Tools",
+      "link": {
+        "url": "#tools",
+        "label": "Tools"
+      },
       "ico": {
         "cat": "solid",
         "name": "screwdriver-wrench"
-      }
+      },
+      "txt": "Tools"
     }
   ],
   "header": {
@@ -2142,8 +2154,10 @@
   },
   "footer": [
     {
-      "label": "Contact",
-      "url": "mailto:philippebeck.dev@gmail.com",
+      "link": {
+        "url": "mailto:philippebeck.dev@gmail.com",
+        "label": "Contact"
+      },
       "ico": {
         "cat": "regular",
         "name": "paper-plane",
@@ -2151,24 +2165,30 @@
       }
     },
     {
-      "label": "Medium",
-      "url": "https://medium.com/@philippebeck",
+      "link": {
+        "url": "https://medium.com/@philippebeck",
+        "label": "Medium"
+      },
       "ico": {
         "name": "medium",
         "option": "1x"
       }
     },
     {
-      "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/philippebeck",
+      "link": {
+        "url": "https://www.linkedin.com/in/philippebeck",
+        "label": "LinkedIn"
+      },
       "ico": {
         "name": "linkedin-in",
         "option": "1x"
       }
     },
     {
-      "label": "GitHub",
-      "url": "https://github.com/philippebeck",
+      "link": {
+        "url": "https://github.com/philippebeck",
+        "label": "GitHub"
+      },
       "ico": {
         "name": "github",
         "option": "1x"
