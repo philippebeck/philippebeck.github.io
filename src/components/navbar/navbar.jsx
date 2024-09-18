@@ -1,6 +1,5 @@
-import { List } from 'reactoms'
+import { Button, List } from 'reactoms'
 import { nav } from '../../assets/data.json'
-import Button from '../button/button'
 import './navbar.scss'
 
 /**
@@ -15,7 +14,11 @@ const Navbar = () => {
     <nav className="navbar">
       <List
         array={nav.map((item) =>
-          <Button link={item} />
+          <Button
+            link={item.link}
+            ico={item.ico}
+            txt={item.txt}
+          />
         )}
       />
     </nav>

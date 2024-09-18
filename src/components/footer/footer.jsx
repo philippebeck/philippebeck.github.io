@@ -1,6 +1,5 @@
-import { List } from 'reactoms'
+import { Button, List } from 'reactoms'
 import { footer } from '../../assets/data.json'
-import Button from '../button/button'
 import './footer.scss'
 
 /**
@@ -15,7 +14,10 @@ const Footer = () => {
     <footer className="footer">
       <List
         array={footer.map((item) =>
-          <Button link={item} />
+          <Button
+            link={item.link}
+            ico={item.ico}
+          />
         )}
       />
     </footer>
