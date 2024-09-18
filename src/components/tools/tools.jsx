@@ -1,7 +1,6 @@
-import { Collapse, List } from 'reactoms'
-import { tools } from '../../../assets/data.json'
-import Heading from '../../molecules/heading/heading'
-import Links from '../../molecules/links/links'
+import { Collapse, List, Title } from 'reactoms'
+import { tools } from '../../assets/data.json'
+import Links from '../links/links'
 import './tools.scss'
 
 /**
@@ -15,12 +14,21 @@ const Tools = () => {
 
   return (
     <article id="tools">
-      <Heading title={title} />
+      <Title
+        txt={title.txt}
+        lvl={title.lvl}
+        sub={title.sub}
+        ico={title.ico}
+      />
 
       <List
         array={data.map((tool) =>
           <Collapse
-            title={<Heading title={tool.title} />}
+            title={<Title
+              txt={tool.title.txt}
+              lvl={tool.title.lvl}
+              ico={tool.title.ico}
+            />}
             content={<Links array={tool.list} />}
           />
         )}

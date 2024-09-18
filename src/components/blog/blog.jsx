@@ -1,7 +1,6 @@
-import { Collapse, List } from 'reactoms'
-import { blog } from '../../../assets/data.json'
-import Heading from '../../molecules/heading/heading'
-import Links from '../../molecules/links/links'
+import { Collapse, List, Title } from 'reactoms'
+import { blog } from '../../assets/data.json'
+import Links from '../links/links'
 import './blog.scss'
 
 /**
@@ -15,12 +14,21 @@ const Blog = () => {
 
   return (
     <article id="blog">
-      <Heading title={title} />
+      <Title
+        txt={title.txt}
+        lvl={title.lvl}
+        sub={title.sub}
+        ico={title.ico}
+      />
 
       <List
         array={data.map((article) =>
           <Collapse
-            title={<Heading title={article.title} />}
+            title={<Title
+              txt={article.title.txt}
+              lvl={article.title.lvl}
+              ico={article.title.ico}
+            />}
             content={<Links array={article.gallery} />}
           />
         )}

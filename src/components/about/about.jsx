@@ -1,7 +1,5 @@
-import { List } from 'reactoms'
-import { about } from '../../../assets/data.json'
-import Heading from '../../molecules/heading/heading'
-import Slider from '../../molecules/slider/slider'
+import { List, Slider, Title } from 'reactoms'
+import { about } from '../../assets/data.json'
 import './about.scss'
 
 /**
@@ -15,12 +13,21 @@ const About = () => {
 
   return (
     <article id="about">
-      <Heading title={title} />
+      <Title
+        txt={title.txt}
+        lvl={title.lvl}
+        sub={title.sub}
+        ico={title.ico}
+      />
 
       <Slider
         array={data.map((item) =>
           <section>
-            <Heading title={item.title} />
+            <Title
+              txt={item.title.txt}
+              lvl={item.title.lvl}
+              ico={item.title.ico}
+            />
 
             <List
               array={item.data.map((subitem) =>

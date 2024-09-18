@@ -1,7 +1,5 @@
-import { Image } from 'reactoms'
-import { stats } from '../../../assets/data.json'
-import Heading from '../../molecules/heading/heading'
-import Slider from '../../molecules/slider/slider'
+import { Image, Slider, Title } from 'reactoms'
+import { stats } from '../../assets/data.json'
 import './stats.scss'
 
 /**
@@ -15,7 +13,12 @@ const Stats = () => {
 
   return (
     <article id="stats">
-      <Heading title={title} />
+      <Title
+        txt={title.txt}
+        lvl={title.lvl}
+        sub={title.sub}
+        ico={title.ico}
+      />
 
       <Slider
         array={data.map((item, index) =>

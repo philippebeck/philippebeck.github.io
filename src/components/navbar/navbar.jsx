@@ -1,6 +1,6 @@
 import { List } from 'reactoms'
-import { nav } from '../../../assets/data.json'
-import Button from '../../molecules/button/button'
+import { nav } from '../../assets/data.json'
+import Button from '../button/button'
 import './navbar.scss'
 
 /**

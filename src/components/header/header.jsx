@@ -1,6 +1,5 @@
-import { header } from '../../../assets/data.json'
-import Heading from '../../molecules/heading/heading'
-import { List } from 'reactoms'
+import { List, Title } from 'reactoms'
+import { header } from '../../assets/data.json'
 import './header.scss'
 
 /**
@@ -14,7 +13,12 @@ const Header = () => {
 
   return (
     <header id="home">
-      <Heading title={title} />
+      <Title
+        txt={title.txt}
+        lvl={title.lvl}
+        sub={title.sub}
+        ico={title.ico}
+      />
 
       <List
         array={data.map((item) =>
