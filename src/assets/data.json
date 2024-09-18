@@ -4,7 +4,7 @@
       "url": "#home",
       "label": "Home",
       "text": "Home",
-      "icon": {
+      "ico": {
         "cat": "solid",
         "name": "user-ninja"
       }
@@ -13,7 +13,7 @@
       "url": "#portfolio",
       "label": "Portfolio",
       "text": "Portfolio",
-      "icon": {
+      "ico": {
         "cat": "solid",
         "name": "code"
       }
@@ -22,7 +22,7 @@
       "url": "#stats",
       "label": "Stats",
       "text": "Stats",
-      "icon": {
+      "ico": {
         "cat": "solid",
         "name": "chart-pie"
       }
@@ -31,7 +31,7 @@
       "url": "#blog",
       "text": "Blog",
       "label": "Blog",
-      "icon": {
+      "ico": {
         "cat": "solid",
         "name": "blog"
       }
@@ -40,7 +40,7 @@
       "url": "#about",
       "label": "About",
       "text": "About",
-      "icon": {
+      "ico": {
         "cat": "regular",
         "name": "address-card"
       }
@@ -49,7 +49,7 @@
       "url": "#tools",
       "label": "Tools",
       "text": "Tools",
-      "icon": {
+      "ico": {
         "cat": "solid",
         "name": "screwdriver-wrench"
       }
@@ -57,14 +57,14 @@
   ],
   "header": {
     "title": {
-      "heading": "Philippe Beck",
-      "level": 1,
-      "icon": {
+      "txt": "Philippe Beck",
+      "lvl": 1,
+      "sub": "Senior Fullstack IT Developer & IT Development Trainer",
+      "ico": {
         "name": "user-ninja",
         "cat": "solid",
         "option": "5x"
-      },
-      "subtitle": "Senior Fullstack IT Developer & IT Development Trainer"
+      }
     },
     "data": [
       "🖼️ Web Int: HTML, CSS, Sass",
@@ -79,21 +79,21 @@
   },
   "portfolio": {
     "title": {
-      "heading": "Portfolio",
-      "level": 2,
-      "icon": {
+      "txt": "Portfolio",
+      "lvl": 2,
+      "sub": "All my projects are hosted on GitHub & some packages are published on NPM or Packagist",
+      "ico": {
         "name": "code",
         "cat": "solid",
         "option": "3x"
-      },
-      "subtitle": "All my projects are hosted on GitHub & some packages are published on NPM or Packagist"
+      }
     },
     "data": [
       {
         "title": {
-          "heading": "Integration",
-          "level": 3,
-          "icon": {
+          "txt": "Integration",
+          "lvl": 3,
+          "ico": {
             "name": "sitemap",
             "cat": "solid"
           }
@@ -180,9 +180,9 @@
       },
       {
         "title": {
-          "heading": "JavaScript",
-          "level": 3,
-          "icon": {
+          "txt": "JavaScript",
+          "lvl": 3,
+          "ico": {
             "name": "square-js",
             "cat": "brands"
           }
@@ -271,9 +271,9 @@
       },
       {
         "title": {
-          "heading": "Node",
-          "level": 3,
-          "icon": {
+          "txt": "Node",
+          "lvl": 3,
+          "ico": {
             "name": "node-js",
             "cat": "brands"
           }
@@ -329,9 +329,9 @@
       },
       {
         "title": {
-          "heading": "PHP",
-          "level": 3,
-          "icon": {
+          "txt": "PHP",
+          "lvl": 3,
+          "ico": {
             "name": "php",
             "cat": "brands"
           }
@@ -453,14 +453,14 @@
   },
   "stats": {
     "title": {
-      "heading": "Stats",
-      "level": 2,
-      "icon": {
+      "txt": "Stats",
+      "lvl": 2,
+      "sub": "Here are some stats about my IT development skills",
+      "ico": {
         "name": "chart-pie",
         "cat": "solid",
         "option": "3x"
-      },
-      "subtitle": "Here are some stats about my IT development skills"
+      }
     },
     "data": [
       {
@@ -479,21 +479,21 @@
   },
   "blog": {
     "title": {
-      "heading": "Blog",
-      "level": 2,
-      "icon": {
+      "txt": "Blog",
+      "lvl": 2,
+      "sub": "My articles about IT development are hosted on Medium",
+      "ico": {
         "name": "blog",
         "cat": "solid",
         "option": "3x"
-      },
-      "subtitle": "My articles about IT development are hosted on Medium"
+      }
     },
     "data": [
       {
         "title": {
-          "heading": "HTML",
-          "level": 3,
-          "icon": {
+          "txt": "HTML",
+          "lvl": 3,
+          "ico": {
             "name": "html5"
           }
         },
@@ -590,9 +590,9 @@
       },
       {
         "title": {
-          "heading": "CSS",
-          "level": 3,
-          "icon": {
+          "txt": "CSS",
+          "lvl": 3,
+          "ico": {
             "name": "css3"
           }
         },
@@ -689,9 +689,9 @@
       },
       {
         "title": {
-          "heading": "JavaScript",
-          "level": 3,
-          "icon": {
+          "txt": "JavaScript",
+          "lvl": 3,
+          "ico": {
             "name": "square-js"
           }
         },
@@ -788,9 +788,9 @@
       },
       {
         "title": {
-          "heading": "PHP",
-          "level": 3,
-          "icon": {
+          "txt": "PHP",
+          "lvl": 3,
+          "ico": {
             "name": "php"
           }
         },
@@ -889,21 +889,21 @@
   },
   "about": {
     "title": {
-      "heading": "About",
-      "level": 2,
-      "icon": {
+      "txt": "About",
+      "lvl": 2,
+      "sub": "You can find additional information about me here...",
+      "ico": {
         "name": "address-card",
         "cat": "regular",
         "option": "3x"
-      },
-      "subtitle": "You can find additional information about me here..."
+      }
     },
     "data": [
       {
         "title": {
-          "heading": "Languages",
-          "level": 3,
-          "icon": {
+          "txt": "Languages",
+          "lvl": 3,
+          "ico": {
             "name": "language",
             "cat": "solid"
           }
@@ -917,9 +917,9 @@
       },
       {
         "title": {
-          "heading": "Hobbies",
-          "level": 3,
-          "icon": {
+          "txt": "Hobbies",
+          "lvl": 3,
+          "ico": {
             "name": "atom",
             "cat": "solid"
           }
@@ -934,9 +934,9 @@
       },
       {
         "title": {
-          "heading": "Sports",
-          "level": 3,
-          "icon": {
+          "txt": "Sports",
+          "lvl": 3,
+          "ico": {
             "name": "person-biking",
             "cat": "solid"
           }
@@ -953,9 +953,9 @@
       },
       {
         "title": {
-          "heading": "Fun",
-          "level": 3,
-          "icon": {
+          "txt": "Fun",
+          "lvl": 3,
+          "ico": {
             "name": "chess",
             "cat": "solid"
           }
@@ -973,21 +973,21 @@
   },
   "tools": {
     "title": {
-      "heading": "Tools",
-      "level": 2,
-      "icon": {
+      "txt": "Tools",
+      "lvl": 2,
+      "sub": "Here are useful links for IT development, particularly for the Web",
+      "ico": {
         "name": "screwdriver-wrench",
         "cat": "solid",
         "option": "3x"
-      },
-      "subtitle": "Here are useful links for IT development, particularly for the Web"
+      }
     },
     "data": [
       {
         "title": {
-          "heading": "HTML",
-          "level": 3,
-          "icon": {
+          "txt": "HTML",
+          "lvl": 3,
+          "ico": {
             "name": "html5"
           }
         },
@@ -1088,9 +1088,9 @@
       },
       {
         "title": {
-          "heading": "CSS",
-          "level": 3,
-          "icon": {
+          "txt": "CSS",
+          "lvl": 3,
+          "ico": {
             "name": "css3"
           }
         },
@@ -1227,9 +1227,9 @@
       },
       {
         "title": {
-          "heading": "JavaScript",
-          "level": 3,
-          "icon": {
+          "txt": "JavaScript",
+          "lvl": 3,
+          "ico": {
             "name": "square-js"
           }
         },
@@ -1398,9 +1398,9 @@
       },
       {
         "title": {
-          "heading": "Vue",
-          "level": 3,
-          "icon": {
+          "txt": "Vue",
+          "lvl": 3,
+          "ico": {
             "name": "vuejs"
           }
         },
@@ -1557,9 +1557,9 @@
       },
       {
         "title": {
-          "heading": "Node",
-          "level": 3,
-          "icon": {
+          "txt": "Node",
+          "lvl": 3,
+          "ico": {
             "name": "node-js"
           }
         },
@@ -1604,9 +1604,9 @@
       },
       {
         "title": {
-          "heading": "PHP",
-          "level": 3,
-          "icon": {
+          "txt": "PHP",
+          "lvl": 3,
+          "ico": {
             "name": "php"
           }
         },
@@ -1699,9 +1699,9 @@
       },
       {
         "title": {
-          "heading": "Python",
-          "level": 3,
-          "icon": {
+          "txt": "Python",
+          "lvl": 3,
+          "ico": {
             "name": "python"
           }
         },
@@ -1846,9 +1846,9 @@
       },
       {
         "title": {
-          "heading": "DataBase",
-          "level": 3,
-          "icon": {
+          "txt": "DataBase",
+          "lvl": 3,
+          "ico": {
             "name": "database",
             "cat": "solid"
           }
@@ -1902,9 +1902,9 @@
       },
       {
         "title": {
-          "heading": "Git",
-          "level": 3,
-          "icon": {
+          "txt": "Git",
+          "lvl": 3,
+          "ico": {
             "name": "square-git"
           }
         },
@@ -1965,9 +1965,9 @@
       },
       {
         "title": {
-          "heading": "Others",
-          "level": 3,
-          "icon": {
+          "txt": "Others",
+          "lvl": 3,
+          "ico": {
             "name": "dev"
           }
         },
@@ -2144,7 +2144,7 @@
     {
       "label": "Contact",
       "url": "mailto:philippebeck.dev@gmail.com",
-      "icon": {
+      "ico": {
         "cat": "regular",
         "name": "paper-plane",
         "option": "1x"
@@ -2153,7 +2153,7 @@
     {
       "label": "Medium",
       "url": "https://medium.com/@philippebeck",
-      "icon": {
+      "ico": {
         "name": "medium",
         "option": "1x"
       }
@@ -2161,7 +2161,7 @@
     {
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/philippebeck",
-      "icon": {
+      "ico": {
         "name": "linkedin-in",
         "option": "1x"
       }
@@ -2169,7 +2169,7 @@
     {
       "label": "GitHub",
       "url": "https://github.com/philippebeck",
-      "icon": {
+      "ico": {
         "name": "github",
         "option": "1x"
       }
