@@ -18,8 +18,8 @@ import './button.scss'
  * @return {JSX.Element} - The rendered Button Molecule.
  */
 const Button = ({ link }) => {
-  const { url, label, text, icon } = link;
-  const { cat, name, option } = icon;
+  const { url, label, text, ico } = link;
+  const { cat, name, option } = ico;
 
   return (
     <Link

@@ -29,7 +29,7 @@ const Links = ({ array }) => {
       title: item.detail || null,
       content: (
         <Card
-          caption={item.caption && <Title heading={item.caption.title} />}
+          caption={item.caption && <Title txt={item.caption.title} />}
           content={item.image && <Image url={item.image.url} alt={item.image.alt} />}
         />
       )
@@ -44,7 +44,7 @@ const Links = ({ array }) => {
         <Card
           caption={
             <>
-              <Title heading={item.caption.title} />
+              <Title txt={item.caption.title} />
               <List
                 array={item.caption.technos.map((techno) => 
                   <Icon name={techno} option="lg" isHidden="false" />
