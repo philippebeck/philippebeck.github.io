@@ -1,6 +1,5 @@
-import { Collapse, List, Title } from 'reactoms'
+import { Collapse, Gallery, List, Title } from 'reactoms'
 import { blog } from '../../assets/data.json'
-import Links from '../links/links'
 import './blog.scss'
 
 /**
@@ -29,7 +28,7 @@ const Blog = () => {
               lvl={article.title.lvl}
               ico={article.title.ico}
             />}
-            content={<Links array={article.gallery} />}
+            content={<Gallery array={article.gallery} />}
           />
         )}
       />

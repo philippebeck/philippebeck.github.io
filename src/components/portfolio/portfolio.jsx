@@ -1,6 +1,5 @@
-import { Collapse, List, Title } from 'reactoms'
+import { Collapse, Gallery, List, Title } from 'reactoms'
 import { portfolio } from '../../assets/data.json'
-import Links from '../links/links'
 import './portfolio.scss'
 
 /**
@@ -29,7 +28,7 @@ const Portfolio = () => {
               lvl={project.title.lvl}
               ico={project.title.ico}
             />}
-            content={<Links array={project.gallery} />}
+            content={<Gallery array={project.gallery} />}
           />
         )}
       />
