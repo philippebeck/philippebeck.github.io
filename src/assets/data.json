@@ -1,6 +1,6 @@
 {
-  "nav": [
-    {
+  "nav": {
+    "brand": {
       "link": {
         "url": "#home",
         "label": "Home"
@@ -8,65 +8,76 @@
       "ico": {
         "cat": "solid",
         "name": "user-ninja"
-      },
-      "txt": "Home"
+      }
     },
-    {
+    "links": [
+      {
+        "link": {
+          "url": "#portfolio",
+          "label": "Portfolio"
+        },
+        "ico": {
+          "cat": "solid",
+          "name": "code"
+        },
+        "txt": "Portfolio"
+      },
+      {
+        "link": {
+          "url": "#stats",
+          "label": "Stats"
+        },
+        "ico": {
+          "cat": "solid",
+          "name": "chart-pie"
+        },
+        "txt": "Stats"
+      },
+      {
+        "link": {
+          "url": "#blog",
+          "label": "Blog"
+        },
+        "ico": {
+          "cat": "solid",
+          "name": "blog"
+        },
+        "txt": "Blog"
+      },
+      {
+        "link": {
+          "url": "#about",
+          "label": "About"
+        },
+        "ico": {
+          "cat": "regular",
+          "name": "address-card"
+        },
+        "txt": "About"
+      },
+      {
+        "link": {
+          "url": "#tools",
+          "label": "Tools"
+        },
+        "ico": {
+          "cat": "solid",
+          "name": "screwdriver-wrench"
+        },
+        "txt": "Tools"
+      }
+    ],
+    "contact": {
       "link": {
-        "url": "#portfolio",
-        "label": "Portfolio"
-      },
-      "ico": {
-        "cat": "solid",
-        "name": "code"
-      },
-      "txt": "Portfolio"
-    },
-    {
-      "link": {
-        "url": "#stats",
-        "label": "Stats"
-      },
-      "ico": {
-        "cat": "solid",
-        "name": "chart-pie"
-      },
-      "txt": "Stats"
-    },
-    {
-      "link": {
-        "url": "#blog",
-        "label": "Blog"
-      },
-      "ico": {
-        "cat": "solid",
-        "name": "blog"
-      },
-      "txt": "Blog"
-    },
-    {
-      "link": {
-        "url": "#about",
-        "label": "About"
+        "url": "mailto:philippebeck.dev@gmail.com",
+        "label": "Contact"
       },
       "ico": {
         "cat": "regular",
-        "name": "address-card"
-      },
-      "txt": "About"
-    },
-    {
-      "link": {
-        "url": "#tools",
-        "label": "Tools"
-      },
-      "ico": {
-        "cat": "solid",
-        "name": "screwdriver-wrench"
-      },
-      "txt": "Tools"
+        "name": "paper-plane"
+      }
     }
-  ],
+  },
   "header": {
     "title": {
       "txt": "Philippe Beck",
@@ -977,7 +988,7 @@
           "🎎 Anime & Manga",
           "🎬 Sci-Fi Movies",
           "📚 Sci-Fi Books",
-          "📺 Dramas",
+          "📺 K-Dramas",
           "🎸 Pop, Rock & Electro"
         ]
       }
@@ -2155,12 +2166,31 @@
   "footer": [
     {
       "link": {
-        "url": "mailto:philippebeck.dev@gmail.com",
-        "label": "Contact"
+        "url": "https://github.com/philippebeck",
+        "label": "GitHub"
       },
       "ico": {
-        "cat": "regular",
-        "name": "paper-plane",
+        "name": "github",
+        "option": "1x"
+      }
+    },
+    {
+      "link": {
+        "url": "https://codepen.io/philippebeck",
+        "label": "CodePen"
+      },
+      "ico": {
+        "name": "codepen",
+        "option": "1x"
+      }
+    },
+    {
+      "link": {
+        "url": "https://www.npmjs.com/~philippebeck",
+        "label": "NPM"
+      },
+      "ico": {
+        "name": "npm",
         "option": "1x"
       }
     },
@@ -2176,21 +2206,21 @@
     },
     {
       "link": {
-        "url": "https://www.linkedin.com/in/philippebeck",
-        "label": "LinkedIn"
+        "url": "https://x.com/ph_beck",
+        "label": "X"
       },
       "ico": {
-        "name": "linkedin-in",
+        "name": "x-twitter",
         "option": "1x"
       }
     },
     {
       "link": {
-        "url": "https://github.com/philippebeck",
-        "label": "GitHub"
+        "url": "https://www.linkedin.com/in/philippebeck",
+        "label": "LinkedIn"
       },
       "ico": {
-        "name": "github",
+        "name": "linkedin-in",
         "option": "1x"
       }
     }
