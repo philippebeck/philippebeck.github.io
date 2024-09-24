@@ -12,9 +12,15 @@ import Tools from './components/tools/tools'
 import data from './assets/data.json'
 import './assets/style/app.scss'
 
+const { nav, footer } = data
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar array={data.nav}/>
+    <Navbar
+      brand={nav.brand}
+      links={nav.links}
+      contact={nav.contact}
+    />
 
     <Header />
     <Portfolio />
@@ -23,6 +29,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <About />
     <Tools />
 
-    <Footer array={data.footer}/>
+    <Footer links={footer}/>
   </React.StrictMode>
 )
