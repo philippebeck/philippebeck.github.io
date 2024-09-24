@@ -714,6 +714,18 @@
   content: "\f1d8";
 }
 
+.fa-codepen:before {
+  content: "\f1cb";
+}
+
+.fa-npm:before {
+  content: "\f3d4";
+}
+
+.fa-x-twitter:before {
+  content: "\e61b";
+}
+
 .sr-only,
 .fa-sr-only {
   position: absolute;
