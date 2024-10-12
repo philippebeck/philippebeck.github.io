@@ -3,8 +3,6 @@
 //! ********** MAIN **********
 
 [id=tools] {
-  margin-bottom: 50px;
-
   &:hover > .title i {
     animation: turn-z 2s linear infinite reverse;
   }
