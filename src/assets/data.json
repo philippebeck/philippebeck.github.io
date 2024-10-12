@@ -69,12 +69,12 @@
     ],
     "contact": {
       "link": {
-        "url": "mailto:philippebeck.dev@gmail.com",
+        "url": "#contact",
         "label": "Contact"
       },
       "ico": {
         "cat": "regular",
-        "name": "paper-plane"
+        "name": "address-book"
       }
     }
   },
@@ -2194,16 +2194,6 @@
     },
     {
       "link": {
-        "url": "https://codepen.io/philippebeck",
-        "label": "CodePen"
-      },
-      "ico": {
-        "name": "codepen",
-        "option": "1x"
-      }
-    },
-    {
-      "link": {
         "url": "https://www.npmjs.com/~philippebeck",
         "label": "NPM"
       },
@@ -2224,21 +2214,22 @@
     },
     {
       "link": {
-        "url": "https://x.com/ph_beck",
-        "label": "X"
-      },
-      "ico": {
-        "name": "x-twitter",
-        "option": "1x"
-      }
-    },
-    {
-      "link": {
         "url": "https://www.linkedin.com/in/philippebeck",
         "label": "LinkedIn"
       },
       "ico": {
         "name": "linkedin-in",
+        "option": "1x"
+      }
+    },
+    {
+      "link": {
+        "url": "mailto:philippebeck.dev@gmail.com",
+        "label": "Email"
+      },
+      "ico": {
+        "cat": "regular",
+        "name": "paper-plane",
         "option": "1x"
       }
     }
