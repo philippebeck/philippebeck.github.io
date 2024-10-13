@@ -1,6 +1,6 @@
 # Portfolio
 
-My own Website, a SPA (Single Page Application) made with React + Sass, using the Atomic Design principles & deployed on GitHub Pages  
+My own Website, a SPA (Single Page Application) made with React + Sass, using my own components package *(made with TypeScript & Atomic Design)* & deployed on GitHub Pages  
 
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/philippebeck/philippebeck.github.io)](https://github.com/philippebeck/philippebeck.github.io)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fphilippebeck.github.io)](https://philippebeck.github.io)
@@ -29,33 +29,13 @@ My own Website, a SPA (Single Page Application) made with React + Sass, using th
 
 -  dev mode: `npm start`  
 -  prod mode: `npm run build`  
+-  deploy mode: `npm run deploy`  
 
-## Atomic Design
-
-### Atomic Components
-
--  Card
--  Collapse
--  Icon
--  Image
--  Link
--  List
--  Title
-
-### Molecular Components
-
--  Button
--  Heading
--  Links
--  Slider
-
-### Organic Components
+## Components
 
 -  About
 -  Blog
--  Footer
 -  Header
--  Navbar
 -  Portfolio
 -  Stats
 -  Tools
