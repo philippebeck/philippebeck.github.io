@@ -1035,7 +1035,7 @@
         "list": [
           {
             "name": "Accessibility Validator",
-            "url": "https://achecker.achecks.ca/checker/index.php"
+            "url": "https://achecks.org/achecker"
           },
           {
             "name": "Button",
@@ -1088,10 +1088,6 @@
           {
             "name": "MD -> HTML Converter",
             "url": "https://markdowntohtml.com"
-          },
-          {
-            "name": "Nested Tags",
-            "url": "https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-n"
           },
           {
             "name": "Option Tag Separator",
@@ -1167,10 +1163,6 @@
           {
             "name": "CSS Battle",
             "url": "https://cssbattle.dev"
-          },
-          {
-            "name": "CSS Measurement Units",
-            "url": "https://graphiste.com/img/blog/unites-mesure-css"
           },
           {
             "name": "CSS Reference",
@@ -1372,10 +1364,6 @@
             "url": "https://livescript.net"
           },
           {
-            "name": "MelonJS",
-            "url": "https://www.melonjs.org"
-          },
-          {
             "name": "Mock process.env",
             "url": "https://medium.com/weekly-webtips/how-to-mock-process-env-when-writing-unit-tests-with-jest-80940f36"
           },
@@ -1424,10 +1412,6 @@
             "url": "https://unpkg.com"
           },
           {
-            "name": "Var, Let or Const",
-            "url": "https://andy-carter.com/img/blog/variable-scope-in-modern-javascript"
-          },
-          {
             "name": "Vitest",
             "url": "https://vitest.dev"
           },
@@ -1447,14 +1431,6 @@
         },
         "list": [
           {
-            "name": "Auth0 Vue Guide",
-            "url": "https://auth0.com/img/blog/complete-guide-to-vue-user-authentication"
-          },
-          {
-            "name": "Jest Test Vue Component",
-            "url": "https://alexjover.com/img/blog/write-the-first-vue-js-component-unit-test-in-jest"
-          },
-          {
             "name": "Jest Test Vue Component by Bugs",
             "url": "https://blog.canopas.com/vue-3-component-testing-with-jest-8b80a8a8946b"
           },
@@ -1473,10 +1449,6 @@
           {
             "name": "Pinia",
             "url": "https://blog.logrocket.com/consume-apis-vuex-pinia-axios"
-          },
-          {
-            "name": "Unit Tests Vue Components",
-            "url": "https://testdriven.io/img/blog/vue-unit-testing"
           },
           {
             "name": "Vesan",
@@ -1509,10 +1481,6 @@
           {
             "name": "Vue External Modules",
             "url": "https://blog.pusher.com/building-external-modules-vuejs"
-          },
-          {
-            "name": "Vue External Script",
-            "url": "https://vue-view.com/how-to-load-an-external-script-in-vue-component"
           },
           {
             "name": "Vue Font Awesome",
@@ -1587,10 +1555,6 @@
             "url": "https://vuetifyjs.com/en"
           },
           {
-            "name": "VueX",
-            "url": "https://learnvue.co/tutorials/vuex-in-vue-3"
-          },
-          {
             "name": "VueX Modules",
             "url": "https://blog.logrocket.com/managing-multiple-store-modules-vuex"
           }
@@ -1632,10 +1596,6 @@
           {
             "name": "NPM",
             "url": "https://www.npmjs.com"
-          },
-          {
-            "name": "Rest API Node/Express",
-            "url": "https://community.bonitasoft.com/img/blog/building-restful-api-nodejs-and-express"
           },
           {
             "name": "Yarn",
@@ -1856,20 +1816,12 @@
             "url": "https://www.pygame.org/news"
           },
           {
-            "name": "PYJS",
-            "url": "https://pyjs.org"
-          },
-          {
             "name": "Python",
             "url": "https://www.python.org"
           },
           {
             "name": "Python Doc",
             "url": "https://docs.python.org/fr/3"
-          },
-          {
-            "name": "Requests",
-            "url": "https://python-requests.org/en/latest"
           },
           {
             "name": "SciPy",
@@ -1898,10 +1850,6 @@
           {
             "name": "MariaDB",
             "url": "https://mariadb.org"
-          },
-          {
-            "name": "Mongoose Error E11000",
-            "url": "https://code-garage.fr/img/blog/mongodb-erreur-mongoose-e11000-duplicate-key-error"
           },
           {
             "name": "MySQL",
@@ -2070,16 +2018,8 @@
             "url": "https://juliend.github.io/linux-cheatsheet/#cp"
           },
           {
-            "name": "Linux Monitoring",
-            "url": "https://www.lemagit.fr/conseil/cinq-commandes-linux-pour-monitorer-les-performances-des-serveurs"
-          },
-          {
             "name": "MDN Tutorials",
             "url": "https://developer.mozilla.org/fr/docs/web/tutorials"
-          },
-          {
-            "name": "Medium Articles",
-            "url": "https://thepycoach.teachable.com/p/make-extra-income-writing-as-a-programmer-or-data-scientist"
           },
           {
             "name": "Negative Space",
