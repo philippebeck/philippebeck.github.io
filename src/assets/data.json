@@ -18,20 +18,20 @@
         },
         "ico": {
           "cat": "solid",
-          "name": "code"
+          "name": "briefcase"
         },
         "txt": "Portfolio"
       },
       {
         "link": {
-          "url": "#stats",
-          "label": "Stats"
+          "url": "#skills",
+          "label": "Skills"
         },
         "ico": {
           "cat": "solid",
-          "name": "chart-pie"
+          "name": "code"
         },
-        "txt": "Stats"
+        "txt": "Skills"
       },
       {
         "link": {
@@ -86,7 +86,7 @@
       "ico": {
         "name": "user-ninja",
         "cat": "solid",
-        "option": "5x"
+        "option": "7x"
       }
     },
     "data": [
@@ -106,7 +106,7 @@
       "lvl": 2,
       "sub": "All my projects are hosted on GitHub & some packages are published on NPM or Packagist",
       "ico": {
-        "name": "code",
+        "name": "briefcase",
         "cat": "solid",
         "option": "3x"
       }
@@ -159,8 +159,7 @@
               "technos": [
                 "html5",
                 "css3",
-                "sass",
-                "square-js"
+                "sass"
               ]
             },
             "detail": "Junior Web Developer Project 1",
@@ -174,8 +173,8 @@
             "caption": {
               "title": "Animadio",
               "technos": [
-                "sass",
-                "square-js"
+                "css3",
+                "sass"
               ]
             },
             "detail": "CSS Library made with Sass",
@@ -189,6 +188,7 @@
             "caption": {
               "title": "Sam.scss",
               "technos": [
+                "css3",
                 "sass"
               ]
             },
@@ -203,7 +203,7 @@
       },
       {
         "title": {
-          "txt": "JavaScript",
+          "txt": "Frontend",
           "lvl": 3,
           "ico": {
             "name": "square-js",
@@ -282,6 +282,9 @@
             "caption": {
               "title": "Vesan",
               "technos": [
+                "html5",
+                "css3",
+                "sass",
                 "square-js",
                 "vuejs"
               ]
@@ -297,6 +300,8 @@
             "caption": {
               "title": "Vue-Elt",
               "technos": [
+                "html5",
+                "css3",
                 "square-js",
                 "vuejs"
               ]
@@ -324,6 +329,8 @@
             "caption": {
               "title": "Links2Code",
               "technos": [
+                "html5",
+                "css3",
                 "square-js",
                 "vuejs",
                 "node-js"
@@ -492,30 +499,94 @@
       }
     ]
   },
-  "stats": {
+  "skills": {
     "title": {
-      "txt": "Stats",
+      "txt": "Skills",
       "lvl": 2,
-      "sub": "Here are some stats about my IT development skills",
+      "sub": "Here are my IT development skills",
       "ico": {
-        "name": "chart-pie",
+        "name": "code",
         "cat": "solid",
         "option": "3x"
       }
     },
     "data": [
-      {
-        "url": "https://github-readme-stats.vercel.app/api?username=philippebeck&theme=midnight-purple&show_icons=true",
-        "alt": "GitHub Stats"
-      },
-      {
-        "url": "https://github-readme-streak-stats.herokuapp.com/?user=philippebeck&theme=midnight-purple",
-        "alt": "GitHub Streaks"
-      },
-      {
-        "url": "https://github-readme-stats.vercel.app/api/top-langs/?username=philippebeck&layout=compact&theme=midnight-purple",
-        "alt": "Most Used Languages"
-      }
+      [
+        {
+          "name": "html5",
+          "option": "3x"
+        },
+        {
+          "name": "css3",
+          "option": "3x"
+        },
+        {
+          "name": "sass",
+          "option": "3x"
+        }
+      ],
+      [
+        {
+          "name": "square-js",
+          "option": "3x"
+        },
+        {
+          "name": "react",
+          "option": "3x"
+        },
+        {
+          "name": "vuejs",
+          "option": "3x"
+        }
+      ],
+      [
+        {
+          "name": "node-js",
+          "option": "3x"
+        },
+        {
+          "name": "php",
+          "option": "3x"
+        },
+        {
+          "name": "symfony",
+          "option": "3x"
+        }
+      ],
+      [
+        {
+          "name": "square-git",
+          "option": "3x"
+        },
+        {
+          "name": "gitkraken",
+          "option": "3x"
+        },
+        {
+          "name": "github",
+          "option": "3x"
+        }
+      ],
+      [
+        {
+          "name": "slack",
+          "option": "3x"
+        },
+        {
+          "name": "trello",
+          "option": "3x"
+        }
+      ],
+      [
+        {
+          "name": "linux",
+          "option": "3x"
+        },
+        {
+          "name": "windows",
+          "option": "3x"
+        }
+      ]
     ]
   },
   "blog": {
@@ -2122,6 +2193,16 @@
     ]
   },
   "footer": [
+    {
+      "link": {
+        "url": "https://www.upwork.com/freelancers/~013bd425d5d3f9be2c",
+        "label": "Upwork"
+      },
+      "ico": {
+        "name": "upwork",
+        "option": "1x"
+      }
+    },
     {
       "link": {
         "url": "https://github.com/philippebeck",
