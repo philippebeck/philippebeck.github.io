@@ -4,7 +4,7 @@ import { Navbar, Footer } from 'reactoms'
 
 import Header from './components/header/header'
 import Portfolio from './components/portfolio/portfolio'
-import Stats from './components/stats/stats'
+import Skills from './components/skills/skills'
 import Blog from './components/blog/blog'
 import About from './components/about/about'
 import Tools from './components/tools/tools'
@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <Header />
     <Portfolio />
-    <Stats />
+    <Skills />
     <Blog />
     <About />
     <Tools />
