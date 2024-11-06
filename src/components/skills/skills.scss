@@ -1,0 +1,58 @@
+@import '../../assets/style/main.scss';
+
+//! ********** VARIABLES **********
+
+$height: 80px;
+
+$height-sizes: (
+  "tn": 1rem,
+  "xs": 2rem,
+  "sm": 3rem,
+  "md": 4rem,
+  "lg": 5rem,
+  "xl": 6rem,
+  "wd": 7rem
+) !default;
+
+//! ********** MIXIN **********
+
+@mixin skills($size) {
+  ul {
+    height: calc($height + $size);
+
+    i {
+      font-size: calc(3rem + $size);
+    }
+  }
+}
+
+@mixin skill($name, $color) {
+  .fa-#{$name} {
+    color: $color;
+  }
+}
+
+//! ********** MAIN **********
+
+[id=skills] {
+
+  &:hover > .title i {
+    animation: turn-z 3s linear infinite reverse;
+  }
+
+  ul {
+    height: $height;
+  }
+
+    //! ********** RESPONSIVE **********
+
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @media (min-width: $breakpoint-value) {
+      @include skills(map-get($height-sizes, $breakpoint-key));
+    }
+  }
+
+  @each $name, $color in $icons {
+    @include skill($name, $color);
+  }
+}
