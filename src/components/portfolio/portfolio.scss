@@ -1,7 +1,5 @@
 @import '../../assets/style/main.scss';
 
-//! ********** MAIN **********
-
 [id=portfolio] {
 
   &:hover > .title i {
@@ -18,5 +16,9 @@
     &[open] summary i {
       animation: turn-xy 2s linear infinite reverse;
     }
+  }
+
+  @each $name, $color in $icons {
+    @include icon($name, $color);
   }
 }

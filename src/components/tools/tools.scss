@@ -1,7 +1,5 @@
 @import '../../assets/style/main.scss';
 
-//! ********** MAIN **********
-
 [id=tools] {
   &:hover > .title i {
     animation: turn-z 2s linear infinite reverse;
@@ -16,5 +14,9 @@
     & summary:focus i {
       animation: turn-yz 2s linear infinite reverse;
     }
+  }
+
+  @each $name, $color in $icons {
+    @include icon($name, $color);
   }
 }
