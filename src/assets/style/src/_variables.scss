@@ -52,3 +52,58 @@ $transforms: (
   "turn-yz":  rotate3d(0, 1, 1, 360deg),
   "turn-3d":  rotate3d(1, 1, 1, 360deg)
 ) !default;
+
+//! ********** APP **********
+
+$border: 1px;
+$padding: 5px;
+$font: 1rem;
+
+$border-ratios: (
+  "tn": 1.5,
+  "xs": 2,
+  "sm": 2.5,
+  "md": 3,
+  "lg": 3.5,
+  "xl": 4,
+  "wd": 4.5
+) !default;
+
+$padding-ratios: (
+  "tn": 2,
+  "xs": 3,
+  "sm": 3.5,
+  "md": 4,
+  "lg": 4.5,
+  "xl": 5,
+  "wd": 5
+) !default;
+
+$font-ratios: (
+  "tn": 1.1,
+  "xs": 1.2,
+  "sm": 1.3,
+  "md": 1.4,
+  "lg": 1.5,
+  "xl": 1.6,
+  "wd": 1.7
+) !default;
+
+$icons: (
+  "css3":       #1572B6,
+  "database":   #00758F,
+  "gitkraken":  #009587,
+  "html5":      #E44D26,
+  "node-js":    #3C873A,
+  "php":        #777BB4,
+  "python":     #3776AB,
+  "react":      #61DBFB,
+  "sass":       #CD6799,
+  "sitemap":    #3498DB,
+  "slack":      #ECB22E,
+  "square-git": #F1502F,
+  "square-js":  #F0DB4F,
+  "trello":     #0079BF,
+  "vuejs":      #42B883,
+  "windows":    #05A6F1
+) !default;

@@ -17,3 +17,20 @@
     }
   }
 }
+
+@mixin body($font-ratio) {
+  font-size: calc($font * $font-ratio);
+}
+
+@mixin molecules($border-ratio, $padding-ratio) {
+  border-width: calc($border * $border-ratio);
+  padding: calc($padding * $padding-ratio * 4) calc($padding * $padding-ratio);
+}
+
+@mixin icon($name, $color) {
+  [open] .fa-#{$name},
+  *:hover > * > .fa-#{$name},
+  *:focus > * > * > .fa-#{$name} {
+    color: $color;
+  }
+}
