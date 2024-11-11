@@ -92,7 +92,7 @@
     "data": [
       "🖼️ Web Int: HTML, CSS, Sass",
       "🪅 Front: JS, TS, React, Vue",
-      "⚙️ Back: Node, PHP, Python",
+      "⚙️ Back: Node, PHP",
       "🗄️ DB: SQL, MongoDB",
       "🛠️ Tools: VSCode, GitKraken",
       "🖥️ OS: Linux, Windows",
@@ -503,7 +503,7 @@
     "title": {
       "txt": "Skills",
       "lvl": 2,
-      "sub": "Here are my IT development skills",
+      "sub": "Here are some of my current key skills in IT development",
       "ico": {
         "name": "code",
         "cat": "solid",
@@ -547,10 +547,6 @@
         {
           "name": "php",
           "option": "3x"
-        },
-        {
-          "name": "symfony",
-          "option": "3x"
         }
       ],
       [
@@ -564,6 +560,26 @@
         },
         {
           "name": "github",
+          "option": "3x"
+        }
+      ],
+      [
+        {
+          "name": "figma",
+          "option": "3x"
+        },
+        {
+          "name": "font-awesome",
+          "option": "3x"
+        }
+      ],
+      [
+        {
+          "name": "markdown",
+          "option": "3x"
+        },
+        {
+          "name": "grunt",
           "option": "3x"
         }
       ],
