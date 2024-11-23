@@ -108,7 +108,7 @@
       "ico": {
         "name": "briefcase",
         "cat": "solid",
-        "option": "3x"
+        "option": "4x"
       }
     },
     "data": [
@@ -507,7 +507,7 @@
       "ico": {
         "name": "code",
         "cat": "solid",
-        "option": "3x"
+        "option": "4x"
       }
     },
     "data": [
@@ -613,7 +613,7 @@
       "ico": {
         "name": "blog",
         "cat": "solid",
-        "option": "3x"
+        "option": "4x"
       }
     },
     "data": [
@@ -1023,7 +1023,7 @@
       "ico": {
         "name": "address-card",
         "cat": "regular",
-        "option": "3x"
+        "option": "4x"
       }
     },
     "data": [
@@ -1107,7 +1107,7 @@
       "ico": {
         "name": "screwdriver-wrench",
         "cat": "solid",
-        "option": "3x"
+        "option": "4x"
       }
     },
     "data": [
