@@ -3,10 +3,10 @@ import { skills } from '../../assets/data.json'
 import './skills.scss'
 
 /**
- * ? SKILLS ORGANISM
- * * Renders the Skills Organism that displays a list of skills
+ * ? SKILLS COMPONENT
+ * * Renders the Skills Component that displays a list of skills
  *
- * @return {JSX.Element} - The rendered Skills Organism.
+ * @return {JSX.Element} - The rendered Skills Component.
  */
 const Skills = () => {
   const { title, data } = skills;

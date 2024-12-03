@@ -3,10 +3,10 @@ import { about } from '../../assets/data.json'
 import './about.scss'
 
 /**
- * ? ABOUT ORGANISM
- * * Renders the About Organism that displays a list of information
+ * ? ABOUT COMPONENT
+ * * Renders the About Component that displays a list of information
  *
- * @return {JSX.Element} - The rendered About Organism.
+ * @return {JSX.Element} - The rendered About Component.
  */
 const About = () => {
   const { title, data } = about;

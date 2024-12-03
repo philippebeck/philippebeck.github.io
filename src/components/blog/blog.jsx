@@ -3,10 +3,10 @@ import { blog } from '../../assets/data.json'
 import './blog.scss'
 
 /**
- * ? BLOG ORGANISM
- * * Renders the Blog Organism that displays a list of articles
+ * ? BLOG COMPONENT
+ * * Renders the Blog Component that displays a list of articles
  *
- * @return {JSX.Element} - The rendered Blog Organism.
+ * @return {JSX.Element} - The rendered Blog Component.
  */
 const Blog = () => {
   const { title, data } = blog;

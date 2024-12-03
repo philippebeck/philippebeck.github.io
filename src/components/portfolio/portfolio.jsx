@@ -3,10 +3,10 @@ import { portfolio } from '../../assets/data.json'
 import './portfolio.scss'
 
 /**
- * ? PORTFOLIO ORGANISM
- * * Renders the Portfolio Organism that displays a list of projects
+ * ? PORTFOLIO COMPONENT
+ * * Renders the Portfolio Component that displays a list of projects
  *
- * @return {JSX.Element} - The rendered Portfolio Organism.
+ * @return {JSX.Element} - The rendered Portfolio Component.
  */
 const Portfolio = () => {
   const { title, data } = portfolio;

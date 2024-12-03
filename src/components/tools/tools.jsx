@@ -3,10 +3,10 @@ import { tools } from '../../assets/data.json'
 import './tools.scss'
 
 /**
- * ? TOOLS ORGANISM
- * * Renders the Tools Organism that displays some nested lists of tools
+ * ? TOOLS COMPONENT
+ * * Renders the Tools Component that displays some nested lists of tools
  *
- * @return {JSX.Element} - The rendered Tools Organism.
+ * @return {JSX.Element} - The rendered Tools Component.
  */
 const Tools = () => {
   const { title, data } = tools;

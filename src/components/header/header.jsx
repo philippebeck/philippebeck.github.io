@@ -3,10 +3,10 @@ import { header } from '../../assets/data.json'
 import './header.scss'
 
 /**
- * ? HEADER ORGANISMS
- * * Renders the Header Organisms that displays the main information
+ * ? HEADER COMPONENT
+ * * Renders the Header Component that displays the main information
  *
- * @return {JSX.Element} - The rendered Header Organisms.
+ * @return {JSX.Element} - The rendered Header Component.
  */
 const Header = () => {
   const { title, data } = header;
