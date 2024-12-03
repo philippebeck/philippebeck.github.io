@@ -6,35 +6,27 @@ $gap: 5px;
 $padding: 5px;
 
 $gap-ratios: (
-  "xs": 2,
   "sm": 4,
-  "md": 5,
-  "lg": 6,
-  "xl": 7
+  "md": 6,
+  "lg": 8
 ) !default;
 
 $padding-ratios: (
-  "xs": 2,
   "sm": 4,
-  "md": 5,
-  "lg": 6,
-  "xl": 7
+  "md": 6,
+  "lg": 8
 ) !default;
 
 $width-sizes: (
-  "xs": 15%,
   "sm": 10%,
-  "md": 25%,
-  "lg": 40%,
-  "xl": 45%
+  "md": 40%,
+  "lg": 50%
 ) !default;
 
 $height-sizes: (
-  "xs": 50px,
   "sm": -15px,
-  "md": 10px,
-  "lg": 40px,
-  "xl": 65px
+  "md": 40px,
+  "lg": 90px
 ) !default;
 
 //! ********** MIXIN **********
