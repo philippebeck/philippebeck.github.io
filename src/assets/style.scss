@@ -93,6 +93,12 @@ $icons: (
   "windows":      #05A6F1
 ) !default;
 
+$buttons: (
+  "linkedin-in":  #0077B5,
+  "medium":       #00AB6C,
+  "npm":          #EA2039
+) !default;
+
 //! ********** MIXINS **********
 
 @mixin font-face($font-family) {
@@ -128,6 +134,13 @@ $icons: (
   [open] .fa-#{$name},
   *:hover > * > .fa-#{$name},
   *:focus > * > * > .fa-#{$name} {
+    color: $color;
+  }
+}
+
+@mixin button($icon, $color) {
+  .fa-#{$icon}:hover,
+  .fa-#{$icon}:focus {
     color: $color;
   }
 }
@@ -181,4 +194,8 @@ body {
       }
     }
   }
+}
+
+@each $social-key, $social-value in $buttons {
+  @include button($social-key, $social-value);
 }
