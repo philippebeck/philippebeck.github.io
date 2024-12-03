@@ -50,7 +50,7 @@
           "label": "About"
         },
         "ico": {
-          "cat": "regular",
+          "cat": "solid",
           "name": "address-card"
         },
         "txt": "About"
@@ -73,7 +73,7 @@
         "label": "Contact"
       },
       "ico": {
-        "cat": "regular",
+        "cat": "solid",
         "name": "address-book"
       }
     }
@@ -82,7 +82,7 @@
     "title": {
       "txt": "Philippe Beck",
       "lvl": 1,
-      "sub": "Senior Fullstack IT Developer & IT Development Trainer",
+      "sub": "Senior Fullstack Developer & IT Development Trainer",
       "ico": {
         "name": "user-ninja",
         "cat": "solid",
@@ -104,7 +104,7 @@
     "title": {
       "txt": "Portfolio",
       "lvl": 2,
-      "sub": "All my projects are hosted on GitHub & some packages are published on NPM or Packagist",
+      "sub": "Click the buttons below to see my projects hosted on GitHub",
       "ico": {
         "name": "briefcase",
         "cat": "solid",
@@ -609,7 +609,7 @@
     "title": {
       "txt": "Blog",
       "lvl": 2,
-      "sub": "My articles about IT development are hosted on Medium",
+      "sub": "Click the buttons below to see my articles hosted on Medium",
       "ico": {
         "name": "blog",
         "cat": "solid",
@@ -1022,7 +1022,7 @@
       "sub": "You can find additional information about me here...",
       "ico": {
         "name": "address-card",
-        "cat": "regular",
+        "cat": "solid",
         "option": "4x"
       }
     },
@@ -1039,8 +1039,7 @@
         "data": [
           "🇫🇷 French: Native",
           "🇬🇧 English: Professional",
-          "🇯🇵 Japanese: Elementary",
-          "🇰🇷 Korean: Beginner"
+          "🇯🇵 Japanese: Elementary"
         ]
       },
       {
@@ -1103,7 +1102,7 @@
     "title": {
       "txt": "Tools",
       "lvl": 2,
-      "sub": "Here are useful links for IT development, particularly for the Web",
+      "sub": "Click the buttons below to see useful links for developers",
       "ico": {
         "name": "screwdriver-wrench",
         "cat": "solid",
@@ -2211,16 +2210,6 @@
   "footer": [
     {
       "link": {
-        "url": "https://www.upwork.com/freelancers/~013bd425d5d3f9be2c",
-        "label": "Upwork"
-      },
-      "ico": {
-        "name": "upwork",
-        "option": "1x"
-      }
-    },
-    {
-      "link": {
         "url": "https://github.com/philippebeck",
         "label": "GitHub"
       },
@@ -2256,17 +2245,6 @@
       },
       "ico": {
         "name": "linkedin-in",
-        "option": "1x"
-      }
-    },
-    {
-      "link": {
-        "url": "mailto:philippebeck.dev@gmail.com",
-        "label": "Email"
-      },
-      "ico": {
-        "cat": "regular",
-        "name": "paper-plane",
         "option": "1x"
       }
     }
