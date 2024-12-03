@@ -1,4 +1,4 @@
-@import '../../assets/style/main.scss';
+@import '../../assets/style.scss';
 
 //! ********** VARIABLES **********
 
@@ -6,43 +6,35 @@ $gap: 5px;
 $padding: 5px;
 
 $gap-ratios: (
-  "tn": 2,
-  "xs": 3,
+  "xs": 2,
   "sm": 4,
   "md": 5,
   "lg": 6,
-  "xl": 7,
-  "wd": 8
+  "xl": 7
 ) !default;
 
 $padding-ratios: (
-  "tn": 2,
-  "xs": 3,
+  "xs": 2,
   "sm": 4,
   "md": 5,
   "lg": 6,
-  "xl": 7,
-  "wd": 8
+  "xl": 7
 ) !default;
 
 $width-sizes: (
-  "tn": 15%,
-  "xs": 40%,
+  "xs": 15%,
   "sm": 10%,
   "md": 25%,
   "lg": 40%,
-  "xl": 45%,
-  "wd": 50%
+  "xl": 45%
 ) !default;
 
 $height-sizes: (
-  "tn": 50px,
-  "xs": 90px,
+  "xs": 50px,
   "sm": -15px,
   "md": 10px,
   "lg": 40px,
-  "xl": 65px,
-  "wd": 90px
+  "xl": 65px
 ) !default;
 
 //! ********** MIXIN **********

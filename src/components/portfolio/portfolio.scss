@@ -1,7 +1,6 @@
-@import '../../assets/style/main.scss';
+@import '../../assets/style.scss';
 
 [id=portfolio] {
-
   &:hover > .title i {
     animation: turn-x 2s linear infinite reverse;
   }

@@ -1,4 +1,4 @@
-@import '../../assets/style/main.scss';
+@import '../../assets/style.scss';
 
 //! ********** VARIABLES **********
 
@@ -6,33 +6,27 @@ $gap: 10px;
 $padding: 5px;
 
 $gap-ratios: (
-  "tn": 1.5,
-  "xs": 2,
+  "xs": 1.5,
   "sm": 2.5,
   "md": 3,
   "lg": 3.5,
-  "xl": 4,
-  "wd": 4.5
+  "xl": 4
 ) !default;
 
 $padding-ratios: (
-  "tn": 2,
-  "xs": 3,
+  "xs": 2,
   "sm": 4,
   "md": 5,
   "lg": 6,
-  "xl": 7,
-  "wd": 8
+  "xl": 7
 ) !default;
 
 $height-sizes: (
-  "tn": 0px,
-  "xs": 50px,
+  "xs": 0px,
   "sm": 100px,
   "md": 150px,
   "lg": 200px,
-  "xl": 250px,
-  "wd": 300px
+  "xl": 250px
 ) !default;
 
 //! ********** MIXIN **********
@@ -46,7 +40,6 @@ $height-sizes: (
 //! ********** MAIN **********
 
 [id=about] {
-
   &:hover > .title i {
     animation: turn-x 2s linear infinite reverse;
   }

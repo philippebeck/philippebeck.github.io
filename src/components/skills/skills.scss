@@ -1,17 +1,15 @@
-@import '../../assets/style/main.scss';
+@import '../../assets/style.scss';
 
 //! ********** VARIABLES **********
 
 $height: 80px;
 
 $height-sizes: (
-  "tn": 1rem,
-  "xs": 2rem,
+  "xs": 1rem,
   "sm": 3rem,
   "md": 4rem,
   "lg": 5rem,
-  "xl": 6rem,
-  "wd": 7rem
+  "xl": 6rem
 ) !default;
 
 //! ********** MIXIN **********
@@ -35,7 +33,6 @@ $height-sizes: (
 //! ********** MAIN **********
 
 [id=skills] {
-
   &:hover > .title i {
     animation: turn-z 3s linear infinite reverse;
   }
