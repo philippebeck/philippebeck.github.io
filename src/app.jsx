@@ -10,7 +10,7 @@ import About from './components/about/about'
 import Tools from './components/tools/tools'
 
 import data from './assets/data.json'
-import './assets/style/app.scss'
+import './assets/style.scss'
 
 const { nav, footer } = data
 
