@@ -40,7 +40,7 @@ $transforms: (
 ) !default;
 
 $border: 1px;
-$padding: 5px;
+$padding: 20px;
 $font: 1rem;
 
 $border-ratios: (
@@ -117,7 +117,7 @@ $buttons: (
 
 @mixin molecules($border-ratio, $padding-ratio) {
   border-width: calc($border * $border-ratio);
-  padding: calc($padding * $padding-ratio * 4) calc($padding * $padding-ratio);
+  padding: calc($padding * $padding-ratio);
 }
 
 @mixin icon($name, $color) {
@@ -152,7 +152,7 @@ html {
 }
 
 body {
-  margin: 25px 0 0;
+  margin: 30px 0 0;
   font-family: $sans-serif;
   font-size: $font;
   background-color: $black;
@@ -171,7 +171,7 @@ body {
   [id=about],
   [id=tools] {
     border-top: solid $border $silver;
-    padding: calc($padding * 6);
+    padding: calc($padding * 4);
 
     @each $breakpoint-key, $breakpoint-value in $breakpoints {
       @media (min-width: $breakpoint-value) {
