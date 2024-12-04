@@ -1,6 +1,6 @@
 {
   "name": "philippebeck.github.io",
-  "version": "0.5.10",
+  "version": "0.5.11",
   "type": "module",
   "homepage": "https://philippebeck.github.io",
   "private": false,
@@ -15,7 +15,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "reactoms": "^0.4.9"
+    "reactoms": "^0.4.10"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
