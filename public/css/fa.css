@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-brands-400.woff2") format("woff2"); }
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../fonts/fa-solid-900.woff2") format("woff2"); }
+
+:root, :host {
+  --fa-style-family-brands: 'Font Awesome 6 Brands';
+  --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands';
+  --fa-style-family-classic: 'Font Awesome 6 Free';
+  --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free'; }
+
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900); }
+
+.fa-solid, .fa-brands, .fa {
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto; }
+
+.fa-solid::before, .fa-brands::before, .fa::before {
+  content: var(--fa); }
+
+.fa-solid { 
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900; }
+
+.fa-brands {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa-2x { font-size: 2em }
+.fa-3x { font-size: 3em }
+.fa-4x { font-size: 4em }
+.fa-7x { font-size: 7em }
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em; }
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em; }
+
+.fa-address-book { --fa: "\f2b9" }
+.fa-address-card { --fa: "\f2bb" }
+.fa-atom { --fa: "\f5d2" }
+.fa-blog { --fa: "\f781" }
+.fa-briefcase { --fa: "\f0b1" }
+.fa-chess { --fa: "\f439" }
+.fa-chevron-left { --fa: "\f053" }
+.fa-chevron-right { --fa: "\f054" }
+.fa-code { --fa: "\f121" }
+.fa-css3 { --fa: "\f13c" }
+.fa-database { --fa: "\f1c0" }
+.fa-dev { --fa: "\f6cc" }
+.fa-figma { --fa: "\f799" }
+.fa-font-awesome { --fa: "\f2b4" }
+.fa-github { --fa: "\f09b" }
+.fa-gitkraken { --fa: "\f3a6" }
+.fa-grunt { --fa: "\f3ad" }
+.fa-html5 { --fa: "\f13b" }
+.fa-language { --fa: "\f1ab" }
+.fa-linkedin-in { --fa: "\f0e1" }
+.fa-linux { --fa: "\f17c" }
+.fa-markdown { --fa: "\f60f" }
+.fa-medium { --fa: "\f23a" }
+.fa-node-js { --fa: "\f3d3" }
+.fa-npm { --fa: "\f3d4" }
+.fa-pause { --fa: "\f04c" }
+.fa-person-biking { --fa: "\f84a" }
+.fa-php { --fa: "\f457" }
+.fa-play { --fa: "\f04b" }
+.fa-python { --fa: "\f3e2" }
+.fa-react { --fa: "\f41b" }
+.fa-sass { --fa: "\f41e" }
+.fa-screwdriver-wrench { --fa: "\f7d9" }
+.fa-sitemap { --fa: "\f0e8" }
+.fa-slack { --fa: "\f198" }
+.fa-square-git { --fa: "\f1d2" }
+.fa-square-js { --fa: "\f3b9" }
+.fa-trello { --fa: "\f181" }
+.fa-user-ninja { --fa: "\f504" }
+.fa-vuejs { --fa: "\f41f" }
+.fa-windows { --fa: "\f17a" }
