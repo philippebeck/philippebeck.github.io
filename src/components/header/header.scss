@@ -1,47 +1,7 @@
 @import '../../assets/style.scss';
 
-//! ********** VARIABLES **********
-
 $gap: 5px;
-$padding: 5px;
-
-$gap-ratios: (
-  "sm": 4,
-  "md": 6,
-  "lg": 8
-) !default;
-
-$padding-ratios: (
-  "sm": 4,
-  "md": 6,
-  "lg": 8
-) !default;
-
-$width-sizes: (
-  "sm": 10%,
-  "md": 40%,
-  "lg": 50%
-) !default;
-
-$height-sizes: (
-  "sm": -15px,
-  "md": 40px,
-  "lg": 90px
-) !default;
-
-//! ********** MIXIN **********
-
-@mixin header($gap-ratio, $padding-ratio, $width-size, $height-size) {
-  gap: calc($gap * $gap-ratio);
-
-  ul {
-    padding: calc($padding * $padding-ratio);
-    width: calc(100% - $width-size);
-    height: calc(210px + $height-size);
-  }
-}
-
-//! ********** MAIN **********
+$padding: 20px;
 
 [id=home] {
   display: flex;
@@ -63,18 +23,5 @@ $height-sizes: (
     height: auto;
     background-color: $silver;
     color: $black;
-  }
-
-  //! ********** RESPONSIVE **********
-
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
-    @media (min-width: $breakpoint-value) {
-      @include header(
-        map-get($gap-ratios, $breakpoint-key),
-        map-get($padding-ratios, $breakpoint-key),
-        map-get($width-sizes, $breakpoint-key),
-        map-get($height-sizes, $breakpoint-key)
-      );
-    }
   }
 }
