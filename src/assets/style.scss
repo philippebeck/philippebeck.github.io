@@ -152,8 +152,7 @@ html {
 }
 
 body {
-  margin: 0;
-  text-align: center;
+  margin: 25px 0 0;
   font-family: $sans-serif;
   font-size: $font;
   background-color: $black;
@@ -172,7 +171,7 @@ body {
   [id=about],
   [id=tools] {
     border-top: solid $border $silver;
-    padding: calc($padding * 6) $padding;
+    padding: calc($padding * 6);
 
     @each $breakpoint-key, $breakpoint-value in $breakpoints {
       @media (min-width: $breakpoint-value) {
