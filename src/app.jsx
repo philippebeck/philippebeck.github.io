@@ -9,7 +9,7 @@ import Blog from './components/blog/blog'
 import About from './components/about/about'
 
 import data from './assets/data.json'
-import './assets/style.scss'
+import './assets/app.scss'
 
 const { nav, footer } = data
 

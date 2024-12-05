@@ -1,0 +1,63 @@
+@import './style.scss';
+
+//! ********** MIXINS **********
+
+@mixin body($font-ratio) {
+  font-size: calc($font * $font-ratio);
+}
+
+@mixin molecules($border-ratio, $padding-ratio) {
+  border-width: calc($border * $border-ratio);
+  padding: calc($padding * $padding-ratio * 2) calc($padding * $padding-ratio);
+}
+
+@mixin button($icon, $color) {
+  .fa-#{$icon}:hover,
+  .fa-#{$icon}:focus {
+    color: $color;
+  }
+}
+
+//! ********** MAIN **********
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 30px 0 0;
+  font-family: $sans-serif;
+  font-size: $font;
+  background-color: $black;
+  color: $white;
+
+  @each $breakpoint-key, $breakpoint-value in $breakpoints {
+    @media (min-width: $breakpoint-value) {
+      @include body(map-get($font-ratios, $breakpoint-key));
+    }
+  }
+
+  [id=home],
+  [id=portfolio],
+  [id=skills],
+  [id=blog],
+  [id=about],
+  [id=tools] {
+    border-top: solid $border $silver;
+    padding: calc($padding * 4);
+
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @media (min-width: $breakpoint-value) {
+
+        @include molecules(
+          map-get($border-ratios, $breakpoint-key),
+          map-get($padding-ratios, $breakpoint-key)
+        );
+      }
+    }
+  }
+}
+
+@each $social-key, $social-value in $buttons {
+  @include button($social-key, $social-value);
+}
