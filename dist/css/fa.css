@@ -65,14 +65,13 @@
 .fa-chevron-right { --fa: "\f054" }
 .fa-code { --fa: "\f121" }
 .fa-css3 { --fa: "\f13c" }
-.fa-database { --fa: "\f1c0" }
-.fa-dev { --fa: "\f6cc" }
 .fa-figma { --fa: "\f799" }
 .fa-font-awesome { --fa: "\f2b4" }
 .fa-github { --fa: "\f09b" }
 .fa-gitkraken { --fa: "\f3a6" }
 .fa-grunt { --fa: "\f3ad" }
 .fa-html5 { --fa: "\f13b" }
+.fa-ts { --fa: "\f3b8" }
 .fa-language { --fa: "\f1ab" }
 .fa-linkedin-in { --fa: "\f0e1" }
 .fa-linux { --fa: "\f17c" }
@@ -84,10 +83,8 @@
 .fa-person-biking { --fa: "\f84a" }
 .fa-php { --fa: "\f457" }
 .fa-play { --fa: "\f04b" }
-.fa-python { --fa: "\f3e2" }
 .fa-react { --fa: "\f41b" }
 .fa-sass { --fa: "\f41e" }
-.fa-screwdriver-wrench { --fa: "\f7d9" }
 .fa-sitemap { --fa: "\f0e8" }
 .fa-slack { --fa: "\f198" }
 .fa-square-git { --fa: "\f1d2" }
