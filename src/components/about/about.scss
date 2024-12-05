@@ -6,21 +6,18 @@ $gap: 10px;
 $padding: 5px;
 
 $gap-ratios: (
-  "sm": 2.5,
-  "md": 3.5,
-  "lg": 4.5
+  "md": 2.5,
+  "lg": 3.5
 ) !default;
 
 $padding-ratios: (
-  "sm": 4,
-  "md": 6,
-  "lg": 8
+  "md": 4,
+  "lg": 6
 ) !default;
 
 $height-sizes: (
-  "sm": 100px,
-  "md": 200px,
-  "lg": 300px
+  "md": 100px,
+  "lg": 200px
 ) !default;
 
 //! ********** MIXIN **********

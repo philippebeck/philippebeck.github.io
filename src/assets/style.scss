@@ -1,11 +1,9 @@
 //! ********** VARIABLES **********
 
-$sm: 768px;
-$md: 1366px;
-$lg: 1920px;
+$md: 768px;
+$lg: 1366px;
 
 $breakpoints: (
-  "sm": $sm,
   "md": $md,
   "lg": $lg
 ) !default;
@@ -44,21 +42,18 @@ $padding: 10px;
 $font: 1rem;
 
 $border-ratios: (
-  "sm": 2.5,
+  "md": 2.5,
+  "lg": 3.5
+) !default;
+
+$padding-ratios: (
   "md": 3.5,
   "lg": 4.5
 ) !default;
 
-$padding-ratios: (
-  "sm": 3.5,
-  "md": 4.5,
-  "lg": 5
-) !default;
-
 $font-ratios: (
-  "sm": 1.3,
-  "md": 1.5,
-  "lg": 1.7
+  "md": 1.3,
+  "lg": 1.5
 ) !default;
 
 $icons: (
