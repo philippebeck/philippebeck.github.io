@@ -5,16 +5,14 @@
     animation: turn-x 2s linear infinite reverse;
   }
 
-  .collapse[open] {
-    & > figure {
-      animation: slide-right 500ms ease-in-out;
-    }
+  [open] > figure {
+    animation: slide-right 500ms ease-in-out;
+  }
 
-    &:hover summary i,
-    summary:focus i,
-    &[open] summary i {
-      animation: turn-xy 2s linear infinite reverse;
-    }
+  .collapse:hover summary i,
+  summary:focus i,
+  [open] summary i {
+    animation: turn-xy 2s linear infinite reverse;
   }
 
   @each $name, $color in $icons {
