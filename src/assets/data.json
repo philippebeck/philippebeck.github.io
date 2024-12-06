@@ -51,7 +51,7 @@
         },
         "ico": {
           "cat": "solid",
-          "name": "address-card"
+          "name": "circle-info"
         },
         "txt": "About"
       }
@@ -63,7 +63,7 @@
       },
       "ico": {
         "cat": "solid",
-        "name": "address-book"
+        "name": "address-card"
       }
     }
   },
@@ -581,7 +581,7 @@
           "option": "3x"
         },
         {
-          "name": "github",
+          "name": "square-github",
           "option": "3x"
         }
       ],
@@ -1043,7 +1043,7 @@
       "lvl": 2,
       "sub": "You can find additional information about me here...",
       "ico": {
-        "name": "address-card",
+        "name": "circle-info",
         "cat": "solid",
         "option": "4x"
       }
