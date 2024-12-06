@@ -1,12 +1,8 @@
-@import '../../assets/style.scss';
-
-$gap: 5px;
-$padding: 20px;
+@import '../../assets/style';
 
 [id=home] {
   display: flex;
   flex-flow: column;
-  gap: $gap;
 
   &:hover > .title i {
     animation: turn-y 2s linear infinite reverse;
@@ -15,13 +11,10 @@ $padding: 20px;
   ul {
     flex-flow: column wrap;
     place-items: baseline;
-    box-sizing: border-box;
     margin: auto;
     border-radius: 20px;
-    padding: $padding;
-    width: fit-content;
-    height: auto;
-    background-color: $silver;
-    color: $black;
+    padding: 20px;
+    background-color: var(--silver);
+    color: var(--black);
   }
 }
