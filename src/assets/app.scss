@@ -1,24 +1,17 @@
 @import './style.scss';
 
-//! ********** MIXINS **********
+:root {
+  --sans-serif: Geologica, Helvetica, sans-serif;
+  --serif:      Trocchi, Times, serif;
+  --monospace:  UbuntuMono, Courier, monospace;
 
-@mixin body($font-ratio) {
-  font-size: calc($font * $font-ratio);
+  --primary:    hsl(270, 100%, 80%);
+  --secondary:  hsl(120, 100%, 80%);
+  --white:      hsl(  0,   0%, 99%);
+  --silver:     hsl(  0,   0%, 80%);
+  --gray:       hsl(  0,   0%, 20%);
+  --black:      hsl(  0,   0%,  1%);
 }
-
-@mixin molecules($border-ratio, $padding-ratio) {
-  border-width: calc($border * $border-ratio);
-  padding: calc($padding * $padding-ratio * 2) calc($padding * $padding-ratio);
-}
-
-@mixin button($icon, $color) {
-  .fa-#{$icon}:hover,
-  .fa-#{$icon}:focus {
-    color: $color;
-  }
-}
-
-//! ********** MAIN **********
 
 html {
   scroll-behavior: smooth;
@@ -26,35 +19,58 @@ html {
 
 body {
   margin: 30px 0 0;
-  font-family: $sans-serif;
-  font-size: $font;
-  background-color: $black;
-  color: $white;
-
-  @each $breakpoint-key, $breakpoint-value in $breakpoints {
-    @media (min-width: $breakpoint-value) {
-      @include body(map-get($font-ratios, $breakpoint-key));
-    }
-  }
+  font-family: var(--sans-serif);
+  font-size: 1rem;
+  background-color: var(--black);
+  color: var(--white);
 
   [id=home],
   [id=portfolio],
   [id=skills],
   [id=blog],
-  [id=about],
-  [id=tools] {
-    border-top: solid $border $silver;
-    padding: calc($padding * 4);
+  [id=about] {
+    border-top: solid 1px var(--silver);
+    padding: 40px;
+  }
 
-    @each $breakpoint-key, $breakpoint-value in $breakpoints {
-      @media (min-width: $breakpoint-value) {
+  @media (min-width: $md) {
+    font-size: 1.3rem;
 
-        @include molecules(
-          map-get($border-ratios, $breakpoint-key),
-          map-get($padding-ratios, $breakpoint-key)
-        );
-      }
+    [id=home],
+    [id=portfolio],
+    [id=skills],
+    [id=blog],
+    [id=about] {
+      border-width: 2px;
+      padding: 70px 35px;
     }
+  }
+
+  @media (min-width: $lg) {
+    font-size: 1.5rem;
+
+    [id=home],
+    [id=portfolio],
+    [id=skills],
+    [id=blog],
+    [id=about] {
+      border-width: 2px;
+      padding: 70px 35px;
+    }
+  }
+}
+
+$buttons: (
+  "github":       #010409,
+  "linkedin-in":  #0077B5,
+  "medium":       #00AB6C,
+  "npm":          #EA2039
+) !default;
+
+@mixin button($icon, $color) {
+  .fa-#{$icon}:hover,
+  .fa-#{$icon}:focus {
+    color: $color;
   }
 }
 
