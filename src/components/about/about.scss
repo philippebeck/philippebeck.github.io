@@ -1,79 +1,47 @@
-@import '../../assets/style.scss';
-
-//! ********** VARIABLES **********
-
-$gap: 10px;
-$padding: 5px;
-
-$gap-ratios: (
-  "md": 2.5,
-  "lg": 3.5
-) !default;
-
-$padding-ratios: (
-  "md": 4,
-  "lg": 6
-) !default;
-
-$height-sizes: (
-  "md": 100px,
-  "lg": 200px
-) !default;
-
-//! ********** MIXIN **********
-
-@mixin about($gap-ratio, $padding-ratio, $height-size) {
-  gap: calc($gap * $gap-ratio);
-  padding: calc($padding * $padding-ratio);
-  height: calc(310px + $height-size);
-}
-
-//! ********** MAIN **********
+@import '../../assets/style';
 
 [id=about] {
   &:hover > .title i {
     animation: turn-x 2s linear infinite reverse;
   }
 
-  & .slider:hover > section i {
-    animation: turn-3d 2s linear infinite reverse;
-  }
-
   section {
     display: flex;
     flex-flow: column;
-    gap: $gap;
+    gap: 10px;
     box-sizing: border-box;
     margin: auto;
     border-radius: 20px;
-    padding: $padding;
+    padding: 10px;
     width: fit-content;
     height: 300px;
-    background-color: $silver;
-    color: $black;
+    background-color: var(--silver);
+    color: var(--black);
 
     & > * {
       margin: 0;
+    }
+
+    i {
+      animation: turn-3d 2s linear infinite reverse;
     }
 
     ul {
       display: flex;
       flex-flow: column;
       place-items: baseline;
-      width: fit-content;
     }
 
-    //! ********** RESPONSIVE **********
+    @media (min-width: $md) {
+      gap: 20px;
+      padding: 20px;
+      height: 420px;
+    }
 
-    @each $breakpoint-key, $breakpoint-value in $breakpoints {
-      @media (min-width: $breakpoint-value) {
-
-        @include about(
-          map-get($gap-ratios, $breakpoint-key),
-          map-get($padding-ratios, $breakpoint-key),
-          map-get($height-sizes, $breakpoint-key)
-        );
-      }
+    @media (min-width: $lg) {
+      gap: 30px;
+      padding: 30px;
+      height: 530px;
     }
   }
 }
