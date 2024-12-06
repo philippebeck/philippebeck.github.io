@@ -27,6 +27,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Blog />
     <About />
 
-    <Footer links={footer}/>
+    <Footer
+      id="contact"
+      links={footer}
+    />
   </React.StrictMode>
 )
