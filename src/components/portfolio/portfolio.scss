@@ -1,11 +1,11 @@
-@import '../../assets/style.scss';
+@import '../../assets/style';
 
 [id=portfolio] {
   &:hover > .title i {
     animation: turn-x 2s linear infinite reverse;
   }
 
-  .collapse {
+  .collapse[open] {
     & > figure {
       animation: slide-right 500ms ease-in-out;
     }
