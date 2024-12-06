@@ -63,6 +63,7 @@
 .fa-chess { --fa: "\f439" }
 .fa-chevron-left { --fa: "\f053" }
 .fa-chevron-right { --fa: "\f054" }
+.fa-circle-info { --fa: "\f05a" }
 .fa-code { --fa: "\f121" }
 .fa-css3 { --fa: "\f13c" }
 .fa-figma { --fa: "\f799" }
@@ -71,7 +72,6 @@
 .fa-gitkraken { --fa: "\f3a6" }
 .fa-grunt { --fa: "\f3ad" }
 .fa-html5 { --fa: "\f13b" }
-.fa-ts { --fa: "\f3b8" }
 .fa-language { --fa: "\f1ab" }
 .fa-linkedin-in { --fa: "\f0e1" }
 .fa-linux { --fa: "\f17c" }
@@ -88,8 +88,10 @@
 .fa-sitemap { --fa: "\f0e8" }
 .fa-slack { --fa: "\f198" }
 .fa-square-git { --fa: "\f1d2" }
+.fa-square-github { --fa: "\f092" }
 .fa-square-js { --fa: "\f3b9" }
 .fa-trello { --fa: "\f181" }
+.fa-ts { --fa: "\f3b8" }
 .fa-user-ninja { --fa: "\f504" }
 .fa-vuejs { --fa: "\f41f" }
 .fa-windows { --fa: "\f17a" }
