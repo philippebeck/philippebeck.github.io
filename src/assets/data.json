@@ -81,7 +81,7 @@
     "data": [
       "💻 Fullstack developer with expertise including :",
       "🖼️ HTML, CSS, Sass, JS, TS, React & Vue",
-      "⚙️ Node, PHP, SQL, MongoDB & Git",
+      "⚙️ Node, PHP, Python, SQL & MongoDB",
       "🛠️ Open-source contributor on GitHub & NPM",
       "🎓 Passionate about continuous learning & innovation",
       "🌏 But also about Nature, Science, Space & Technology",
@@ -1110,12 +1110,11 @@
           }
         },
         "data": [
-          "🎮 Video Games",
           "🎎 Anime & Manga",
-          "🎬 Sci-Fi Movies",
-          "📚 Sci-Fi Books",
-          "📺 K-Dramas",
-          "🎸 Pop, Rock & Electro"
+          "📺 J & K Dramas",
+          "🎸 Pop, Rock & Electro",
+          "🌌 Sci-Fi & Fantasy",
+          "🎮 Video Games"
         ]
       }
     ]
