@@ -1159,6 +1159,17 @@
         "name": "linkedin-in",
         "option": "1x"
       }
+    },
+    {
+      "link": {
+        "url": "https://codeium.com/profile/philippebeck",
+        "label": "Codeium"
+      },
+      "ico": {
+        "name": "robot",
+        "cat": "solid",
+        "option": "1x"
+      }
     }
   ]
 }
